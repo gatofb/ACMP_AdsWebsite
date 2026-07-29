@@ -39,6 +39,10 @@
   .badge-cro-on { background:#fff1e8; color:#b83f06; }
   .table-scroll { overflow-x:auto; -webkit-overflow-scrolling:touch; border-radius:12px; }
   .updated { white-space:nowrap; font-size:13px; color:var(--muted); }
+  .log-list { list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:10px; }
+  .log-entry { background:#fff; border:1px solid var(--border); border-radius:12px; padding:12px 16px; font-size:13px; }
+  .log-entry > ul { margin:6px 0 0; padding-left:18px; color:var(--muted); }
+  .log-entry > ul li { margin:2px 0; }
   footer { margin-top:40px; font-size:12px; color:var(--muted); text-align:center; }
   @media (max-width:720px) {
     table, thead, tbody, th, td, tr { display:block; }
@@ -65,12 +69,13 @@
     <div class="stat"><div class="num">6</div><div class="lbl">Landings generadas</div></div>
     <div class="stat"><div class="num">0</div><div class="lbl">Cursos con errores</div></div>
     <div class="stat"><div class="num">20</div><div class="lbl">Páginas del sitio sin variantes</div></div>
-    <div class="stat"><div class="num">28/07/2026</div><div class="lbl">Última generación</div></div>
+    <div class="stat"><div class="num">29/07/2026</div><div class="lbl">Última generación</div></div>
+    <div class="stat"><div class="num">29/07/2026</div><div class="lbl">Último deploy</div></div>
   </div>
 
   <section>
     <h2>curso-oratoria <span class="badge badge-ok">OK</span></h2>
-    <p class="section-note">Reporte: OK · 2026-07-29 04:47 (<code>log/ads-curso-oratoria.md</code>)</p>
+    <p class="section-note">Reporte: OK · 2026-07-29 13:03 (<code>log/ads-curso-oratoria.md</code>)</p>
     <div class="table-scroll"><table>
       <thead>
         <tr><th>Variación</th><th>Archivo</th><th>Estado</th><th>Peso</th><th>Generado</th></tr>
@@ -81,42 +86,42 @@
           <td data-label="Archivo" class="path"><a href="curso-oratoria/curso-oratoria.html">curso-oratoria.html</a></td>
           <td data-label="Estado"><span class="badge badge-ok">generada</span></td>
           <td data-label="Peso">94 kb</td>
-          <td data-label="Generado" class="updated">28/07/2026, 10:47 p. m.</td>
+          <td data-label="Generado" class="updated">29/07/2026, 07:03 a. m.</td>
         </tr>
         <tr>
           <td data-label="Variación"><span class="badge badge-ok">Sin puntos de fuga</span></td>
           <td data-label="Archivo" class="path"><a href="curso-oratoria/curso-oratoria-ads.html">curso-oratoria-ads.html</a></td>
           <td data-label="Estado"><span class="badge badge-ok">generada</span></td>
           <td data-label="Peso">76 kb</td>
-          <td data-label="Generado" class="updated">28/07/2026, 10:47 p. m.</td>
+          <td data-label="Generado" class="updated">29/07/2026, 07:03 a. m.</td>
         </tr>
         <tr>
           <td data-label="Variación"><span class="badge badge-mod">Formulario de calificación</span></td>
           <td data-label="Archivo" class="path"><a href="curso-oratoria/curso-oratoria-form.html">curso-oratoria-form.html</a></td>
           <td data-label="Estado"><span class="badge badge-ok">generada</span></td>
           <td data-label="Peso">68 kb</td>
-          <td data-label="Generado" class="updated">28/07/2026, 10:47 p. m.</td>
+          <td data-label="Generado" class="updated">29/07/2026, 07:03 a. m.</td>
         </tr>
         <tr>
           <td data-label="Variación"><span class="badge badge-dc">Step 1 · order bump</span></td>
           <td data-label="Archivo" class="path"><a href="curso-oratoria/curso-oratoria-step1.html">curso-oratoria-step1.html</a></td>
           <td data-label="Estado"><span class="badge badge-ok">generada</span></td>
           <td data-label="Peso">76 kb</td>
-          <td data-label="Generado" class="updated">28/07/2026, 10:47 p. m.</td>
+          <td data-label="Generado" class="updated">29/07/2026, 07:03 a. m.</td>
         </tr>
         <tr>
           <td data-label="Variación"><span class="badge badge-dc">Step 2 · upsell</span></td>
           <td data-label="Archivo" class="path"><a href="curso-oratoria/curso-oratoria-step2.html">curso-oratoria-step2.html</a></td>
           <td data-label="Estado"><span class="badge badge-ok">generada</span></td>
           <td data-label="Peso">13 kb</td>
-          <td data-label="Generado" class="updated">28/07/2026, 10:47 p. m.</td>
+          <td data-label="Generado" class="updated">29/07/2026, 07:03 a. m.</td>
         </tr>
         <tr>
           <td data-label="Variación"><span class="badge badge-cro-on">Cupones ?coupon=</span></td>
           <td data-label="Archivo" class="path"><a href="curso-oratoria/curso-oratoria-descuentos.html">curso-oratoria-descuentos.html</a> · <a href="curso-oratoria/curso-oratoria-descuentos.html?coupon=Descuento10">Descuento10</a></td>
           <td data-label="Estado"><span class="badge badge-ok">generada</span></td>
           <td data-label="Peso">79 kb</td>
-          <td data-label="Generado" class="updated">28/07/2026, 10:47 p. m.</td>
+          <td data-label="Generado" class="updated">29/07/2026, 07:03 a. m.</td>
         </tr>
       </tbody>
     </table></div>
@@ -240,7 +245,20 @@
     </ul>
   </section>
 
-  <footer>Generado 29/07/2026, 06:52 a. m. · no editar a mano (se regenera con cada corrida del generador)</footer>
+  <section>
+    <h2>Historial de cambios (generaciones y deploys)</h2>
+    <p class="section-note">Fuente: <code>log/changelog.md</code> · 6 entrada(s), más recientes arriba. Los deploys incluyen el commit publicado en <code>ACMP_AdsWebsite</code>.</p>
+    <ul class="log-list">
+      <li class="log-entry"><strong>2026-07-29 07:03 — Generación: curso-oratoria</strong><ul><li><strong>Script:</strong> <code>generate-ads.mjs</code></li><li><strong>Página:</strong> <code>curso-oratoria</code> → <code>Output/curso-oratoria/</code></li><li><strong>Variantes:</strong> 6 (original, ads, form, step1, step2, descuentos)</li><li><strong>Upsell:</strong> detectado en la página (.acmp-buy-card.is-combo) → Combo Extremo $156.250 → https://maipistiner.wisboo.com/product/combo-i-acceso-a-todos-los-cursos</li><li><strong>Estado:</strong> OK</li><li><strong>Nota:</strong> Alta del registro de cambios (log/changelog.md renderizado en el checklist)</li></ul></li>
+      <li class="log-entry"><strong>2026-07-29 06:52 — Deploy: ACMP_AdsWebsite</strong><ul><li><strong>Script:</strong> <code>sync-output.sh</code></li><li><strong>Remote:</strong> <code>gatofb/ACMP_AdsWebsite</code> (main)</li><li><strong>Commit:</strong> <code>3e82bd4</code> — Update ads landings from LandingPagesAdsMeta Output/</li><li><strong>Nota:</strong> Entrada retroactiva (el registro de cambios se implementó después de este deploy).</li></ul></li>
+      <li class="log-entry"><strong>2026-07-29 06:50 — Deploy: ACMP_AdsWebsite</strong><ul><li><strong>Script:</strong> <code>sync-output.sh</code></li><li><strong>Remote:</strong> <code>gatofb/ACMP_AdsWebsite</code> (main)</li><li><strong>Commit:</strong> <code>8696834</code> — Index link-in-bio en la raíz + checklist sin .git</li><li><strong>Nota:</strong> Menú link-in-bio en la raíz del dominio de pauta, con la landing sin fugas de cada curso. Entrada retroactiva.</li></ul></li>
+      <li class="log-entry"><strong>2026-07-29 06:34 — Deploy: ACMP_AdsWebsite</strong><ul><li><strong>Script:</strong> <code>sync-output.sh</code></li><li><strong>Remote:</strong> <code>gatofb/ACMP_AdsWebsite</code> (main)</li><li><strong>Commit:</strong> <code>4ed375b</code> — Landings Meta Ads: curso-oratoria (6 variantes) + checklist</li><li><strong>Nota:</strong> Primer push del repo de pauta. Entrada retroactiva.</li></ul></li>
+      <li class="log-entry"><strong>2026-07-28 22:47 — Generación: curso-oratoria</strong><ul><li><strong>Script:</strong> <code>generate-ads.mjs</code></li><li><strong>Página:</strong> <code>curso-oratoria</code> → <code>Output/curso-oratoria/</code></li><li><strong>Variantes:</strong> 6 (original, ads, form, step1, step2, descuentos)</li><li><strong>Upsell:</strong> detectado en la página (.acmp-buy-card.is-combo) → Combo Extremo $156.250</li><li><strong>Estado:</strong> OK</li><li><strong>Nota:</strong> Correcciones de la revisión adversarial (24 agentes, 10 hallazgos): step2 sin capa CRO y con pie legal; el cupón deja de descontar la card del combo; patchJsx con más shapes + validación que corta si un acordeón queda sin cuerpo. Entrada retroactiva.</li></ul></li>
+      <li class="log-entry"><strong>2026-07-28 21:34 — Generación: curso-oratoria</strong><ul><li><strong>Script:</strong> <code>generate-ads.mjs</code></li><li><strong>Página:</strong> <code>curso-oratoria</code> → <code>Output/curso-oratoria/</code></li><li><strong>Variantes:</strong> 6 (original, ads, form, step1, step2, descuentos)</li><li><strong>Estado:</strong> OK</li><li><strong>Nota:</strong> Piloto inicial del generador, validado en browser (sin fugas, form sin precios, step1→step2, cupones). Entrada retroactiva.</li></ul></li>
+    </ul>
+  </section>
+
+  <footer>Generado 29/07/2026, 07:05 a. m. · no editar a mano (se regenera con cada corrida del generador)</footer>
 </div>
 
 </body>
