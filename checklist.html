@@ -120,7 +120,7 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
 
   <section>
     <h2>curso-oratoria <span class="badge badge-ok">OK</span></h2>
-    <p class="section-note">Reporte: OK · 2026-08-25 07:23 (<code>log/ads-curso-oratoria.md</code>)</p>
+    <p class="section-note">Reporte: OK · 2026-08-25 07:34 (<code>log/ads-curso-oratoria.md</code>)</p>
     <div class="table-scroll"><table>
       <thead>
         <tr><th>Variación</th><th>Archivo</th><th>Estado</th><th>Peso</th><th>Generado</th></tr>
@@ -130,29 +130,29 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
           <td data-label="Variación"><span class="badge badge-ok">1 · Sin puntos de fuga</span></td>
           <td data-label="Archivo" class="path"><a href="curso-oratoria/curso-oratoria-ads.html">curso-oratoria-ads.html</a> · <a href="curso-oratoria/curso-oratoria-ads.html?coupon=Descuento10">Descuento10</a> · <a href="curso-oratoria/curso-oratoria-ads.html?coupon=D15AD">D15AD</a></td>
           <td data-label="Estado"><span class="badge badge-ok">generada</span></td>
-          <td data-label="Peso">82 kb</td>
-          <td data-label="Generado" class="updated">25/08/2026, 09:23 a. m.</td>
+          <td data-label="Peso">83 kb</td>
+          <td data-label="Generado" class="updated">25/08/2026, 09:34 a. m.</td>
         </tr>
         <tr>
           <td data-label="Variación"><span class="badge badge-mod">2 · Formulario de calificación</span></td>
           <td data-label="Archivo" class="path"><a href="curso-oratoria/curso-oratoria-form.html">curso-oratoria-form.html</a></td>
           <td data-label="Estado"><span class="badge badge-ok">generada</span></td>
           <td data-label="Peso">71 kb</td>
-          <td data-label="Generado" class="updated">25/08/2026, 09:23 a. m.</td>
+          <td data-label="Generado" class="updated">25/08/2026, 09:34 a. m.</td>
         </tr>
         <tr>
           <td data-label="Variación"><span class="badge badge-dc">3 · Order bump (step 1)</span></td>
           <td data-label="Archivo" class="path"><a href="curso-oratoria/curso-oratoria-step1.html">curso-oratoria-step1.html</a></td>
           <td data-label="Estado"><span class="badge badge-ok">generada</span></td>
           <td data-label="Peso">78 kb</td>
-          <td data-label="Generado" class="updated">25/08/2026, 09:23 a. m.</td>
+          <td data-label="Generado" class="updated">25/08/2026, 09:34 a. m.</td>
         </tr>
         <tr>
           <td data-label="Variación"><span class="badge badge-home">↳ step 2 (interna del funnel)</span></td>
           <td data-label="Archivo" class="path"><a href="curso-oratoria/curso-oratoria-step2.html">curso-oratoria-step2.html</a></td>
           <td data-label="Estado"><span class="badge badge-ok">generada</span></td>
           <td data-label="Peso">16 kb</td>
-          <td data-label="Generado" class="updated">25/08/2026, 09:23 a. m.</td>
+          <td data-label="Generado" class="updated">25/08/2026, 09:34 a. m.</td>
         </tr>
       </tbody>
     </table></div>
@@ -278,8 +278,9 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
 
   <section>
     <h2>Historial de cambios (generaciones y deploys)</h2>
-    <p class="section-note">Fuente: <code>log/changelog.md</code> · 28 entrada(s), más recientes arriba. Los deploys incluyen el commit publicado en <code>ACMP_AdsWebsite</code>.</p>
+    <p class="section-note">Fuente: <code>log/changelog.md</code> · 29 entrada(s), más recientes arriba. Los deploys incluyen el commit publicado en <code>ACMP_AdsWebsite</code>.</p>
     <ul class="log-list">
+      <li class="log-entry"><strong>2026-08-25 09:34 — Generación: curso-oratoria</strong><ul><li><strong>Script:</strong> <code>generate-ads.mjs</code></li><li><strong>Página:</strong> <code>curso-oratoria</code> → <code>Output/curso-oratoria/</code></li><li><strong>Variantes:</strong> 4 (ads, form, step1, step2)</li><li><strong>Upsell:</strong> detectado en la página (.acmp-buy-card.is-combo) → Combo Extremo $156.250 → https://maipistiner.wisboo.com/checkout/combo-i-acceso-a-todos-los-cursos</li><li><strong>Estado:</strong> OK</li><li><strong>Nota:</strong> Fix: el forward de cupón y UTMs no reconocía los links de /checkout/ (matches() con /product/ hardcodeado)</li></ul></li>
       <li class="log-entry"><strong>2026-08-25 09:24 — Deploy: ACMP_AdsWebsite</strong><ul><li><strong>Script:</strong> <code>sync-output.sh</code></li><li><strong>Remote:</strong> <code>gatofb/ACMP_AdsWebsite</code> (main)</li><li><strong>Commit:</strong> <code>aa1479a</code> — Checkout directo de Wisboo, sin apertura de precios y validación del matcher de tracking</li><li><strong>Archivos:</strong> 5 files changed, 31 insertions(+), 25 deletions(-)</li></ul></li>
       <li class="log-entry"><strong>2026-08-25 09:23 — Generación: academia-ingles</strong><ul><li><strong>Script:</strong> <code>generate-ads.mjs</code></li><li><strong>Página:</strong> <code>academia-ingles</code> → <code>Output/academia-ingles/</code></li><li><strong>Variantes:</strong> 2 (ads, form)</li><li><strong>Upsell:</strong> —</li><li><strong>Estado:</strong> 1 error(es) — no publicar · 1 warning(s)</li><li><strong>Nota:</strong> Alinear el hub con los cambios de pipeline (checkout directo, sin apertura de precios)</li></ul></li>
       <li class="log-entry"><strong>2026-08-25 09:23 — Generación: curso-oratoria</strong><ul><li><strong>Script:</strong> <code>generate-ads.mjs</code></li><li><strong>Página:</strong> <code>curso-oratoria</code> → <code>Output/curso-oratoria/</code></li><li><strong>Variantes:</strong> 4 (ads, form, step1, step2)</li><li><strong>Upsell:</strong> detectado en la página (.acmp-buy-card.is-combo) → Combo Extremo $156.250 → https://maipistiner.wisboo.com/checkout/combo-i-acceso-a-todos-los-cursos</li><li><strong>Estado:</strong> OK</li><li><strong>Nota:</strong> Checkout directo, sin apertura de precios y normalización de checkout_url en el pipeline</li></ul></li>
@@ -311,7 +312,7 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
     </ul>
   </section>
 
-  <footer>Generado 25/08/2026, 09:25 a. m. · no editar a mano (se regenera con cada corrida del generador)</footer>
+  <footer>Generado 25/08/2026, 09:35 a. m. · no editar a mano (se regenera con cada corrida del generador)</footer>
 </div>
 
 </body>

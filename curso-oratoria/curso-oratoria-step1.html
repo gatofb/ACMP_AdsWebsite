@@ -211,7 +211,7 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
 <script>(function(){
   'use strict';
   var PARAMS = ["utm_source","utm_medium","utm_campaign","utm_content","utm_term","fbclid","gclid"];
-  var COURSE_SLUG = "";
+  var COURSE_SLUG = "relanzamiento-oratoria-el-arte-de-hablar";
   var qs = new URLSearchParams(location.search);
   function extend(href){
     var u; try { u = new URL(href, location.href); } catch (e) { return href; }
@@ -222,7 +222,11 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
       u.searchParams.set('coupon', window.__ACMP_COUPON_CODE);
     return u.href;
   }
-  function matches(href){ return /wisboo\.com\/product/.test(href) || /-step2\.html/.test(href); }
+  // Qué links se procesan. Cualquier link a Wisboo es un link de compra: no se
+  // hardcodea /product/ ni /checkout/, porque al cambiar la ruta esto dejaba de
+  // matchear y se perdían EL CUPÓN Y LOS UTMs, sin ningún síntoma visible.
+  var LINK_PATTERNS = ["wisboo.com/","curso-oratoria-step2.html"];
+  function matches(href){ return LINK_PATTERNS.some(function(p){ return href.indexOf(p) !== -1; }); }
   function applyAll(){
     document.querySelectorAll('a[href]').forEach(function(a){
       var h = a.getAttribute('href') || '';
