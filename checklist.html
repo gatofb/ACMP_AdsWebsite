@@ -75,7 +75,7 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
     <div class="stat"><div class="num">1</div><div class="lbl">Cursos con errores</div></div>
     <div class="stat"><div class="num">20</div><div class="lbl">Páginas del sitio sin variantes</div></div>
     <div class="stat"><div class="num">24/08/2026</div><div class="lbl">Última generación</div></div>
-    <div class="stat"><div class="num">10/08/2026</div><div class="lbl">Último deploy</div></div>
+    <div class="stat"><div class="num">25/08/2026</div><div class="lbl">Último deploy</div></div>
   </div>
 
   <section>
@@ -278,8 +278,9 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
 
   <section>
     <h2>Historial de cambios (generaciones y deploys)</h2>
-    <p class="section-note">Fuente: <code>log/changelog.md</code> · 20 entrada(s), más recientes arriba. Los deploys incluyen el commit publicado en <code>ACMP_AdsWebsite</code>.</p>
+    <p class="section-note">Fuente: <code>log/changelog.md</code> · 21 entrada(s), más recientes arriba. Los deploys incluyen el commit publicado en <code>ACMP_AdsWebsite</code>.</p>
     <ul class="log-list">
+      <li class="log-entry"><strong>2026-08-25 09:04 — Deploy: ACMP_AdsWebsite</strong><ul><li><strong>Script:</strong> <code>sync-output.sh</code></li><li><strong>Remote:</strong> <code>gatofb/ACMP_AdsWebsite</code> (main)</li><li><strong>Commit:</strong> <code>168f30d</code> — Simplificación a 3 destinos de pauta: cupones dentro de -ads, sin copia original ni página de descuentos + redirects</li><li><strong>Archivos:</strong> 8 files changed, 308 insertions(+), 1084 deletions(-)</li></ul></li>
       <li class="log-entry"><strong>2026-08-24 18:47 — Generación: curso-oratoria</strong><ul><li><strong>Script:</strong> <code>generate-ads.mjs</code></li><li><strong>Página:</strong> <code>curso-oratoria</code> → <code>Output/curso-oratoria/</code></li><li><strong>Variantes:</strong> 4 (ads, form, step1, step2)</li><li><strong>Upsell:</strong> detectado en la página (.acmp-buy-card.is-combo) → Combo Extremo $156.250 → https://maipistiner.wisboo.com/product/combo-i-acceso-a-todos-los-cursos</li><li><strong>Estado:</strong> OK</li><li><strong>Nota:</strong> Cupones genéricos DXXAD (XX = % OFF, ej. D15AD) además de la tabla Descuento*</li></ul></li>
       <li class="log-entry"><strong>2026-08-24 12:01 — Generación: academia-ingles</strong><ul><li><strong>Script:</strong> <code>generate-ads.mjs</code></li><li><strong>Página:</strong> <code>academia-ingles</code> → <code>Output/academia-ingles/</code></li><li><strong>Variantes:</strong> 2 (ads, form)</li><li><strong>Upsell:</strong> —</li><li><strong>Estado:</strong> 1 error(es) — no publicar</li><li><strong>Nota:</strong> Simplificación a 3 destinos (modo lead: -ads y -form)</li></ul></li>
       <li class="log-entry"><strong>2026-08-24 12:00 — Generación: academia-ingles</strong><ul><li><strong>Script:</strong> <code>generate-ads.mjs</code></li><li><strong>Página:</strong> <code>academia-ingles</code> → <code>Output/academia-ingles/</code></li><li><strong>Variantes:</strong> 2 (ads, form)</li><li><strong>Upsell:</strong> —</li><li><strong>Estado:</strong> OK</li><li><strong>Nota:</strong> Simplificación a 3 destinos (en modo lead: -ads y -form)</li></ul></li>
