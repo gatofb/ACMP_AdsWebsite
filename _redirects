@@ -1,0 +1,9 @@
+# Generado por scripts/build-checklist.mjs desde Reglas/ads-global.json → redirects.
+# No editar a mano. Solo rutas explícitas: nunca un catch-all.
+
+/curso-oratoria/curso-oratoria-descuentos /curso-oratoria/curso-oratoria-ads 301
+/curso-oratoria/curso-oratoria-descuentos.html /curso-oratoria/curso-oratoria-ads 301
+/curso-oratoria/curso-oratoria /curso-oratoria/curso-oratoria-ads 301
+/curso-oratoria/curso-oratoria.html /curso-oratoria/curso-oratoria-ads 301
+/academia-ingles/academia-ingles /academia-ingles/academia-ingles-ads 301
+/academia-ingles/academia-ingles.html /academia-ingles/academia-ingles-ads 301

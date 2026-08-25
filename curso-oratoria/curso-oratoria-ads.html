@@ -148,6 +148,88 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
  ],
  "upsell": {}
 };</script>
+<script>(function(){
+  'use strict';
+  var TABLE = {"Descuento10":10,"Descuento25":25,"Descuento35":35,"Descuento50":50};
+  var PATTERN = new RegExp("^D(\\d{1,2})AD$", 'i');
+  // Copy de la oferta base que se contradice con un cupón ("20% OFF", "75% OFF").
+  // Se reescribe en runtime y solo cuando hay cupón válido: sin cupón la página
+  // conserva su oferta original intacta.
+  var COPY = {"Inscribirme con 20% OFF →":"Inscribirme ahora →","PREVENTA 20% OFF":"PRECIO PROMOCIONAL"};
+  var ROUND = 100;
+  var qs = new URLSearchParams(location.search);
+  var raw = qs.get("coupon");
+  if (!raw) return;
+  var code = Object.keys(TABLE).find(function(k){ return k.toLowerCase() === raw.toLowerCase(); });
+  var pct = code ? TABLE[code] : 0;
+  if (!code) {
+    // cupones genéricos por coupons.pattern: DXXAD → XX% OFF (D15AD = 15%);
+    // el cupón homónimo tiene que existir en Wisboo con el mismo porcentaje
+    var m = PATTERN && PATTERN.exec(raw);
+    if (!m) return;
+    pct = parseInt(m[1], 10);
+    if (!pct || pct >= 100) return;
+    code = raw.toUpperCase();
+  }
+  window.__ACMP_COUPON_CODE = code;
+  window.__ACMP_COUPON_PCT = pct;
+  function disc(n){ return Math.round(n * (100 - pct) / 100 / ROUND) * ROUND; }
+  function fmt(n){ return '$' + n.toLocaleString('es-AR'); }
+  // Ajustar la capa CRO ANTES de que cargue acmp-cro.js (script diferido):
+  var cro = window.ACMP_CRO || {};
+  if (cro.sticky_buy && cro.sticky_buy.price_now) {
+    var pn = parseInt(String(cro.sticky_buy.price_now).replace(/\D/g, ''), 10);
+    if (pn) { cro.sticky_buy.price_was = cro.sticky_buy.price_now; cro.sticky_buy.price_now = fmt(disc(pn)); }
+    cro.sticky_buy.sub = 'Precio con descuento · termina en';
+  }
+  if (cro.urgency_bar) cro.urgency_bar.text = 'Cupón <strong>' + code + '</strong> activo: ' + pct + '% OFF — termina cuando cierra el contador';
+  function apply(){
+    // el cupón descuenta el curso; la card del combo/upsell queda intacta
+    // (salvo coupons.apply_to_combo en Reglas/ads-global.json)
+    document.querySelectorAll('.acmp-buy-card:not(.is-combo)').forEach(function(card){
+      var origWas = null;
+      var wasEl = card.querySelector('.acmp-buy-price .was');
+      if (wasEl) origWas = parseInt(wasEl.textContent.replace(/\D/g, ''), 10);
+      card.querySelectorAll('.acmp-buy-price').forEach(function(block){
+        var now = block.querySelector('.now'), was = block.querySelector('.was');
+        if (!now) return;
+        var n = parseInt(now.textContent.replace(/\D/g, ''), 10);
+        if (!n) return;
+        var d = disc(n);
+        was && (was.textContent = fmt(n));
+        now.innerHTML = fmt(d) + '<small> ARS</small>';
+        block.setAttribute('data-coupon-applied', code);
+      });
+      var inst = card.querySelector('.acmp-buy-installments');
+      if (inst && /Ahorr\u00e1s|Ahorrás/.test(inst.textContent) && origWas) {
+        var nowEl2 = card.querySelector('.acmp-buy-price .now');
+        var d2 = nowEl2 ? parseInt(nowEl2.textContent.replace(/\D/g, ''), 10) : null;
+        if (d2) inst.textContent = 'Ahorrás ' + fmt(origWas - d2) + ' · hasta 12 cuotas';
+      }
+    });
+    var head = document.querySelector('.acmp-buy-head');
+    if (head) {
+      var b = document.createElement('div');
+      b.setAttribute('style', 'display:inline-block;margin:14px auto 0;padding:8px 18px;border-radius:999px;background:#f74604;color:#fff;font-family:Inter,sans-serif;font-weight:700;font-size:14px;');
+      b.textContent = "Cupón {code} aplicado · {pct}% OFF".replace('{code}', code).replace('{pct}', pct);
+      head.appendChild(b);
+    }
+    var pares = Object.keys(COPY);
+    if (pares.length) {
+      var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+      var n;
+      while ((n = walker.nextNode())) {
+        for (var i = 0; i < pares.length; i++) {
+          if (n.nodeValue.indexOf(pares[i]) !== -1) n.nodeValue = n.nodeValue.split(pares[i]).join(COPY[pares[i]]);
+        }
+      }
+    }
+  }
+  // el script vive después del contenido: aplicar ya (no esperar DOMContentLoaded,
+  // que con los scripts defer externos puede demorar el repintado del precio)
+  if (document.querySelector('.acmp-buy-card')) apply();
+  else document.addEventListener('DOMContentLoaded', apply);
+})();</script>
 <script src="https://organico.academia-comunica.com/js/shared/acmp-cro.js" defer></script>
 <script src="https://organico.academia-comunica.com/js/shared/tracking-academia.js" defer></script>
 <script>(function(){
