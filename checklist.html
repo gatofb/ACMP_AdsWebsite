@@ -75,7 +75,7 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
     <div class="stat"><div class="num">0</div><div class="lbl">Cursos con errores</div></div>
     <div class="stat"><div class="num">22</div><div class="lbl">Páginas del sitio sin variantes</div></div>
     <div class="stat"><div class="num">21/09/2026</div><div class="lbl">Última generación</div></div>
-    <div class="stat"><div class="num">20/09/2026</div><div class="lbl">Último deploy</div></div>
+    <div class="stat"><div class="num">21/09/2026</div><div class="lbl">Último deploy</div></div>
   </div>
 
   <section>
@@ -326,8 +326,9 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
 
   <section>
     <h2>Historial de cambios (generaciones y deploys)</h2>
-    <p class="section-note">Fuente: <code>log/changelog.md</code> · 63 entrada(s), más recientes arriba. Los deploys incluyen el commit publicado en <code>ACMP_AdsWebsite</code>.</p>
+    <p class="section-note">Fuente: <code>log/changelog.md</code> · 64 entrada(s), más recientes arriba. Los deploys incluyen el commit publicado en <code>ACMP_AdsWebsite</code>.</p>
     <ul class="log-list">
+      <li class="log-entry"><strong>2026-09-21 08:49 — Deploy: ACMP_AdsWebsite</strong><ul><li><strong>Script:</strong> <code>sync-output.sh</code></li><li><strong>Remote:</strong> <code>gatofb/ACMP_AdsWebsite</code> (main)</li><li><strong>Commit:</strong> <code>b6c39d4</code> — lead-magnet-19k pasa a ser parte de curso-oratoria: rutas dentro de /curso-oratoria/ + redirects de las URLs viejas</li><li><strong>Archivos:</strong> 7 files changed, 30 insertions(+), 27 deletions(-)</li></ul></li>
       <li class="log-entry"><strong>2026-09-21 08:41 — Generación: lead-magnet-19k</strong><ul><li><strong>Script:</strong> <code>generate-ads.mjs</code></li><li><strong>Página:</strong> <code>lead-magnet-19k</code> → <code>Output/curso-oratoria/</code></li><li><strong>Variantes:</strong> 4 (ads, form, step1, step2)</li><li><strong>Upsell:</strong> detectado en la página (.acmp-buy-card.is-combo) → Combo Extremo $156.250 → https://academia.maipistiner.com/checkout/combo-i-acceso-a-todos-los-cursos</li><li><strong>Estado:</strong> OK · 3 warning(s)</li><li><strong>Nota:</strong> La oferta de $19.997 pasa a ser parte de curso-oratoria: rutas nuevas dentro de /curso-oratoria/ (lead-magnet-19k-ads, -form, -step1) en vez de carpeta propia. Las URLs viejas /lead-magnet-19k/… redirigen con 301. Contenido idéntico al publicado.</li></ul></li>
       <li class="log-entry"><strong>2026-09-20 22:33 — Deploy: ACMP_AdsWebsite</strong><ul><li><strong>Script:</strong> <code>sync-output.sh</code></li><li><strong>Remote:</strong> <code>gatofb/ACMP_AdsWebsite</code> (main)</li><li><strong>Commit:</strong> <code>e4a82c8</code> — curso-oratoria: CTAs al checkout directo + fix del forward de cupón/UTMs (whitelabel)</li><li><strong>Archivos:</strong> 5 files changed, 56 insertions(+), 34 deletions(-)</li></ul></li>
       <li class="log-entry"><strong>2026-09-20 22:29 — Generación: lead-magnet-19k</strong><ul><li><strong>Script:</strong> <code>generate-ads.mjs</code></li><li><strong>Página:</strong> <code>lead-magnet-19k</code> → <code>Output/lead-magnet-19k/</code></li><li><strong>Variantes:</strong> 4 (ads, form, step1, step2)</li><li><strong>Upsell:</strong> detectado en la página (.acmp-buy-card.is-combo) → Combo Extremo $156.250 → https://academia.maipistiner.com/checkout/combo-i-acceso-a-todos-los-cursos</li><li><strong>Estado:</strong> OK · 3 warning(s)</li><li><strong>Nota:</strong> Landing nueva derivada de curso-oratoria: tres planes en el bloque de compra — Acceso esencial $19.997 (3 meses, sin bonos, se cobra con el cupón fijo AC50X), plan completo $39.000 destacado como MÁS ELEGIDO y Combo Extremo de upsell.</li></ul></li>
