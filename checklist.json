@@ -1,0 +1,205 @@
+{
+  "generado": "2026-09-22T10:52:28.830Z",
+  "public_base": "https://ads.academia-comunica.com",
+  "checklist_url": "https://ads.academia-comunica.com/checklist",
+  "ultimo_deploy": "2026-09-21 19:48",
+  "totales": {
+    "cursos": 2,
+    "landings": 10,
+    "cursos_con_error": 0,
+    "paginas_sin_variantes": 22
+  },
+  "pendientes_antes_de_pautar": [
+    "Cupón fijo AC50X (curso-oratoria/lead-magnet-19k): confirmar que el checkout cobre $19.997"
+  ],
+  "cursos": [
+    {
+      "curso": "academia-ingles",
+      "error": false,
+      "huerfanos": [],
+      "ofertas": [
+        {
+          "key": "academia-ingles",
+          "titulo": null,
+          "modo": "lead",
+          "estado": "OK · 2 warning(s)",
+          "generado": "2026-09-21T01:27:02.401Z",
+          "error": false,
+          "avisos": [
+            "Falta form.url (variante form sin formulario)",
+            "Reporte: OK · 2 warning(s) · 2026-09-21 01:27 (log/ads-academia-ingles.md)"
+          ],
+          "variantes": [
+            {
+              "variant": "ads",
+              "label": "1 · Sin puntos de fuga",
+              "file": "academia-ingles-ads.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/academia-ingles/academia-ingles-ads",
+              "size": "103 kb",
+              "updated": "2026-09-21T01:27:00.988Z"
+            },
+            {
+              "variant": "form",
+              "label": "2 · Formulario de calificación",
+              "file": "academia-ingles-form.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/academia-ingles/academia-ingles-form",
+              "size": "103 kb",
+              "updated": "2026-09-21T01:27:01.013Z"
+            },
+            {
+              "variant": "step1",
+              "label": "3 · Order bump (step 1)",
+              "file": "academia-ingles-step1.html",
+              "exists": false,
+              "estado": "no aplica",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/academia-ingles/academia-ingles-step1",
+              "size": null,
+              "updated": null
+            },
+            {
+              "variant": "step2",
+              "label": "↳ step 2 (interna del funnel)",
+              "file": "academia-ingles-step2.html",
+              "exists": false,
+              "estado": "no aplica",
+              "destino": false,
+              "url": "https://ads.academia-comunica.com/academia-ingles/academia-ingles-step2",
+              "size": null,
+              "updated": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curso": "curso-oratoria",
+      "error": false,
+      "huerfanos": [],
+      "ofertas": [
+        {
+          "key": "curso-oratoria",
+          "titulo": null,
+          "modo": "venta",
+          "estado": "OK · 3 warning(s)",
+          "generado": "2026-09-21T22:49:24.713Z",
+          "error": false,
+          "avisos": [
+            "Reporte: OK · 3 warning(s) · 2026-09-21 22:49 (log/ads-curso-oratoria.md)"
+          ],
+          "variantes": [
+            {
+              "variant": "ads",
+              "label": "1 · Sin puntos de fuga",
+              "file": "curso-oratoria-ads.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/curso-oratoria/curso-oratoria-ads",
+              "size": "118 kb",
+              "updated": "2026-09-21T22:49:24.259Z"
+            },
+            {
+              "variant": "form",
+              "label": "2 · Formulario de calificación",
+              "file": "curso-oratoria-form.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/curso-oratoria/curso-oratoria-form",
+              "size": "106 kb",
+              "updated": "2026-09-21T22:49:24.303Z"
+            },
+            {
+              "variant": "step1",
+              "label": "3 · Order bump (step 1)",
+              "file": "curso-oratoria-step1.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/curso-oratoria/curso-oratoria-step1",
+              "size": "111 kb",
+              "updated": "2026-09-21T22:49:24.334Z"
+            },
+            {
+              "variant": "step2",
+              "label": "↳ step 2 (interna del funnel)",
+              "file": "curso-oratoria-step2.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": false,
+              "url": "https://ads.academia-comunica.com/curso-oratoria/curso-oratoria-step2",
+              "size": "16 kb",
+              "updated": "2026-09-21T22:49:24.334Z"
+            }
+          ]
+        },
+        {
+          "key": "lead-magnet-19k",
+          "titulo": "Curso de Oratoria — Empezá desde $19.997",
+          "modo": "venta",
+          "estado": "OK · 3 warning(s)",
+          "generado": "2026-09-21T22:54:54.638Z",
+          "error": false,
+          "avisos": [
+            "Markup de curso-oratoria",
+            "Plan extra $19.997 con cupón fijo AC50X",
+            "Reporte: OK · 3 warning(s) · 2026-09-21 22:54 (log/ads-lead-magnet-19k.md)"
+          ],
+          "variantes": [
+            {
+              "variant": "ads",
+              "label": "1 · Sin puntos de fuga",
+              "file": "lead-magnet-19k-ads.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/curso-oratoria/lead-magnet-19k-ads",
+              "size": "125 kb",
+              "updated": "2026-09-21T22:54:54.173Z"
+            },
+            {
+              "variant": "form",
+              "label": "2 · Formulario de calificación",
+              "file": "lead-magnet-19k-form.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/curso-oratoria/lead-magnet-19k-form",
+              "size": "106 kb",
+              "updated": "2026-09-21T22:54:54.218Z"
+            },
+            {
+              "variant": "step1",
+              "label": "3 · Order bump (step 1)",
+              "file": "lead-magnet-19k-step1.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/curso-oratoria/lead-magnet-19k-step1",
+              "size": "118 kb",
+              "updated": "2026-09-21T22:54:54.251Z"
+            },
+            {
+              "variant": "step2",
+              "label": "↳ step 2 (interna del funnel)",
+              "file": "lead-magnet-19k-step2.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": false,
+              "url": "https://ads.academia-comunica.com/curso-oratoria/lead-magnet-19k-step2",
+              "size": "16 kb",
+              "updated": "2026-09-21T22:54:54.252Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
