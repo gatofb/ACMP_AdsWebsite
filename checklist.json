@@ -1,11 +1,11 @@
 {
-  "generado": "2026-09-22T15:10:28.174Z",
+  "generado": "2026-09-23T11:32:03.566031Z",
   "public_base": "https://ads.academia-comunica.com",
   "checklist_url": "https://ads.academia-comunica.com/checklist",
   "ultimo_deploy": "2026-09-22 12:10",
   "totales": {
-    "cursos": 2,
-    "landings": 10,
+    "cursos": 11,
+    "landings": 21,
     "cursos_con_error": 0,
     "paginas_sin_variantes": 22
   },
@@ -196,6 +196,285 @@
               "url": "https://ads.academia-comunica.com/curso-oratoria/lead-magnet-19k-step2",
               "size": "16 kb",
               "updated": "2026-09-22T13:51:23.729Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curso": "curso-liderazgo",
+      "error": false,
+      "huerfanos": [],
+      "ofertas": [
+        {
+          "key": "curso-liderazgo-quiz",
+          "titulo": "Quiz · Liderazgo Inteligente",
+          "modo": "lead",
+          "estado": "OK",
+          "generado": "2026-09-23T11:32:03.566031Z",
+          "error": false,
+          "avisos": [
+            "Landing de lead magnet: el CTA va al quiz de FormFlow, no al checkout."
+          ],
+          "variantes": [
+            {
+              "variant": "quiz",
+              "label": "Lead magnet · Quiz de 12 preguntas",
+              "file": "curso-liderazgo-quiz.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/curso-liderazgo/curso-liderazgo-quiz",
+              "size": "11 kb",
+              "updated": "2026-09-23T11:32:03.566031Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curso": "curso-manejo-emociones",
+      "error": false,
+      "huerfanos": [],
+      "ofertas": [
+        {
+          "key": "curso-manejo-emociones-quiz",
+          "titulo": "Quiz · Manejo de las Emociones",
+          "modo": "lead",
+          "estado": "OK",
+          "generado": "2026-09-23T11:32:03.566031Z",
+          "error": false,
+          "avisos": [
+            "Landing de lead magnet: el CTA va al quiz de FormFlow, no al checkout."
+          ],
+          "variantes": [
+            {
+              "variant": "quiz",
+              "label": "Lead magnet · Quiz de 12 preguntas",
+              "file": "curso-manejo-emociones-quiz.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/curso-manejo-emociones/curso-manejo-emociones-quiz",
+              "size": "11 kb",
+              "updated": "2026-09-23T11:32:03.566031Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curso": "curso-desarrollo-profesional",
+      "error": false,
+      "huerfanos": [],
+      "ofertas": [
+        {
+          "key": "curso-desarrollo-profesional-quiz",
+          "titulo": "Quiz · Carrera Laboral",
+          "modo": "lead",
+          "estado": "OK",
+          "generado": "2026-09-23T11:32:03.566031Z",
+          "error": false,
+          "avisos": [
+            "Landing de lead magnet: el CTA va al quiz de FormFlow, no al checkout."
+          ],
+          "variantes": [
+            {
+              "variant": "quiz",
+              "label": "Lead magnet · Quiz de 12 preguntas",
+              "file": "curso-desarrollo-profesional-quiz.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/curso-desarrollo-profesional/curso-desarrollo-profesional-quiz",
+              "size": "11 kb",
+              "updated": "2026-09-23T11:32:03.566031Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curso": "curso-estrategia-redes",
+      "error": false,
+      "huerfanos": [],
+      "ofertas": [
+        {
+          "key": "curso-estrategia-redes-quiz",
+          "titulo": "Quiz · Estrategias en Redes",
+          "modo": "lead",
+          "estado": "OK",
+          "generado": "2026-09-23T11:32:03.566031Z",
+          "error": false,
+          "avisos": [
+            "Landing de lead magnet: el CTA va al quiz de FormFlow, no al checkout."
+          ],
+          "variantes": [
+            {
+              "variant": "quiz",
+              "label": "Lead magnet · Quiz de 12 preguntas",
+              "file": "curso-estrategia-redes-quiz.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/curso-estrategia-redes/curso-estrategia-redes-quiz",
+              "size": "11 kb",
+              "updated": "2026-09-23T11:32:03.566031Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curso": "curso-email-marketing",
+      "error": false,
+      "huerfanos": [],
+      "ofertas": [
+        {
+          "key": "curso-email-marketing-quiz",
+          "titulo": "Quiz · Email Marketing",
+          "modo": "lead",
+          "estado": "OK",
+          "generado": "2026-09-23T11:32:03.566031Z",
+          "error": false,
+          "avisos": [
+            "Landing de lead magnet: el CTA va al quiz de FormFlow, no al checkout."
+          ],
+          "variantes": [
+            {
+              "variant": "quiz",
+              "label": "Lead magnet · Quiz de 12 preguntas",
+              "file": "curso-email-marketing-quiz.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/curso-email-marketing/curso-email-marketing-quiz",
+              "size": "11 kb",
+              "updated": "2026-09-23T11:32:03.566031Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curso": "curso-storytelling",
+      "error": false,
+      "huerfanos": [],
+      "ofertas": [
+        {
+          "key": "curso-storytelling-quiz",
+          "titulo": "Quiz · Storytelling & Copywriting",
+          "modo": "lead",
+          "estado": "OK",
+          "generado": "2026-09-23T11:32:03.566031Z",
+          "error": false,
+          "avisos": [
+            "Landing de lead magnet: el CTA va al quiz de FormFlow, no al checkout."
+          ],
+          "variantes": [
+            {
+              "variant": "quiz",
+              "label": "Lead magnet · Quiz de 12 preguntas",
+              "file": "curso-storytelling-quiz.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/curso-storytelling/curso-storytelling-quiz",
+              "size": "11 kb",
+              "updated": "2026-09-23T11:32:03.566031Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curso": "english-for-impact",
+      "error": false,
+      "huerfanos": [],
+      "ofertas": [
+        {
+          "key": "english-for-impact-quiz",
+          "titulo": "Quiz · Inglés: English for Impact",
+          "modo": "lead",
+          "estado": "OK",
+          "generado": "2026-09-23T11:32:03.566031Z",
+          "error": false,
+          "avisos": [
+            "Landing de lead magnet: el CTA va al quiz de FormFlow, no al checkout."
+          ],
+          "variantes": [
+            {
+              "variant": "quiz",
+              "label": "Lead magnet · Quiz de 12 preguntas",
+              "file": "english-for-impact-quiz.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/english-for-impact/english-for-impact-quiz",
+              "size": "11 kb",
+              "updated": "2026-09-23T11:32:03.566031Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curso": "curso-podcast",
+      "error": false,
+      "huerfanos": [],
+      "ofertas": [
+        {
+          "key": "curso-podcast-quiz",
+          "titulo": "Quiz · Podcast",
+          "modo": "lead",
+          "estado": "OK",
+          "generado": "2026-09-23T11:32:03.566031Z",
+          "error": false,
+          "avisos": [
+            "Landing de lead magnet: el CTA va al quiz de FormFlow, no al checkout."
+          ],
+          "variantes": [
+            {
+              "variant": "quiz",
+              "label": "Lead magnet · Quiz de 12 preguntas",
+              "file": "curso-podcast-quiz.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/curso-podcast/curso-podcast-quiz",
+              "size": "11 kb",
+              "updated": "2026-09-23T11:32:03.566031Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curso": "curso-ventas-persuasion",
+      "error": false,
+      "huerfanos": [],
+      "ofertas": [
+        {
+          "key": "curso-ventas-persuasion-quiz",
+          "titulo": "Quiz · Ventas y Persuasión",
+          "modo": "lead",
+          "estado": "OK",
+          "generado": "2026-09-23T11:32:03.566031Z",
+          "error": false,
+          "avisos": [
+            "Landing de lead magnet: el CTA va al quiz de FormFlow, no al checkout."
+          ],
+          "variantes": [
+            {
+              "variant": "quiz",
+              "label": "Lead magnet · Quiz de 12 preguntas",
+              "file": "curso-ventas-persuasion-quiz.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/curso-ventas-persuasion/curso-ventas-persuasion-quiz",
+              "size": "11 kb",
+              "updated": "2026-09-23T11:32:03.566031Z"
             }
           ]
         }

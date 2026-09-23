@@ -196,6 +196,90 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
   </section>
 
   <section>
+<h2>Lead magnets · Quiz por curso <span class="badge badge-ok">9 landings</span></h2>
+<p class="section-note">Landings de captación, una por curso. Destino alternativo de campaña: en vez de
+mandar el ad a la landing del curso, se lo manda al quiz, que pide el mail para dar el resultado, así
+entra el lead antes de la decisión de compra. <strong>Agregadas a mano</strong>: todavía no salen de
+<code>Reglas/&lt;curso&gt;.json</code>, así que hay que sumarlas ahí para que <code>build-checklist.mjs</code>
+las regenere y no las pise.</p>
+<p class="section-note"><strong>Para pauta:</strong> mandá el ad a la landing y no al link de FormFlow
+(salteada, no dispara pixel ni PostHog y el lead entra sin atribución) · pegá los UTM en la URL del ad ·
+usá el gancho como copy base del ad · llevan <code>noindex</code>, no compiten en orgánico. Variante A de
+cada curso; la B existe como formulario y no tiene landing. Oratoria no está: ya tiene
+<code>lead-magnet-19k</code>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr><th>Variación</th><th>Archivo</th><th>Formulario</th><th>Gancho (copy base del ad)</th><th>Peso</th></tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="Variación"><span class="badge badge-ok">Lead magnet · Quiz</span></td>
+<td data-label="Archivo" class="path"><a href="curso-liderazgo/curso-liderazgo-quiz.html">curso-liderazgo-quiz.html</a></td>
+<td data-label="Formulario" class="path">cb314de6…</td>
+<td data-label="Gancho">12 preguntas para descubrir tu estilo de liderazgo y qué te falta para liderar mejor.</td>
+<td data-label="Peso">11 kb</td>
+</tr>
+<tr>
+<td data-label="Variación"><span class="badge badge-ok">Lead magnet · Quiz</span></td>
+<td data-label="Archivo" class="path"><a href="curso-manejo-emociones/curso-manejo-emociones-quiz.html">curso-manejo-emociones-quiz.html</a></td>
+<td data-label="Formulario" class="path">06546a45…</td>
+<td data-label="Gancho">12 preguntas para medir tu inteligencia emocional y descubrir tu nivel de autocontrol.</td>
+<td data-label="Peso">11 kb</td>
+</tr>
+<tr>
+<td data-label="Variación"><span class="badge badge-ok">Lead magnet · Quiz</span></td>
+<td data-label="Archivo" class="path"><a href="curso-desarrollo-profesional/curso-desarrollo-profesional-quiz.html">curso-desarrollo-profesional-quiz.html</a></td>
+<td data-label="Formulario" class="path">03969e9b…</td>
+<td data-label="Gancho">12 preguntas para descubrir en qué punto está tu carrera y qué paso te falta para crecer.</td>
+<td data-label="Peso">11 kb</td>
+</tr>
+<tr>
+<td data-label="Variación"><span class="badge badge-ok">Lead magnet · Quiz</span></td>
+<td data-label="Archivo" class="path"><a href="curso-estrategia-redes/curso-estrategia-redes-quiz.html">curso-estrategia-redes-quiz.html</a></td>
+<td data-label="Formulario" class="path">8dd51111…</td>
+<td data-label="Gancho">12 preguntas para descubrir qué está frenando el crecimiento de tu cuenta.</td>
+<td data-label="Peso">11 kb</td>
+</tr>
+<tr>
+<td data-label="Variación"><span class="badge badge-ok">Lead magnet · Quiz</span></td>
+<td data-label="Archivo" class="path"><a href="curso-email-marketing/curso-email-marketing-quiz.html">curso-email-marketing-quiz.html</a></td>
+<td data-label="Formulario" class="path">24ae4623…</td>
+<td data-label="Gancho">12 preguntas para descubrir cuánto dinero estás dejando en la mesa con tu email.</td>
+<td data-label="Peso">11 kb</td>
+</tr>
+<tr>
+<td data-label="Variación"><span class="badge badge-ok">Lead magnet · Quiz</span></td>
+<td data-label="Archivo" class="path"><a href="curso-storytelling/curso-storytelling-quiz.html">curso-storytelling-quiz.html</a></td>
+<td data-label="Formulario" class="path">0e752b06…</td>
+<td data-label="Gancho">12 preguntas para descubrir si tu forma de escribir conecta y vende o se pierde.</td>
+<td data-label="Peso">11 kb</td>
+</tr>
+<tr>
+<td data-label="Variación"><span class="badge badge-ok">Lead magnet · Quiz</span></td>
+<td data-label="Archivo" class="path"><a href="english-for-impact/english-for-impact-quiz.html">english-for-impact-quiz.html</a></td>
+<td data-label="Formulario" class="path">65360fce…</td>
+<td data-label="Gancho">12 preguntas para descubrir qué te frena para hablar inglés con seguridad.</td>
+<td data-label="Peso">11 kb</td>
+</tr>
+<tr>
+<td data-label="Variación"><span class="badge badge-ok">Lead magnet · Quiz</span></td>
+<td data-label="Archivo" class="path"><a href="curso-podcast/curso-podcast-quiz.html">curso-podcast-quiz.html</a></td>
+<td data-label="Formulario" class="path">fcdf56a8…</td>
+<td data-label="Gancho">12 preguntas para saber qué tan cerca estás de lanzar tu podcast.</td>
+<td data-label="Peso">11 kb</td>
+</tr>
+<tr>
+<td data-label="Variación"><span class="badge badge-ok">Lead magnet · Quiz</span></td>
+<td data-label="Archivo" class="path"><a href="curso-ventas-persuasion/curso-ventas-persuasion-quiz.html">curso-ventas-persuasion-quiz.html</a></td>
+<td data-label="Formulario" class="path">c67cbea7…</td>
+<td data-label="Gancho">12 preguntas para descubrir tu estilo al persuadir y qué te falta para conseguir el sí sin forzar.</td>
+<td data-label="Peso">11 kb</td>
+</tr>
+</tbody>
+</table></div>
+</section>
+
+<section>
     <h2>Páginas del sitio sin variantes de pauta</h2>
     <p class="section-note">Migradas en <code>Web-ACMP-ClaudDesign/output</code> pero sin carpeta en <code>Output/</code>. Antes de generar: pedir la URL y el título del formulario de calificación (FormFlow) y crear <code>Reglas/&lt;curso&gt;.json</code>.</p>
     <div class="table-scroll"><table>
