@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="https://www.academia-comunica.com/css/footer.css">
 <link rel="stylesheet" href="https://www.academia-comunica.com/css/curso-desarrollo-profesional.css">
 <link rel="stylesheet" href="https://www.academia-comunica.com/css/design-system.css">
+<link rel="stylesheet" href="https://www.academia-comunica.com/css/cro.css">
 <link rel="stylesheet" href="https://www.academia-comunica.com/css/promo-banner.css">
 <style>.acmp-module:not(.is-open) .acmp-module-body{display:none}
 .acmp-faq-item:not(.is-open) .acmp-faq-a{display:none}
@@ -118,12 +119,13 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
  "course": "desarrollo-profesional",
  "product_key": "desarrollo-profesional",
  "product": {
-  "meta_content_id": "89161",
+  "meta_content_id": "PRO-019fd69d827d72508595f5a20b38f",
   "content_name": "Cómo desarrollar tu carrera laboral",
   "content_category": "course",
   "currency": "ARS",
   "value": 48000,
-  "course_key": "desarrollo-profesional"
+  "course_key": "desarrollo-profesional",
+  "wisboo_id": "89161"
  },
  "product_missing": false,
  "events": [
@@ -135,7 +137,7 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
  "selectors": {
   "price": "#precio, #comprar, .acmp-buy",
   "form": ".acmp-footer-newsletter, [data-acmp-form]",
-  "upsell": ".acmp-buy-card.is-combo"
+  "upsell": "#acmp-programa-upsell"
  },
  "intersection_threshold": 0.45,
  "checkout_href_contains": [
@@ -148,6 +150,12 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
 <script src="https://www.academia-comunica.com/js/shared/tracking-academia.js" defer></script>
 <script>(function(){
   'use strict';
+  // Acordeones <details> nativos (curso-email-marketing): el navegador abre y
+  // cierra solo; la clase is-open (que usa el CSS de arriba) sigue al atributo.
+  document.querySelectorAll('details.acmp-module, details.acmp-faq-item').forEach(function(d){
+    d.classList.toggle('is-open', d.open);
+    d.addEventListener('toggle', function(){ d.classList.toggle('is-open', d.open); });
+  });
   function exclusiveToggle(el, sel){
     var open = el.classList.contains('is-open');
     var parent = el.parentElement;
@@ -157,9 +165,9 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
   document.addEventListener('click', function(e){
     var t = e.target;
     var mod = t.closest && t.closest('.acmp-module');
-    if (mod) { exclusiveToggle(mod, '.acmp-module'); return; }
+    if (mod) { if (mod.tagName !== 'DETAILS') exclusiveToggle(mod, '.acmp-module'); return; }
     var faq = t.closest && t.closest('.acmp-faq-item');
-    if (faq) { exclusiveToggle(faq, '.acmp-faq-item'); return; }
+    if (faq) { if (faq.tagName !== 'DETAILS') exclusiveToggle(faq, '.acmp-faq-item'); return; }
     var burger = t.closest && t.closest('.acmp-nav-burger, .acmp-nav-mobile-close');
     if (burger) { var nav = burger.closest('.acmp-nav'); if (nav) nav.classList.toggle('is-open'); return; }
     var acc = t.closest && t.closest('.acmp-nav-mobile-accordion-toggle');
@@ -173,12 +181,15 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
   });
   // Carrusel "la academia en acción": todas las fotos están en el DOM,
   // el runtime pagina (3 por página desktop, 1 mobile) y rearma los dots.
-  var grid = document.querySelector('.liq-accion-grid');
-  var ctrls = document.querySelector('.acmp-accion-ctrls');
-  if (grid && ctrls) {
+  // Puede haber más de un carrusel (english-for-impact: Mai y Delfi) y los
+  // controles vienen con dos shapes: .acmp-accion-ctrls o .liq-accion-nav.
+  document.querySelectorAll('.liq-accion-grid').forEach(function(grid){
+    var scope = grid.closest('section') || grid.parentElement;
+    var ctrls = scope && scope.querySelector('.acmp-accion-ctrls, .liq-accion-nav');
+    if (!ctrls) return;
     var items = Array.prototype.slice.call(grid.children);
-    var buttons = ctrls.querySelectorAll('button');
-    var prevBtn = buttons[0], nextBtn = buttons[buttons.length - 1];
+    var arrows = Array.prototype.filter.call(ctrls.querySelectorAll('button'), function(b){ return !/(^|s)(acmp|liq)-accion-dot(s|$)/.test(b.className); });
+    var prevBtn = arrows[0], nextBtn = arrows[arrows.length - 1];
     var page = 0;
     function per(){ return window.matchMedia('(max-width: 768px)').matches ? 1 : 3; }
     function pages(){ return Math.max(1, Math.ceil(items.length / per())); }
@@ -186,7 +197,7 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
       var p = per(), total = pages();
       page = Math.max(0, Math.min(page, total - 1));
       items.forEach(function(el, i){ el.style.display = (i >= page*p && i < page*p + p) ? '' : 'none'; });
-      ctrls.querySelectorAll('.acmp-accion-dot').forEach(function(d){ d.remove(); });
+      ctrls.querySelectorAll('.acmp-accion-dot, .liq-accion-dot').forEach(function(d){ d.remove(); });
       for (var i = total - 1; i >= 0; i--) (function(i){
         var dot = document.createElement('button');
         dot.type = 'button';
@@ -194,14 +205,14 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
         dot.setAttribute('aria-label', 'Página ' + (i + 1));
         dot.style.cssText = 'width:8px;height:8px;border-radius:50%;border:none;cursor:pointer;';
         dot.addEventListener('click', function(){ page = i; render(); });
-        prevBtn.insertAdjacentElement('afterend', dot);
+        if (prevBtn) prevBtn.insertAdjacentElement('afterend', dot); else ctrls.appendChild(dot);
       })(i);
     }
     if (prevBtn) prevBtn.addEventListener('click', function(){ page--; render(); });
-    if (nextBtn) nextBtn.addEventListener('click', function(){ page++; render(); });
+    if (nextBtn && nextBtn !== prevBtn) nextBtn.addEventListener('click', function(){ page++; render(); });
     window.addEventListener('resize', render);
     render();
-  }
+  });
 })();</script>
 <script>(function(){
   'use strict';
