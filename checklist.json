@@ -1,5 +1,5 @@
 {
-  "generado": "2026-09-24T23:11:18.323Z",
+  "generado": "2026-09-29T12:33:13.066Z",
   "public_base": "https://ads.academia-comunica.com",
   "checklist_url": "https://ads.academia-comunica.com/checklist",
   "ultimo_deploy": "2026-09-24 20:11",
@@ -530,10 +530,10 @@
           "titulo": null,
           "modo": "venta",
           "estado": "OK · 2 warning(s)",
-          "generado": "2026-09-24T22:14:13.426Z",
+          "generado": "2026-09-29T12:32:33.411Z",
           "error": false,
           "avisos": [
-            "Reporte: OK · 2 warning(s) · 2026-09-24 22:14 (log/ads-curso-ventas-persuasion.md)"
+            "Reporte: OK · 2 warning(s) · 2026-09-29 12:32 (log/ads-curso-ventas-persuasion.md)"
           ],
           "variantes": [
             {
@@ -545,7 +545,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-ventas-persuasion/curso-ventas-persuasion-ads",
               "size": "94 kb",
-              "updated": "2026-09-24T22:14:12.156Z"
+              "updated": "2026-09-29T12:32:32.476Z"
             },
             {
               "variant": "form",
@@ -567,7 +567,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-ventas-persuasion/curso-ventas-persuasion-step1",
               "size": "86 kb",
-              "updated": "2026-09-24T22:14:12.185Z"
+              "updated": "2026-09-29T12:32:32.503Z"
             },
             {
               "variant": "step2",
@@ -578,7 +578,7 @@
               "destino": false,
               "url": "https://ads.academia-comunica.com/curso-ventas-persuasion/curso-ventas-persuasion-step2",
               "size": "18 kb",
-              "updated": "2026-09-24T22:14:12.185Z"
+              "updated": "2026-09-29T12:32:32.503Z"
             }
           ]
         }
