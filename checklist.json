@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-01T22:49:15.208Z",
+  "generado": "2026-10-01T22:52:57.312Z",
   "public_base": "https://ads.academia-comunica.com",
   "checklist_url": "https://ads.academia-comunica.com/checklist",
   "ultimo_deploy": "2026-10-01 19:49",
@@ -80,11 +80,11 @@
           "titulo": "Academia en Inglés — Intensivo en vivo",
           "modo": "static",
           "estado": "OK",
-          "generado": "2026-10-01T22:49:14.963Z",
+          "generado": "2026-10-01T22:52:57.205Z",
           "error": false,
           "avisos": [
             "Fuente Static/academia-ingles-intensivo/index.html · se publica con build-static-page.mjs",
-            "Reporte: OK · 2026-10-01 22:49 (log/ads-academia-ingles-intensivo.md)"
+            "Reporte: OK · 2026-10-01 22:52 (log/ads-academia-ingles-intensivo.md)"
           ],
           "variantes": [
             {
@@ -96,7 +96,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/academia-ingles/academia-ingles-intensivo",
               "size": "93 kb",
-              "updated": "2026-10-01T22:49:13.995Z"
+              "updated": "2026-10-01T22:52:56.058Z"
             }
           ]
         }
