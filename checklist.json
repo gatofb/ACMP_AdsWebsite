@@ -1,13 +1,13 @@
 {
-  "generado": "2026-09-29T14:23:19.849Z",
+  "generado": "2026-10-01T19:33:27.773Z",
   "public_base": "https://ads.academia-comunica.com",
   "checklist_url": "https://ads.academia-comunica.com/checklist",
   "ultimo_deploy": "2026-09-29 11:23",
   "totales": {
-    "cursos": 9,
-    "landings": 31,
+    "cursos": 13,
+    "landings": 39,
     "cursos_con_error": 0,
-    "paginas_sin_variantes": 15
+    "paginas_sin_variantes": 11
   },
   "pendientes_antes_de_pautar": [
     "Cupón fijo AC50X (curso-oratoria/lead-magnet-19k): confirmar que el checkout cobre $19.997"
@@ -38,7 +38,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/academia-ingles/academia-ingles-ads",
               "size": "104 kb",
-              "updated": "2026-09-29T14:22:31.942Z"
+              "updated": "2026-10-01T19:05:17.709Z"
             },
             {
               "variant": "form",
@@ -49,7 +49,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/academia-ingles/academia-ingles-form",
               "size": "104 kb",
-              "updated": "2026-09-29T14:22:31.967Z"
+              "updated": "2026-10-01T19:05:17.709Z"
             },
             {
               "variant": "step1",
@@ -230,7 +230,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-estrategia-redes/curso-estrategia-redes-ads",
               "size": "77 kb",
-              "updated": "2026-09-29T14:22:37.403Z"
+              "updated": "2026-10-01T19:05:17.710Z"
             },
             {
               "variant": "form",
@@ -252,7 +252,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-estrategia-redes/curso-estrategia-redes-step1",
               "size": "69 kb",
-              "updated": "2026-09-29T14:22:37.425Z"
+              "updated": "2026-10-01T19:05:17.710Z"
             },
             {
               "variant": "step2",
@@ -263,7 +263,7 @@
               "destino": false,
               "url": "https://ads.academia-comunica.com/curso-estrategia-redes/curso-estrategia-redes-step2",
               "size": "17 kb",
-              "updated": "2026-09-29T14:22:37.425Z"
+              "updated": "2026-10-01T19:05:17.711Z"
             }
           ]
         }
@@ -358,7 +358,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-oratoria/curso-oratoria-ads",
               "size": "121 kb",
-              "updated": "2026-09-29T14:22:40.599Z"
+              "updated": "2026-10-01T19:05:17.711Z"
             },
             {
               "variant": "form",
@@ -369,7 +369,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-oratoria/curso-oratoria-form",
               "size": "107 kb",
-              "updated": "2026-09-29T14:22:40.643Z"
+              "updated": "2026-10-01T19:05:17.712Z"
             },
             {
               "variant": "step1",
@@ -380,7 +380,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-oratoria/curso-oratoria-step1",
               "size": "113 kb",
-              "updated": "2026-09-29T14:22:40.677Z"
+              "updated": "2026-10-01T19:05:17.712Z"
             },
             {
               "variant": "step2",
@@ -391,7 +391,7 @@
               "destino": false,
               "url": "https://ads.academia-comunica.com/curso-oratoria/curso-oratoria-step2",
               "size": "17 kb",
-              "updated": "2026-09-29T14:22:40.677Z"
+              "updated": "2026-10-01T19:05:17.712Z"
             }
           ]
         },
@@ -609,7 +609,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/english-for-impact/english-for-impact-ads",
               "size": "83 kb",
-              "updated": "2026-09-29T14:22:46.333Z"
+              "updated": "2026-10-01T19:05:17.713Z"
             },
             {
               "variant": "form",
@@ -631,7 +631,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/english-for-impact/english-for-impact-step1",
               "size": "75 kb",
-              "updated": "2026-09-29T14:22:46.355Z"
+              "updated": "2026-10-01T19:05:17.713Z"
             },
             {
               "variant": "step2",
@@ -642,7 +642,263 @@
               "destino": false,
               "url": "https://ads.academia-comunica.com/english-for-impact/english-for-impact-step2",
               "size": "17 kb",
-              "updated": "2026-09-29T14:22:46.355Z"
+              "updated": "2026-10-01T19:05:17.713Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curso": "ingles-nivel-avanzado",
+      "error": false,
+      "huerfanos": [],
+      "ofertas": [
+        {
+          "key": "ingles-nivel-avanzado",
+          "titulo": null,
+          "modo": "lead",
+          "estado": "OK",
+          "generado": "2026-10-01T19:08:54.817Z",
+          "error": false,
+          "avisos": [
+            "Reporte: OK · 2026-10-01 19:08 (log/ads-ingles-nivel-avanzado.md)"
+          ],
+          "variantes": [
+            {
+              "variant": "ads",
+              "label": "1 · Sin puntos de fuga",
+              "file": "ingles-nivel-avanzado-ads.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/ingles-nivel-avanzado/ingles-nivel-avanzado-ads",
+              "size": "144 kb",
+              "updated": "2026-10-01T19:08:53.709Z"
+            },
+            {
+              "variant": "form",
+              "label": "2 · Formulario de calificación",
+              "file": "ingles-nivel-avanzado-form.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/ingles-nivel-avanzado/ingles-nivel-avanzado-form",
+              "size": "144 kb",
+              "updated": "2026-10-01T19:08:53.743Z"
+            },
+            {
+              "variant": "step1",
+              "label": "3 · Order bump (step 1)",
+              "file": "ingles-nivel-avanzado-step1.html",
+              "exists": false,
+              "estado": "no aplica",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/ingles-nivel-avanzado/ingles-nivel-avanzado-step1",
+              "size": null,
+              "updated": null
+            },
+            {
+              "variant": "step2",
+              "label": "↳ step 2 (interna del funnel)",
+              "file": "ingles-nivel-avanzado-step2.html",
+              "exists": false,
+              "estado": "no aplica",
+              "destino": false,
+              "url": "https://ads.academia-comunica.com/ingles-nivel-avanzado/ingles-nivel-avanzado-step2",
+              "size": null,
+              "updated": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curso": "ingles-nivel-cero",
+      "error": false,
+      "huerfanos": [],
+      "ofertas": [
+        {
+          "key": "ingles-nivel-cero",
+          "titulo": null,
+          "modo": "lead",
+          "estado": "OK",
+          "generado": "2026-10-01T19:09:08.424Z",
+          "error": false,
+          "avisos": [
+            "Reporte: OK · 2026-10-01 19:09 (log/ads-ingles-nivel-cero.md)"
+          ],
+          "variantes": [
+            {
+              "variant": "ads",
+              "label": "1 · Sin puntos de fuga",
+              "file": "ingles-nivel-cero-ads.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/ingles-nivel-cero/ingles-nivel-cero-ads",
+              "size": "144 kb",
+              "updated": "2026-10-01T19:09:08.199Z"
+            },
+            {
+              "variant": "form",
+              "label": "2 · Formulario de calificación",
+              "file": "ingles-nivel-cero-form.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/ingles-nivel-cero/ingles-nivel-cero-form",
+              "size": "144 kb",
+              "updated": "2026-10-01T19:09:08.231Z"
+            },
+            {
+              "variant": "step1",
+              "label": "3 · Order bump (step 1)",
+              "file": "ingles-nivel-cero-step1.html",
+              "exists": false,
+              "estado": "no aplica",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/ingles-nivel-cero/ingles-nivel-cero-step1",
+              "size": null,
+              "updated": null
+            },
+            {
+              "variant": "step2",
+              "label": "↳ step 2 (interna del funnel)",
+              "file": "ingles-nivel-cero-step2.html",
+              "exists": false,
+              "estado": "no aplica",
+              "destino": false,
+              "url": "https://ads.academia-comunica.com/ingles-nivel-cero/ingles-nivel-cero-step2",
+              "size": null,
+              "updated": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curso": "ingles-nivel-intermedio",
+      "error": false,
+      "huerfanos": [],
+      "ofertas": [
+        {
+          "key": "ingles-nivel-intermedio",
+          "titulo": null,
+          "modo": "lead",
+          "estado": "OK",
+          "generado": "2026-10-01T19:08:53.160Z",
+          "error": false,
+          "avisos": [
+            "Reporte: OK · 2026-10-01 19:08 (log/ads-ingles-nivel-intermedio.md)"
+          ],
+          "variantes": [
+            {
+              "variant": "ads",
+              "label": "1 · Sin puntos de fuga",
+              "file": "ingles-nivel-intermedio-ads.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/ingles-nivel-intermedio/ingles-nivel-intermedio-ads",
+              "size": "145 kb",
+              "updated": "2026-10-01T19:08:51.940Z"
+            },
+            {
+              "variant": "form",
+              "label": "2 · Formulario de calificación",
+              "file": "ingles-nivel-intermedio-form.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/ingles-nivel-intermedio/ingles-nivel-intermedio-form",
+              "size": "145 kb",
+              "updated": "2026-10-01T19:08:51.974Z"
+            },
+            {
+              "variant": "step1",
+              "label": "3 · Order bump (step 1)",
+              "file": "ingles-nivel-intermedio-step1.html",
+              "exists": false,
+              "estado": "no aplica",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/ingles-nivel-intermedio/ingles-nivel-intermedio-step1",
+              "size": null,
+              "updated": null
+            },
+            {
+              "variant": "step2",
+              "label": "↳ step 2 (interna del funnel)",
+              "file": "ingles-nivel-intermedio-step2.html",
+              "exists": false,
+              "estado": "no aplica",
+              "destino": false,
+              "url": "https://ads.academia-comunica.com/ingles-nivel-intermedio/ingles-nivel-intermedio-step2",
+              "size": null,
+              "updated": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curso": "ingles-nivel-pre-intermedio",
+      "error": false,
+      "huerfanos": [],
+      "ofertas": [
+        {
+          "key": "ingles-nivel-pre-intermedio",
+          "titulo": null,
+          "modo": "lead",
+          "estado": "OK",
+          "generado": "2026-10-01T19:08:51.374Z",
+          "error": false,
+          "avisos": [
+            "Reporte: OK · 2026-10-01 19:08 (log/ads-ingles-nivel-pre-intermedio.md)"
+          ],
+          "variantes": [
+            {
+              "variant": "ads",
+              "label": "1 · Sin puntos de fuga",
+              "file": "ingles-nivel-pre-intermedio-ads.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/ingles-nivel-pre-intermedio/ingles-nivel-pre-intermedio-ads",
+              "size": "145 kb",
+              "updated": "2026-10-01T19:08:50.211Z"
+            },
+            {
+              "variant": "form",
+              "label": "2 · Formulario de calificación",
+              "file": "ingles-nivel-pre-intermedio-form.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/ingles-nivel-pre-intermedio/ingles-nivel-pre-intermedio-form",
+              "size": "145 kb",
+              "updated": "2026-10-01T19:08:50.244Z"
+            },
+            {
+              "variant": "step1",
+              "label": "3 · Order bump (step 1)",
+              "file": "ingles-nivel-pre-intermedio-step1.html",
+              "exists": false,
+              "estado": "no aplica",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/ingles-nivel-pre-intermedio/ingles-nivel-pre-intermedio-step1",
+              "size": null,
+              "updated": null
+            },
+            {
+              "variant": "step2",
+              "label": "↳ step 2 (interna del funnel)",
+              "file": "ingles-nivel-pre-intermedio-step2.html",
+              "exists": false,
+              "estado": "no aplica",
+              "destino": false,
+              "url": "https://ads.academia-comunica.com/ingles-nivel-pre-intermedio/ingles-nivel-pre-intermedio-step2",
+              "size": null,
+              "updated": null
             }
           ]
         }

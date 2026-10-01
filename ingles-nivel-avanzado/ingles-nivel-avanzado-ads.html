@@ -1,0 +1,1085 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Inglés Nivel Avanzado · Academia Comunica de Mai Pistiner</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Intensivo de Inglés Avanzado: fluidez, naturalidad y confianza en contextos profesionales.">
+<meta name="robots" content="noindex, nofollow">
+<style>/* ===== Hero — Nivel Avanzado (centered, no photo) ===== */
+  .acmp-hero-n0 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: clamp(48px, 9vw, 110px) 28px clamp(36px, 6vw, 72px);
+  }
+  .acmp-hero-n0-inner {
+    max-width: 920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .acmp-hero-n0-eyebrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    color: #000;
+    margin-bottom: 22px !important;
+    margin-top: 0 !important;
+    line-height: 1.4;
+  }
+  .acmp-hero-n0-eyebrow-l1 {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .acmp-hero-n0-eyebrow-l2 { display: inline-block; }
+  .acmp-eyebrow-br { display: none; }
+  .acmp-sub-br { display: none; }
+  .acmp-hero-n0-eyebrow .agotado { color: var(--acmp-orange); }
+  .acmp-hero-n0-eyebrow .sep { color: var(--border-strong); font-weight: 400; }
+  .acmp-hero-n0-title {
+    font-family: 'Extenda 30 Deca', 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: clamp(3rem, 11vw, 180px);
+    line-height: 0.86;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    color: var(--acmp-orange);
+    margin: 0;
+    text-wrap: balance;
+  }
+  .acmp-hero-n0-title .kw { color: var(--acmp-orange); }
+  .acmp-hero-ni-title {
+    font-size: 120px;
+    line-height: 0.75;
+    white-space: normal !important;
+  }
+  .acmp-hero-n0-sub {
+    font-family: var(--font-long-form, 'DM Sans', sans-serif);
+    font-weight: 500;
+    font-size: clamp(1.15rem, 2.4vw, 1.6rem);
+    color: #000;
+    margin: 20px 0 0;
+  }
+  .acmp-hero-n0-lead {
+    font-family: var(--font-body, 'Inter', sans-serif);
+    font-size: clamp(1rem, 1.4vw, 1.15rem);
+    line-height: 1.6;
+    color: #000;
+    max-width: 62ch;
+    margin: 22px auto 0;
+    text-wrap: pretty;
+    hyphens: none;
+  }
+  .acmp-hero-n0-ctas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 32px;
+  }
+  @media (max-width: 600px) {
+    .acmp-hero-n0-inner { align-items: flex-start; text-align: left; }
+    .acmp-hero-n0-eyebrow { align-items: flex-start; }
+    .acmp-hero-n0-ctas { flex-direction: row; flex-wrap: nowrap; align-items: stretch; width: 100%; max-width: none; gap: 8px; }
+    .acmp-hero-n0-ctas .acmp-btn { justify-content: center; text-align: center; flex: 1 1 0; min-width: 0; padding-left: 10px; padding-right: 10px; font-size: 14px; line-height: 1.25; }
+    .acmp-hero-n0-eyebrow { font-size: 10px; }
+    .acmp-eyebrow-br { display: inline; }
+    .acmp-sub-br { display: inline; }
+    .acmp-hero-n0-title { font-size: clamp(68px, 18vw, 80px); }
+    /* +4px al título en mobile */
+    .acmp-hero-n0-title.acmp-hero-ni-title { font-size: 75px; }
+    /* -1px al subtítulo en mobile */
+    .acmp-hero-n0-sub { font-size: 16px; }
+    /* -2px al texto largo en mobile */
+    .acmp-hero-n0-lead { font-size: 13px; }
+    /* -1px a la desc del video y al párrafo de profesores en mobile */
+    .acmp-vsl-head .desc { font-size: 14px; }
+    .acmp-comunica-emph { font-size: 18px; }
+    /* Desc de módulos -1px en mobile */
+    .acmp-modules-head .desc { font-size: 15px; }
+  }
+
+  /* ===== Profesores — misma altura por fila con stretch ===== */
+  .acmp-bio-grid { align-items: stretch !important; }
+  #profesores .acmp-bio { height: 100%; box-sizing: border-box; }
+
+  /* ===== Video VSL — más aire abajo ===== */
+  #video.acmp-vsl-wrap { padding-bottom: clamp(64px, 9vw, 130px); }
+
+  /* ===== ¿Qué incluye? — cards ===== */
+  #incluye.acmp-outcomes { background: #fff; }
+  .acmp-incluye-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: left;
+    align-items: stretch;
+  }
+  @media (max-width: 1000px) {
+    .acmp-incluye-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 600px) {
+    .acmp-incluye-grid { grid-template-columns: 1fr; }
+  }
+  .acmp-incluye-card {
+    background: var(--acmp-gray);
+    border: 1px solid transparent;
+    border-radius: var(--radius-lg);
+    padding: 26px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: box-shadow var(--dur-base) var(--ease-standard), transform var(--dur-base) var(--ease-standard);
+  }
+  .acmp-incluye-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+  .acmp-incluye-check {
+    width: 38px; height: 38px; flex: 0 0 38px;
+    border-radius: var(--radius-pill);
+    background: rgba(247, 70, 4, 0.10);
+    color: var(--acmp-orange);
+    display: inline-flex; align-items: center; justify-content: center;
+  }
+  .acmp-incluye-title {
+    font-family: var(--font-section, 'Satoshi', sans-serif);
+    font-weight: 700; font-size: 18px; line-height: 1.25;
+    letter-spacing: -0.01em; color: var(--acmp-navy); margin: 0;
+  }
+  .acmp-incluye-desc {
+    font-family: var(--font-body, 'Inter', sans-serif);
+    font-size: 14.5px; line-height: 1.55; color: var(--fg-2); margin: 0;
+  }
+  .acmp-incluye-photo {
+    border-radius: var(--radius-lg); overflow: hidden;
+    min-height: 240px; background: var(--acmp-gray);
+  }
+  .acmp-incluye-photo img {
+    width: 100%; height: 100%; object-fit: cover;
+    object-position: center 30%; display: block;
+  }
+
+  /* ===== Módulos ===== */
+  .acmp-module-mes {
+    display: inline-block;
+    font-family: 'TT Commons Pro', 'DM Sans', var(--font-long-form, sans-serif);
+    font-weight: 700; font-size: 19px; letter-spacing: -0.02em;
+    line-height: 1.25; text-transform: uppercase;
+    color: var(--acmp-orange); margin-right: 8px;
+  }
+  #modulos .acmp-module-title {
+    font-family: 'TT Commons Pro', 'DM Sans', var(--font-long-form, sans-serif);
+  }
+  @media (max-width: 720px) { .acmp-module-mes { font-size: 16px; } }
+  .acmp-resultado {
+    margin-top: 14px; background: #fff;
+    border: 1px solid var(--border-subtle); border-radius: var(--radius-md);
+    padding: 20px 22px; display: grid;
+    grid-template-columns: 64px 1fr; gap: 18px; align-items: center;
+  }
+  .acmp-resultado-icon {
+    width: 52px; height: 52px; border-radius: var(--radius-pill);
+    background: rgba(247, 70, 4, 0.12); color: var(--acmp-orange);
+    display: inline-flex; align-items: center; justify-content: center; margin: 0 auto;
+  }
+  .acmp-resultado-tag {
+    font-family: var(--font-section, 'Satoshi', sans-serif);
+    font-weight: 700; font-size: 12px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--acmp-orange); margin-bottom: 6px;
+  }
+  .acmp-resultado-text {
+    font-family: 'TT Commons Pro', 'DM Sans', var(--font-long-form, sans-serif);
+    font-weight: 700; font-size: 19px; line-height: 1.3;
+    letter-spacing: -0.02em; color: #000; margin: 0; text-wrap: pretty;
+  }
+  .acmp-resultado-text .kw { color: var(--acmp-orange); }
+  @media (max-width: 720px) {
+    .acmp-resultado { grid-template-columns: 48px 1fr; gap: 12px; padding: 16px; }
+    .acmp-resultado-icon { width: 44px; height: 44px; }
+  }
+
+  /* ===== Badge comprar ===== */
+  .acmp-buy-badge-top {
+    display: inline-block; align-self: flex-start;
+    background: var(--acmp-orange); color: #fff;
+    font-family: var(--font-section, 'Satoshi', sans-serif);
+    font-weight: 700; font-size: 12px; letter-spacing: 0.1em;
+    text-transform: uppercase; padding: 5px 14px;
+    border-radius: var(--radius-pill);
+  }
+
+  /* ===== Comprar — card único centrado ===== */
+  .acmp-buy-single { max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
+  .acmp-buy-card-solo {
+    background: #fff; border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg); box-shadow: var(--shadow-md);
+    padding: 40px 36px; display: flex; flex-direction: column; gap: 20px;
+    position: relative;
+  }
+  .acmp-buy-price-block {
+    display: flex; flex-direction: column; gap: 10px;
+    background: var(--acmp-gray); border-radius: var(--radius-md); padding: 20px 22px;
+  }
+  .acmp-buy-price-row {
+    display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px;
+    font-family: var(--font-body); font-size: 15px; color: var(--fg-2);
+  }
+  .acmp-buy-price-row--main { margin-top: 6px; }
+  .acmp-buy-price-label { font-weight: 600; color: var(--fg-1); }
+  .acmp-buy-price-val { font-weight: 700; color: var(--acmp-navy); font-size: 16px; }
+  .acmp-buy-price-hint { font-size: 13px; font-weight: 400; color: var(--fg-2); font-style: italic; }
+  .acmp-buy-price-total {
+    font-family: var(--font-display, 'Poppins', sans-serif);
+    font-weight: 800; font-size: clamp(2rem, 4vw, 2.8rem);
+    letter-spacing: -0.04em; color: var(--acmp-orange); line-height: 1;
+  }
+  .acmp-buy-price-total small {
+    font-size: 0.45em; font-weight: 600; letter-spacing: 0;
+    color: var(--fg-2); vertical-align: middle;
+  }
+  .acmp-buy-cuotas {
+    font-family: var(--font-body); font-size: 14px; color: var(--fg-2);
+    padding-top: 4px; border-top: 1px solid var(--border-subtle);
+  }
+  .acmp-buy-cuotas strong { color: var(--acmp-navy); }
+  @media (max-width: 600px) { .acmp-buy-card-solo { padding: 28px 22px; } }</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=DM+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://www.academia-comunica.com/css/tokens.css?v=8d77b026">
+<link rel="stylesheet" href="https://www.academia-comunica.com/css/kit.css?v=fce5bef2">
+<link rel="stylesheet" href="https://www.academia-comunica.com/css/global.css?v=3f5adeeb">
+<link rel="stylesheet" href="https://www.academia-comunica.com/css/nav.css?v=de11af20">
+<link rel="stylesheet" href="https://www.academia-comunica.com/css/footer.css?v=20204758">
+<link rel="stylesheet" href="https://www.academia-comunica.com/css/ingles-nivel-avanzado.css?v=23189588">
+<link rel="stylesheet" href="https://www.academia-comunica.com/css/design-system.css?v=dbb3e1ef">
+<link rel="stylesheet" href="https://www.academia-comunica.com/css/promo-banner.css?v=1249f9d5">
+<style>.acmp-module:not(.is-open) .acmp-module-body{display:none}
+.acmp-faq-item:not(.is-open) .acmp-faq-a{display:none}
+.acmp-nav:not(.is-open) .acmp-nav-mobile{display:none!important}
+.acmp-nav-mobile-accordion:not(.is-open) .acmp-nav-mobile-accordion-body{display:none}
+.ads-legal-footer a:hover{color:#fff}</style>
+
+<!-- acmp:site-scripts-head -->
+<!-- Google tag (gtag.js) — GA4 -->
+<script>
+window.ACADEMIA_GA4_ID = 'G-W2CWKERQYL';
+window.ACADEMIA_GA4_MEASUREMENT_ID = 'G-W2CWKERQYL';
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W2CWKERQYL"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-W2CWKERQYL', { send_page_view: true });
+</script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '465380847815051');
+fbq('init', '593646336073864');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=465380847815051&ev=PageView&noscript=1" alt=""/></noscript>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=593646336073864&ev=PageView&noscript=1" alt=""/></noscript>
+<!-- Amplitude Analytics -->
+<script src="https://cdn.amplitude.com/libs/analytics-browser-2.11.1-min.js.gz"></script>
+<script>
+window.amplitude.init('1c04b33a8dab9f13f5a9e012ea87c39a');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "su8qfentzs");
+</script>
+<!-- PostHog -->
+<script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog && window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}p||((p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",p.onerror=function(){p=null},(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r));var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="an ln init xn Cn Br kn In capture Fn nn calculateEventProperties On register register_once register_for_session unregister unregister_for_session Ln getFeatureFlag getFeatureFlagPayload getFeatureFlagResult getAllFeatureFlags isFeatureEnabled reloadFeatureFlags updateFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey cancelPendingSurvey canRenderSurvey canRenderSurveyAsync Dn identify setPersonProperties unsetPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset shutdown setIdentity clearIdentity get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException addExceptionStep captureLog startExceptionAutocapture stopExceptionAutocapture loadToolbar get_property getSessionProperty An Rn createPersonProfile setInternalOrTestUser $n yn jn opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing Tn debug Ur Rt getPageViewId captureTraceFeedback captureTraceMetric pn".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'https://us.i.posthog.com', defaults: '2026-05-30', person_profiles: 'identified_only' });
+</script>
+<!-- /acmp:site-scripts-head -->
+</head>
+<body data-page-key="ingles-nivel-avanzado">
+<div id="root"><div class="acmp-page"><section class="acmp-hero-n0"><div class="acmp-hero-n0-inner"><div class="eyebrow acmp-hero-n0-eyebrow"><span class="acmp-hero-n0-eyebrow-l1"><span style="font-weight:600;color:var(--acmp-navy)">MODALIDAD VIRTUAL SINCRÓNICA · CLASES VIRTUALES</span></span><span class="acmp-hero-n0-eyebrow-l2"><span style="font-weight:600;color:var(--acmp-navy)">CUPOS AGOTADOS · </span><span style="color:var(--acmp-orange)">SUMATE A LA LISTA DE ESPERA</span></span></div><h1 class="acmp-hero-n0-title acmp-hero-ni-title" style="font-family:var(--font-section)">English Advanced:<br><span style="color:var(--acmp-navy)">Ya hablás inglés.<br class="acmp-br-m"> Ahora se<br class="acmp-br-d"> trata de<br class="acmp-br-m"> sonar como vos.</span><style>.acmp-br-m{display:none}@media (max-width:600px){.acmp-br-m{display:inline}.acmp-br-d{display:none}}</style></h1><p class="acmp-hero-n0-sub"><span style="color:var(--acmp-navy);font-size:clamp(16px, 4.4vw, 22px)">Trabajá matices, registro y los errores que arrastrás hace años sin darte cuenta.</span></p><p class="acmp-hero-n0-lead" style="color:var(--acmp-gray-700)">Si ya hablás inglés, pero sentís que todavía no terminás de sonar natural, seguro o profesional, este intensivo es para vos. En un mundo donde el inglés no solo abre puertas, sino que define oportunidades, ya no alcanza con "defenderse": se trata de comunicarte con soltura, precisión y seguridad en contextos reales.<br>Te damos la bienvenida al grupo.</p><div class="acmp-hero-n0-ctas"><a href="#comprar" class="acmp-btn acmp-btn-primary">Sumarme a la lista de espera</a><a class="acmp-btn acmp-btn-ghost" href="#incluye">Quiero más información</a></div></div></section><section class="acmp-comunica" id="comunicar-en-ingles" style="background-color:var(--acmp-gray)"><div class="acmp-comunica-inner"><div class="acmp-comunica-media"><div class="acmp-carousel"><div class="acmp-carousel-track" style="transform:translateX(-0%)"><div class="acmp-carousel-slide"><img src="https://www.academia-comunica.com/assets/comunica-02.webp" alt="Academia Comunica — clases y eventos de inglés"></div><div class="acmp-carousel-slide"><img src="https://www.academia-comunica.com/assets/comunica-01.webp" alt="Academia Comunica — clases y eventos de inglés"></div><div class="acmp-carousel-slide"><img src="https://www.academia-comunica.com/assets/comunica-04.webp" alt="Academia Comunica — clases y eventos de inglés"></div></div><button class="acmp-carousel-arrow acmp-carousel-prev" aria-label="Foto anterior"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"></path></svg></button><button class="acmp-carousel-arrow acmp-carousel-next" aria-label="Foto siguiente"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"></path></svg></button><div class="acmp-carousel-dots"><button class="acmp-carousel-dot is-active" aria-label="Ir a la foto 1"></button><button class="acmp-carousel-dot" aria-label="Ir a la foto 2"></button><button class="acmp-carousel-dot" aria-label="Ir a la foto 3"></button></div></div></div><div class="acmp-comunica-text"><h2 class="acmp-comunica-title">Somos una academia de<br>comunicación y te enseñamos<br><span style="color:var(--acmp-orange)">a hablar en inglés</span></h2><p style="font-family:var(--font-body)">Estos no son cursos para repetir frases de manual. Es un proceso de aprendizaje diseñado desde la comunicación: cómo hablar, cómo sonar, cómo expresarte con claridad, cómo perder el miedo, cómo lograr que te entiendan… y que te tomen en serio.</p><p class="acmp-comunica-emph" style="font-size:19px;font-family:var(--font-section)">El diferencial no es el idioma: es la comunicación.</p><p class="acmp-comunica-close"><span style="font-weight:600;font-size:18px;font-family:var(--font-section)">No te enseñamos solo inglés:</span><br><strong style="font-size:18px;color:var(--acmp-navy);font-family:var(--font-section)">te enseñamos a comunicar en inglés.</strong></p><a class="acmp-btn acmp-btn-primary" href="https://formflow.capogrowth.com/form/b6a8fea3-8316-47c5-9954-fc364dd982d2" target="_blank" rel="noopener noreferrer" style="margin-top:var(--space-7);align-self:center;text-decoration:none;font-size:20px;padding:18px 40px">ANOTAME EN LISTA DE ESPERA</a></div></div></section><section class="acmp-vtest-wrap" data-acmp-videos="https://www.academia-comunica.com/assets/video-testimonio-07.mp4 https://www.academia-comunica.com/assets/video-testimonio-08.mp4 https://www.academia-comunica.com/assets/video-testimonio-09.mp4 https://www.academia-comunica.com/assets/video-testimonio-10.mp4 https://www.academia-comunica.com/assets/video-testimonio-01.mp4 https://www.academia-comunica.com/assets/video-testimonio-04.mp4 https://www.academia-comunica.com/assets/video-testimonio-06.mp4 https://www.academia-comunica.com/assets/video-testimonio-03.mp4 https://www.academia-comunica.com/assets/video-testimonio-05.mp4 https://www.academia-comunica.com/assets/video-testimonio-02.mp4"><style>
+        .acmp-vtest-wrap {
+          background: transparent;
+          padding: clamp(8px, 2vw, 16px) 0 clamp(32px, 5vw, 56px);
+          overflow: hidden;
+          width: 100%;
+        }
+        .acmp-vtest-head {
+          text-align: center;
+          padding: 0 24px;
+          margin-bottom: 48px;
+        }
+        .acmp-vtest-head .eyebrow {
+          font-family: var(--font-section, &#x27;Satoshi&#x27;, sans-serif);
+          font-weight: 700;
+          font-size: 12px;
+          letter-spacing: 0.14em;
+          text-transform: uppercase;
+          color: var(--acmp-orange);
+          margin-bottom: 12px;
+        }
+        .acmp-vtest-head h2 {
+          font-family: var(--font-display, &#x27;Poppins&#x27;, sans-serif);
+          font-weight: 700;
+          font-size: clamp(1.5rem, 2.8vw, 2.2rem);
+          line-height: 1.1;
+          letter-spacing: -0.03em;
+          color: #fff;
+          margin: 0;
+        }
+        .acmp-vtest-head h2 .kw { color: var(--acmp-orange); }
+
+        .acmp-vtest-stage {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+          position: relative;
+          padding: 0 clamp(12px, 1.5vw, 28px);
+          width: 100%;
+          box-sizing: border-box;
+        }
+        .acmp-vtest-cards {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 18px;
+          flex: 1;
+          overflow: hidden;
+        }
+        .acmp-vtest-card {
+          position: relative;
+          width: min(560px, max(360px, calc((100% - 40px) / 3)));
+          aspect-ratio: 9/16;
+          border-radius: 22px;
+          overflow: hidden;
+          background: #111;
+          flex-shrink: 0;
+          opacity: 0.45;
+          transform: scale(0.92);
+          transition: opacity 0.3s ease, transform 0.3s ease;
+          cursor: pointer;
+        }
+        .acmp-vtest-card.is-active {
+          opacity: 1;
+          transform: scale(1);
+          cursor: default;
+          box-shadow: 0 24px 60px rgba(0,0,0,0.22);
+        }
+        .acmp-vtest-video {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }
+        .acmp-vtest-btn {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: none;
+          border: none;
+          cursor: pointer;
+          transition: opacity 0.2s;
+          z-index: 2;
+        }
+        .acmp-vtest-btn::before {
+          content: &#x27;&#x27;;
+          position: absolute;
+          inset: 0;
+          background: rgba(0,0,0,0.18);
+          transition: background 0.2s;
+        }
+        .acmp-vtest-btn.is-playing::before {
+          background: transparent;
+        }
+        .acmp-vtest-btn:hover::before {
+          background: rgba(0,0,0,0.28);
+        }
+        .acmp-vtest-btn svg {
+          position: relative;
+          z-index: 1;
+          color: #fff;
+          filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5));
+          width: 52px;
+          height: 52px;
+        }
+        .acmp-vtest-btn.is-playing svg {
+          opacity: 0;
+        }
+        .acmp-vtest-btn.is-playing:hover svg {
+          opacity: 1;
+        }
+        .acmp-vtest-arrow {
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          border: 2px solid rgba(34,43,73,0.18);
+          background: rgba(34,43,73,0.06);
+          color: var(--acmp-navy);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          flex-shrink: 0;
+          transition: background 0.2s, border-color 0.2s, color 0.2s;
+        }
+        .acmp-vtest-arrow:hover {
+          background: var(--acmp-orange);
+          border-color: var(--acmp-orange);
+          color: #fff;
+        }
+        .acmp-vtest-dots {
+          display: flex;
+          justify-content: center;
+          gap: 8px;
+          margin-top: 28px;
+        }
+        .acmp-vtest-dot {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: rgba(34,43,73,0.2);
+          border: none;
+          cursor: pointer;
+          transition: background 0.2s, transform 0.2s;
+        }
+        .acmp-vtest-dot.is-active {
+          background: var(--acmp-orange);
+          transform: scale(1.3);
+        }
+        .acmp-vtest-card:nth-child(1), .acmp-vtest-card:nth-child(5) { display: none; }
+        @media (max-width: 700px) {
+          .acmp-vtest-card:nth-child(2), .acmp-vtest-card:nth-child(4) { display: none; }
+          .acmp-vtest-card { border-radius: 16px; width: min(420px, 100%); }
+          .acmp-vtest-arrow { width: 38px; height: 38px; }
+          .acmp-vtest-cards { gap: 10px; }
+        }
+      </style><div class="acmp-vtest-stage"><button class="acmp-vtest-arrow" aria-label="Video anterior"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button><div class="acmp-vtest-cards"><div class="acmp-vtest-card" role="button" tabindex="0" aria-label="Ver este testimonio"><video src="https://www.academia-comunica.com/assets/video-testimonio-05.mp4" class="acmp-vtest-video" playsinline="" preload="metadata"></video><button class="acmp-vtest-btn" aria-label="Reproducir" type="button"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5,3 19,12 5,21"></polygon></svg></button></div><div class="acmp-vtest-card" role="button" tabindex="0" aria-label="Ver este testimonio"><video src="https://www.academia-comunica.com/assets/video-testimonio-02.mp4" class="acmp-vtest-video" playsinline="" preload="metadata"></video><button class="acmp-vtest-btn" aria-label="Reproducir" type="button"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5,3 19,12 5,21"></polygon></svg></button></div><div class="acmp-vtest-card is-active"><video src="https://www.academia-comunica.com/assets/video-testimonio-07.mp4" class="acmp-vtest-video" playsinline="" preload="metadata"></video><button class="acmp-vtest-btn" aria-label="Reproducir" type="button"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5,3 19,12 5,21"></polygon></svg></button></div><div class="acmp-vtest-card" role="button" tabindex="0" aria-label="Ver este testimonio"><video src="https://www.academia-comunica.com/assets/video-testimonio-08.mp4" class="acmp-vtest-video" playsinline="" preload="metadata"></video><button class="acmp-vtest-btn" aria-label="Reproducir" type="button"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5,3 19,12 5,21"></polygon></svg></button></div><div class="acmp-vtest-card" role="button" tabindex="0" aria-label="Ver este testimonio"><video src="https://www.academia-comunica.com/assets/video-testimonio-09.mp4" class="acmp-vtest-video" playsinline="" preload="metadata"></video><button class="acmp-vtest-btn" aria-label="Reproducir" type="button"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5,3 19,12 5,21"></polygon></svg></button></div></div><button class="acmp-vtest-arrow" aria-label="Video siguiente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button></div><div class="acmp-vtest-dots"><button class="acmp-vtest-dot is-active" aria-label="Video 1"></button><button class="acmp-vtest-dot" aria-label="Video 2"></button><button class="acmp-vtest-dot" aria-label="Video 3"></button><button class="acmp-vtest-dot" aria-label="Video 4"></button><button class="acmp-vtest-dot" aria-label="Video 5"></button><button class="acmp-vtest-dot" aria-label="Video 6"></button><button class="acmp-vtest-dot" aria-label="Video 7"></button><button class="acmp-vtest-dot" aria-label="Video 8"></button><button class="acmp-vtest-dot" aria-label="Video 9"></button><button class="acmp-vtest-dot" aria-label="Video 10"></button></div></section><section class="acmp-outcomes" id="incluye"><div class="acmp-outcomes-wrap"><div class="acmp-outcomes-head"><div class="eyebrow">NIVEL AVANZADO</div><h2><span style="color:var(--acmp-navy)">¿Qué </span><span class="kw">incluye</span><span style="color:var(--acmp-navy)"> este intensivo?</span></h2></div><div class="acmp-incluye-grid"><article class="acmp-incluye-card"><span class="acmp-incluye-check" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></span><h3 class="acmp-incluye-title" style="font-family:var(--font-body)">2 clases por semana, online y en vivo</h3><p class="acmp-incluye-desc" style="font-family:var(--font-body);font-size:15px">Clases interactivas y en tiempo real por Google Meet, de 1.5 h cada una. Cursás en un grupo cerrado con el mismo profe de principio a fin. Podés elegir turno mañana, mediodía, tarde o noche. La cursada es en un mismo horario para ambos días.</p></article><article class="acmp-incluye-card"><span class="acmp-incluye-check" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></span><h3 class="acmp-incluye-title" style="font-family:var(--font-body)">Seguimiento personalizado</h3><p class="acmp-incluye-desc" style="font-family:var(--font-body);font-size:15px">Si faltás a dos clases seguidas, tu profe o la coordinadora se comunican con vos para saber qué pasó y ayudarte a retomar. La asistencia y la participación se registran clase a clase en PresentApp, nuestra propia plataforma de la academia en donde vas a poder ver tu asistencia, ingresar a tu clase, ver tu material práctico, tener acceso a material extra y comunicarte con tu profesor y coordinadora.</p></article><article class="acmp-incluye-card"><span class="acmp-incluye-check" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></span><h3 class="acmp-incluye-title" style="font-family:var(--font-body)">Tareas con corrección y devoluciones</h3><p class="acmp-incluye-desc" style="font-family:var(--font-body);font-size:15px">Entre clase y clase hacés tareas prácticas, que se corrigen en clase con el profe y el grupo. Al terminar el intensivo te llevás tu certificado de finalización de cursada.</p></article><article class="acmp-incluye-card"><span class="acmp-incluye-check" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></span><h3 class="acmp-incluye-title" style="font-family:var(--font-body)">Curso bonificado: Oratoria, El Arte de Hablar</h3><p class="acmp-incluye-desc" style="font-family:var(--font-body);font-size:15px">Somos una academia de comunicación: por eso no solo enseñamos inglés, enseñamos a comunicar en inglés. Por eso nuestro intensivo te incluye nuestro curso más elegido, disponible durante 1 año. Te recomendamos hacerlo antes de arrancar el intensivo, porque te brinda herramientas para comunicar que después vas a poder aplicar en cada clase.</p></article><article class="acmp-incluye-card"><span class="acmp-incluye-check" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></span><h3 class="acmp-incluye-title" style="font-family:var(--font-body)">Curso bonificado: English for Impact</h3><p class="acmp-incluye-desc" style="font-family:var(--font-body);font-size:15px">Es un MUST DO de la Academia. Tenés acceso durante 1 año a este curso práctico, 100% on demand, para entrenar conversación, entrevistas de trabajo y small talk. ¿Cuándo hacerlo? Nivel Cero y Pre-Intermedio: cuando termines el intensivo. Nivel Intermedio: a medida que avanzás en el intensivo, y nivel Avanzado: antes de empezar a cursar.</p></article><article class="acmp-incluye-card"><span class="acmp-incluye-check" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg></span><h3 class="acmp-incluye-title" style="font-family:var(--font-body)">Dinámicas con herramientas digitales</h3><p class="acmp-incluye-desc" style="font-family:var(--font-body);font-size:15px">Odiamos las clases aburridas. Por eso cada una de las clases combina ejercicios y juegos con herramientas digitales que te mantienen activo de principio a fin.</p><p class="acmp-incluye-desc" style="font-family:var(--font-body);font-size:15px;font-weight:700;color:var(--acmp-navy)">Herramientas que usamos en clase:</p><ul class="acmp-incluye-desc" style="font-family:var(--font-body);font-size:15px;padding-left:20px;list-style:disc"><li>Juegos online como Kahoot</li><li>Videos de YouTube</li><li>Videos interactivos</li><li>Ejercicios de multiple choice online</li><li>Trabajo en grupos dentro de la clase</li><li>Google Meet como aula</li></ul></article></div></div></section><section class="acmp-modules-wrap" id="modulos"><div class="acmp-modules-head"><div class="eyebrow">TU PLAN EN 4 MESES</div><h2 style="line-height:1.1;letter-spacing:-0.04em;font-size:34px"><span style="color:var(--acmp-navy)">Conocé el contenido del curso</span> <span class="kw">intensivo avanzado</span></h2><p class="desc"></p></div><div class="acmp-modules-list"><button class="acmp-module is-open" type="button"><div class="acmp-module-row"><div class="acmp-module-n">01</div><div class="acmp-module-title" style="color:var(--acmp-navy)"><span class="acmp-module-mes">Mes 1</span>Fluidez y precisión en conversaciones reales</div><div class="acmp-module-meta"><span>4<!-- --> objetivos</span></div><div class="acmp-module-chev" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div></div><div class="acmp-module-body"><ul class="acmp-module-bullets"><li>Expresarte con precisión en contextos personales y profesionales.</li><li>Ampliar vocabulario avanzado para sonar más natural.</li><li>Eliminar hesitaciones y ganar velocidad al hablar.</li><li>Consolidar estructuras complejas sin pensarlo.</li></ul></div></button><button class="acmp-module" type="button"><div class="acmp-module-row"><div class="acmp-module-n">02</div><div class="acmp-module-title" style="color:var(--acmp-navy)"><span class="acmp-module-mes">Mes 2</span>Inglés profesional: reuniones, emails y negociaciones</div><div class="acmp-module-meta"><span>4<!-- --> objetivos</span></div><div class="acmp-module-chev" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div></div><div class="acmp-module-body"><ul class="acmp-module-bullets"><li>Participar con seguridad en reuniones y calls en inglés.</li><li>Redactar emails profesionales con tono adecuado.</li><li>Negociar, argumentar y persuadir en inglés.</li><li>Adaptarte a distintos registros formales e informales.</li></ul></div></button><button class="acmp-module" type="button"><div class="acmp-module-row"><div class="acmp-module-n">03</div><div class="acmp-module-title" style="color:var(--acmp-navy)"><span class="acmp-module-mes">Mes 3</span>Conversación avanzada y cultura del idioma</div><div class="acmp-module-meta"><span>4<!-- --> objetivos</span></div><div class="acmp-module-chev" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div></div><div class="acmp-module-body"><ul class="acmp-module-bullets"><li>Sostener conversaciones espontáneas y profundas.</li><li>Entender expresiones idiomáticas y lenguaje coloquial nativo.</li><li>Debatir, opinar y defender puntos de vista con fluidez.</li><li>Comprender diferentes acentos y velocidades del habla real.</li></ul></div></button><button class="acmp-module" type="button"><div class="acmp-module-row"><div class="acmp-module-n">04</div><div class="acmp-module-title" style="color:var(--acmp-navy)"><span class="acmp-module-mes">Mes 4</span>Inglés para oportunidades globales</div><div class="acmp-module-meta"><span>4<!-- --> objetivos</span></div><div class="acmp-module-chev" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></div></div><div class="acmp-module-body"><ul class="acmp-module-bullets"><li>Prepararte para entrevistas de trabajo en inglés.</li><li>Presentaciones y pitches frente a audiencias internacionales.</li><li>Networking y relaciones profesionales en inglés.</li><li>Comunicarte con soltura en cualquier contexto global.</li></ul></div></button></div><div class="acmp-resultado"><div class="acmp-resultado-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0V4zM17 5h2a2 2 0 0 1 0 4h-2M7 5H5a2 2 0 0 0 0 4h2"></path></svg></div><div class="acmp-resultado-body"><div class="acmp-resultado-tag">RESULTADO FINAL</div><p class="acmp-resultado-text" style="font-family:var(--font-body)"><span style="color:var(--acmp-navy)">Vas a poder comunicarte en inglés con soltura, precisión y seguridad en</span><span class="kw"> cualquier contexto que se te presente</span>.</p></div></div></section><section class="acmp-bio-wrap" id="profesores"><style>
+        .acmp-profes-4col {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 24px;
+          align-items: start;
+        }
+        .acmp-profes-3bot {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 24px;
+          align-items: start;
+          max-width: 75%;
+          margin: 24px auto 0;
+        }
+        /* compact bio photo smaller */
+        .acmp-bio--compact .acmp-bio-photo {
+          width: 100% !important;
+          height: auto !important;
+          min-width: 0 !important;
+          flex: 0 0 auto !important;
+          aspect-ratio: 1 / 1 !important;
+        }
+        .acmp-bio-role--2line {
+          font-family: &#x27;DM Sans&#x27;, var(--font-long-form, sans-serif) !important;
+          font-size: 13px !important;
+          line-height: 1.4 !important;
+        }
+        .acmp-bio-role-sub {
+          font-weight: 400;
+          opacity: 0.72;
+          font-size: 12px;
+        }
+        .acmp-bio--compact .acmp-bio-lead {
+          font-size: 13.5px !important;
+        }
+        .acmp-profes-2center {
+          display: flex;
+          justify-content: center;
+          gap: 24px;
+          flex-wrap: wrap;
+        }
+        .acmp-profes-2center .acmp-bio--compact {
+          width: calc(25% - 12px);
+          min-width: 220px;
+          max-width: 340px;
+          flex: 0 1 calc(25% - 12px);
+        }
+        /* name size -2pt */
+        .acmp-bio--compact .acmp-bio-name {
+          font-size: 18px !important;
+        }
+        @media (max-width: 1100px) {
+          .acmp-profes-4col { grid-template-columns: repeat(2, 1fr); }
+          .acmp-profes-3bot { max-width: 100%; grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 600px) {
+          .acmp-profes-4col, .acmp-profes-3bot { grid-template-columns: 1fr; max-width: 100%; }
+          .acmp-profes-2center .acmp-bio--compact { width: 100%; max-width: 100%; }
+        }
+        }
+      </style><div class="acmp-bio-head"><div class="eyebrow">TUS PROFESORES</div><h2 class="acmp-bio-section-title">Quiénes te acompañarán a lo largo de todo el <span class="kw">intensivo de inglés</span></h2></div><div class="acmp-profes-4col"><article class="acmp-bio acmp-bio--compact"><div class="acmp-bio-photo"><img src="https://www.academia-comunica.com/assets/profe-eugenia.avif" alt="Eugenia Segurado" style="width:100%;height:100%;object-fit:cover;display:block"></div><div class="acmp-bio-text"><h3 class="acmp-bio-name">Eugenia<!-- --> <span>Segurado</span></h3><p class="acmp-bio-role acmp-bio-role--2line" style="font-family:var(--font-body);font-size:16px">Profesora de Inglés<br><span class="acmp-bio-role-sub">Instituto Superior Palomar de Caseros</span></p><p class="acmp-bio-lead" style="font-family:var(--font-body);font-size:14px">Eugenia Segurado es profesora de inglés con más de 6 años de experiencia en el área. Realizó sus estudios en el Instituto Superior Palomar de Caseros.</p><p class="acmp-bio-lead" style="font-family:var(--font-body);font-size:14px">Trabaja con un enfoque comunicativo, donde el objetivo principal es animarse a usar el idioma desde el primer momento. En sus clases, la comunicación real, la confianza y la participación activa son claves.</p><p class="acmp-bio-lead" style="font-family:var(--font-body);font-size:14px">Acompaña a sus estudiantes con clases dinámicas y prácticas, creando un espacio relajado donde equivocarse es parte del aprendizaje y el inglés se convierte en algo cercano y posible.</p></div></article><article class="acmp-bio acmp-bio--compact"><div class="acmp-bio-photo"><img src="https://www.academia-comunica.com/assets/profe-facundo.avif" alt="Facundo Cáceres" style="width:100%;height:100%;object-fit:cover;display:block"></div><div class="acmp-bio-text"><h3 class="acmp-bio-name">Facundo<!-- --> <span>Cáceres</span></h3><p class="acmp-bio-role acmp-bio-role--2line" style="font-family:var(--font-body);font-size:16px">Profesor y Traductor de Inglés<br><span class="acmp-bio-role-sub">+10 años de experiencia.</span></p><p class="acmp-bio-lead" style="font-family:var(--font-body);font-size:14px">Facundo Cáceres es profesor y traductor de inglés. Desde hace más de diez años se dedica a la docencia en institutos de idiomas, impartiendo clases a adolescentes y adultos, tanto de manera virtual como presencial.</p><p class="acmp-bio-lead" style="font-family:var(--font-body);font-size:14px">Trabajó en España como profesor de inglés para empresas de distintos rubros, formando parte de equipos internacionales de trabajo en el exterior.</p><p class="acmp-bio-lead" style="font-family:var(--font-body);font-size:14px">Tiene un fuerte interés en acompañar a sus estudiantes en su proceso de aprendizaje, brindándoles herramientas para derribar cualquier barrera idiomática y comunicarse con confianza y seguridad.</p></div></article><article class="acmp-bio acmp-bio--compact"><div class="acmp-bio-photo"><img src="https://www.academia-comunica.com/assets/profe-irina.avif" alt="Irina Peirano" style="width:100%;height:100%;object-fit:cover;display:block"></div><div class="acmp-bio-text"><h3 class="acmp-bio-name">Irina<!-- --> <span>Peirano</span></h3><p class="acmp-bio-role acmp-bio-role--2line" style="font-family:var(--font-body);font-size:16px">Profesora de Inglés CELTA<br><span class="acmp-bio-role-sub">Traductora de Inglés y Español.</span></p><p class="acmp-bio-lead" style="font-family:var(--font-body);font-size:14px">Irina Peirano es profesora de inglés certificada con CELTA y traductora de inglés y español. Trabaja hace más de 3 años enseñando a adultos vía online.</p><p class="acmp-bio-lead" style="font-family:var(--font-body);font-size:14px">Trabaja con un enfoque práctico: ayudar a sus alumnos a destrabarse, a expresarse con lo que ya saben y a construir confianza para mantener conversaciones reales. "No es que no sepas, es que te ponés objetivos irreales y te comparás con otros constantemente."</p><p class="acmp-bio-lead" style="font-family:var(--font-body);font-size:14px">Durante este curso va a estar compartiendo tips para lograr una comunicación sencilla y efectiva en diferentes situaciones reales.</p></div></article><article class="acmp-bio acmp-bio--compact"><div class="acmp-bio-photo"><img src="https://www.academia-comunica.com/assets/profe-morena.avif" alt="Morena Herrera" style="width:100%;height:100%;object-fit:cover;display:block"></div><div class="acmp-bio-text"><h3 class="acmp-bio-name">Morena<!-- --> <span>Herrera</span></h3><p class="acmp-bio-role acmp-bio-role--2line" style="font-family:var(--font-body);font-size:16px">Profesora de Inglés<br><span class="acmp-bio-role-sub">Universidad Nacional de Hurlingham.</span></p><p class="acmp-bio-lead" style="font-family:var(--font-body);font-size:14px">Morena Herrera es profesora de Inglés con una experiencia de más de seis años en diferentes instituciones. Estudió en la Universidad Nacional de Hurlingham. Disfruta de crear un espacio ameno, preparado para que todos participen y se sientan protagonistas clase a clase.</p><p class="acmp-bio-lead" style="font-family:var(--font-body);font-size:14px">Le gusta agregar juegos, actividades dinámicas y trabajar con canciones o clips de las series y películas favoritas de los estudiantes, así tienen la oportunidad de hablar y mejorar el idioma en un entorno natural y propio.</p><p class="acmp-bio-lead" style="font-family:var(--font-body);font-size:14px">Considera que la mejor manera de aprender es haciendo; por eso sus clases concentran conversación, tópicos interesantes y recomendaciones para desarrollar un manejo fluido de la lengua.</p></div></article></div><div class="acmp-profes-3bot"><article class="acmp-bio acmp-bio--compact"><div class="acmp-bio-photo"><img src="https://www.academia-comunica.com/assets/profe-magali.avif" alt="Magalí Orellana" style="width:100%;height:100%;object-fit:cover;display:block"></div><div class="acmp-bio-text"><h3 class="acmp-bio-name">Magalí<!-- --> <span>Orellana</span></h3><p class="acmp-bio-role acmp-bio-role--2line" style="font-family:var(--font-body);font-size:16px">Mentora de Inglés<br><span class="acmp-bio-role-sub">10 años de experiencia.</span></p><p class="acmp-bio-lead" style="font-family:var(--font-body);font-size:14px">Magalí Orellana es mentora de inglés con casi 10 años de experiencia acompañando a estudiantes y profesionales en su proceso de aprendizaje. Ha vivido en el exterior, y esa experiencia se refleja en sus clases, donde el inglés se usa como puente para conectar culturas y comunicarse de forma auténtica y real.</p><p class="acmp-bio-lead" style="font-family:var(--font-body);font-size:14px">Sus clases son dinámicas, participativas y pensadas para que aprender sea una experiencia disfrutable. Le gusta crear un espacio donde equivocarse no desanima y la confianza en uno mismo se construye paso a paso.</p><p class="acmp-bio-lead" style="font-family:var(--font-body);font-size:14px">Su objetivo es que cada estudiante se anime a usar su inglés de manera natural, descubriendo que aprender no tiene que ser tedioso.</p></div></article><article class="acmp-bio acmp-bio--compact"><div class="acmp-bio-photo"><img src="https://www.academia-comunica.com/assets/profe-ghiglione.webp" alt="Marcela Ghiglione" style="width:100%;height:100%;object-fit:cover;display:block"></div><div class="acmp-bio-text"><h3 class="acmp-bio-name">Marcela<!-- --> <span>Ghiglione</span></h3><p class="acmp-bio-role acmp-bio-role--2line" style="font-family:var(--font-body);font-size:16px">Profesora y Traductora de Inglés<br><span class="acmp-bio-role-sub">19 años de experiencia.</span></p><p class="acmp-bio-lead" style="font-family:var(--font-body);font-size:14px">Marcela Paula Ghiglione es profesora y traductora de inglés, con 19 años de experiencia en la enseñanza del idioma. Su enfoque es comunicativo, ya que considera fundamental que los estudiantes puedan usar el inglés de manera práctica, natural y significativa.</p><p class="acmp-bio-lead" style="font-family:var(--font-body);font-size:14px">También es profesora de Educación Especial, lo que le permite acompañar diversos procesos de aprendizaje con empatía, creatividad y compromiso. Le apasionan los desafíos y disfruta seguir creciendo profesionalmente.</p></div></article><article class="acmp-bio acmp-bio--compact"><div class="acmp-bio-photo"><img src="https://www.academia-comunica.com/assets/profe-camila.webp" alt="Camila Orellana" style="width:100%;height:100%;object-fit:cover;display:block"></div><div class="acmp-bio-text"><h3 class="acmp-bio-name">Camila<!-- --> <span>Orellana</span></h3><p class="acmp-bio-role acmp-bio-role--2line" style="font-family:var(--font-body);font-size:16px">Profesora de Inglés CELTA<br><span class="acmp-bio-role-sub">ISFD N.º 41 · +8 años de experiencia.</span></p><p class="acmp-bio-lead" style="font-family:var(--font-body);font-size:14px">Camila es profesora de inglés con más de 8 años de experiencia en el área. Realizó sus estudios en el profesorado de Inglés del ISFD N.º 41 y cuenta con la certificación CELTA.</p><p class="acmp-bio-lead" style="font-family:var(--font-body);font-size:14px">Su enfoque está en crear clases dinámicas y comunicativas, ayudando a los estudiantes a desarrollar confianza y fluidez en el idioma de acuerdo con sus objetivos e intereses.</p></div></article></div></section><section class="acmp-logos" style="background-color:var(--acmp-white)"><div class="label"><span class="hl">+70</span> marcas y empresas confían en nosotros</div><div class="acmp-logos-marquee"><div class="acmp-logos-track"><img class="brand-logo" src="https://www.academia-comunica.com/logos/google.webp" alt="Google"><img class="brand-logo" src="https://www.academia-comunica.com/logos/mercadolibre.webp" alt="Mercado Libre"><img class="brand-logo" src="https://www.academia-comunica.com/logos/roche.webp" alt="Roche"><img class="brand-logo" src="https://www.academia-comunica.com/logos/lancome.webp" alt="Lancôme"><img class="brand-logo" src="https://www.academia-comunica.com/logos/royalcanin.webp" alt="Royal Canin"><img class="brand-logo" src="https://www.academia-comunica.com/logos/booking.webp" alt="Booking.com"><img class="brand-logo" src="https://www.academia-comunica.com/logos/endeavor.webp" alt="Endeavor"><img class="brand-logo" src="https://www.academia-comunica.com/logos/elea.webp" alt="Elea"><img class="brand-logo" src="https://www.academia-comunica.com/logos/gsk.webp" alt="GSK"><img class="brand-logo" src="https://www.academia-comunica.com/logos/banderas.webp" alt="Banderas"><img class="brand-logo" src="https://www.academia-comunica.com/logos/biotherm.webp" alt="Biotherm"><img class="brand-logo" src="https://www.academia-comunica.com/logos/pampers.webp" alt="Pampers"><img class="brand-logo" src="https://www.academia-comunica.com/logos/google.webp" alt="Google"><img class="brand-logo" src="https://www.academia-comunica.com/logos/mercadolibre.webp" alt="Mercado Libre"><img class="brand-logo" src="https://www.academia-comunica.com/logos/roche.webp" alt="Roche"><img class="brand-logo" src="https://www.academia-comunica.com/logos/lancome.webp" alt="Lancôme"><img class="brand-logo" src="https://www.academia-comunica.com/logos/royalcanin.webp" alt="Royal Canin"><img class="brand-logo" src="https://www.academia-comunica.com/logos/booking.webp" alt="Booking.com"><img class="brand-logo" src="https://www.academia-comunica.com/logos/endeavor.webp" alt="Endeavor"><img class="brand-logo" src="https://www.academia-comunica.com/logos/elea.webp" alt="Elea"><img class="brand-logo" src="https://www.academia-comunica.com/logos/gsk.webp" alt="GSK"><img class="brand-logo" src="https://www.academia-comunica.com/logos/banderas.webp" alt="Banderas"><img class="brand-logo" src="https://www.academia-comunica.com/logos/biotherm.webp" alt="Biotherm"><img class="brand-logo" src="https://www.academia-comunica.com/logos/pampers.webp" alt="Pampers"></div></div></section><section class="acmp-testimonial-wrap"><style>
+.acmp-resenas-viewport{overflow:hidden;padding:0 max(24px,calc((100% - 1120px)/2));transition:height .42s var(--ease-standard,cubic-bezier(.2,.7,.2,1))}
+.acmp-resenas-track{display:flex;align-items:flex-start;transition:transform .42s var(--ease-standard,cubic-bezier(.2,.7,.2,1))}
+.acmp-resenas-page{flex:0 0 100%;min-width:100%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:stretch}
+.acmp-resenas-card{background:#fff;border:1px solid var(--border-subtle,#e6e6e6);border-radius:var(--radius-lg,20px);padding:24px;display:flex;flex-direction:column;gap:14px;min-width:0;transition:box-shadow .22s var(--ease-standard,ease),transform .22s var(--ease-standard,ease)}
+.acmp-resenas-card:hover{box-shadow:0 14px 32px rgba(34,43,73,.12);transform:translateY(-2px)}
+.acmp-resenas-card .acmp-test-stars{color:var(--acmp-orange);display:flex;gap:2px}
+.acmp-resenas-quote{margin:0;font-family:var(--font-body,&#x27;Inter&#x27;,sans-serif);font-size:15px;line-height:1.55;letter-spacing:-0.01em;color:#1a1a1a;text-wrap:pretty;overflow-wrap:break-word;display:-webkit-box;-webkit-line-clamp:8;-webkit-box-orient:vertical;overflow:hidden}
+.acmp-resenas-meta{display:flex;align-items:baseline;gap:8px;padding-top:10px;margin-top:auto;border-top:1px solid var(--border-subtle,#e6e6e6)}
+.acmp-resenas-name{letter-spacing:-0.02em}
+.acmp-resenas-name{font-family:var(--font-section,&#x27;Satoshi&#x27;,sans-serif);font-weight:700;font-size:14px;color:var(--acmp-navy);min-width:0;overflow-wrap:break-word}
+.acmp-resenas-date{font-family:var(--font-body,&#x27;Inter&#x27;,sans-serif);font-size:12px;color:#8a8a8a}
+.acmp-resenas-controls{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:32px;padding:0 max(24px,calc((100% - 1120px)/2))}
+.acmp-resenas-nav{display:inline-flex;align-items:center;gap:8px;background:transparent;border:1px solid var(--acmp-navy);color:var(--acmp-navy);font-family:var(--font-section,&#x27;Satoshi&#x27;,sans-serif);font-weight:700;font-size:14px;padding:12px 24px;border-radius:999px;cursor:pointer;transition:background .14s ease,color .14s ease}
+.acmp-resenas-nav:hover{background:var(--acmp-navy);color:#fff}
+.acmp-resenas-dots{display:flex;align-items:center;gap:12px}
+.acmp-resenas-dot{width:26px;height:6px;padding:0;border:0;border-radius:999px;background:#e6e6e6;cursor:pointer;transition:background .22s ease}
+.acmp-resenas-dot.is-active{background:var(--acmp-orange)}
+.acmp-resenas-counter{font-family:var(--font-body,&#x27;Inter&#x27;,sans-serif);font-size:12px;color:#8a8a8a;margin-left:8px}
+@media (max-width:900px){.acmp-resenas-page{grid-template-columns:repeat(2,minmax(0,1fr))}.acmp-resenas-quote{font-size:15px}}
+@media (max-width:620px){.acmp-resenas-page{grid-template-columns:1fr;gap:14px}.acmp-resenas-card{padding:18px}.acmp-resenas-quote{-webkit-line-clamp:5}.acmp-resenas-controls{flex-wrap:wrap;justify-content:center;gap:12px;margin-top:20px}.acmp-resenas-nav{order:2;font-size:13px;padding:10px 18px}.acmp-resenas-dots{order:1;width:100%;justify-content:center;gap:8px}}
+      </style><div class="acmp-test-head"><div class="eyebrow">RESEÑAS DE ALUMNOS</div><h2 style="line-height:1.1;letter-spacing:-0.04em;margin:0">Testimonios</h2></div><div class="acmp-resenas-viewport"><div class="acmp-resenas-track" style="transform:translateX(-0%)"><div class="acmp-resenas-page" aria-hidden="false"><article class="acmp-resenas-card" style="font-family:var(--font-body);font-size:15px"><div class="acmp-test-stars" aria-label="5 estrellas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg></div><p class="acmp-resenas-quote" style="font-family:var(--font-body);font-size:15px">Excelente</p><div class="acmp-resenas-meta"><span class="acmp-resenas-name">Florencia De La Vega De La Vega</span><span class="acmp-resenas-date">24/08/2026</span></div></article><article class="acmp-resenas-card" style="font-family:var(--font-body);font-size:15px"><div class="acmp-test-stars" aria-label="5 estrellas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg></div><p class="acmp-resenas-quote" style="font-family:var(--font-body);font-size:15px">Millón de gracias, increíble</p><div class="acmp-resenas-meta"><span class="acmp-resenas-name">Antonela Piaggio</span><span class="acmp-resenas-date">21/08/2026</span></div></article><article class="acmp-resenas-card" style="font-family:var(--font-body);font-size:15px"><div class="acmp-test-stars" aria-label="5 estrellas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg></div><p class="acmp-resenas-quote" style="font-family:var(--font-body);font-size:15px">Me encantó, lo recomiendo gracias</p><div class="acmp-resenas-meta"><span class="acmp-resenas-name">Melina Motto</span><span class="acmp-resenas-date">31/07/2026</span></div></article><article class="acmp-resenas-card" style="font-family:var(--font-body);font-size:15px"><div class="acmp-test-stars" aria-label="5 estrellas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg></div><p class="acmp-resenas-quote" style="font-family:var(--font-body);font-size:15px">EXCELENTE.</p><div class="acmp-resenas-meta"><span class="acmp-resenas-name">Zulema Mariana Barrios</span><span class="acmp-resenas-date">29/07/2026</span></div></article><article class="acmp-resenas-card" style="font-family:var(--font-body);font-size:15px"><div class="acmp-test-stars" aria-label="5 estrellas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg></div><p class="acmp-resenas-quote" style="font-family:var(--font-body);font-size:15px">Amazing course! Clear lessons, great instructors, and practical content. I really enjoyed it and learned a lot. Highly recommend it!</p><div class="acmp-resenas-meta"><span class="acmp-resenas-name">Araceli Noemi Gonzalez</span><span class="acmp-resenas-date">25/07/2026</span></div></article><article class="acmp-resenas-card" style="font-family:var(--font-body);font-size:15px"><div class="acmp-test-stars" aria-label="5 estrellas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg></div><p class="acmp-resenas-quote" style="font-family:var(--font-body);font-size:15px">Realmente es "For impact", enfocándose más en la comunicación, que en el inglés en si, que es lo que nos pone nerviosas no saber quizás. Igualmente con un montón de herramientas, las necesarias, para una conversación real. Y también me encantaron todos los tips de pronunciación y oratoria. Lo recomiendo a full a personas que ya sepan inglés.</p><div class="acmp-resenas-meta"><span class="acmp-resenas-name">Nahir Maraz</span><span class="acmp-resenas-date">16/07/2026</span></div></article></div><div class="acmp-resenas-page" aria-hidden="true"><article class="acmp-resenas-card" style="font-family:var(--font-body);font-size:15px"><div class="acmp-test-stars" aria-label="5 estrellas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg></div><p class="acmp-resenas-quote" style="font-family:var(--font-body);font-size:15px">¡Me encantó el curso! Los contenidos estuvieron muy bien explicados y los ejercicios fueron excelentes para poner en práctica lo aprendido. Mejoré mucho mi inglés y entendí el porqué y cómo se usan distintas estructuras gramaticales. El booklet y las actividades fueron muy claros y dinámicos. Sin duda fue una experiencia muy enriquecedora.</p><div class="acmp-resenas-meta"><span class="acmp-resenas-name">Nayla Feijoo</span><span class="acmp-resenas-date">07/07/2026</span></div></article><article class="acmp-resenas-card" style="font-family:var(--font-body);font-size:15px"><div class="acmp-test-stars" aria-label="5 estrellas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg></div><p class="acmp-resenas-quote" style="font-family:var(--font-body);font-size:15px">Muy bueno! Gracias!!</p><div class="acmp-resenas-meta"><span class="acmp-resenas-name">Brenda Peña</span><span class="acmp-resenas-date">12/06/2026</span></div></article><article class="acmp-resenas-card" style="font-family:var(--font-body);font-size:15px"><div class="acmp-test-stars" aria-label="5 estrellas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg></div><p class="acmp-resenas-quote" style="font-family:var(--font-body);font-size:15px">Super interesante!</p><div class="acmp-resenas-meta"><span class="acmp-resenas-name">Alejandra Schwerdtfeger</span><span class="acmp-resenas-date">02/06/2026</span></div></article><article class="acmp-resenas-card" style="font-family:var(--font-body);font-size:15px"><div class="acmp-test-stars" aria-label="5 estrellas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg></div><p class="acmp-resenas-quote" style="font-family:var(--font-body);font-size:15px">Muy bueno! Muy bien organizado y muy práctico</p><div class="acmp-resenas-meta"><span class="acmp-resenas-name">Gimena Moreno</span><span class="acmp-resenas-date">26/05/2026</span></div></article><article class="acmp-resenas-card" style="font-family:var(--font-body);font-size:15px"><div class="acmp-test-stars" aria-label="5 estrellas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg></div><p class="acmp-resenas-quote" style="font-family:var(--font-body);font-size:15px">buenos tips</p><div class="acmp-resenas-meta"><span class="acmp-resenas-name">Juana Gonzalez Chion</span><span class="acmp-resenas-date">26/05/2026</span></div></article><article class="acmp-resenas-card" style="font-family:var(--font-body);font-size:15px"><div class="acmp-test-stars" aria-label="5 estrellas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg></div><p class="acmp-resenas-quote" style="font-family:var(--font-body);font-size:15px">Me encantó! Me dieron herramientas que había olvidado al no usar el idioma desde hace tiempo y a sacarme de la mente el que tengo que ser nativa para hablar y que no tengo que cometer errores.</p><div class="acmp-resenas-meta"><span class="acmp-resenas-name">Vanesa Lucero Szkafarowski</span><span class="acmp-resenas-date">24/05/2026</span></div></article></div><div class="acmp-resenas-page" aria-hidden="true"><article class="acmp-resenas-card" style="font-family:var(--font-body);font-size:15px"><div class="acmp-test-stars" aria-label="5 estrellas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg></div><p class="acmp-resenas-quote" style="font-family:var(--font-body);font-size:15px">Excelentes herramientas, fue muy claro todo el proceso.</p><div class="acmp-resenas-meta"><span class="acmp-resenas-name">Gustavo Daniel Maglio</span><span class="acmp-resenas-date">15/05/2026</span></div></article><article class="acmp-resenas-card" style="font-family:var(--font-body);font-size:15px"><div class="acmp-test-stars" aria-label="5 estrellas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg></div><p class="acmp-resenas-quote" style="font-family:var(--font-body);font-size:15px">Me resultó muy interesante, tanto Mai como Delfi super claras, concretas. Congrats!</p><div class="acmp-resenas-meta"><span class="acmp-resenas-name">Maria De Los Angeles Jaworski</span><span class="acmp-resenas-date">05/04/2026</span></div></article><article class="acmp-resenas-card" style="font-family:var(--font-body);font-size:15px"><div class="acmp-test-stars" aria-label="5 estrellas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg></div><p class="acmp-resenas-quote" style="font-family:var(--font-body);font-size:15px">Muy practico!</p><div class="acmp-resenas-meta"><span class="acmp-resenas-name">Sofia Mosqueda</span><span class="acmp-resenas-date">05/04/2026</span></div></article><article class="acmp-resenas-card" style="font-family:var(--font-body);font-size:15px"><div class="acmp-test-stars" aria-label="5 estrellas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg></div><p class="acmp-resenas-quote" style="font-family:var(--font-body);font-size:15px">Excelentes consejos para quienes todavía nos cuesta soltarnos al hablar en inglés. Gracias!</p><div class="acmp-resenas-meta"><span class="acmp-resenas-name">Natalia García</span><span class="acmp-resenas-date">18/03/2026</span></div></article><article class="acmp-resenas-card" style="font-family:var(--font-body);font-size:15px"><div class="acmp-test-stars" aria-label="4 estrellas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg></div><p class="acmp-resenas-quote" style="font-family:var(--font-body);font-size:15px">Me fue muy útil</p><div class="acmp-resenas-meta"><span class="acmp-resenas-name">Aldana Marcela Roberts Marrero</span><span class="acmp-resenas-date">04/03/2026</span></div></article><article class="acmp-resenas-card" style="font-family:var(--font-body);font-size:15px"><div class="acmp-test-stars" aria-label="4 estrellas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg></div><p class="acmp-resenas-quote" style="font-family:var(--font-body);font-size:15px">Excelente curso! Las herramientas dadas son muy utiles. Ahora tendré más estructura a la hora de hablar</p><div class="acmp-resenas-meta"><span class="acmp-resenas-name">María Gabriela Carreira</span><span class="acmp-resenas-date">25/02/2026</span></div></article></div><div class="acmp-resenas-page" aria-hidden="true"><article class="acmp-resenas-card" style="font-family:var(--font-body);font-size:15px"><div class="acmp-test-stars" aria-label="5 estrellas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg></div><p class="acmp-resenas-quote" style="font-family:var(--font-body);font-size:15px">Me parece muy interesante que relacionaron y complementaron este curso con el curso de oratoria. Muchas gracias.</p><div class="acmp-resenas-meta"><span class="acmp-resenas-name">Ivana Mariel Montalbán</span><span class="acmp-resenas-date">22/02/2026</span></div></article><article class="acmp-resenas-card" style="font-family:var(--font-body);font-size:15px"><div class="acmp-test-stars" aria-label="5 estrellas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg></div><p class="acmp-resenas-quote" style="font-family:var(--font-body);font-size:15px">Muy completo</p><div class="acmp-resenas-meta"><span class="acmp-resenas-name">Martina Canitano Canitano</span><span class="acmp-resenas-date">18/02/2026</span></div></article><article class="acmp-resenas-card" style="font-family:var(--font-body);font-size:15px"><div class="acmp-test-stars" aria-label="5 estrellas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg></div><p class="acmp-resenas-quote" style="font-family:var(--font-body);font-size:15px">increible</p><div class="acmp-resenas-meta"><span class="acmp-resenas-name">Mariela Rodriguez</span><span class="acmp-resenas-date">11/02/2026</span></div></article><article class="acmp-resenas-card" style="font-family:var(--font-body);font-size:15px"><div class="acmp-test-stars" aria-label="5 estrellas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg></div><p class="acmp-resenas-quote" style="font-family:var(--font-body);font-size:15px">Muy interesante y dinamico! Me encanto la profe Delfi!</p><div class="acmp-resenas-meta"><span class="acmp-resenas-name">Valentina Lillo Noval</span><span class="acmp-resenas-date">04/02/2026</span></div></article><article class="acmp-resenas-card" style="font-family:var(--font-body);font-size:15px"><div class="acmp-test-stars" aria-label="5 estrellas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg></div><p class="acmp-resenas-quote" style="font-family:var(--font-body);font-size:15px">Me gustó muchísimo el curso! Súper bien explicado todo! Mi parte favorita fue la de los fillers y la de la CNV! Muchas gracias</p><div class="acmp-resenas-meta"><span class="acmp-resenas-name">Jimena Paneda</span><span class="acmp-resenas-date">03/02/2026</span></div></article><article class="acmp-resenas-card" style="font-family:var(--font-body);font-size:15px"><div class="acmp-test-stars" aria-label="5 estrellas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg></div><p class="acmp-resenas-quote" style="font-family:var(--font-body);font-size:15px">Me gustó mucho el curso, siento que me dio herramientas para mejorar la oralidad</p><div class="acmp-resenas-meta"><span class="acmp-resenas-name">Camila Benítez Salinas</span><span class="acmp-resenas-date">01/02/2026</span></div></article></div><div class="acmp-resenas-page" aria-hidden="true"><article class="acmp-resenas-card" style="font-family:var(--font-body);font-size:15px"><div class="acmp-test-stars" aria-label="5 estrellas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg></div><p class="acmp-resenas-quote" style="font-family:var(--font-body);font-size:15px">El curso esta bueno, me gustó y ayudo bastante para mi aprendizaje y perfeccion del inglés. Noté que el curso es para personas que ya tienen una base de inglés al menos intermedia, ya que hablan con fluidez y naturalidad sin decir la traducción en español, por lo tanto alguien que tiene ingles basico no llega a entenderlo. Gracias.</p><div class="acmp-resenas-meta"><span class="acmp-resenas-name">Florencia Plumari</span><span class="acmp-resenas-date">01/02/2026</span></div></article><article class="acmp-resenas-card" style="font-family:var(--font-body);font-size:15px"><div class="acmp-test-stars" aria-label="5 estrellas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg></div><p class="acmp-resenas-quote" style="font-family:var(--font-body);font-size:15px">Me pareció muy bueno el curso.</p><div class="acmp-resenas-meta"><span class="acmp-resenas-name">Cristian Elias D'ambrosio</span><span class="acmp-resenas-date">26/01/2026</span></div></article><article class="acmp-resenas-card" style="font-family:var(--font-body);font-size:15px"><div class="acmp-test-stars" aria-label="5 estrellas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg></div><p class="acmp-resenas-quote" style="font-family:var(--font-body);font-size:15px">Me encantaron los consejos personales de Mai, en cuanto a la experiencia y su historia con el inglés. También me gustó mucho Delfina, su tono de voz para explicar te hace sentir acompañada y no presionada o juzgada en cuanto a el nivel de inglés que uno tiene. No la conocía, ni a ella ni su academia. Así que muchas gracias a ambas. Muy bueno!</p><div class="acmp-resenas-meta"><span class="acmp-resenas-name">Eliana Rodriguez</span><span class="acmp-resenas-date">24/01/2026</span></div></article><article class="acmp-resenas-card" style="font-family:var(--font-body);font-size:15px"><div class="acmp-test-stars" aria-label="5 estrellas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg></div><p class="acmp-resenas-quote" style="font-family:var(--font-body);font-size:15px">Cortito y al pie, me parece muy bueno para aquellos que tenemos que hacer entrevistas en ingles o trabajar en ese idioma recurrentemente.</p><div class="acmp-resenas-meta"><span class="acmp-resenas-name">Consuelo Sanchez</span><span class="acmp-resenas-date">11/01/2026</span></div></article><article class="acmp-resenas-card" style="font-family:var(--font-body);font-size:15px"><div class="acmp-test-stars" aria-label="5 estrellas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg></div><p class="acmp-resenas-quote" style="font-family:var(--font-body);font-size:15px">VALUABLE INFO As a Teacher of English for more than 30 years, and an eternal student myself, I have found this material very valuable and enriching. It offers insights that continue to inspire my teaching practice and lifelong learning. Thanx Caryn EnglishZoneRocks</p><div class="acmp-resenas-meta"><span class="acmp-resenas-name">Caryn Moffa</span><span class="acmp-resenas-date">11/01/2026</span></div></article><article class="acmp-resenas-card" style="font-family:var(--font-body);font-size:15px"><div class="acmp-test-stars" aria-label="5 estrellas"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.8 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"></path></svg></div><p class="acmp-resenas-quote" style="font-family:var(--font-body);font-size:15px">Súper rápido todo el proceso, mai sos la mejor!</p><div class="acmp-resenas-meta"><span class="acmp-resenas-name">Julieta Ivonne Rosales</span><span class="acmp-resenas-date">20/12/2025</span></div></article></div></div></div><div class="acmp-resenas-controls"><button class="acmp-resenas-nav" type="button">← Anteriores</button><div class="acmp-resenas-dots"><button type="button" class="acmp-resenas-dot is-active" aria-label="Página 1"></button><button type="button" class="acmp-resenas-dot" aria-label="Página 2"></button><button type="button" class="acmp-resenas-dot" aria-label="Página 3"></button><button type="button" class="acmp-resenas-dot" aria-label="Página 4"></button><button type="button" class="acmp-resenas-dot" aria-label="Página 5"></button><span class="acmp-resenas-counter">1 / 5</span></div><button class="acmp-resenas-nav" type="button">Siguientes →</button></div></section><section class="acmp-stats"><div class="acmp-stat"><div class="num"><span>+<!-- -->200<!-- -->k</span></div><div class="lbl">alumnos en la región</div></div><div class="acmp-stat"><div class="num"><span>+<!-- -->70</span></div><div class="lbl">marcas / empresas clientes</div></div><div class="acmp-stat"><div class="num"><span>450<!-- -->k</span></div><div class="lbl">seguidores en Instagram</div></div></section><section class="acmp-galeria" id="galeria"><style>
+        @keyframes galScroll-up {
+          from { transform: translateY(0); }
+          to   { transform: translateY(-50%); }
+        }
+        @keyframes galScroll-down {
+          from { transform: translateY(-50%); }
+          to   { transform: translateY(0); }
+        }
+        .acmp-galeria {
+          background: var(--acmp-gray);
+          padding: clamp(56px, 8vw, 100px) 0 clamp(28px, 3vw, 40px);
+          overflow: hidden;
+        }
+        .acmp-galeria-head {
+          text-align: center;
+          padding: 0 28px;
+          margin-bottom: 48px;
+        }
+        .acmp-galeria-head .eyebrow {
+          font-family: var(--font-section, &#x27;Satoshi&#x27;, sans-serif);
+          font-weight: 700;
+          font-size: 12px;
+          letter-spacing: 0.14em;
+          text-transform: uppercase;
+          color: var(--acmp-orange);
+          margin-bottom: 12px;
+        }
+        .acmp-galeria-head h2 {
+          font-family: var(--font-display, &#x27;Poppins&#x27;, sans-serif);
+          font-weight: 700;
+          font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+          line-height: 1.1;
+          letter-spacing: -0.03em;
+          color: var(--acmp-navy);
+          margin: 0;
+          text-wrap: balance;
+        }
+        .acmp-galeria-head h2 .kw { color: var(--acmp-orange); }
+        .acmp-galeria-stage {
+          position: relative;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 14px;
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 0 20px;
+          height: 680px;
+          overflow: hidden;
+          mask-image: linear-gradient(
+            to bottom,
+            transparent 0%,
+            black 15%,
+            black 85%,
+            transparent 100%
+          );
+          -webkit-mask-image: linear-gradient(
+            to bottom,
+            transparent 0%,
+            black 15%,
+            black 85%,
+            transparent 100%
+          );
+        }
+        .acmp-galeria-stage:hover .acmp-galeria-track {
+          animation-play-state: paused !important;
+        }
+        .acmp-galeria-col {
+          overflow: hidden;
+        }
+        .acmp-galeria-track {
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+        }
+        .acmp-galeria-track--up {
+          animation: galScroll-up linear infinite;
+        }
+        .acmp-galeria-track--down {
+          animation: galScroll-down linear infinite;
+        }
+        .acmp-galeria-img {
+          width: 100%;
+          aspect-ratio: 3/4;
+          object-fit: cover;
+          border-radius: 14px;
+          display: block;
+          flex-shrink: 0;
+        }
+        @media (max-width: 700px) {
+          .acmp-galeria-stage { height: 460px; gap: 16px; padding: 0 16px; }
+          .acmp-galeria-track { gap: 16px; }
+          .acmp-galeria-img { border-radius: 10px; }
+        }
+      </style><div class="acmp-galeria-head"><div class="eyebrow">ACADEMIA COMUNICA EN ACCIÓN</div><h2><span>Los mejores momentos del </span><span class="kw">intensivo</span></h2></div><div class="acmp-galeria-stage"><div class="acmp-galeria-col"><div class="acmp-galeria-track acmp-galeria-track--up" style="animation-duration:28s"><img src="https://www.academia-comunica.com/assets/galeria-01.webp" alt="Momento del intensivo de inglés — Academia Comunica" class="acmp-galeria-img" loading="lazy"><img src="https://www.academia-comunica.com/assets/galeria-04.webp" alt="Momento del intensivo de inglés — Academia Comunica" class="acmp-galeria-img" loading="lazy"><img src="https://www.academia-comunica.com/assets/galeria-07.webp" alt="Momento del intensivo de inglés — Academia Comunica" class="acmp-galeria-img" loading="lazy"><img src="https://www.academia-comunica.com/assets/galeria-10.webp" alt="Momento del intensivo de inglés — Academia Comunica" class="acmp-galeria-img" loading="lazy"><img src="https://www.academia-comunica.com/assets/galeria-01.webp" alt="Momento del intensivo de inglés — Academia Comunica" class="acmp-galeria-img" loading="lazy"><img src="https://www.academia-comunica.com/assets/galeria-04.webp" alt="Momento del intensivo de inglés — Academia Comunica" class="acmp-galeria-img" loading="lazy"><img src="https://www.academia-comunica.com/assets/galeria-07.webp" alt="Momento del intensivo de inglés — Academia Comunica" class="acmp-galeria-img" loading="lazy"><img src="https://www.academia-comunica.com/assets/galeria-10.webp" alt="Momento del intensivo de inglés — Academia Comunica" class="acmp-galeria-img" loading="lazy"></div></div><div class="acmp-galeria-col"><div class="acmp-galeria-track acmp-galeria-track--down" style="animation-duration:34s"><img src="https://www.academia-comunica.com/assets/galeria-02.webp" alt="Momento del intensivo de inglés — Academia Comunica" class="acmp-galeria-img" loading="lazy"><img src="https://www.academia-comunica.com/assets/galeria-05.webp" alt="Momento del intensivo de inglés — Academia Comunica" class="acmp-galeria-img" loading="lazy"><img src="https://www.academia-comunica.com/assets/galeria-08.webp" alt="Momento del intensivo de inglés — Academia Comunica" class="acmp-galeria-img" loading="lazy"><img src="https://www.academia-comunica.com/assets/galeria-11.webp" alt="Momento del intensivo de inglés — Academia Comunica" class="acmp-galeria-img" loading="lazy"><img src="https://www.academia-comunica.com/assets/galeria-02.webp" alt="Momento del intensivo de inglés — Academia Comunica" class="acmp-galeria-img" loading="lazy"><img src="https://www.academia-comunica.com/assets/galeria-05.webp" alt="Momento del intensivo de inglés — Academia Comunica" class="acmp-galeria-img" loading="lazy"><img src="https://www.academia-comunica.com/assets/galeria-08.webp" alt="Momento del intensivo de inglés — Academia Comunica" class="acmp-galeria-img" loading="lazy"><img src="https://www.academia-comunica.com/assets/galeria-11.webp" alt="Momento del intensivo de inglés — Academia Comunica" class="acmp-galeria-img" loading="lazy"></div></div><div class="acmp-galeria-col"><div class="acmp-galeria-track acmp-galeria-track--up" style="animation-duration:40s"><img src="https://www.academia-comunica.com/assets/galeria-03.webp" alt="Momento del intensivo de inglés — Academia Comunica" class="acmp-galeria-img" loading="lazy"><img src="https://www.academia-comunica.com/assets/galeria-06.webp" alt="Momento del intensivo de inglés — Academia Comunica" class="acmp-galeria-img" loading="lazy"><img src="https://www.academia-comunica.com/assets/galeria-09.webp" alt="Momento del intensivo de inglés — Academia Comunica" class="acmp-galeria-img" loading="lazy"><img src="https://www.academia-comunica.com/assets/galeria-03.webp" alt="Momento del intensivo de inglés — Academia Comunica" class="acmp-galeria-img" loading="lazy"><img src="https://www.academia-comunica.com/assets/galeria-06.webp" alt="Momento del intensivo de inglés — Academia Comunica" class="acmp-galeria-img" loading="lazy"><img src="https://www.academia-comunica.com/assets/galeria-09.webp" alt="Momento del intensivo de inglés — Academia Comunica" class="acmp-galeria-img" loading="lazy"></div></div></div></section><section class="acmp-certs" id="certificados"><style>
+        .acmp-certs {
+          background: var(--acmp-gray);
+          padding: clamp(56px, 8vw, 96px) 0;
+          overflow: hidden;
+        }
+        .acmp-certs-head {
+          text-align: center;
+          padding: 0 24px;
+          margin-bottom: 48px;
+        }
+        .acmp-certs-title {
+          font-family: var(--font-display, &#x27;Poppins&#x27;, sans-serif);
+          font-weight: 700;
+          font-size: clamp(1.5rem, 2.8vw, 2.2rem);
+          letter-spacing: -0.03em;
+          color: var(--acmp-navy);
+          margin: 0 0 12px;
+        }
+        .acmp-certs-title .kw { color: var(--acmp-orange); }
+        .acmp-certs-sub {
+          font-family: var(--font-body, &#x27;Inter&#x27;, sans-serif);
+          font-size: 15px;
+          color: var(--fg-2);
+          max-width: 52ch;
+          margin: 0 auto;
+          line-height: 1.55;
+        }
+        .acmp-certs-stage {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+          padding: 0 clamp(24px, 5vw, 80px);
+          width: 100%;
+          box-sizing: border-box;
+        }
+        .acmp-certs-cards {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 16px;
+          flex: 1;
+          overflow: hidden;
+        }
+        .acmp-certs-card {
+          position: relative;
+          width: clamp(280px, 30vw, 460px);
+          border-radius: 16px;
+          background: #fff;
+          flex-shrink: 0;
+          opacity: 0.4;
+          transform: scale(0.88);
+          transition: opacity 0.3s ease, transform 0.3s ease;
+          cursor: pointer;
+          box-shadow: var(--shadow-sm);
+        }
+        .acmp-certs-card.is-active {
+          opacity: 1;
+          transform: scale(1);
+          cursor: default;
+          box-shadow: var(--shadow-lg);
+        }
+        .acmp-certs-card img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+        .acmp-certs-arrow {
+          width: 48px; height: 48px;
+          border-radius: 50%;
+          border: 2px solid rgba(34,43,73,0.18);
+          background: rgba(34,43,73,0.06);
+          color: var(--acmp-navy);
+          display: flex; align-items: center; justify-content: center;
+          cursor: pointer; flex-shrink: 0;
+          transition: background 0.2s, border-color 0.2s, color 0.2s;
+        }
+        .acmp-certs-arrow:hover {
+          background: var(--acmp-orange);
+          border-color: var(--acmp-orange);
+          color: #fff;
+        }
+        .acmp-certs-dots {
+          display: flex; justify-content: center;
+          gap: 8px; margin-top: 28px;
+        }
+        .acmp-certs-dot {
+          width: 8px; height: 8px; border-radius: 50%;
+          background: rgba(34,43,73,0.2);
+          border: none; cursor: pointer;
+          transition: background 0.2s, transform 0.2s;
+        }
+        .acmp-certs-dot.is-active {
+          background: var(--acmp-orange);
+          transform: scale(1.3);
+        }
+        @media (max-width: 700px) {
+          .acmp-certs-head { margin-bottom: 28px; }
+          .acmp-certs-sub { font-size: 14px; }
+          .acmp-certs-stage { gap: 8px; padding: 0 12px; }
+          .acmp-certs-cards { gap: 0; }
+          .acmp-certs-card { border-radius: 10px; width: 100%; max-width: 420px; opacity: 0; transform: scale(1); position: absolute; pointer-events: none; }
+          .acmp-certs-cards { position: relative; min-height: 1px; }
+          .acmp-certs-card.is-active { position: relative; opacity: 1; pointer-events: auto; }
+          .acmp-certs-arrow { width: 38px; height: 38px; }
+          .acmp-certs-dots { margin-top: 20px; }
+        }
+      </style><div class="acmp-certs-head"><h2 class="acmp-certs-title" style="font-size:clamp(22px, 6.6vw, 33px)">Certificados para tu <span class="kw">CV &amp; LinkedIn</span></h2><p class="acmp-certs-sub" style="font-family:var(--font-body);font-size:clamp(14px, 4vw, 16px)">¡Todos nuestros cursos incluyen un certificado que podés compartir<br>en LinkedIn y nosotros te lo validamos!</p></div><div class="acmp-certs-stage"><button class="acmp-certs-arrow" aria-label="Certificado anterior"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button><div class="acmp-certs-cards" data-acmp-certs=""><div class="acmp-certs-card is-active"><img src="https://www.academia-comunica.com/certificates/01.webp" alt="Certificado 1" loading="lazy"></div><div class="acmp-certs-card"><img src="https://www.academia-comunica.com/certificates/02.webp" alt="Certificado 2" loading="lazy"></div><div class="acmp-certs-card"><img src="https://www.academia-comunica.com/certificates/03.webp" alt="Certificado 3" loading="lazy"></div><div class="acmp-certs-card"><img src="https://www.academia-comunica.com/certificates/04.webp" alt="Certificado 4" loading="lazy"></div><div class="acmp-certs-card"><img src="https://www.academia-comunica.com/certificates/05.webp" alt="Certificado 5" loading="lazy"></div><div class="acmp-certs-card"><img src="https://www.academia-comunica.com/certificates/06.webp" alt="Certificado 6" loading="lazy"></div></div><button class="acmp-certs-arrow" aria-label="Certificado siguiente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button></div><div class="acmp-certs-dots"><button class="acmp-certs-dot is-active" aria-label="Certificado 1"></button><button class="acmp-certs-dot" aria-label="Certificado 2"></button><button class="acmp-certs-dot" aria-label="Certificado 3"></button><button class="acmp-certs-dot" aria-label="Certificado 4"></button><button class="acmp-certs-dot" aria-label="Certificado 5"></button><button class="acmp-certs-dot" aria-label="Certificado 6"></button></div></section><section class="acmp-faq" id="faq" style="background-color:var(--acmp-gray)"><div class="acmp-faq-wrap"><div class="acmp-faq-head"><div class="eyebrow">FAQ</div><h2 class="acmp-faq-title" style="font-weight:700">Preguntas Frecuentes</h2></div><div class="acmp-faq-list"><button type="button" class="acmp-faq-item is-open"><div class="acmp-faq-row"><span class="acmp-faq-q" style="font-family:var(--font-section);font-size:19px">¿Cuándo comienza el intensivo?</span><span class="acmp-faq-chev" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><p class="acmp-faq-a" style="white-space:pre-line;font-family:var(--font-body);font-size:15px">El grupo actual arrancó el 15 de septiembre y sus cupos están agotados en todos los turnos. Anotate en la lista de espera desde el botón «ANOTAME EN LISTA DE ESPERA» de esta página y te avisamos primero cuando abra el próximo grupo. Todos los horarios son en GMT-3 (Buenos Aires); las equivalencias por país están en la pregunta «¿Qué días y horarios tendrá el intensivo?».</p></button><button type="button" class="acmp-faq-item"><div class="acmp-faq-row"><span class="acmp-faq-q" style="font-family:var(--font-section);font-size:19px">¿Las clases son online o presencial?</span><span class="acmp-faq-chev" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><p class="acmp-faq-a" style="white-space:pre-line;font-family:var(--font-body);font-size:15px">Las clases son 100% online y en vivo por Google Meet.</p></button><button type="button" class="acmp-faq-item"><div class="acmp-faq-row"><span class="acmp-faq-q" style="font-family:var(--font-section);font-size:19px">¿Qué días y horarios tendrá el intensivo?</span><span class="acmp-faq-chev" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><p class="acmp-faq-a" style="white-space:pre-line;font-family:var(--font-body);font-size:15px">Los días serán los lunes y miércoles, dos veces por semana. Cada clase dura 1 hora y media. Los Google Meet se dictan en horario GMT-3 (Buenos Aires, Argentina):
+
+Mañana: 8:00 – 9:30 hs (agotado)
+Mediodía: 13:00 – 14:30 hs (agotado)
+Tarde: 18:30 – 20:00 hs (agotado)
+Noche: 20:00 – 21:30 hs (agotado)
+
+Referencia en otros países de Latinoamérica (hora de inicio de cada turno):
+
+🇨🇴 Colombia: 6:00 · 11:00 · 16:30 · 18:00
+🇲🇽 México (CDMX): 5:00 · 10:00 · 15:30 · 17:00
+🇨🇱 Chile: 7:00 · 12:00 · 17:30 · 19:00
+🇵🇪 Perú: 6:00 · 11:00 · 16:30 · 18:00
+🇺🇾 Uruguay: 8:00 · 13:00 · 18:30 · 20:00
+
+Una vez que elegís tu horario, siempre cursás en ese mismo turno, ya que formarás parte de un grupo fijo.</p></button><button type="button" class="acmp-faq-item"><div class="acmp-faq-row"><span class="acmp-faq-q" style="font-family:var(--font-section);font-size:19px">¿Qué incluye el intensivo?</span><span class="acmp-faq-chev" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><p class="acmp-faq-a" style="white-space:pre-line;font-family:var(--font-body);font-size:15px">24 clases online en vivo por Google Meet, certificado de participación, soporte del equipo, cursos bonificados de Oratoria y English for Impact.</p></button><button type="button" class="acmp-faq-item"><div class="acmp-faq-row"><span class="acmp-faq-q" style="font-family:var(--font-section);font-size:19px">¿Cuánto dura el intensivo?</span><span class="acmp-faq-chev" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><p class="acmp-faq-a" style="white-space:pre-line;font-family:var(--font-body);font-size:15px">Tiene una duración de 3 meses, con clases 2 veces por semana. En total son 24 clases en vivo.</p></button><button type="button" class="acmp-faq-item"><div class="acmp-faq-row"><span class="acmp-faq-q" style="font-family:var(--font-section);font-size:19px">¿Puedo pagar en cuotas?</span><span class="acmp-faq-chev" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><p class="acmp-faq-a" style="white-space:pre-line;font-family:var(--font-body);font-size:15px">Sí. Podés pagar en 3 cuotas sin interés.</p></button><button type="button" class="acmp-faq-item"><div class="acmp-faq-row"><span class="acmp-faq-q" style="font-family:var(--font-section);font-size:19px">¿Qué pasa si no me gusta el intensivo?</span><span class="acmp-faq-chev" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><p class="acmp-faq-a" style="white-space:pre-line;font-family:var(--font-body);font-size:15px">Confiamos plenamente en la propuesta, pero igual tenés respaldo:
+
+Si compraste el curso online, podés cancelarlo dentro de los 10 días corridos desde el inicio del curso. Además, si el curso no cumple con lo prometido o tenés algún inconveniente con el servicio, podés solicitar una revisión de tu caso.</p></button><button type="button" class="acmp-faq-item"><div class="acmp-faq-row"><span class="acmp-faq-q" style="font-family:var(--font-section);font-size:19px">¿Recibo certificado?</span><span class="acmp-faq-chev" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><p class="acmp-faq-a" style="white-space:pre-line;font-family:var(--font-body);font-size:15px">Sí. Al finalizar recibirás:
+• Certificado del Intensivo de Inglés
+• Certificado del curso de Oratoria (incluido)
+• Certificado de English for Impact (incluido)
+
+Tres certificados en total.</p></button><button type="button" class="acmp-faq-item"><div class="acmp-faq-row"><span class="acmp-faq-q" style="font-family:var(--font-section);font-size:19px">¿Qué pasa si falto a una clase?</span><span class="acmp-faq-chev" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><p class="acmp-faq-a" style="white-space:pre-line;font-family:var(--font-body);font-size:15px">No pasa nada. Si sabés con anticipación que vas a faltar por vacaciones de invierno o por algún compromiso personal, avisanos y te haremos llegar la clase grabada. Además, si notamos tu ausencia en dos clases, la coordinadora del intensivo se pondrá en contacto con vos para saber qué ocurrió y acompañarte para mejorar tu experiencia y continuidad.</p></button><button type="button" class="acmp-faq-item"><div class="acmp-faq-row"><span class="acmp-faq-q" style="font-family:var(--font-section);font-size:19px">¿Cómo sé cuál es mi nivel?</span><span class="acmp-faq-chev" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></span></div><p class="acmp-faq-a" style="white-space:pre-line;font-family:var(--font-body);font-size:15px">Actualmente ofrecemos cuatro intensivos: Nivel Cero, Pre-intermedio, Intermedio y Avanzado. Si no sabés cuál es tu nivel, podés hacer el <a href="#comprar">Test de Inglés gratuito</a>. Y no te preocupes: antes de comenzar, la coordinadora te enviará un test de nivelación para asegurarse de que estés en el grupo correcto.</p></button></div><div class="acmp-faq-cond"><style>
+.acmp-faq-cond{width:100%;box-sizing:border-box;margin-top:10px;background:#fff;border:1px solid #e6e6e6;border-radius:14px;padding:20px 22px;font-family:var(--font-body,&#x27;Inter&#x27;,sans-serif);font-size:13px;line-height:1.3;color:var(--acmp-navy-700,#4a5470)}
+.acmp-faq-cond h3{font-family:var(--font-body,&#x27;Inter&#x27;,sans-serif);font-weight:700;font-size:13px;letter-spacing:0;color:var(--acmp-navy);margin:0 0 8px}
+.acmp-page section .acmp-faq-cond p.acmp-faq-cond-legal{margin:0 0 9px;text-wrap:pretty;font-family:var(--font-body,&#x27;Inter&#x27;,sans-serif)!important;font-size:13px!important;line-height:1.3!important;letter-spacing:normal!important;color:var(--acmp-navy-700,#4a5470)!important}
+.acmp-faq-cond h3{font-size:13px!important;line-height:1.3!important;font-family:var(--font-body,&#x27;Inter&#x27;,sans-serif)!important}
+.acmp-faq-cond a{font-size:13px!important;font-family:var(--font-body,&#x27;Inter&#x27;,sans-serif)!important}
+.acmp-faq-cond p:last-child{margin-bottom:0}
+.acmp-faq-cond a{color:var(--acmp-orange);text-decoration:none;font-weight:600}
+.acmp-faq-cond a:hover{color:#c93702;text-decoration:underline;text-underline-offset:2px}
+@media (max-width:700px){.acmp-faq-cond{padding:16px 18px}.acmp-faq-cond h3{font-size:12px!important}.acmp-page section .acmp-faq-cond p.acmp-faq-cond-legal{font-size:12px!important}}
+          </style><h3>Condiciones de cursada</h3><p class="acmp-faq-cond-legal" style="font-family:var(--font-body);font-size:13px;line-height:1.3">El Intensivo de Inglés es un programa de entrenamiento en comunicación oral. No constituye una certificación oficial de nivel ni acredita la obtención de un nivel determinado del Marco Común Europeo de Referencia (MCER). El programa no incluye instancias de evaluación formal: el seguimiento se realiza mediante tareas de práctica corregidas en clase y devoluciones del profesor.</p><p class="acmp-faq-cond-legal" style="font-family:var(--font-body);font-size:13px;line-height:1.3">Al finalizar el cuatrimestre se emite un certificado de participación, que acredita la cursada y requiere un mínimo del 60% de asistencia a las clases en vivo, conforme a los Términos y Condiciones.</p><p class="acmp-faq-cond-legal" style="font-family:var(--font-body);font-size:13px;line-height:1.3">El progreso de cada alumno depende de su nivel inicial, su asistencia, su participación oral en clase y su práctica fuera de ella. La Academia se compromete a dictar la totalidad de las clases previstas, mantener el grupo dentro del cupo informado, brindar tareas con corrección y ofrecer seguimiento durante todo el cuatrimestre.</p><p class="acmp-faq-cond-legal" style="font-family:var(--font-body);font-size:13px;line-height:1.3">La asistencia y la participación se registran por clase. Todo planteo relativo al nivel asignado o al avance debe canalizarse durante el cuatrimestre al <a href="https://wa.me/5491130194851" target="_blank" rel="noopener noreferrer">+54 9 11 3019-4851</a>.</p></div></div></section><section class="acmp-upsell" id="comprar"><style>
+.acmp-upsell{display:flex;justify-content:center;padding:72px 24px;background:#fff}
+.acmp-upsell-inner{display:flex;flex-direction:column;align-items:center;width:100%}
+.acmp-upsell-card{max-width:660px;width:100%;border-radius:24px;overflow:hidden;box-shadow:var(--shadow-lg)}
+.acmp-upsell-head{background:var(--acmp-orange);padding:40px 44px 34px}
+.acmp-upsell-head h3{font-family:&#x27;Poppins&#x27;,sans-serif;font-weight:700;font-size:30px;line-height:1.2;color:#fff;letter-spacing:-0.02em;margin:0;text-align:center}
+.acmp-upsell-body{background:var(--acmp-navy);padding:44px 44px 40px;display:flex;flex-direction:column;gap:26px}
+.acmp-upsell-badge{align-self:center;background:var(--acmp-orange);color:#fff;font-family:var(--font-body);font-weight:700;font-size:14px;letter-spacing:0.1em;padding:13px 30px;border-radius:999px}
+.acmp-upsell-hora{font-family:var(--font-body);font-size:13px;font-weight:700;letter-spacing:0.12em;color:rgba(255,255,255,0.6);margin:0}
+.acmp-upsell-hora-val{font-family:var(--font-body);font-weight:700;font-size:20px;color:#fff;margin:8px 0 0}
+.acmp-upsell-price{font-family:&#x27;Poppins&#x27;,sans-serif;font-weight:700;font-size:clamp(40px,7vw,58px);line-height:1;letter-spacing:-0.03em;color:#fff;margin:0}
+.acmp-upsell-price-alt{font-family:&#x27;Poppins&#x27;,sans-serif;font-weight:700;font-size:22px;color:#fff;margin:10px 0 0}
+.acmp-upsell-cuotas{font-family:var(--font-body);font-size:15px;color:rgba(255,255,255,0.6);margin:10px 0 0}
+.acmp-upsell-pricing{display:flex;flex-direction:column;gap:0}
+.acmp-upsell-note{color:rgba(255,255,255,0.55);text-align:center;font-size:16px;line-height:1.5;margin:0}
+.acmp-upsell-note strong{color:rgba(255,255,255,0.75)}
+.acmp-upsell-feats{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:15px}
+.acmp-upsell-feats li{display:flex;gap:12px;color:#fff;font-size:16.5px;line-height:1.45}
+.acmp-upsell-feats strong{font-weight:700}
+.acmp-upsell-cta,.acmp-upsell-wa{display:block;text-align:center;border-radius:14px;padding:18px 20px;font-family:var(--font-body);font-weight:700;font-size:17px;text-decoration:none;transition:filter var(--dur-fast) var(--ease-standard)}
+.acmp-upsell-cta{background:var(--acmp-orange);color:#fff;box-shadow:var(--shadow-orange)}
+.acmp-upsell-cta:hover{background:#c93702;color:#fff}
+.acmp-upsell-wa{background:#2ecc71;color:#fff;margin-top:-10px}
+.acmp-upsell-wa:hover{filter:brightness(0.93);color:#fff}
+.acmp-upsell-test{align-self:center;text-align:center;background:#fff;color:var(--acmp-orange);border-radius:14px;padding:16px 32px;font-family:var(--font-body);font-weight:700;font-size:16px;text-decoration:none;transition:filter var(--dur-fast) var(--ease-standard)}
+.acmp-upsell-test:hover{color:var(--acmp-orange);filter:brightness(0.94)}
+@media (max-width:600px){.acmp-upsell{padding:48px 18px}.acmp-upsell-head{padding:30px 26px 26px}.acmp-upsell-body{padding:32px 22px 30px;gap:22px}.acmp-upsell-feats li{font-size:15px}.acmp-upsell-cta,.acmp-upsell-wa{white-space:nowrap;font-size:clamp(11px,3.4vw,16px);padding:16px 6px}}
+      </style><div class="acmp-upsell-inner"><div class="acmp-buy-head" style="text-align:center;margin-bottom:28px"><div class="eyebrow">LISTA DE ESPERA</div><h2 style="font-size:33px;letter-spacing:-0.03em">Cupos agotados</h2><p style="font-family:var(--font-body);font-size:17px;line-height:1.5;color:var(--acmp-navy-700, #4a5470);max-width:560px;margin:14px auto 0">Los cupos de este grupo están agotados. Anotate en la lista de espera y te avisamos primero cuando abra el próximo grupo.</p></div><div class="acmp-upsell-card"><div class="acmp-upsell-head"><h3 style="font-family:var(--font-section);font-size:27px">Curso Intensivo de Inglés<br>English Advanced</h3></div><div class="acmp-upsell-body"><div class="acmp-upsell-pricing"><p class="acmp-upsell-hora" style="font-family:var(--font-body);color:var(--acmp-white)">INVERSIÓN POR HORA DE CLASE:</p><p class="acmp-upsell-hora-val" style="color:var(--acmp-orange);font-weight:700">$14.286 ARS · ¡Una gaseosa y un alfajor!</p><p class="acmp-upsell-price" style="margin-top:26px">$599.999 ARS</p><p class="acmp-upsell-price-alt">o 394 USD</p><p class="acmp-upsell-cuotas" style="color:var(--bg-surface)">Hasta 3 cuotas sin interés · 3 cuotas de $199.999 ARS</p></div><ul class="acmp-upsell-feats"><li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--acmp-orange)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 auto;margin-top:3px"><polyline points="20 6 9 17 4 12"></polyline></svg><span>28 clases en vivo (2 por semana, 1.5hs c/u)</span></li><li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--acmp-orange)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 auto;margin-top:3px"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Certificado de finalización</span></li><li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--acmp-orange)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 auto;margin-top:3px"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Soporte ilimitado</span></li><li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--acmp-orange)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 auto;margin-top:3px"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Curso bonificado: Oratoria (valor $48.750)</span></li><li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="var(--acmp-orange)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:0 0 auto;margin-top:3px"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Curso bonificado: English for Impact (valor $59.800)</span></li></ul><a class="acmp-upsell-cta" href="https://formflow.capogrowth.com/form/b6a8fea3-8316-47c5-9954-fc364dd982d2" target="_blank" rel="noopener noreferrer">ANOTAME EN LISTA DE ESPERA</a><a class="acmp-upsell-wa" href="https://wa.me/12065391288?text=Hola%2C%20quiero%20info%20sobre%20el%20intensivo%20de%20ingl%C3%A9s%20Nivel%20Avanzado" target="_blank" rel="noopener noreferrer">💬 Tengo dudas · Escribinos por WhatsApp</a></div></div></div></section><section class="acmp-aviso" style="background-color:var(--acmp-navy)"><style>
+.acmp-aviso{background:var(--acmp-gray);padding:clamp(48px,6vw,80px) 24px;display:flex;justify-content:center}
+.acmp-aviso-card{background:#fff;border:1px solid var(--border-subtle,#e6e6e6);border-radius:var(--radius-lg,20px);box-shadow:var(--shadow-md,0 8px 24px rgba(34,43,73,.08));max-width:720px;width:100%;padding:clamp(28px,4vw,44px);text-align:center}
+.acmp-aviso-card h2{font-family:var(--font-section,&#x27;Satoshi&#x27;,sans-serif);font-weight:700;font-size:34px;line-height:1.15;letter-spacing:-0.02em;color:var(--acmp-navy);margin:0 0 18px}
+.acmp-aviso-card p{font-family:var(--font-body,&#x27;Inter&#x27;,sans-serif);font-size:16px;line-height:1.6;color:var(--acmp-navy);margin:0 0 18px;text-wrap:pretty}
+.acmp-aviso-card p:last-child{margin-bottom:0}
+.acmp-aviso-tel{display:inline-block;font-family:var(--font-section,&#x27;Satoshi&#x27;,sans-serif);font-weight:700;font-size:22px;letter-spacing:-0.01em;color:var(--acmp-orange);text-decoration:none;margin:0 0 18px}
+.acmp-aviso-tel:hover{color:#c93702}
+@media (max-width:700px){.acmp-aviso-card h2{font-size:25px;line-height:1.2}.acmp-aviso-card p{font-size:15px}.acmp-aviso-tel{font-size:19px}}
+      </style><div class="acmp-aviso-card"><h2>No esperes al mes 4</h2><p style="font-family:var(--font-body);font-size:16px">Si en cualquier momento del cuatrimestre sentís que el nivel no es el tuyo, que te quedaste atrás o que no estás avanzando como esperabas, avisanos. Tenemos una línea directa para eso:</p><a class="acmp-aviso-tel" href="https://wa.me/5491130194851" target="_blank" rel="noopener noreferrer" style="font-family:var(--font-body)">📱 +54 9 11 3019-4851</a><p style="font-family:var(--font-body);font-size:16px">Con ese aviso podemos reubicarte de nivel, sumarte práctica<br>extra o revisar tu caso con el profesor.</p></div></section></div><footer class="ads-legal-footer" style="background:#222b49;color:rgba(255,255,255,.72);padding:40px 24px 44px;text-align:center;font-family:Inter,sans-serif;font-size:12.5px;line-height:2;"><div>© 2026 Academia Comunica de Mai Pistiner</div><div><a href="mailto:academia@maipistiner.com" style="color:rgba(255,255,255,.88);text-decoration:none">academia@maipistiner.com</a></div><div><a href="https://www.maipistiner.com/terminos" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,.88)">Términos y condiciones</a> &nbsp;·&nbsp; <a href="https://www.maipistiner.com/privacidad" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,.88)">Política de privacidad</a></div></footer></div>
+<script>window.ACMP_TRACKING = {
+ "enabled": true,
+ "page_key": "ingles-nivel-avanzado",
+ "output_html": "ingles-nivel-avanzado-ads.html",
+ "funnel": "intensivo_ingles_julio",
+ "course_level": "C1",
+ "course": "intensivo-ingles-c1",
+ "product_key": "intensivo-ingles-c1",
+ "product": {
+  "meta_content_id": "PENDIENTE",
+  "content_name": "Inglés Nivel Avanzado (C1)",
+  "content_category": "course",
+  "currency": "ARS",
+  "value": 0,
+  "course_key": "intensivo-ingles-c1"
+ },
+ "product_missing": true,
+ "events": [
+  "view_content",
+  "view_price",
+  "click_whatsapp",
+  "click_checkout",
+  "click_upsell"
+ ],
+ "selectors": {
+  "price": "#precio, #comprar, .acmp-buy",
+  "form": ".acmp-footer-newsletter, [data-acmp-form]",
+  "upsell": "#acmp-programa-upsell, .acmp-buy-card.is-combo"
+ },
+ "intersection_threshold": 0.45,
+ "checkout_href_contains": [],
+ "upsell": {}
+};</script>
+<script src="https://www.academia-comunica.com/js/shared/tracking-academia.js" defer></script>
+<script>(function(){
+  'use strict';
+  // Acordeones <details> nativos (curso-email-marketing): el navegador abre y
+  // cierra solo; la clase is-open (que usa el CSS de arriba) sigue al atributo.
+  document.querySelectorAll('details.acmp-module, details.acmp-faq-item').forEach(function(d){
+    d.classList.toggle('is-open', d.open);
+    d.addEventListener('toggle', function(){ d.classList.toggle('is-open', d.open); });
+  });
+  function exclusiveToggle(el, sel){
+    var open = el.classList.contains('is-open');
+    var parent = el.parentElement;
+    if (parent) parent.querySelectorAll(sel).forEach(function(x){ x.classList.remove('is-open'); });
+    if (!open) el.classList.add('is-open');
+  }
+  document.addEventListener('click', function(e){
+    var t = e.target;
+    var mod = t.closest && t.closest('.acmp-module');
+    if (mod) { if (mod.tagName !== 'DETAILS') exclusiveToggle(mod, '.acmp-module'); return; }
+    var faq = t.closest && t.closest('.acmp-faq-item');
+    if (faq) { if (faq.tagName !== 'DETAILS') exclusiveToggle(faq, '.acmp-faq-item'); return; }
+    var burger = t.closest && t.closest('.acmp-nav-burger, .acmp-nav-mobile-close');
+    if (burger) { var nav = burger.closest('.acmp-nav'); if (nav) nav.classList.toggle('is-open'); return; }
+    var acc = t.closest && t.closest('.acmp-nav-mobile-accordion-toggle');
+    if (acc) { var box = acc.closest('.acmp-nav-mobile-accordion'); if (box) box.classList.toggle('is-open'); return; }
+    var dd = t.closest && t.closest('.acmp-nav-dropdown-toggle');
+    if (dd) { var d = dd.closest('.acmp-nav-dropdown'); if (d) d.classList.toggle('is-open'); return; }
+  });
+  document.querySelectorAll('.acmp-nav-dropdown').forEach(function(d){
+    d.addEventListener('mouseenter', function(){ d.classList.add('is-open'); });
+    d.addEventListener('mouseleave', function(){ d.classList.remove('is-open'); });
+  });
+  // Carrusel "la academia en acción": todas las fotos están en el DOM,
+  // el runtime pagina (3 por página desktop, 1 mobile) y rearma los dots.
+  // Puede haber más de un carrusel (english-for-impact: Mai y Delfi) y los
+  // controles vienen con dos shapes: .acmp-accion-ctrls o .liq-accion-nav.
+  document.querySelectorAll('.liq-accion-grid').forEach(function(grid){
+    var scope = grid.closest('section') || grid.parentElement;
+    var ctrls = scope && scope.querySelector('.acmp-accion-ctrls, .liq-accion-nav');
+    if (!ctrls) return;
+    var items = Array.prototype.slice.call(grid.children);
+    var arrows = Array.prototype.filter.call(ctrls.querySelectorAll('button'), function(b){ return !/(^|s)(acmp|liq)-accion-dot(s|$)/.test(b.className); });
+    var prevBtn = arrows[0], nextBtn = arrows[arrows.length - 1];
+    var page = 0;
+    function per(){ return window.matchMedia('(max-width: 768px)').matches ? 1 : 3; }
+    function pages(){ return Math.max(1, Math.ceil(items.length / per())); }
+    function render(){
+      var p = per(), total = pages();
+      page = Math.max(0, Math.min(page, total - 1));
+      items.forEach(function(el, i){ el.style.display = (i >= page*p && i < page*p + p) ? '' : 'none'; });
+      ctrls.querySelectorAll('.acmp-accion-dot, .liq-accion-dot').forEach(function(d){ d.remove(); });
+      for (var i = total - 1; i >= 0; i--) (function(i){
+        var dot = document.createElement('button');
+        dot.type = 'button';
+        dot.className = 'acmp-accion-dot' + (i === page ? ' is-active' : '');
+        dot.setAttribute('aria-label', 'Página ' + (i + 1));
+        dot.style.cssText = 'width:8px;height:8px;border-radius:50%;border:none;cursor:pointer;';
+        dot.addEventListener('click', function(){ page = i; render(); });
+        if (prevBtn) prevBtn.insertAdjacentElement('afterend', dot); else ctrls.appendChild(dot);
+      })(i);
+    }
+    if (prevBtn) prevBtn.addEventListener('click', function(){ page--; render(); });
+    if (nextBtn && nextBtn !== prevBtn) nextBtn.addEventListener('click', function(){ page++; render(); });
+    window.addEventListener('resize', render);
+    render();
+  });
+})();</script>
+<script>(function(){
+  'use strict';
+  document.querySelectorAll('.acmp-carousel').forEach(function(car){
+    var track = car.querySelector('.acmp-carousel-track');
+    var n = car.querySelectorAll('.acmp-carousel-slide').length;
+    if (!track || n < 2) return;
+    var dots = car.querySelectorAll('.acmp-carousel-dot');
+    var i = 0;
+    function go(k){
+      i = ((k % n) + n) % n;
+      track.style.transform = 'translateX(-' + (i * 100) + '%)';
+      dots.forEach(function(d, j){ d.classList.toggle('is-active', j === i); });
+    }
+    var prev = car.querySelector('.acmp-carousel-prev'), next = car.querySelector('.acmp-carousel-next');
+    if (prev) prev.addEventListener('click', function(){ go(i - 1); });
+    if (next) next.addEventListener('click', function(){ go(i + 1); });
+    dots.forEach(function(d, j){ d.addEventListener('click', function(){ go(j); }); });
+    setInterval(function(){ go(i + 1); }, 4500);
+  });
+  document.querySelectorAll('.acmp-resenas-track').forEach(function(track){
+    var sec = track.closest('section') || track.parentElement.parentElement;
+    var vp = sec.querySelector('.acmp-resenas-viewport');
+    var pages = sec.querySelectorAll('.acmp-resenas-page');
+    var total = pages.length;
+    if (total < 2) return;
+    var dots = sec.querySelectorAll('.acmp-resenas-dot');
+    var navs = sec.querySelectorAll('.acmp-resenas-nav');
+    var counter = sec.querySelector('.acmp-resenas-counter');
+    var page = 0;
+    function measure(){ if (vp && pages[page]) vp.style.height = pages[page].getBoundingClientRect().height + 'px'; }
+    function go(k){
+      page = ((k % total) + total) % total;
+      track.style.transform = 'translateX(-' + (page * 100) + '%)';
+      pages.forEach(function(p, j){ p.setAttribute('aria-hidden', j !== page ? 'true' : 'false'); });
+      dots.forEach(function(d, j){ d.classList.toggle('is-active', j === page); });
+      if (counter) counter.textContent = (page + 1) + ' / ' + total;
+      measure();
+    }
+    if (navs[0]) navs[0].addEventListener('click', function(){ go(page - 1); });
+    if (navs.length > 1) navs[navs.length - 1].addEventListener('click', function(){ go(page + 1); });
+    dots.forEach(function(d, j){ d.addEventListener('click', function(){ go(j); }); });
+    window.addEventListener('resize', measure);
+    setTimeout(measure, 300);
+    measure();
+  });
+  document.querySelectorAll('.acmp-certs-cards[data-acmp-certs]').forEach(function(box){
+    var sec = box.closest('section') || box.parentElement.parentElement;
+    var cards = box.querySelectorAll('.acmp-certs-card');
+    var dots = sec.querySelectorAll('.acmp-certs-dot');
+    var n = cards.length;
+    if (n < 2) return;
+    var arrows = sec.querySelectorAll('.acmp-certs-arrow');
+    var active = 0;
+    function render(){
+      cards.forEach(function(c, j){
+        c.style.display = Math.abs(j - active) > 2 ? 'none' : '';
+        c.classList.toggle('is-active', j === active);
+      });
+      dots.forEach(function(d, j){ d.classList.toggle('is-active', j === active); });
+    }
+    function go(k){ active = ((k % n) + n) % n; render(); }
+    cards.forEach(function(c, j){ c.addEventListener('click', function(){ if (j !== active) go(j); }); });
+    dots.forEach(function(d, j){ d.addEventListener('click', function(){ go(j); }); });
+    if (arrows[0]) arrows[0].addEventListener('click', function(){ go(active - 1); });
+    if (arrows.length > 1) arrows[arrows.length - 1].addEventListener('click', function(){ go(active + 1); });
+    setInterval(function(){ go(active + 1); }, 2000);
+    render();
+  });
+  document.querySelectorAll('.acmp-vtest-wrap[data-acmp-videos]').forEach(function(wrap){
+    var list = wrap.getAttribute('data-acmp-videos').split(' ');
+    var cards = Array.prototype.slice.call(wrap.querySelectorAll('.acmp-vtest-card'));
+    var n = list.length;
+    if (n < 2 || !cards.length) return;
+    var dots = wrap.querySelectorAll('.acmp-vtest-dot');
+    var arrows = wrap.querySelectorAll('.acmp-vtest-arrow');
+    var mid = Math.floor(cards.length / 2);
+    var active = 0;
+    var PLAY = '<polygon points="5,3 19,12 5,21"></polygon>';
+    var PAUSE = '<rect x="5" y="4" width="4" height="16" rx="1"></rect><rect x="15" y="4" width="4" height="16" rx="1"></rect>';
+    function idx(k){ return (((active + k - mid) % n) + n) % n; }
+    function mark(card, playing){
+      var b = card.querySelector('.acmp-vtest-btn');
+      if (!b) return;
+      b.classList.toggle('is-playing', playing);
+      b.setAttribute('aria-label', playing ? 'Pausar' : 'Reproducir');
+      var svg = b.querySelector('svg');
+      if (svg) svg.innerHTML = playing ? PAUSE : PLAY;
+    }
+    function render(){
+      cards.forEach(function(card, k){
+        var v = card.querySelector('video');
+        if (v) {
+          v.pause();
+          if (v.getAttribute('src') !== list[idx(k)]) v.setAttribute('src', list[idx(k)]);
+          else if (v.currentTime) v.currentTime = 0;
+        }
+        mark(card, false);
+      });
+      dots.forEach(function(d, j){ d.classList.toggle('is-active', j === active); });
+    }
+    function go(k){ active = ((k % n) + n) % n; render(); }
+    cards.forEach(function(card, k){
+      var v = card.querySelector('video');
+      if (v) v.addEventListener('ended', function(){ mark(card, false); });
+      card.addEventListener('click', function(){
+        if (k !== mid) { go(idx(k)); return; }
+        if (!v) return;
+        if (v.paused) { v.play(); mark(card, true); } else { v.pause(); mark(card, false); }
+      });
+    });
+    dots.forEach(function(d, j){ d.addEventListener('click', function(){ go(j); }); });
+    if (arrows[0]) arrows[0].addEventListener('click', function(){ go(active - 1); });
+    if (arrows.length > 1) arrows[arrows.length - 1].addEventListener('click', function(){ go(active + 1); });
+  });
+})();</script>
+<script>(function(){
+  'use strict';
+  var PARAMS = ["utm_source","utm_medium","utm_campaign","utm_content","utm_term","fbclid","gclid"];
+  var COURSE_SLUG = "";
+  var HOSTS = ["academia.maipistiner.com","wisboo.com"];
+  var qs = new URLSearchParams(location.search);
+  function extend(href){
+    var u; try { u = new URL(href, location.href); } catch (e) { return href; }
+    PARAMS.forEach(function(k){ if (qs.has(k) && !u.searchParams.has(k)) u.searchParams.set(k, qs.get(k)); });
+    // el cupón viaja solo al checkout del curso (salvo coupons.apply_to_combo).
+    // Un link que YA trae cupón es una oferta cerrada (una card de precio fijo):
+    // pisarlo con el de la URL cobraría un precio distinto al que se mostró.
+    if (window.__ACMP_COUPON_CODE && !u.searchParams.has('coupon')
+        && HOSTS.some(function(h){ return u.hostname === h || u.hostname.slice(-(h.length + 1)) === '.' + h; })
+        && (false || (COURSE_SLUG && u.pathname.indexOf(COURSE_SLUG) !== -1)))
+      u.searchParams.set('coupon', window.__ACMP_COUPON_CODE);
+    return u.href;
+  }
+  // Qué links se procesan. Cualquier link a Wisboo es un link de compra: no se
+  // hardcodea /product/ ni /checkout/, porque al cambiar la ruta esto dejaba de
+  // matchear y se perdían EL CUPÓN Y LOS UTMs, sin ningún síntoma visible.
+  var LINK_PATTERNS = ["academia.maipistiner.com/","wisboo.com/","ingles-nivel-avanzado-step2.html","formflow.capogrowth.com/form/b6a8fea3-8316-47c5-9954-fc364dd982d2"];
+  function matches(href){ return LINK_PATTERNS.some(function(p){ return href.indexOf(p) !== -1; }); }
+  function applyAll(){
+    document.querySelectorAll('a[href]').forEach(function(a){
+      var h = a.getAttribute('href') || '';
+      if (matches(h)) a.setAttribute('href', extend(h));
+    });
+  }
+  applyAll(); // el script vive después del contenido: el DOM de arriba ya está parseado
+  document.addEventListener('DOMContentLoaded', applyAll);
+  // la barra sticky de la capa CRO inyecta su CTA después: reescribir al click
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (!a) return;
+    var h = a.getAttribute('href') || '';
+    if (matches(h)) a.setAttribute('href', extend(h));
+  }, true);
+})();</script>
+</body>
+</html>
