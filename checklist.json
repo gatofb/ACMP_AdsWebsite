@@ -1,11 +1,11 @@
 {
-  "generado": "2026-10-01T22:52:57.445Z",
+  "generado": "2026-10-01T22:57:04.610Z",
   "public_base": "https://ads.academia-comunica.com",
   "checklist_url": "https://ads.academia-comunica.com/checklist",
   "ultimo_deploy": "2026-10-01 19:52",
   "totales": {
     "cursos": 13,
-    "landings": 40,
+    "landings": 41,
     "cursos_con_error": 0,
     "paginas_sin_variantes": 11
   },
@@ -80,11 +80,11 @@
           "titulo": "Academia en Inglés — Intensivo en vivo",
           "modo": "static",
           "estado": "OK",
-          "generado": "2026-10-01T22:52:57.205Z",
+          "generado": "2026-10-01T22:57:03.352Z",
           "error": false,
           "avisos": [
             "Fuente Static/academia-ingles-intensivo/index.html · se publica con build-static-page.mjs",
-            "Reporte: OK · 2026-10-01 22:52 (log/ads-academia-ingles-intensivo.md)"
+            "Reporte: OK · 2026-10-01 22:57 (log/ads-academia-ingles-intensivo.md)"
           ],
           "variantes": [
             {
@@ -95,8 +95,33 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/academia-ingles/academia-ingles-intensivo",
-              "size": "93 kb",
-              "updated": "2026-10-01T22:52:56.058Z"
+              "size": "96 kb",
+              "updated": "2026-10-01T22:57:02.503Z"
+            }
+          ]
+        },
+        {
+          "key": "academia-ingles-intensivo-b",
+          "titulo": "Academia en Inglés — Intensivo en vivo (versión B: precio desde $419.250)",
+          "modo": "static",
+          "estado": "OK",
+          "generado": "2026-10-01T22:57:04.484Z",
+          "error": false,
+          "avisos": [
+            "Fuente Static/academia-ingles-intensivo/index.html · se publica con build-static-page.mjs",
+            "Reporte: OK · 2026-10-01 22:57 (log/ads-academia-ingles-intensivo-b.md)"
+          ],
+          "variantes": [
+            {
+              "variant": "static",
+              "label": "Página estática (fuente en Static/)",
+              "file": "academia-ingles-intensivo-b.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/academia-ingles/academia-ingles-intensivo-b",
+              "size": "97 kb",
+              "updated": "2026-10-01T22:57:03.564Z"
             }
           ]
         }
