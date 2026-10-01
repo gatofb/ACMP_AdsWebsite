@@ -494,6 +494,18 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
     .faq-item.open .faq-answer { max-height: 1400px; padding-bottom: 22px; }
     .faq-answer ul { padding-left: 18px; margin-top: 10px; }
     .faq-answer li { margin-bottom: 6px; }
+    /* Condiciones de cursada: el bloque legal que cierra la FAQ en www */
+    .faq-cond {
+      margin-top: 28px; padding: 20px 22px; background: var(--white);
+      border: 1px solid var(--gray-200); border-radius: 14px;
+      font-size: 13px; line-height: 1.5; color: var(--gray-600);
+    }
+    .faq-cond h3 { font-family: var(--font-body); font-weight: 700; font-size: 13px; color: var(--dark-blue); margin: 0 0 8px; }
+    .faq-cond p { margin: 0 0 9px; }
+    .faq-cond p:last-child { margin-bottom: 0; }
+    .faq-cond a { color: var(--orange-primary); font-weight: 600; text-decoration: none; }
+    .faq-cond a:hover { text-decoration: underline; text-underline-offset: 2px; }
+    @media (max-width: 720px) { .faq-cond { padding: 16px 18px; font-size: 12px; } .faq-cond h3 { font-size: 12px; } }
 
     /* ── CTA Strip ── */
     .cta-strip {
@@ -1033,7 +1045,17 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
             <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
           <div class="faq-answer">
-            Los cupos de este grupo están <strong>agotados en todos los niveles y turnos</strong>. Anotate en la <a href="https://formflow.capogrowth.com/form/2c50b097-d34f-47ee-8cef-850b5f38f310" target="_blank" rel="noopener noreferrer" style="color: var(--orange-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 2px;">lista de espera</a> y te avisamos primero cuando abra el próximo grupo. Todos los horarios se dictan en <strong>GMT-3 (Buenos Aires)</strong>; las equivalencias por país están en la pregunta «¿Qué días y horarios tendrá el intensivo?».
+            Los cupos de este grupo están <strong>agotados en los cuatro niveles y en todos los turnos</strong>. Anotate en la <a href="https://formflow.capogrowth.com/form/2c50b097-d34f-47ee-8cef-850b5f38f310" target="_blank" rel="noopener noreferrer" style="color: var(--orange-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 2px;">lista de espera</a> con el botón «ANOTAME EN LISTA DE ESPERA» y te avisamos primero cuando abra el próximo grupo, antes de publicarla. Todos los horarios son en <strong>GMT-3 (Buenos Aires)</strong>; las equivalencias por país están en la pregunta «¿Qué días y horarios tendrá el intensivo?».
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            ¿Las clases son online o presencial?
+            <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          </button>
+          <div class="faq-answer">
+            Las clases son <strong>100% online y en vivo</strong> por Google Meet.
           </div>
         </div>
 
@@ -1045,11 +1067,12 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
           <div class="faq-answer">
             Los días serán los <strong>lunes y miércoles</strong>, dos veces por semana. Cada clase dura <strong>1 hora y media</strong>. Los Google Meet se dictan en horario <strong>GMT-3 (Buenos Aires, Argentina)</strong>:
             <ul style="margin-top:10px">
-              <li><strong>Mañana:</strong> 8:00 – 9:30 hs <span style="color:#b3261e;font-weight:700;">· Agotado</span></li>
-              <li><strong>Medio día:</strong> 13:00 – 14:30 hs <span style="color:#b3261e;font-weight:700;">· Agotado</span></li>
-              <li><strong>Tarde:</strong> 18:30 – 20:00 hs <span style="color:#b3261e;font-weight:700;">· Agotado</span></li>
-              <li><strong>Noche</strong> 🌃<strong>:</strong> 20:00 – 21:30 hs <span style="color:#b3261e;font-weight:700;">· Agotado</span></li>
+              <li><strong>Mañana:</strong> 8:00 – 9:30 hs <span style="color:#b3261e;font-weight:700;">(agotado)</span></li>
+              <li><strong>Mediodía:</strong> 13:00 – 14:30 hs <span style="color:#b3261e;font-weight:700;">(agotado)</span></li>
+              <li><strong>Tarde:</strong> 18:30 – 20:00 hs <span style="color:#b3261e;font-weight:700;">(agotado)</span></li>
+              <li><strong>Noche:</strong> 20:00 – 21:30 hs <span style="color:#b3261e;font-weight:700;">(agotado)</span></li>
             </ul>
+            <p style="margin-top:10px">En este grupo todos los turnos están agotados: sumate a la lista de espera y te avisamos cuando abra el próximo.</p>
             <p style="margin-top:10px"><strong>Referencia en otros países de Latinoamérica</strong> (hora de inicio de cada turno):</p>
             <ul>
               <li>🇨🇴 <strong>Colombia:</strong> 6:00 · 11:00 · 16:30 · 18:00</li>
@@ -1068,7 +1091,7 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
             <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
           <div class="faq-answer">
-            <strong>24 clases en vivo</strong> por Google Meet, certificado de participación, soporte del equipo, cursos bonificados de Oratoria y English for Impact.
+            <strong>24 clases online en vivo</strong> por Google Meet, certificado de participación, soporte del equipo, cursos bonificados de Oratoria y English for Impact.
           </div>
         </div>
 
@@ -1077,7 +1100,9 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
             ¿Cuánto dura el intensivo?
             <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
-          <div class="faq-answer">Tiene una duración de <strong>3 meses</strong>, con clases 2 veces por semana. En total son <strong>24 clases en vivo</strong>.</div>
+          <div class="faq-answer">
+            Tiene una duración de <strong>3 meses</strong>, con clases 2 veces por semana. En total son <strong>24 clases en vivo</strong>.
+          </div>
         </div>
 
         <div class="faq-item">
@@ -1085,7 +1110,9 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
             ¿Puedo pagar en cuotas?
             <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
-          <div class="faq-answer">Sí. Podés pagar en <strong>hasta 3 cuotas sin interés</strong>.</div>
+          <div class="faq-answer">
+            Sí. Podés pagar en <strong>3 cuotas sin interés</strong>.
+          </div>
         </div>
 
         <div class="faq-item">
@@ -1093,7 +1120,10 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
             ¿Qué pasa si no me gusta el intensivo?
             <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
-          <div class="faq-answer">Confiamos plenamente en la propuesta, pero te damos una <strong>garantía total</strong>: si después de la primera clase no te sentís cómodo/a, te devolvemos el 100% de tu dinero, sin preguntas.</div>
+          <div class="faq-answer">
+            Confiamos plenamente en la propuesta, pero igual tenés respaldo:
+            <p style="margin-top:10px">Si compraste el curso online, podés cancelarlo dentro de los <strong>10 días corridos</strong> desde el inicio del curso. Además, si el curso no cumple con lo prometido o tenés algún inconveniente con el servicio, podés solicitar una revisión de tu caso.</p>
+          </div>
         </div>
 
         <div class="faq-item">
@@ -1102,12 +1132,13 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
             <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
           <div class="faq-answer">
-            Sí. Al finalizar recibirás tres certificados:
+            Sí. Al finalizar recibirás:
             <ul>
-              <li>Certificado de participación del Intensivo de Inglés</li>
+              <li>Certificado del Intensivo de Inglés</li>
               <li>Certificado del curso de Oratoria (incluido)</li>
               <li>Certificado de English for Impact (incluido)</li>
             </ul>
+            <p style="margin-top:10px">Tres certificados en total.</p>
           </div>
         </div>
 
@@ -1116,7 +1147,9 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
             ¿Qué pasa si falto a una clase?
             <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
-          <div class="faq-answer">No pasa nada. Si sabés con anticipación que vas a faltar, avisanos y te haremos llegar la clase grabada. Además, si notamos tu ausencia en dos clases, la coordinadora se pondrá en contacto con vos para acompañarte.</div>
+          <div class="faq-answer">
+            No pasa nada. Si sabés con anticipación que vas a faltar por vacaciones de invierno o por algún compromiso personal, avisanos y te haremos llegar la clase grabada. Además, si notamos tu ausencia en dos clases, la coordinadora del intensivo se pondrá en contacto con vos para saber qué ocurrió y acompañarte para mejorar tu experiencia y continuidad.
+          </div>
         </div>
 
         <div class="faq-item">
@@ -1124,7 +1157,17 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
             ¿Cómo sé cuál es mi nivel?
             <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
-          <div class="faq-answer">Actualmente ofrecemos <strong>cuatro intensivos</strong>: Nivel A1, A2, B1 y C1. Si no sabés cuál es tu nivel, podés hacer el <a href="https://formflow.capogrowth.com/form/f3ca5050-d704-4c49-8554-b8bcbd1e48b4" target="_blank" rel="noopener noreferrer" style="color: var(--orange-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 2px;">Test de Inglés gratuito</a>. Y no te preocupes: antes de comenzar, la coordinadora te enviará un test de nivelación para asegurarse de que estés en el grupo correcto.</div>
+          <div class="faq-answer">
+            Actualmente ofrecemos <strong>cuatro intensivos</strong>: Nivel Cero, Pre-intermedio, Intermedio y Avanzado. Si no sabés cuál es tu nivel, podés hacer el <a href="https://formflow.capogrowth.com/form/f3ca5050-d704-4c49-8554-b8bcbd1e48b4" target="_blank" rel="noopener noreferrer" style="color: var(--orange-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 2px;">Test de Inglés gratuito</a>. Y no te preocupes: antes de comenzar, la coordinadora te enviará un test de nivelación para asegurarse de que estés en el grupo correcto.
+          </div>
+        </div>
+
+        <div class="faq-cond">
+          <h3>Condiciones de cursada</h3>
+          <p>El Intensivo de Inglés es un programa de entrenamiento en comunicación oral. No constituye una certificación oficial de nivel ni acredita la obtención de un nivel determinado del Marco Común Europeo de Referencia (MCER). El programa no incluye instancias de evaluación formal: el seguimiento se realiza mediante tareas de práctica corregidas en clase y devoluciones del profesor.</p>
+          <p>Al finalizar la cursada se emite un certificado de participación, que acredita la cursada y requiere un mínimo del 60% de asistencia a las clases en vivo, conforme a los Términos y Condiciones.</p>
+          <p>El progreso de cada alumno depende de su nivel inicial, su asistencia, su participación oral en clase y su práctica fuera de ella. La Academia se compromete a dictar la totalidad de las clases previstas, mantener el grupo dentro del cupo informado, brindar tareas con corrección y ofrecer seguimiento durante toda la cursada.</p>
+          <p>La asistencia y la participación se registran por clase. Todo planteo relativo al nivel asignado o al avance debe canalizarse durante la cursada al <a href="https://wa.me/5491130194851" target="_blank" rel="noopener noreferrer">+54 9 11 3019-4851</a>.</p>
         </div>
 
       </div>
