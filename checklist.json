@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-01T23:03:27.786Z",
+  "generado": "2026-10-02T15:17:31.977Z",
   "public_base": "https://ads.academia-comunica.com",
   "checklist_url": "https://ads.academia-comunica.com/checklist",
   "ultimo_deploy": "2026-10-01 20:03",
@@ -23,10 +23,10 @@
           "titulo": null,
           "modo": "lead",
           "estado": "OK",
-          "generado": "2026-10-01T23:01:52.828Z",
+          "generado": "2026-10-02T15:15:26.620Z",
           "error": false,
           "avisos": [
-            "Reporte: OK · 2026-10-01 23:01 (log/ads-academia-ingles.md)"
+            "Reporte: OK · 2026-10-02 15:15 (log/ads-academia-ingles.md)"
           ],
           "variantes": [
             {
@@ -37,8 +37,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/academia-ingles/academia-ingles-ads",
-              "size": "106 kb",
-              "updated": "2026-10-01T23:01:52.069Z"
+              "size": "104 kb",
+              "updated": "2026-10-02T15:15:24.914Z"
             },
             {
               "variant": "form",
@@ -48,8 +48,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/academia-ingles/academia-ingles-form",
-              "size": "106 kb",
-              "updated": "2026-10-01T23:01:52.113Z"
+              "size": "104 kb",
+              "updated": "2026-10-02T15:15:24.972Z"
             },
             {
               "variant": "step1",
@@ -80,11 +80,11 @@
           "titulo": "Academia en Inglés — Intensivo en vivo",
           "modo": "static",
           "estado": "OK",
-          "generado": "2026-10-01T23:03:26.406Z",
+          "generado": "2026-10-02T15:15:18.617Z",
           "error": false,
           "avisos": [
             "Fuente Static/academia-ingles-intensivo/index.html · se publica con build-static-page.mjs",
-            "Reporte: OK · 2026-10-01 23:03 (log/ads-academia-ingles-intensivo.md)"
+            "Reporte: OK · 2026-10-02 15:15 (log/ads-academia-ingles-intensivo.md)"
           ],
           "variantes": [
             {
@@ -95,21 +95,21 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/academia-ingles/academia-ingles-intensivo",
-              "size": "96 kb",
-              "updated": "2026-10-01T23:03:25.202Z"
+              "size": "97 kb",
+              "updated": "2026-10-02T15:15:15.616Z"
             }
           ]
         },
         {
           "key": "academia-ingles-intensivo-b",
-          "titulo": "Academia en Inglés — Intensivo en vivo (versión B: precio desde $419.250)",
+          "titulo": "Academia en Inglés — Intensivo en vivo (versión B: precio $419.300 con 30% OFF)",
           "modo": "static",
           "estado": "OK",
-          "generado": "2026-10-01T23:03:27.498Z",
+          "generado": "2026-10-02T15:15:19.888Z",
           "error": false,
           "avisos": [
             "Fuente Static/academia-ingles-intensivo/index.html · se publica con build-static-page.mjs",
-            "Reporte: OK · 2026-10-01 23:03 (log/ads-academia-ingles-intensivo-b.md)"
+            "Reporte: OK · 2026-10-02 15:15 (log/ads-academia-ingles-intensivo-b.md)"
           ],
           "variantes": [
             {
@@ -120,8 +120,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/academia-ingles/academia-ingles-intensivo-b",
-              "size": "97 kb",
-              "updated": "2026-10-01T23:03:26.619Z"
+              "size": "101 kb",
+              "updated": "2026-10-02T15:15:18.840Z"
             }
           ]
         }
@@ -393,10 +393,10 @@
           "titulo": null,
           "modo": "venta",
           "estado": "OK · 3 warning(s)",
-          "generado": "2026-10-01T23:02:01.495Z",
+          "generado": "2026-10-01T23:31:27.761Z",
           "error": false,
           "avisos": [
-            "Reporte: OK · 3 warning(s) · 2026-10-01 23:02 (log/ads-curso-oratoria.md)"
+            "Reporte: OK · 3 warning(s) · 2026-10-01 23:31 (log/ads-curso-oratoria.md)"
           ],
           "variantes": [
             {
@@ -408,7 +408,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-oratoria/curso-oratoria-ads",
               "size": "121 kb",
-              "updated": "2026-10-01T23:02:00.017Z"
+              "updated": "2026-10-01T23:31:27.245Z"
             },
             {
               "variant": "form",
@@ -419,7 +419,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-oratoria/curso-oratoria-form",
               "size": "108 kb",
-              "updated": "2026-10-01T23:02:00.059Z"
+              "updated": "2026-10-01T23:31:27.317Z"
             },
             {
               "variant": "step1",
@@ -430,7 +430,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-oratoria/curso-oratoria-step1",
               "size": "113 kb",
-              "updated": "2026-10-01T23:02:00.091Z"
+              "updated": "2026-10-01T23:31:27.346Z"
             },
             {
               "variant": "step2",
@@ -441,7 +441,7 @@
               "destino": false,
               "url": "https://ads.academia-comunica.com/curso-oratoria/curso-oratoria-step2",
               "size": "17 kb",
-              "updated": "2026-10-01T23:02:00.091Z"
+              "updated": "2026-10-01T23:31:27.346Z"
             }
           ]
         },
@@ -708,10 +708,10 @@
           "titulo": null,
           "modo": "lead",
           "estado": "OK",
-          "generado": "2026-10-01T23:02:08.048Z",
+          "generado": "2026-10-02T15:15:36.592Z",
           "error": false,
           "avisos": [
-            "Reporte: OK · 2026-10-01 23:02 (log/ads-ingles-nivel-avanzado.md)"
+            "Reporte: OK · 2026-10-02 15:15 (log/ads-ingles-nivel-avanzado.md)"
           ],
           "variantes": [
             {
@@ -722,8 +722,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-avanzado/ingles-nivel-avanzado-ads",
-              "size": "145 kb",
-              "updated": "2026-10-01T23:02:07.127Z"
+              "size": "144 kb",
+              "updated": "2026-10-02T15:15:34.866Z"
             },
             {
               "variant": "form",
@@ -733,8 +733,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-avanzado/ingles-nivel-avanzado-form",
-              "size": "145 kb",
-              "updated": "2026-10-01T23:02:07.181Z"
+              "size": "144 kb",
+              "updated": "2026-10-02T15:15:34.940Z"
             },
             {
               "variant": "step1",
@@ -772,10 +772,10 @@
           "titulo": null,
           "modo": "lead",
           "estado": "OK",
-          "generado": "2026-10-01T23:02:09.717Z",
+          "generado": "2026-10-02T15:15:29.436Z",
           "error": false,
           "avisos": [
-            "Reporte: OK · 2026-10-01 23:02 (log/ads-ingles-nivel-cero.md)"
+            "Reporte: OK · 2026-10-02 15:15 (log/ads-ingles-nivel-cero.md)"
           ],
           "variantes": [
             {
@@ -786,8 +786,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-cero/ingles-nivel-cero-ads",
-              "size": "145 kb",
-              "updated": "2026-10-01T23:02:08.629Z"
+              "size": "144 kb",
+              "updated": "2026-10-02T15:15:27.221Z"
             },
             {
               "variant": "form",
@@ -797,8 +797,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-cero/ingles-nivel-cero-form",
-              "size": "145 kb",
-              "updated": "2026-10-01T23:02:08.682Z"
+              "size": "144 kb",
+              "updated": "2026-10-02T15:15:27.299Z"
             },
             {
               "variant": "step1",
@@ -836,10 +836,10 @@
           "titulo": null,
           "modo": "lead",
           "estado": "OK",
-          "generado": "2026-10-01T23:02:11.379Z",
+          "generado": "2026-10-02T15:15:34.258Z",
           "error": false,
           "avisos": [
-            "Reporte: OK · 2026-10-01 23:02 (log/ads-ingles-nivel-intermedio.md)"
+            "Reporte: OK · 2026-10-02 15:15 (log/ads-ingles-nivel-intermedio.md)"
           ],
           "variantes": [
             {
@@ -850,8 +850,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-intermedio/ingles-nivel-intermedio-ads",
-              "size": "146 kb",
-              "updated": "2026-10-01T23:02:10.292Z"
+              "size": "145 kb",
+              "updated": "2026-10-02T15:15:32.340Z"
             },
             {
               "variant": "form",
@@ -861,8 +861,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-intermedio/ingles-nivel-intermedio-form",
-              "size": "146 kb",
-              "updated": "2026-10-01T23:02:10.347Z"
+              "size": "145 kb",
+              "updated": "2026-10-02T15:15:32.415Z"
             },
             {
               "variant": "step1",
@@ -900,10 +900,10 @@
           "titulo": null,
           "modo": "lead",
           "estado": "OK",
-          "generado": "2026-10-01T23:02:12.944Z",
+          "generado": "2026-10-02T15:15:31.739Z",
           "error": false,
           "avisos": [
-            "Reporte: OK · 2026-10-01 23:02 (log/ads-ingles-nivel-pre-intermedio.md)"
+            "Reporte: OK · 2026-10-02 15:15 (log/ads-ingles-nivel-pre-intermedio.md)"
           ],
           "variantes": [
             {
@@ -914,8 +914,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-pre-intermedio/ingles-nivel-pre-intermedio-ads",
-              "size": "145 kb",
-              "updated": "2026-10-01T23:02:11.944Z"
+              "size": "144 kb",
+              "updated": "2026-10-02T15:15:30.022Z"
             },
             {
               "variant": "form",
@@ -925,8 +925,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-pre-intermedio/ingles-nivel-pre-intermedio-form",
-              "size": "145 kb",
-              "updated": "2026-10-01T23:02:12.000Z"
+              "size": "144 kb",
+              "updated": "2026-10-02T15:15:30.099Z"
             },
             {
               "variant": "step1",

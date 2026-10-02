@@ -20,7 +20,7 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, nofollow" />
   <title>Academia en Inglés — Intensivo en vivo | Academia Comunica de Mai Pistiner</title>
-  <meta name="description" content="Aprendé inglés en vivo con un método enfocado en comunicación real. Lunes y miércoles. Intensivo de Inglés: cupos agotados — anotate en la lista de espera del próximo grupo. Niveles A1, A2, B1 y C1. Academia Comunica." />
+  <meta name="description" content="Aprendé inglés en vivo con un método enfocado en comunicación real. Lunes y miércoles. Nuevo grupo del Intensivo de Inglés: arranca el 18 de noviembre de 2026. Cuatro niveles: Cero, Pre-Intermedio, Intermedio y Avanzado. Academia Comunica." />
 
     
     <script type="text/javascript">
@@ -319,17 +319,69 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
     .level-turnos strong { color: var(--dark-blue); font-family: var(--font-title); font-weight: 700; }
     .level-turnos .emoji { font-size: 16px; }
     @media (max-width: 480px) { .level-turnos { grid-template-columns: 1fr; } }
-    /* Precio "desde": solo lo usa la versión B (Reglas/academia-ingles-intensivo-b.json) */
-    .level-price {
-      font-family: var(--font-title); color: var(--dark-blue);
-      font-size: 14px; font-weight: 600; margin: 0 0 14px;
+    /* ── Bloque de precio (clases precio-*): solo lo usa la versión B
+       (Reglas/academia-ingles-intensivo-b.json). La versión A no lleva este HTML.
+       Acá no se escriben montos ni el texto de la frase: viven en las Reglas de B. ── */
+    .precio-sr {
+      position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+      overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%);
+      white-space: nowrap; border: 0;
     }
-    .level-price strong { font-size: 1.6rem; font-weight: 800; margin: 0 4px; }
-    .hero-price {
-      font-family: var(--font-title); font-weight: 600; font-size: 17px;
-      color: var(--white); margin: 0 0 22px;
+    /* Caja única de cada tarjeta: debajo de los turnos, arriba del botón */
+    .precio-caja {
+      background: var(--dark-blue); color: var(--white);
+      border-radius: 12px; padding: 16px; margin: 0 0 14px;
     }
-    .hero-price strong { font-size: 1.9rem; font-weight: 800; color: var(--yellow-accent); margin: 0 6px; }
+    /* Tachado + descuento + precio final: en una fila si entra; si no, el final baja entero */
+    .precio-monto {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin: 0;
+      color: var(--white);
+    }
+    .precio-lista {
+      font-family: var(--font-body); font-weight: 500; font-size: 15px; line-height: 1.2;
+      color: rgba(255,255,255,0.74);
+      text-decoration: line-through; text-decoration-thickness: 1.5px;
+    }
+    .precio-off {
+      display: inline-flex; align-items: center;
+      background: var(--yellow-accent); color: var(--dark-blue);
+      font-family: var(--font-title); font-weight: 800; font-size: 12px; line-height: 1;
+      letter-spacing: 0.04em; text-transform: uppercase; white-space: nowrap;
+      padding: 5px 9px; border-radius: 999px;
+    }
+    .precio-final {
+      font-family: var(--font-title); font-weight: 800; font-size: 2rem; line-height: 1.05;
+      letter-spacing: -0.02em; white-space: nowrap;
+    }
+    .precio-moneda {
+      font-size: 13px; font-weight: 700; letter-spacing: 0.04em;
+      color: rgba(255,255,255,0.74);
+    }
+    .precio-hora {
+      border-top: 1px solid rgba(255,255,255,0.16); margin-top: 12px; padding-top: 12px;
+    }
+    .precio-frase {
+      font-family: var(--font-title); font-weight: 700; font-size: 16px; line-height: 1.3;
+      color: var(--white); margin: 0;
+    }
+    /* Cada mitad de la frase baja entera: nunca queda una palabra suelta */
+    .precio-frase > span { display: inline-block; }
+    .precio-valor-hora {
+      font-family: var(--font-body); font-size: 13px; line-height: 1.4;
+      color: rgba(255,255,255,0.78); margin: 4px 0 0;
+    }
+    .precio-valor-hora strong { color: var(--yellow-accent); font-weight: 600; }
+    /* Pantallas angostas: se le da aire a la frase achicando el padding lateral */
+    @media (max-width: 374px) { .precio-caja { padding: 16px 14px; } }
+    @media (max-width: 359px) {
+      .precio-caja { padding: 14px 12px; }
+      .precio-frase { font-size: 15px; }
+      .precio-valor-hora { font-size: 12px; }
+      .precio-emoji { display: none; }
+    }
+    /* Hero (fondo oscuro): las mismas piezas sin caja, arriba de los botones */
+    .precio-hero { margin: 0 0 22px; }
+    .precio-hero .precio-frase { margin-top: 10px; }
     .btn-level {
       display: inline-flex; align-items: center; justify-content: center; gap: 7px;
       padding: 12px 20px; border-radius: 10px;
@@ -604,8 +656,8 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
 
   <!-- Promo Banner -->
   <div class="promo-banner">
-    <span id="promo-text">🎙 <strong>Intensivo de Inglés</strong> — ¡Cupos agotados! Sumate a la lista de espera del próximo grupo — </span>
-    <a href="https://formflow.capogrowth.com/form/2c50b097-d34f-47ee-8cef-850b5f38f310" target="_blank" rel="noopener noreferrer">ANOTAME EN LISTA DE ESPERA</a>
+    <span id="promo-text">🎙 <strong>Nuevo Intensivo de Inglés</strong> — arranca el <strong>miércoles 18 de noviembre</strong> — </span>
+    <a href="#niveles" id="promo-link">elegí tu nivel →</a>
   </div>
 
   <!-- Hero -->
@@ -617,7 +669,15 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
           <h1>Aprendé inglés:<br>pero no <em>como en todos lados</em></h1>
           <p class="hero-headline2">Un método enfocado en comunicación real: entrenás hablando desde la primera clase.</p>
           <p class="hero-desc">La Academia ofrece cursos de inglés para personas que están empezando o para quienes ya tienen base y necesitan ganar fluidez profesional. Con clases en vivo y programas de práctica real, aprendés a comunicarte sin traducir, sin miedo y sin depender de la gramática perfecta.</p>
-          <p class="hero-price">Desde<strong>$419.250</strong>ARS</p>
+          <div class="precio-hero">
+            <p class="precio-monto">
+              <span class="precio-sr">Precio de lista: </span><s class="precio-lista">$599.000</s>
+              <span class="precio-off" aria-hidden="true">30% OFF</span>
+              <strong class="precio-final"><span class="precio-sr">Precio con 30% de descuento: </span>$419.300 <span class="precio-moneda" aria-hidden="true">ARS</span><span class="precio-sr">pesos argentinos.</span></strong>
+            </p>
+            <p class="precio-frase"><span>Tu hora de inglés en vivo</span> <span>sale menos que una pizza <span class="precio-emoji" aria-hidden="true">🍕</span></span></p>
+            <p class="precio-valor-hora">Hasta <strong>$11.646</strong> por hora de clase</p>
+          </div>
           <div class="hero-ctas">
             <a class="btn-primary" href="#niveles">
               Elegir mi nivel
@@ -639,14 +699,14 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
       <div class="section-header text-center">
         <div class="section-label">Elegí tu nivel</div>
         <h2 class="section-title">Conocé tu nivel para elegir<br>la opción que más se adapte</h2>
-        <p class="section-lead"><strong>Los cupos de este grupo están agotados</strong> en los cuatro niveles y todos los turnos. Anotate en la lista de espera y te avisamos primero cuando abra el próximo grupo. Cuatro intensivos en vivo, dos veces por semana, 3 meses de duración.</p>
+        <p class="section-lead"><strong>El nuevo grupo arranca el miércoles 18 de noviembre</strong> · clases lunes y miércoles. Hay cupos en los cuatro niveles. Cuatro intensivos en vivo, dos veces por semana, 3 meses de duración.</p>
       </div>
       <div class="levels-grid">
 
-        <!-- A1 -->
+        <!-- Nivel Cero -->
         <div class="level-card">
           <span class="level-badge badge-live">🔴 En vivo · Google Meet</span>
-          <div class="level-name">Nivel Cero — A1</div>
+          <div class="level-name">Nivel Cero</div>
           <div class="level-tagline">Empezás desde lo básico y hablás desde la primera clase.</div>
           <hr class="level-divider">
           <p class="level-desc">Nunca hablaste inglés (o muy poco, pero no funcionó). Aprendés a comunicarte sin depender de la traducción, con ejercicios orales desde el día uno.</p>
@@ -654,19 +714,28 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
             <li><span class="emoji" aria-hidden="true">🌅</span><span><strong>Mañana</strong> 8:00 – 9:30 hs</span></li>
             <li><span class="emoji" aria-hidden="true">☀️</span><span><strong>Mediodía</strong> 13:00 – 14:30 hs</span></li>
             <li><span class="emoji" aria-hidden="true">🌇</span><span><strong>Tarde</strong> 18:30 – 20:00 hs</span></li>
-            <li><span class="emoji" aria-hidden="true">🌙</span><span><strong>Noche</strong> 20:00 – 21:30 hs</span></li>
           </ul>
-          <div class="level-price">Desde<strong>$419.250</strong>ARS</div>
-          <a class="btn-level utm-forward" href="https://formflow.capogrowth.com/form/2c50b097-d34f-47ee-8cef-850b5f38f310" target="_blank" rel="noopener noreferrer">
-            ANOTAME EN LISTA DE ESPERA
+          <div class="precio-caja">
+            <p class="precio-monto">
+              <span class="precio-sr">Precio de lista: </span><s class="precio-lista">$599.000</s>
+              <span class="precio-off" aria-hidden="true">30% OFF</span>
+              <strong class="precio-final"><span class="precio-sr">Precio con 30% de descuento: </span>$419.300 <span class="precio-moneda" aria-hidden="true">ARS</span><span class="precio-sr">pesos argentinos.</span></strong>
+            </p>
+            <div class="precio-hora">
+              <p class="precio-frase"><span>Tu hora de inglés en vivo</span> <span>sale menos que una pizza <span class="precio-emoji" aria-hidden="true">🍕</span></span></p>
+              <p class="precio-valor-hora">Hasta <strong>$11.646</strong> por hora de clase</p>
+            </div>
+          </div>
+          <a class="btn-level utm-forward" href="https://formflow.capogrowth.com/form/b6a8fea3-8316-47c5-9954-fc364dd982d2" target="_blank" rel="noopener noreferrer">
+            Quiero inscribirme
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
 
-        <!-- A2 -->
+        <!-- Nivel Pre-Intermedio -->
         <div class="level-card">
           <span class="level-badge badge-live">🔴 En vivo · Google Meet</span>
-          <div class="level-name">Nivel Pre-Intermedio — A2</div>
+          <div class="level-name">Nivel Pre-Intermedio</div>
           <div class="level-tagline">Sabés más inglés del que usás.</div>
           <hr class="level-divider">
           <p class="level-desc">Te defendés con lo básico, pero cuando la charla se estira te quedás sin recursos. Tres meses para pasar de frases sueltas a conversaciones que se sostienen.</p>
@@ -676,17 +745,27 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
             <li><span class="emoji" aria-hidden="true">🌇</span><span><strong>Tarde</strong> 18:30 – 20:00 hs</span></li>
             <li><span class="emoji" aria-hidden="true">🌙</span><span><strong>Noche</strong> 20:00 – 21:30 hs</span></li>
           </ul>
-          <div class="level-price">Desde<strong>$419.250</strong>ARS</div>
-          <a class="btn-level utm-forward" href="https://formflow.capogrowth.com/form/2c50b097-d34f-47ee-8cef-850b5f38f310" target="_blank" rel="noopener noreferrer">
-            ANOTAME EN LISTA DE ESPERA
+          <div class="precio-caja">
+            <p class="precio-monto">
+              <span class="precio-sr">Precio de lista: </span><s class="precio-lista">$599.000</s>
+              <span class="precio-off" aria-hidden="true">30% OFF</span>
+              <strong class="precio-final"><span class="precio-sr">Precio con 30% de descuento: </span>$419.300 <span class="precio-moneda" aria-hidden="true">ARS</span><span class="precio-sr">pesos argentinos.</span></strong>
+            </p>
+            <div class="precio-hora">
+              <p class="precio-frase"><span>Tu hora de inglés en vivo</span> <span>sale menos que una pizza <span class="precio-emoji" aria-hidden="true">🍕</span></span></p>
+              <p class="precio-valor-hora">Hasta <strong>$11.646</strong> por hora de clase</p>
+            </div>
+          </div>
+          <a class="btn-level utm-forward" href="https://formflow.capogrowth.com/form/b6a8fea3-8316-47c5-9954-fc364dd982d2" target="_blank" rel="noopener noreferrer">
+            Quiero inscribirme
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
 
-        <!-- B1 -->
+        <!-- Nivel Intermedio -->
         <div class="level-card" style="border-color: var(--orange-primary); box-shadow: 0 0 0 1px var(--orange-primary);">
           <span class="level-badge badge-live">🔴 En vivo · Google Meet</span>
-          <div class="level-name">Nivel Intermedio — B1</div>
+          <div class="level-name">Nivel Intermedio</div>
           <div class="level-tagline">Entendés algo, pero te trabás al hablar.</div>
           <hr class="level-divider">
           <p class="level-desc">Ordenás lo que ya sabés y ganás fluidez en situaciones reales: reuniones, presentaciones, conversaciones de trabajo y viajes.</p>
@@ -696,17 +775,27 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
             <li><span class="emoji" aria-hidden="true">🌇</span><span><strong>Tarde</strong> 18:30 – 20:00 hs</span></li>
             <li><span class="emoji" aria-hidden="true">🌙</span><span><strong>Noche</strong> 20:00 – 21:30 hs</span></li>
           </ul>
-          <div class="level-price">Desde<strong>$419.250</strong>ARS</div>
-          <a class="btn-level utm-forward" href="https://formflow.capogrowth.com/form/2c50b097-d34f-47ee-8cef-850b5f38f310" target="_blank" rel="noopener noreferrer">
-            ANOTAME EN LISTA DE ESPERA
+          <div class="precio-caja">
+            <p class="precio-monto">
+              <span class="precio-sr">Precio de lista: </span><s class="precio-lista">$599.000</s>
+              <span class="precio-off" aria-hidden="true">30% OFF</span>
+              <strong class="precio-final"><span class="precio-sr">Precio con 30% de descuento: </span>$419.300 <span class="precio-moneda" aria-hidden="true">ARS</span><span class="precio-sr">pesos argentinos.</span></strong>
+            </p>
+            <div class="precio-hora">
+              <p class="precio-frase"><span>Tu hora de inglés en vivo</span> <span>sale menos que una pizza <span class="precio-emoji" aria-hidden="true">🍕</span></span></p>
+              <p class="precio-valor-hora">Hasta <strong>$11.646</strong> por hora de clase</p>
+            </div>
+          </div>
+          <a class="btn-level utm-forward" href="https://formflow.capogrowth.com/form/b6a8fea3-8316-47c5-9954-fc364dd982d2" target="_blank" rel="noopener noreferrer">
+            Quiero inscribirme
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
 
-        <!-- C1 -->
+        <!-- Nivel Avanzado -->
         <div class="level-card">
           <span class="level-badge badge-live">🔴 En vivo · Google Meet</span>
-          <div class="level-name">Nivel Avanzado — C1</div>
+          <div class="level-name">Nivel Avanzado</div>
           <div class="level-tagline">Ya hablás inglés y querés usarlo con seguridad y naturalidad.</div>
           <hr class="level-divider">
           <p class="level-desc">Fluir de verdad + vocabulario específico + confianza en conversaciones inteligentes. Para quienes ya tienen base y buscan el siguiente nivel profesional.</p>
@@ -714,11 +803,20 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
             <li><span class="emoji" aria-hidden="true">🌅</span><span><strong>Mañana</strong> 8:00 – 9:30 hs</span></li>
             <li><span class="emoji" aria-hidden="true">☀️</span><span><strong>Mediodía</strong> 13:00 – 14:30 hs</span></li>
             <li><span class="emoji" aria-hidden="true">🌇</span><span><strong>Tarde</strong> 18:30 – 20:00 hs</span></li>
-            <li><span class="emoji" aria-hidden="true">🌙</span><span><strong>Noche</strong> 20:00 – 21:30 hs</span></li>
           </ul>
-          <div class="level-price">Desde<strong>$419.250</strong>ARS</div>
-          <a class="btn-level utm-forward" href="https://formflow.capogrowth.com/form/2c50b097-d34f-47ee-8cef-850b5f38f310" target="_blank" rel="noopener noreferrer">
-            ANOTAME EN LISTA DE ESPERA
+          <div class="precio-caja">
+            <p class="precio-monto">
+              <span class="precio-sr">Precio de lista: </span><s class="precio-lista">$599.000</s>
+              <span class="precio-off" aria-hidden="true">30% OFF</span>
+              <strong class="precio-final"><span class="precio-sr">Precio con 30% de descuento: </span>$419.300 <span class="precio-moneda" aria-hidden="true">ARS</span><span class="precio-sr">pesos argentinos.</span></strong>
+            </p>
+            <div class="precio-hora">
+              <p class="precio-frase"><span>Tu hora de inglés en vivo</span> <span>sale menos que una pizza <span class="precio-emoji" aria-hidden="true">🍕</span></span></p>
+              <p class="precio-valor-hora">Hasta <strong>$11.646</strong> por hora de clase</p>
+            </div>
+          </div>
+          <a class="btn-level utm-forward" href="https://formflow.capogrowth.com/form/b6a8fea3-8316-47c5-9954-fc364dd982d2" target="_blank" rel="noopener noreferrer">
+            Quiero inscribirme
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -1097,7 +1195,7 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
             <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
           <div class="faq-answer">
-            Los cupos de este grupo están <strong>agotados en los cuatro niveles y en todos los turnos</strong>. Anotate en la <a href="https://formflow.capogrowth.com/form/2c50b097-d34f-47ee-8cef-850b5f38f310" target="_blank" rel="noopener noreferrer" style="color: var(--orange-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 2px;">lista de espera</a> con el botón «ANOTAME EN LISTA DE ESPERA» y te avisamos primero cuando abra el próximo grupo, antes de publicarla. Todos los horarios son en <strong>GMT-3 (Buenos Aires)</strong>; las equivalencias por país están en la pregunta «¿Qué días y horarios tendrá el intensivo?».
+            El nuevo grupo del Intensivo arranca el <strong>miércoles 18 de noviembre de 2026</strong>. Las inscripciones están abiertas y hay cupos en los <strong>cuatro niveles</strong>. Todos los horarios son en <strong>GMT-3 (Buenos Aires)</strong>; las equivalencias por país están en la pregunta «¿Qué días y horarios tendrá el intensivo?».
           </div>
         </div>
 
@@ -1119,17 +1217,16 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
           <div class="faq-answer">
             Los días serán los <strong>lunes y miércoles</strong>, dos veces por semana. Cada clase dura <strong>1 hora y media</strong>. Los Google Meet se dictan en horario <strong>GMT-3 (Buenos Aires, Argentina)</strong>:
             <ul style="margin-top:10px">
-              <li><strong>Mañana:</strong> 8:00 – 9:30 hs <span style="color:#b3261e;font-weight:700;">(agotado)</span></li>
-              <li><strong>Mediodía:</strong> 13:00 – 14:30 hs <span style="color:#b3261e;font-weight:700;">(agotado)</span></li>
-              <li><strong>Tarde:</strong> 18:30 – 20:00 hs <span style="color:#b3261e;font-weight:700;">(agotado)</span></li>
-              <li><strong>Noche:</strong> 20:00 – 21:30 hs <span style="color:#b3261e;font-weight:700;">(agotado)</span></li>
+              <li><strong>Mañana:</strong> 8:00 – 9:30 hs</li>
+              <li><strong>Mediodía:</strong> 13:00 – 14:30 hs</li>
+              <li><strong>Tarde:</strong> 18:30 – 20:00 hs</li>
+              <li><strong>Noche</strong> (solo niveles Pre-Intermedio e Intermedio)<strong>:</strong> 20:00 – 21:30 hs</li>
             </ul>
-            <p style="margin-top:10px">En este grupo todos los turnos están agotados: sumate a la lista de espera y te avisamos cuando abra el próximo.</p>
             <p style="margin-top:10px"><strong>Referencia en otros países de Latinoamérica</strong> (hora de inicio de cada turno):</p>
             <ul>
               <li>🇨🇴 <strong>Colombia:</strong> 6:00 · 11:00 · 16:30 · 18:00</li>
               <li>🇲🇽 <strong>México (CDMX):</strong> 5:00 · 10:00 · 15:30 · 17:00</li>
-              <li>🇨🇱 <strong>Chile:</strong> 7:00 · 12:00 · 17:30 · 19:00</li>
+              <li>🇨🇱 <strong>Chile:</strong> 8:00 · 13:00 · 18:30 · 20:00</li>
               <li>🇵🇪 <strong>Perú:</strong> 6:00 · 11:00 · 16:30 · 18:00</li>
               <li>🇺🇾 <strong>Uruguay:</strong> 8:00 · 13:00 · 18:30 · 20:00</li>
             </ul>
@@ -1200,7 +1297,7 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
             <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
           </button>
           <div class="faq-answer">
-            No pasa nada. Si sabés con anticipación que vas a faltar por vacaciones de invierno o por algún compromiso personal, avisanos y te haremos llegar la clase grabada. Además, si notamos tu ausencia en dos clases, la coordinadora del intensivo se pondrá en contacto con vos para saber qué ocurrió y acompañarte para mejorar tu experiencia y continuidad.
+            No pasa nada. Si sabés con anticipación que vas a faltar por vacaciones o por algún compromiso personal, avisanos y te haremos llegar la clase grabada. Además, si notamos tu ausencia en dos clases, la coordinadora del intensivo se pondrá en contacto con vos para saber qué ocurrió y acompañarte para mejorar tu experiencia y continuidad.
           </div>
         </div>
 
@@ -1229,14 +1326,14 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
   <!-- CTA Strip -->
   <section class="cta-strip">
     <div class="container">
-      <h2>¿Te quedaste sin lugar?</h2>
-      <p>Los cupos de este grupo están <strong>agotados</strong>. Anotate en la lista de espera y te avisamos primero cuando abra el próximo grupo.</p>
+      <h2>¿Listo/a para arrancar?</h2>
+      <p>El nuevo grupo arranca el <strong>miércoles 18 de noviembre</strong> · clases lunes y miércoles. Hay cupos en los cuatro niveles.</p>
       <div class="cta-strip-actions">
-        <a class="btn-cta-white utm-forward" href="https://formflow.capogrowth.com/form/2c50b097-d34f-47ee-8cef-850b5f38f310" target="_blank" rel="noopener noreferrer">
-          ANOTAME EN LISTA DE ESPERA
+        <a class="btn-cta-white utm-forward" href="https://formflow.capogrowth.com/form/b6a8fea3-8316-47c5-9954-fc364dd982d2" target="_blank" rel="noopener noreferrer">
+          Quiero inscribirme
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
-        <a class="btn-cta-ghost" href="https://wa.me/12065391288?text=Hola%2C%20quiero%20anotarme%20en%20la%20lista%20de%20espera%20del%20intensivo%20de%20ingl%C3%A9s%20de%20Academia%20Comunica." target="_blank" rel="noopener noreferrer">
+        <a class="btn-cta-ghost" href="https://wa.me/12065391288?text=Hola%2C%20quiero%20inscribirme%20al%20intensivo%20de%20ingl%C3%A9s%20de%20Academia%20Comunica." target="_blank" rel="noopener noreferrer">
           Escribinos por WhatsApp
         </a>
       </div>
@@ -1811,17 +1908,17 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
       'academia-en-ingles': 'Hola, quiero conocer más sobre la Academia de Inglés y medir mi nivel.',
       // misma landing, migrada a ads.academia-comunica.com/academia-ingles/academia-ingles-intensivo (2026-10)
       'academia-ingles-intensivo': 'Hola, quiero conocer más sobre la Academia de Inglés y medir mi nivel.',
-      'a1-curso-intensivo-ingles': 'Hola, tengo nivel cero de inglés y quiero anotarme en la lista de espera del Curso Intensivo.',
-      'b1-curso-intensivo-ingles': 'Hola, tengo nivel intermedio de inglés y quiero anotarme en la lista de espera del Curso Intensivo.',
+      'a1-curso-intensivo-ingles': 'Hola, tengo nivel cero de inglés y quiero inscribirme al Curso Intensivo.',
+      'b1-curso-intensivo-ingles': 'Hola, tengo nivel intermedio de inglés y quiero inscribirme al Curso Intensivo.',
       // Slugs del sitio organico + sitio principal (agregados 2026-09)
-      'ingles-nivel-pre-intermedio': 'Hola, tengo base de inglés y quiero anotarme en la lista de espera del Intensivo Pre-Intermedio (A2).',
-      'ingles-nivel-cero': 'Hola, tengo nivel cero de inglés y quiero anotarme en la lista de espera del Curso Intensivo.',
-      'ingles-nivel-intermedio': 'Hola, tengo nivel intermedio de inglés y quiero anotarme en la lista de espera del Curso Intensivo.',
-      'ingles-nivel-avanzado': 'Hola, tengo nivel avanzado de inglés y quiero anotarme en la lista de espera del Curso Intensivo.',
-      'a1-intensivo-ingles': 'Hola, tengo nivel cero de inglés y quiero anotarme en la lista de espera del Curso Intensivo.',
-      'a2-intensivo-ingles': 'Hola, tengo base de inglés y quiero anotarme en la lista de espera del Intensivo Pre-Intermedio (A2).',
-      'b1-intensivo-ingles': 'Hola, tengo nivel intermedio de inglés y quiero anotarme en la lista de espera del Curso Intensivo.',
-      'c1-intensivo-ingles': 'Hola, tengo nivel avanzado de inglés y quiero anotarme en la lista de espera del Curso Intensivo.',
+      'ingles-nivel-pre-intermedio': 'Hola, tengo base de inglés y quiero inscribirme al Intensivo Pre-Intermedio (A2).',
+      'ingles-nivel-cero': 'Hola, tengo nivel cero de inglés y quiero inscribirme al Curso Intensivo.',
+      'ingles-nivel-intermedio': 'Hola, tengo nivel intermedio de inglés y quiero inscribirme al Curso Intensivo.',
+      'ingles-nivel-avanzado': 'Hola, tengo nivel avanzado de inglés y quiero inscribirme al Curso Intensivo.',
+      'a1-intensivo-ingles': 'Hola, tengo nivel cero de inglés y quiero inscribirme al Curso Intensivo.',
+      'a2-intensivo-ingles': 'Hola, tengo base de inglés y quiero inscribirme al Intensivo Pre-Intermedio (A2).',
+      'b1-intensivo-ingles': 'Hola, tengo nivel intermedio de inglés y quiero inscribirme al Curso Intensivo.',
+      'c1-intensivo-ingles': 'Hola, tengo nivel avanzado de inglés y quiero inscribirme al Curso Intensivo.',
       'webinar-ingles': 'Hola, quiero info sobre el webinar de inglés para viajar.',
       'english-for-impact': 'Quiero inscribirme al Curso de Inglés Grabado, English for Impact.',
       'curso-storytelling': 'Quiero inscribirme al Curso de Storytelling y Copywriting.',
