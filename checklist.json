@@ -1,13 +1,13 @@
 {
-  "generado": "2026-10-03T17:12:27.084Z",
+  "generado": "2026-10-04T23:08:44.999Z",
   "public_base": "https://ads.academia-comunica.com",
   "checklist_url": "https://ads.academia-comunica.com/checklist",
   "ultimo_deploy": "2026-10-03 14:12",
   "totales": {
-    "cursos": 13,
-    "landings": 41,
+    "cursos": 15,
+    "landings": 44,
     "cursos_con_error": 0,
-    "paginas_sin_variantes": 11
+    "paginas_sin_variantes": 9
   },
   "pendientes_antes_de_pautar": [
     "Cupón fijo AC50X (curso-oratoria/lead-magnet-19k): confirmar que el checkout cobre $19.997"
@@ -128,6 +128,70 @@
       ]
     },
     {
+      "curso": "combo-extremo",
+      "error": false,
+      "huerfanos": [],
+      "ofertas": [
+        {
+          "key": "combo-extremo",
+          "titulo": null,
+          "modo": "venta",
+          "estado": "OK",
+          "generado": "2026-10-04T19:54:35.643Z",
+          "error": false,
+          "avisos": [
+            "Reporte: OK · 2026-10-04 19:54 (log/ads-combo-extremo.md)"
+          ],
+          "variantes": [
+            {
+              "variant": "ads",
+              "label": "1 · Sin puntos de fuga",
+              "file": "combo-extremo-ads.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/combo-extremo/combo-extremo-ads",
+              "size": "52 kb",
+              "updated": "2026-10-04T19:54:35.543Z"
+            },
+            {
+              "variant": "form",
+              "label": "2 · Formulario de calificación",
+              "file": "combo-extremo-form.html",
+              "exists": false,
+              "estado": "no aplica",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/combo-extremo/combo-extremo-form",
+              "size": null,
+              "updated": null
+            },
+            {
+              "variant": "step1",
+              "label": "3 · Order bump (step 1)",
+              "file": "combo-extremo-step1.html",
+              "exists": false,
+              "estado": "no aplica",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/combo-extremo/combo-extremo-step1",
+              "size": null,
+              "updated": null
+            },
+            {
+              "variant": "step2",
+              "label": "↳ step 2 (interna del funnel)",
+              "file": "combo-extremo-step2.html",
+              "exists": false,
+              "estado": "no aplica",
+              "destino": false,
+              "url": "https://ads.academia-comunica.com/combo-extremo/combo-extremo-step2",
+              "size": null,
+              "updated": null
+            }
+          ]
+        }
+      ]
+    },
+    {
       "curso": "curso-desarrollo-profesional",
       "error": false,
       "huerfanos": [],
@@ -216,7 +280,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-email-marketing/curso-email-marketing-ads",
               "size": "85 kb",
-              "updated": "2026-10-01T23:01:55.054Z"
+              "updated": "2026-10-01T23:03:27.000Z"
             },
             {
               "variant": "form",
@@ -238,7 +302,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-email-marketing/curso-email-marketing-step1",
               "size": "77 kb",
-              "updated": "2026-10-01T23:01:55.084Z"
+              "updated": "2026-10-01T23:03:27.000Z"
             },
             {
               "variant": "step2",
@@ -249,7 +313,7 @@
               "destino": false,
               "url": "https://ads.academia-comunica.com/curso-email-marketing/curso-email-marketing-step2",
               "size": "17 kb",
-              "updated": "2026-10-01T23:01:55.084Z"
+              "updated": "2026-10-01T23:03:27.000Z"
             }
           ]
         }
@@ -314,6 +378,70 @@
               "url": "https://ads.academia-comunica.com/curso-estrategia-redes/curso-estrategia-redes-step2",
               "size": "17 kb",
               "updated": "2026-10-01T23:01:56.851Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curso": "curso-liderazgo",
+      "error": false,
+      "huerfanos": [],
+      "ofertas": [
+        {
+          "key": "curso-liderazgo",
+          "titulo": null,
+          "modo": "lead",
+          "estado": "OK",
+          "generado": "2026-10-04T19:53:46.997Z",
+          "error": false,
+          "avisos": [
+            "Reporte: OK · 2026-10-04 19:53 (log/ads-curso-liderazgo.md)"
+          ],
+          "variantes": [
+            {
+              "variant": "ads",
+              "label": "1 · Sin puntos de fuga",
+              "file": "curso-liderazgo-ads.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/curso-liderazgo/curso-liderazgo-ads",
+              "size": "80 kb",
+              "updated": "2026-10-04T19:53:44.970Z"
+            },
+            {
+              "variant": "form",
+              "label": "2 · Formulario de calificación",
+              "file": "curso-liderazgo-form.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/curso-liderazgo/curso-liderazgo-form",
+              "size": "79 kb",
+              "updated": "2026-10-04T19:53:45.043Z"
+            },
+            {
+              "variant": "step1",
+              "label": "3 · Order bump (step 1)",
+              "file": "curso-liderazgo-step1.html",
+              "exists": false,
+              "estado": "no aplica",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/curso-liderazgo/curso-liderazgo-step1",
+              "size": null,
+              "updated": null
+            },
+            {
+              "variant": "step2",
+              "label": "↳ step 2 (interna del funnel)",
+              "file": "curso-liderazgo-step2.html",
+              "exists": false,
+              "estado": "no aplica",
+              "destino": false,
+              "url": "https://ads.academia-comunica.com/curso-liderazgo/curso-liderazgo-step2",
+              "size": null,
+              "updated": null
             }
           ]
         }
@@ -408,7 +536,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-oratoria/curso-oratoria-ads",
               "size": "121 kb",
-              "updated": "2026-10-01T23:31:27.245Z"
+              "updated": "2026-10-01T23:03:27.000Z"
             },
             {
               "variant": "form",
@@ -419,7 +547,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-oratoria/curso-oratoria-form",
               "size": "108 kb",
-              "updated": "2026-10-01T23:31:27.317Z"
+              "updated": "2026-10-01T23:03:27.000Z"
             },
             {
               "variant": "step1",
@@ -430,7 +558,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-oratoria/curso-oratoria-step1",
               "size": "113 kb",
-              "updated": "2026-10-01T23:31:27.346Z"
+              "updated": "2026-10-01T23:03:27.000Z"
             },
             {
               "variant": "step2",
@@ -441,7 +569,7 @@
               "destino": false,
               "url": "https://ads.academia-comunica.com/curso-oratoria/curso-oratoria-step2",
               "size": "17 kb",
-              "updated": "2026-10-01T23:31:27.346Z"
+              "updated": "2026-10-01T23:03:27.000Z"
             }
           ]
         },
@@ -787,7 +915,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-cero/ingles-nivel-cero-ads",
               "size": "146 kb",
-              "updated": "2026-10-03T17:12:16.269Z"
+              "updated": "2026-10-03T17:12:26.000Z"
             },
             {
               "variant": "form",
@@ -798,7 +926,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-cero/ingles-nivel-cero-form",
               "size": "146 kb",
-              "updated": "2026-10-03T17:12:16.340Z"
+              "updated": "2026-10-03T17:12:26.000Z"
             },
             {
               "variant": "step1",
