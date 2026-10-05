@@ -83,9 +83,9 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
       <p class="acmp-buy-subhead">Contanos en un minuto en qué estás y te decimos si este curso tiene sentido para vos.</p>
     </div>
     <div style="max-width:760px;margin:24px auto 0;background:#fff;border-radius:20px;box-shadow:0 24px 64px rgba(34,43,73,.14);overflow:hidden">
-      <iframe src="https://formflow.capogrowth.com/form/8b080cce-2142-4d35-b643-d5b1f1c98689" title="Descubrí qué tan buen comunicador sos" style="width:100%;height:900px;border:0;display:block" loading="lazy"></iframe>
+      <iframe src="https://picocrm.ai/form/8b080cce-2142-4d35-b643-d5b1f1c98689" title="Descubrí qué tan buen comunicador sos" style="width:100%;height:900px;border:0;display:block" loading="lazy"></iframe>
     </div>
-  </div></section></div><footer class="ads-legal-footer" style="background:#222b49;color:rgba(255,255,255,.72);padding:40px 24px 44px;text-align:center;font-family:Inter,sans-serif;font-size:12.5px;line-height:2;"><div>© 2026 Academia Comunica de Mai Pistiner</div><div><a href="mailto:academia@maipistiner.com" style="color:rgba(255,255,255,.88);text-decoration:none">academia@maipistiner.com</a></div><div><a href="https://www.maipistiner.com/terminos" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,.88)">Términos y condiciones</a> &nbsp;·&nbsp; <a href="https://www.maipistiner.com/privacidad" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,.88)">Política de privacidad</a></div></footer></div>
+  </div></section></div><footer class="ads-legal-footer" style="background:#222b49;color:rgba(255,255,255,.72);padding:40px 24px 96px;text-align:center;font-family:Inter,sans-serif;font-size:12.5px;line-height:2;"><div>© 2026 Academia Comunica de Mai Pistiner</div><div><a href="mailto:academia@maipistiner.com" style="color:rgba(255,255,255,.88);text-decoration:none">academia@maipistiner.com</a></div><div><a href="https://www.maipistiner.com/terminos" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,.88)">Términos y condiciones</a> &nbsp;·&nbsp; <a href="https://www.academia-comunica.com/terms#privacidad" target="_blank" rel="noopener noreferrer" style="color:rgba(255,255,255,.88)">Política de privacidad</a></div></footer></div>
 <script>window.ACMP_CRO = {
  "enabled": true,
  "page_key": "lead-magnet-19k",
@@ -138,6 +138,32 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
  ],
  "upsell": {}
 };</script>
+<script>(function(){
+  'use strict';
+  var MAP = [{"c":"/combo-i-acceso-a-todos-los-cursos","p":{"meta_content_id":"PRO-019fd69d69157b4e897b5eb98450a","content_name":"Combo Extremo · acceso a todos los cursos","value":156250}}];
+  var KEYS = ['meta_content_id', 'content_name', 'value'];
+  var ORIG = null, timer = null;
+  function restore(){
+    var t = window.ACMP_TRACKING;
+    if (!ORIG || !t || !t.product) return;
+    for (var i = 0; i < KEYS.length; i++) t.product[KEYS[i]] = ORIG[KEYS[i]];
+  }
+  document.addEventListener('click', function(e){
+    var a = e.target && e.target.closest && e.target.closest('a[href]');
+    var t = window.ACMP_TRACKING;
+    if (!a || !t || !t.product) return;
+    if (!ORIG) { ORIG = {}; for (var j = 0; j < KEYS.length; j++) ORIG[KEYS[j]] = t.product[KEYS[j]]; }
+    restore();
+    var hit = null;
+    for (var i = 0; i < MAP.length; i++) if (a.href.indexOf(MAP[i].c) !== -1) { hit = MAP[i].p; break; }
+    if (!hit) return;
+    for (var k in hit) if (hit[k] != null) t.product[k] = hit[k];
+    clearTimeout(timer);
+    timer = setTimeout(restore, 0);
+  }, true);
+  // fin del mismo clic: ya corrieron todos los listeners de document
+  window.addEventListener('click', restore);
+})();</script>
 <script src="https://www.academia-comunica.com/js/shared/acmp-cro.js" defer></script>
 <script src="https://www.academia-comunica.com/js/shared/tracking-academia.js" defer></script>
 <script>(function(){
@@ -174,18 +200,39 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
   // Carrusel "la academia en acción": todas las fotos están en el DOM,
   // el runtime pagina (3 por página desktop, 1 mobile) y rearma los dots.
   // Puede haber más de un carrusel (english-for-impact: Mai y Delfi) y los
-  // controles vienen con dos shapes: .acmp-accion-ctrls o .liq-accion-nav.
+  // controles vienen con dos shapes: .acmp-accion-ctrls o .liq-accion-nav. En
+  // curso-liderazgo no tienen clase: son el <div> que sigue a la grilla. Y la
+  // grilla puede ser de 4 columnas (repeat(4,1fr) inline) en vez de 3.
   document.querySelectorAll('.liq-accion-grid').forEach(function(grid){
     var scope = grid.closest('section') || grid.parentElement;
     var ctrls = scope && scope.querySelector('.acmp-accion-ctrls, .liq-accion-nav');
+    if (!ctrls) {
+      var sib = grid.nextElementSibling;
+      if (sib && sib.querySelector('.acmp-accion-dot, .liq-accion-dot')) ctrls = sib;
+    }
     if (!ctrls) return;
+    var cols = parseInt((/repeat\(\s*(\d+)/.exec(grid.style.gridTemplateColumns || '') || [])[1], 10) || 3;
     var items = Array.prototype.slice.call(grid.children);
-    var arrows = Array.prototype.filter.call(ctrls.querySelectorAll('button'), function(b){ return !/(^|s)(acmp|liq)-accion-dot(s|$)/.test(b.className); });
+    var arrows = Array.prototype.filter.call(ctrls.querySelectorAll('button'), function(b){ return !/(^|\s)(acmp|liq)-accion-dot(\s|$)/.test(b.className); });
     var prevBtn = arrows[0], nextBtn = arrows[arrows.length - 1];
     var page = 0;
-    function per(){ return window.matchMedia('(max-width: 768px)').matches ? 1 : 3; }
+    // De a cuántas se pagina = cuántas columnas tiene la grilla DE VERDAD (las
+    // que resuelve el CSS, en px). Con el 3 fijo, english-for-impact y
+    // curso-desarrollo-profesional (grilla de 4 por CSS) mostraban 3 fotos y una
+    // columna vacía. Sin dato (grilla oculta), el criterio anterior.
+    function per(){
+      var tracks = (getComputedStyle(grid).gridTemplateColumns || '').match(/[\d.]+px/g);
+      if (tracks && tracks.length) return tracks.length;
+      return window.matchMedia('(max-width: 768px)').matches ? 1 : cols;
+    }
     function pages(){ return Math.max(1, Math.ceil(items.length / per())); }
+    var ctrlsDisplay = ctrls.style.display;
     function render(){
+      // Grilla oculta por CSS (curso-desarrollo-profesional a <=900px muestra un
+      // carrusel de swipe en su lugar): flechas y puntos paginarían algo que no
+      // se ve. Se esconden, y vuelven si la grilla reaparece (resize).
+      if (getComputedStyle(grid).display === 'none') { ctrls.style.display = 'none'; return; }
+      ctrls.style.display = ctrlsDisplay;
       var p = per(), total = pages();
       page = Math.max(0, Math.min(page, total - 1));
       items.forEach(function(el, i){ el.style.display = (i >= page*p && i < page*p + p) ? '' : 'none'; });

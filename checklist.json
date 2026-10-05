@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-04T23:08:45.147Z",
+  "generado": "2026-10-05T12:25:49.798Z",
   "public_base": "https://ads.academia-comunica.com",
   "checklist_url": "https://ads.academia-comunica.com/checklist",
   "ultimo_deploy": "2026-10-04 20:08",
@@ -23,10 +23,10 @@
           "titulo": null,
           "modo": "lead",
           "estado": "OK",
-          "generado": "2026-10-03T17:12:15.683Z",
+          "generado": "2026-10-05T12:25:22.729Z",
           "error": false,
           "avisos": [
-            "Reporte: OK · 2026-10-03 17:12 (log/ads-academia-ingles.md)"
+            "Reporte: OK · 2026-10-05 12:25 (log/ads-academia-ingles.md)"
           ],
           "variantes": [
             {
@@ -37,8 +37,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/academia-ingles/academia-ingles-ads",
-              "size": "105 kb",
-              "updated": "2026-10-03T17:12:14.939Z"
+              "size": "106 kb",
+              "updated": "2026-10-05T12:25:21.595Z"
             },
             {
               "variant": "form",
@@ -48,8 +48,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/academia-ingles/academia-ingles-form",
-              "size": "104 kb",
-              "updated": "2026-10-03T17:12:14.996Z"
+              "size": "106 kb",
+              "updated": "2026-10-05T12:25:21.654Z"
             },
             {
               "variant": "step1",
@@ -137,10 +137,10 @@
           "titulo": null,
           "modo": "venta",
           "estado": "OK",
-          "generado": "2026-10-04T19:54:35.643Z",
+          "generado": "2026-10-05T12:25:18.783Z",
           "error": false,
           "avisos": [
-            "Reporte: OK · 2026-10-04 19:54 (log/ads-combo-extremo.md)"
+            "Reporte: OK · 2026-10-05 12:25 (log/ads-combo-extremo.md)"
           ],
           "variantes": [
             {
@@ -151,8 +151,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/combo-extremo/combo-extremo-ads",
-              "size": "52 kb",
-              "updated": "2026-10-04T19:54:35.543Z"
+              "size": "46 kb",
+              "updated": "2026-10-05T12:25:17.173Z"
             },
             {
               "variant": "form",
@@ -201,10 +201,10 @@
           "titulo": null,
           "modo": "venta",
           "estado": "OK · 2 warning(s)",
-          "generado": "2026-10-01T23:01:54.488Z",
+          "generado": "2026-10-05T12:25:24.734Z",
           "error": false,
           "avisos": [
-            "Reporte: OK · 2 warning(s) · 2026-10-01 23:01 (log/ads-curso-desarrollo-profesional.md)"
+            "Reporte: OK · 2 warning(s) · 2026-10-05 12:25 (log/ads-curso-desarrollo-profesional.md)"
           ],
           "variantes": [
             {
@@ -215,8 +215,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-desarrollo-profesional/curso-desarrollo-profesional-ads",
-              "size": "80 kb",
-              "updated": "2026-10-01T23:01:53.363Z"
+              "size": "84 kb",
+              "updated": "2026-10-05T12:25:23.265Z"
             },
             {
               "variant": "form",
@@ -237,8 +237,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-desarrollo-profesional/curso-desarrollo-profesional-step1",
-              "size": "72 kb",
-              "updated": "2026-10-01T23:01:53.386Z"
+              "size": "76 kb",
+              "updated": "2026-10-05T12:25:23.288Z"
             },
             {
               "variant": "step2",
@@ -248,8 +248,8 @@
               "estado": "generada",
               "destino": false,
               "url": "https://ads.academia-comunica.com/curso-desarrollo-profesional/curso-desarrollo-profesional-step2",
-              "size": "17 kb",
-              "updated": "2026-10-01T23:01:53.386Z"
+              "size": "20 kb",
+              "updated": "2026-10-05T12:25:23.288Z"
             }
           ]
         }
@@ -265,10 +265,10 @@
           "titulo": null,
           "modo": "venta",
           "estado": "OK · 2 warning(s)",
-          "generado": "2026-10-01T23:01:56.293Z",
+          "generado": "2026-10-05T12:25:26.633Z",
           "error": false,
           "avisos": [
-            "Reporte: OK · 2 warning(s) · 2026-10-01 23:01 (log/ads-curso-email-marketing.md)"
+            "Reporte: OK · 2 warning(s) · 2026-10-05 12:25 (log/ads-curso-email-marketing.md)"
           ],
           "variantes": [
             {
@@ -279,8 +279,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-email-marketing/curso-email-marketing-ads",
-              "size": "85 kb",
-              "updated": "2026-10-01T23:03:27.000Z"
+              "size": "87 kb",
+              "updated": "2026-10-05T12:25:25.302Z"
             },
             {
               "variant": "form",
@@ -301,8 +301,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-email-marketing/curso-email-marketing-step1",
-              "size": "77 kb",
-              "updated": "2026-10-01T23:03:27.000Z"
+              "size": "80 kb",
+              "updated": "2026-10-05T12:25:25.332Z"
             },
             {
               "variant": "step2",
@@ -312,8 +312,8 @@
               "estado": "generada",
               "destino": false,
               "url": "https://ads.academia-comunica.com/curso-email-marketing/curso-email-marketing-step2",
-              "size": "17 kb",
-              "updated": "2026-10-01T23:03:27.000Z"
+              "size": "20 kb",
+              "updated": "2026-10-05T12:25:25.332Z"
             }
           ]
         }
@@ -329,10 +329,10 @@
           "titulo": null,
           "modo": "venta",
           "estado": "OK",
-          "generado": "2026-10-01T23:01:57.841Z",
+          "generado": "2026-10-05T12:25:28.984Z",
           "error": false,
           "avisos": [
-            "Reporte: OK · 2026-10-01 23:01 (log/ads-curso-estrategia-redes.md)"
+            "Reporte: OK · 2026-10-05 12:25 (log/ads-curso-estrategia-redes.md)"
           ],
           "variantes": [
             {
@@ -343,8 +343,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-estrategia-redes/curso-estrategia-redes-ads",
-              "size": "77 kb",
-              "updated": "2026-10-01T23:01:56.829Z"
+              "size": "79 kb",
+              "updated": "2026-10-05T12:25:27.151Z"
             },
             {
               "variant": "form",
@@ -365,8 +365,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-estrategia-redes/curso-estrategia-redes-step1",
-              "size": "69 kb",
-              "updated": "2026-10-01T23:01:56.850Z"
+              "size": "71 kb",
+              "updated": "2026-10-05T12:25:27.173Z"
             },
             {
               "variant": "step2",
@@ -376,8 +376,8 @@
               "estado": "generada",
               "destino": false,
               "url": "https://ads.academia-comunica.com/curso-estrategia-redes/curso-estrategia-redes-step2",
-              "size": "17 kb",
-              "updated": "2026-10-01T23:01:56.851Z"
+              "size": "20 kb",
+              "updated": "2026-10-05T12:25:27.173Z"
             }
           ]
         }
@@ -393,10 +393,10 @@
           "titulo": null,
           "modo": "lead",
           "estado": "OK",
-          "generado": "2026-10-04T19:53:46.997Z",
+          "generado": "2026-10-05T12:25:21.044Z",
           "error": false,
           "avisos": [
-            "Reporte: OK · 2026-10-04 19:53 (log/ads-curso-liderazgo.md)"
+            "Reporte: OK · 2026-10-05 12:25 (log/ads-curso-liderazgo.md)"
           ],
           "variantes": [
             {
@@ -407,8 +407,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-liderazgo/curso-liderazgo-ads",
-              "size": "80 kb",
-              "updated": "2026-10-04T19:53:44.970Z"
+              "size": "81 kb",
+              "updated": "2026-10-05T12:25:19.413Z"
             },
             {
               "variant": "form",
@@ -418,8 +418,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-liderazgo/curso-liderazgo-form",
-              "size": "79 kb",
-              "updated": "2026-10-04T19:53:45.043Z"
+              "size": "80 kb",
+              "updated": "2026-10-05T12:25:19.484Z"
             },
             {
               "variant": "step1",
@@ -457,10 +457,10 @@
           "titulo": null,
           "modo": "venta",
           "estado": "OK · 2 warning(s)",
-          "generado": "2026-10-01T23:01:59.441Z",
+          "generado": "2026-10-05T12:25:31.022Z",
           "error": false,
           "avisos": [
-            "Reporte: OK · 2 warning(s) · 2026-10-01 23:01 (log/ads-curso-manejo-emociones.md)"
+            "Reporte: OK · 2 warning(s) · 2026-10-05 12:25 (log/ads-curso-manejo-emociones.md)"
           ],
           "variantes": [
             {
@@ -471,8 +471,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-manejo-emociones/curso-manejo-emociones-ads",
-              "size": "95 kb",
-              "updated": "2026-10-01T23:01:58.402Z"
+              "size": "98 kb",
+              "updated": "2026-10-05T12:25:29.566Z"
             },
             {
               "variant": "form",
@@ -493,8 +493,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-manejo-emociones/curso-manejo-emociones-step1",
-              "size": "87 kb",
-              "updated": "2026-10-01T23:01:58.435Z"
+              "size": "90 kb",
+              "updated": "2026-10-05T12:25:29.601Z"
             },
             {
               "variant": "step2",
@@ -504,8 +504,8 @@
               "estado": "generada",
               "destino": false,
               "url": "https://ads.academia-comunica.com/curso-manejo-emociones/curso-manejo-emociones-step2",
-              "size": "17 kb",
-              "updated": "2026-10-01T23:01:58.435Z"
+              "size": "20 kb",
+              "updated": "2026-10-05T12:25:29.601Z"
             }
           ]
         }
@@ -521,10 +521,10 @@
           "titulo": null,
           "modo": "venta",
           "estado": "OK · 3 warning(s)",
-          "generado": "2026-10-01T23:31:27.761Z",
+          "generado": "2026-10-05T12:25:33.213Z",
           "error": false,
           "avisos": [
-            "Reporte: OK · 3 warning(s) · 2026-10-01 23:31 (log/ads-curso-oratoria.md)"
+            "Reporte: OK · 3 warning(s) · 2026-10-05 12:25 (log/ads-curso-oratoria.md)"
           ],
           "variantes": [
             {
@@ -535,8 +535,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-oratoria/curso-oratoria-ads",
-              "size": "121 kb",
-              "updated": "2026-10-01T23:03:27.000Z"
+              "size": "123 kb",
+              "updated": "2026-10-05T12:25:31.592Z"
             },
             {
               "variant": "form",
@@ -546,8 +546,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-oratoria/curso-oratoria-form",
-              "size": "108 kb",
-              "updated": "2026-10-01T23:03:27.000Z"
+              "size": "110 kb",
+              "updated": "2026-10-05T12:25:31.665Z"
             },
             {
               "variant": "step1",
@@ -557,8 +557,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-oratoria/curso-oratoria-step1",
-              "size": "113 kb",
-              "updated": "2026-10-01T23:03:27.000Z"
+              "size": "115 kb",
+              "updated": "2026-10-05T12:25:31.694Z"
             },
             {
               "variant": "step2",
@@ -568,8 +568,8 @@
               "estado": "generada",
               "destino": false,
               "url": "https://ads.academia-comunica.com/curso-oratoria/curso-oratoria-step2",
-              "size": "17 kb",
-              "updated": "2026-10-01T23:03:27.000Z"
+              "size": "20 kb",
+              "updated": "2026-10-05T12:25:31.695Z"
             }
           ]
         },
@@ -578,12 +578,12 @@
           "titulo": "Curso de Oratoria — Empezá desde $19.997",
           "modo": "venta",
           "estado": "OK · 3 warning(s)",
-          "generado": "2026-10-01T23:02:15.061Z",
+          "generado": "2026-10-05T12:25:35.422Z",
           "error": false,
           "avisos": [
             "Markup de curso-oratoria",
             "Plan extra $19.997 con cupón fijo AC50X",
-            "Reporte: OK · 3 warning(s) · 2026-10-01 23:02 (log/ads-lead-magnet-19k.md)"
+            "Reporte: OK · 3 warning(s) · 2026-10-05 12:25 (log/ads-lead-magnet-19k.md)"
           ],
           "variantes": [
             {
@@ -594,8 +594,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-oratoria/lead-magnet-19k-ads",
-              "size": "126 kb",
-              "updated": "2026-10-01T23:02:13.547Z"
+              "size": "129 kb",
+              "updated": "2026-10-05T12:25:33.809Z"
             },
             {
               "variant": "form",
@@ -605,8 +605,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-oratoria/lead-magnet-19k-form",
-              "size": "108 kb",
-              "updated": "2026-10-01T23:02:13.591Z"
+              "size": "110 kb",
+              "updated": "2026-10-05T12:25:33.884Z"
             },
             {
               "variant": "step1",
@@ -616,8 +616,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-oratoria/lead-magnet-19k-step1",
-              "size": "119 kb",
-              "updated": "2026-10-01T23:02:13.627Z"
+              "size": "121 kb",
+              "updated": "2026-10-05T12:25:33.916Z"
             },
             {
               "variant": "step2",
@@ -627,8 +627,8 @@
               "estado": "generada",
               "destino": false,
               "url": "https://ads.academia-comunica.com/curso-oratoria/lead-magnet-19k-step2",
-              "size": "17 kb",
-              "updated": "2026-10-01T23:02:13.627Z"
+              "size": "20 kb",
+              "updated": "2026-10-05T12:25:33.916Z"
             }
           ]
         }
@@ -644,10 +644,10 @@
           "titulo": null,
           "modo": "venta",
           "estado": "OK · 2 warning(s)",
-          "generado": "2026-10-01T23:02:03.256Z",
+          "generado": "2026-10-05T12:25:37.560Z",
           "error": false,
           "avisos": [
-            "Reporte: OK · 2 warning(s) · 2026-10-01 23:02 (log/ads-curso-storytelling.md)"
+            "Reporte: OK · 2 warning(s) · 2026-10-05 12:25 (log/ads-curso-storytelling.md)"
           ],
           "variantes": [
             {
@@ -658,8 +658,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-storytelling/curso-storytelling-ads",
-              "size": "119 kb",
-              "updated": "2026-10-01T23:02:02.109Z"
+              "size": "122 kb",
+              "updated": "2026-10-05T12:25:36.028Z"
             },
             {
               "variant": "form",
@@ -680,8 +680,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-storytelling/curso-storytelling-step1",
-              "size": "111 kb",
-              "updated": "2026-10-01T23:02:02.143Z"
+              "size": "114 kb",
+              "updated": "2026-10-05T12:25:36.062Z"
             },
             {
               "variant": "step2",
@@ -691,8 +691,8 @@
               "estado": "generada",
               "destino": false,
               "url": "https://ads.academia-comunica.com/curso-storytelling/curso-storytelling-step2",
-              "size": "17 kb",
-              "updated": "2026-10-01T23:02:02.143Z"
+              "size": "20 kb",
+              "updated": "2026-10-05T12:25:36.063Z"
             }
           ]
         }
@@ -708,10 +708,10 @@
           "titulo": null,
           "modo": "venta",
           "estado": "OK · 2 warning(s)",
-          "generado": "2026-10-01T23:02:04.871Z",
+          "generado": "2026-10-05T12:25:39.812Z",
           "error": false,
           "avisos": [
-            "Reporte: OK · 2 warning(s) · 2026-10-01 23:02 (log/ads-curso-ventas-persuasion.md)"
+            "Reporte: OK · 2 warning(s) · 2026-10-05 12:25 (log/ads-curso-ventas-persuasion.md)"
           ],
           "variantes": [
             {
@@ -722,8 +722,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-ventas-persuasion/curso-ventas-persuasion-ads",
-              "size": "94 kb",
-              "updated": "2026-10-01T23:02:03.815Z"
+              "size": "97 kb",
+              "updated": "2026-10-05T12:25:38.114Z"
             },
             {
               "variant": "form",
@@ -744,8 +744,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-ventas-persuasion/curso-ventas-persuasion-step1",
-              "size": "86 kb",
-              "updated": "2026-10-01T23:02:03.841Z"
+              "size": "89 kb",
+              "updated": "2026-10-05T12:25:38.140Z"
             },
             {
               "variant": "step2",
@@ -755,8 +755,8 @@
               "estado": "generada",
               "destino": false,
               "url": "https://ads.academia-comunica.com/curso-ventas-persuasion/curso-ventas-persuasion-step2",
-              "size": "18 kb",
-              "updated": "2026-10-01T23:02:03.841Z"
+              "size": "20 kb",
+              "updated": "2026-10-05T12:25:38.140Z"
             }
           ]
         }
@@ -772,10 +772,10 @@
           "titulo": null,
           "modo": "venta",
           "estado": "OK",
-          "generado": "2026-10-01T23:02:06.569Z",
+          "generado": "2026-10-05T12:25:41.890Z",
           "error": false,
           "avisos": [
-            "Reporte: OK · 2026-10-01 23:02 (log/ads-english-for-impact.md)"
+            "Reporte: OK · 2026-10-05 12:25 (log/ads-english-for-impact.md)"
           ],
           "variantes": [
             {
@@ -786,8 +786,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/english-for-impact/english-for-impact-ads",
-              "size": "83 kb",
-              "updated": "2026-10-01T23:02:05.429Z"
+              "size": "86 kb",
+              "updated": "2026-10-05T12:25:40.382Z"
             },
             {
               "variant": "form",
@@ -808,8 +808,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/english-for-impact/english-for-impact-step1",
-              "size": "76 kb",
-              "updated": "2026-10-01T23:02:05.468Z"
+              "size": "78 kb",
+              "updated": "2026-10-05T12:25:40.437Z"
             },
             {
               "variant": "step2",
@@ -819,8 +819,8 @@
               "estado": "generada",
               "destino": false,
               "url": "https://ads.academia-comunica.com/english-for-impact/english-for-impact-step2",
-              "size": "17 kb",
-              "updated": "2026-10-01T23:02:05.468Z"
+              "size": "20 kb",
+              "updated": "2026-10-05T12:25:40.439Z"
             }
           ]
         }
@@ -836,10 +836,10 @@
           "titulo": null,
           "modo": "lead",
           "estado": "OK",
-          "generado": "2026-10-03T17:12:21.849Z",
+          "generado": "2026-10-05T12:25:43.764Z",
           "error": false,
           "avisos": [
-            "Reporte: OK · 2026-10-03 17:12 (log/ads-ingles-nivel-avanzado.md)"
+            "Reporte: OK · 2026-10-05 12:25 (log/ads-ingles-nivel-avanzado.md)"
           ],
           "variantes": [
             {
@@ -850,8 +850,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-avanzado/ingles-nivel-avanzado-ads",
-              "size": "146 kb",
-              "updated": "2026-10-03T17:12:20.994Z"
+              "size": "147 kb",
+              "updated": "2026-10-05T12:25:42.480Z"
             },
             {
               "variant": "form",
@@ -861,8 +861,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-avanzado/ingles-nivel-avanzado-form",
-              "size": "146 kb",
-              "updated": "2026-10-03T17:12:21.066Z"
+              "size": "147 kb",
+              "updated": "2026-10-05T12:25:42.554Z"
             },
             {
               "variant": "step1",
@@ -900,10 +900,10 @@
           "titulo": null,
           "modo": "lead",
           "estado": "OK",
-          "generado": "2026-10-03T17:12:17.395Z",
+          "generado": "2026-10-05T12:25:45.793Z",
           "error": false,
           "avisos": [
-            "Reporte: OK · 2026-10-03 17:12 (log/ads-ingles-nivel-cero.md)"
+            "Reporte: OK · 2026-10-05 12:25 (log/ads-ingles-nivel-cero.md)"
           ],
           "variantes": [
             {
@@ -914,8 +914,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-cero/ingles-nivel-cero-ads",
-              "size": "146 kb",
-              "updated": "2026-10-03T17:12:26.000Z"
+              "size": "147 kb",
+              "updated": "2026-10-05T12:25:44.380Z"
             },
             {
               "variant": "form",
@@ -925,8 +925,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-cero/ingles-nivel-cero-form",
-              "size": "146 kb",
-              "updated": "2026-10-03T17:12:26.000Z"
+              "size": "147 kb",
+              "updated": "2026-10-05T12:25:44.459Z"
             },
             {
               "variant": "step1",
@@ -964,10 +964,10 @@
           "titulo": null,
           "modo": "lead",
           "estado": "OK",
-          "generado": "2026-10-03T17:12:20.423Z",
+          "generado": "2026-10-05T12:25:47.816Z",
           "error": false,
           "avisos": [
-            "Reporte: OK · 2026-10-03 17:12 (log/ads-ingles-nivel-intermedio.md)"
+            "Reporte: OK · 2026-10-05 12:25 (log/ads-ingles-nivel-intermedio.md)"
           ],
           "variantes": [
             {
@@ -978,8 +978,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-intermedio/ingles-nivel-intermedio-ads",
-              "size": "147 kb",
-              "updated": "2026-10-03T17:12:19.419Z"
+              "size": "148 kb",
+              "updated": "2026-10-05T12:25:46.397Z"
             },
             {
               "variant": "form",
@@ -989,8 +989,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-intermedio/ingles-nivel-intermedio-form",
-              "size": "147 kb",
-              "updated": "2026-10-03T17:12:19.490Z"
+              "size": "148 kb",
+              "updated": "2026-10-05T12:25:46.474Z"
             },
             {
               "variant": "step1",
@@ -1028,10 +1028,10 @@
           "titulo": null,
           "modo": "lead",
           "estado": "OK",
-          "generado": "2026-10-03T17:12:18.853Z",
+          "generado": "2026-10-05T12:25:49.762Z",
           "error": false,
           "avisos": [
-            "Reporte: OK · 2026-10-03 17:12 (log/ads-ingles-nivel-pre-intermedio.md)"
+            "Reporte: OK · 2026-10-05 12:25 (log/ads-ingles-nivel-pre-intermedio.md)"
           ],
           "variantes": [
             {
@@ -1042,8 +1042,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-pre-intermedio/ingles-nivel-pre-intermedio-ads",
-              "size": "146 kb",
-              "updated": "2026-10-03T17:12:17.963Z"
+              "size": "148 kb",
+              "updated": "2026-10-05T12:25:48.426Z"
             },
             {
               "variant": "form",
@@ -1053,8 +1053,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-pre-intermedio/ingles-nivel-pre-intermedio-form",
-              "size": "146 kb",
-              "updated": "2026-10-03T17:12:18.036Z"
+              "size": "148 kb",
+              "updated": "2026-10-05T12:25:48.506Z"
             },
             {
               "variant": "step1",
