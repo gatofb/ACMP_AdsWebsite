@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-05T12:25:49.798Z",
+  "generado": "2026-10-05T14:39:48.055Z",
   "public_base": "https://ads.academia-comunica.com",
   "checklist_url": "https://ads.academia-comunica.com/checklist",
   "ultimo_deploy": "2026-10-04 20:08",
@@ -38,7 +38,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/academia-ingles/academia-ingles-ads",
               "size": "106 kb",
-              "updated": "2026-10-05T12:25:21.595Z"
+              "updated": "2026-10-05T14:28:20.195Z"
             },
             {
               "variant": "form",
@@ -49,7 +49,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/academia-ingles/academia-ingles-form",
               "size": "106 kb",
-              "updated": "2026-10-05T12:25:21.654Z"
+              "updated": "2026-10-05T14:28:20.196Z"
             },
             {
               "variant": "step1",
@@ -96,7 +96,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/academia-ingles/academia-ingles-intensivo",
               "size": "99 kb",
-              "updated": "2026-10-03T17:12:11.558Z"
+              "updated": "2026-10-05T14:28:20.196Z"
             }
           ]
         },
@@ -121,7 +121,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/academia-ingles/academia-ingles-intensivo-b",
               "size": "103 kb",
-              "updated": "2026-10-03T17:12:13.563Z"
+              "updated": "2026-10-05T14:28:20.194Z"
             }
           ]
         }
@@ -407,8 +407,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-liderazgo/curso-liderazgo-ads",
-              "size": "81 kb",
-              "updated": "2026-10-05T12:25:19.413Z"
+              "size": "80 kb",
+              "updated": "2026-10-05T14:28:20.166Z"
             },
             {
               "variant": "form",
@@ -419,7 +419,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-liderazgo/curso-liderazgo-form",
               "size": "80 kb",
-              "updated": "2026-10-05T12:25:19.484Z"
+              "updated": "2026-10-05T14:28:20.166Z"
             },
             {
               "variant": "step1",
@@ -547,7 +547,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-oratoria/curso-oratoria-form",
               "size": "110 kb",
-              "updated": "2026-10-05T12:25:31.665Z"
+              "updated": "2026-10-05T14:28:20.171Z"
             },
             {
               "variant": "step1",
@@ -606,7 +606,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-oratoria/lead-magnet-19k-form",
               "size": "110 kb",
-              "updated": "2026-10-05T12:25:33.884Z"
+              "updated": "2026-10-05T14:28:20.172Z"
             },
             {
               "variant": "step1",
@@ -851,7 +851,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-avanzado/ingles-nivel-avanzado-ads",
               "size": "147 kb",
-              "updated": "2026-10-05T12:25:42.480Z"
+              "updated": "2026-10-05T14:28:20.193Z"
             },
             {
               "variant": "form",
@@ -862,7 +862,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-avanzado/ingles-nivel-avanzado-form",
               "size": "147 kb",
-              "updated": "2026-10-05T12:25:42.554Z"
+              "updated": "2026-10-05T14:28:20.192Z"
             },
             {
               "variant": "step1",
@@ -915,7 +915,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-cero/ingles-nivel-cero-ads",
               "size": "147 kb",
-              "updated": "2026-10-05T12:25:44.380Z"
+              "updated": "2026-10-05T14:28:20.162Z"
             },
             {
               "variant": "form",
@@ -926,7 +926,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-cero/ingles-nivel-cero-form",
               "size": "147 kb",
-              "updated": "2026-10-05T12:25:44.459Z"
+              "updated": "2026-10-05T14:28:20.163Z"
             },
             {
               "variant": "step1",
@@ -979,7 +979,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-intermedio/ingles-nivel-intermedio-ads",
               "size": "148 kb",
-              "updated": "2026-10-05T12:25:46.397Z"
+              "updated": "2026-10-05T14:28:20.169Z"
             },
             {
               "variant": "form",
@@ -990,7 +990,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-intermedio/ingles-nivel-intermedio-form",
               "size": "148 kb",
-              "updated": "2026-10-05T12:25:46.474Z"
+              "updated": "2026-10-05T14:28:20.169Z"
             },
             {
               "variant": "step1",
@@ -1043,7 +1043,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-pre-intermedio/ingles-nivel-pre-intermedio-ads",
               "size": "148 kb",
-              "updated": "2026-10-05T12:25:48.426Z"
+              "updated": "2026-10-05T14:28:20.165Z"
             },
             {
               "variant": "form",
@@ -1054,7 +1054,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-pre-intermedio/ingles-nivel-pre-intermedio-form",
               "size": "148 kb",
-              "updated": "2026-10-05T12:25:48.506Z"
+              "updated": "2026-10-05T14:28:20.164Z"
             },
             {
               "variant": "step1",
