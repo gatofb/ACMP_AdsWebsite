@@ -1,5 +1,5 @@
 {
-  "generado": "2026-10-05T14:39:48.201Z",
+  "generado": "2026-10-06T16:30:00.528Z",
   "public_base": "https://ads.academia-comunica.com",
   "checklist_url": "https://ads.academia-comunica.com/checklist",
   "ultimo_deploy": "2026-10-05 11:39",
@@ -80,11 +80,11 @@
           "titulo": "Academia en Inglés — Intensivo en vivo",
           "modo": "static",
           "estado": "OK",
-          "generado": "2026-10-03T17:12:13.331Z",
+          "generado": "2026-10-06T16:28:09.730Z",
           "error": false,
           "avisos": [
             "Fuente Static/academia-ingles-intensivo/index.html · se publica con build-static-page.mjs",
-            "Reporte: OK · 2026-10-03 17:12 (log/ads-academia-ingles-intensivo.md)"
+            "Reporte: OK · 2026-10-06 16:28 (log/ads-academia-ingles-intensivo.md)"
           ],
           "variantes": [
             {
@@ -96,7 +96,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/academia-ingles/academia-ingles-intensivo",
               "size": "99 kb",
-              "updated": "2026-10-05T14:28:20.196Z"
+              "updated": "2026-10-06T16:28:07.568Z"
             }
           ]
         },
@@ -105,11 +105,11 @@
           "titulo": "Academia en Inglés — Intensivo en vivo (versión B: precio $389.350 con 35% OFF)",
           "modo": "static",
           "estado": "OK",
-          "generado": "2026-10-03T17:12:14.403Z",
+          "generado": "2026-10-06T16:28:10.907Z",
           "error": false,
           "avisos": [
             "Fuente Static/academia-ingles-intensivo/index.html · se publica con build-static-page.mjs",
-            "Reporte: OK · 2026-10-03 17:12 (log/ads-academia-ingles-intensivo-b.md)"
+            "Reporte: OK · 2026-10-06 16:28 (log/ads-academia-ingles-intensivo-b.md)"
           ],
           "variantes": [
             {
@@ -121,7 +121,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/academia-ingles/academia-ingles-intensivo-b",
               "size": "103 kb",
-              "updated": "2026-10-05T14:28:20.194Z"
+              "updated": "2026-10-06T16:28:09.967Z"
             }
           ]
         }
