@@ -70,11 +70,11 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
 <div class="wrap">
 
   <div class="stats">
-    <div class="stat"><div class="num">15</div><div class="lbl">Cursos con variantes</div></div>
-    <div class="stat"><div class="num">44</div><div class="lbl">Landings generadas</div></div>
+    <div class="stat"><div class="num">16</div><div class="lbl">Cursos con variantes</div></div>
+    <div class="stat"><div class="num">46</div><div class="lbl">Landings generadas</div></div>
     <div class="stat"><div class="num">0</div><div class="lbl">Cursos con errores</div></div>
-    <div class="stat"><div class="num">9</div><div class="lbl">Páginas del sitio sin variantes</div></div>
-    <div class="stat"><div class="num">06/10/2026</div><div class="lbl">Última generación</div></div>
+    <div class="stat"><div class="num">8</div><div class="lbl">Páginas del sitio sin variantes</div></div>
+    <div class="stat"><div class="num">07/10/2026</div><div class="lbl">Última generación</div></div>
     <div class="stat"><div class="num">06/10/2026</div><div class="lbl">Último deploy</div></div>
   </div>
 
@@ -548,6 +548,46 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
   </section>
 
   <section>
+    <h2>empresas <span class="badge badge-ok">OK</span></h2>
+    <p class="section-note">Reporte: OK · 2026-10-07 13:15 (<code>log/ads-empresas.md</code>)</p>
+    <div class="table-scroll"><table>
+      <thead>
+        <tr><th>Variación</th><th>Archivo</th><th>Estado</th><th>Peso</th><th>Generado</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Variación"><span class="badge badge-ok">1 · Sin puntos de fuga</span></td>
+          <td data-label="Archivo" class="path"><a href="empresas/empresas-ads.html">empresas-ads.html</a></td>
+          <td data-label="Estado"><span class="badge badge-ok">generada</span></td>
+          <td data-label="Peso">93 kb</td>
+          <td data-label="Generado" class="updated">07/10/2026, 10:15 a. m.</td>
+        </tr>
+        <tr>
+          <td data-label="Variación"><span class="badge badge-mod">2 · Formulario de calificación</span></td>
+          <td data-label="Archivo" class="path"><a href="empresas/empresas-form.html">empresas-form.html</a></td>
+          <td data-label="Estado"><span class="badge badge-ok">generada</span></td>
+          <td data-label="Peso">92 kb</td>
+          <td data-label="Generado" class="updated">07/10/2026, 10:15 a. m.</td>
+        </tr>
+        <tr>
+          <td data-label="Variación"><span class="badge badge-dc">3 · Order bump (step 1)</span></td>
+          <td data-label="Archivo" class="path">empresas-step1.html</td>
+          <td data-label="Estado"><span class="badge badge-pending">no aplica</span></td>
+          <td data-label="Peso">—</td>
+          <td data-label="Generado" class="updated">—</td>
+        </tr>
+        <tr>
+          <td data-label="Variación"><span class="badge badge-home">↳ step 2 (interna del funnel)</span></td>
+          <td data-label="Archivo" class="path">empresas-step2.html</td>
+          <td data-label="Estado"><span class="badge badge-pending">no aplica</span></td>
+          <td data-label="Peso">—</td>
+          <td data-label="Generado" class="updated">—</td>
+        </tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section>
     <h2>english-for-impact <span class="badge badge-ok">OK</span></h2>
     <p class="section-note">Reporte: OK · 2026-10-05 12:25 (<code>log/ads-english-for-impact.md</code>)</p>
     <div class="table-scroll"><table>
@@ -769,11 +809,6 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
           <td data-label="Acción"><code>node scripts/generate-ads.mjs --page ejercicios-gratuitos-oratoria</code></td>
         </tr>
         <tr>
-          <td data-label="Página"><strong>empresas</strong></td>
-          <td data-label="Fuente" class="path">Web-ACMP-ClaudDesign/output/empresas.html</td>
-          <td data-label="Acción"><code>node scripts/generate-ads.mjs --page empresas</code></td>
-        </tr>
-        <tr>
           <td data-label="Página"><strong>formaciones</strong></td>
           <td data-label="Fuente" class="path">Web-ACMP-ClaudDesign/output/formaciones.html</td>
           <td data-label="Acción"><code>node scripts/generate-ads.mjs --page formaciones</code></td>
@@ -813,8 +848,11 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
 
   <section>
     <h2>Historial de cambios (generaciones y deploys)</h2>
-    <p class="section-note">Fuente: <code>log/changelog.md</code> · 258 entrada(s), más recientes arriba. Los deploys incluyen el commit publicado en <code>ACMP_AdsWebsite</code>.</p>
+    <p class="section-note">Fuente: <code>log/changelog.md</code> · 261 entrada(s), más recientes arriba. Los deploys incluyen el commit publicado en <code>ACMP_AdsWebsite</code>.</p>
     <ul class="log-list">
+      <li class="log-entry"><strong>2026-10-07 10:15 — Generación: empresas</strong><ul><li><strong>Script:</strong> <code>generate-ads.mjs</code></li><li><strong>Página:</strong> <code>empresas</code> → <code>Output/empresas/</code></li><li><strong>Variantes:</strong> 2 (ads, form)</li><li><strong>Upsell:</strong> —</li><li><strong>Estado:</strong> OK</li><li><strong>Nota:</strong> Replica de Empresas de www para pauta: form PicoCRM embebido en vanilla, eventos de lead</li></ul></li>
+      <li class="log-entry"><strong>2026-10-06 18:36 — Generación: empresas</strong><ul><li><strong>Script:</strong> <code>generate-ads.mjs</code></li><li><strong>Página:</strong> <code>empresas</code> → <code>Output/empresas/</code></li><li><strong>Variantes:</strong> 2 (ads, form)</li><li><strong>Upsell:</strong> —</li><li><strong>Estado:</strong> 1 error(es) — no publicar</li><li><strong>Nota:</strong> Replica de Empresas de www para pauta: form PicoCRM embebido en vanilla, eventos de lead</li></ul></li>
+      <li class="log-entry"><strong>2026-10-06 18:34 — Generación: empresas</strong><ul><li><strong>Script:</strong> <code>generate-ads.mjs</code></li><li><strong>Página:</strong> <code>empresas</code> → <code>Output/empresas/</code></li><li><strong>Variantes:</strong> 2 (ads, form)</li><li><strong>Upsell:</strong> —</li><li><strong>Estado:</strong> 1 error(es) — no publicar</li><li><strong>Nota:</strong> Replica de la seccion Empresas de www para pauta (pedido 2026-10-06)</li></ul></li>
       <li class="log-entry"><strong>2026-10-06 13:30 — Deploy: ACMP_AdsWebsite</strong><ul><li><strong>Script:</strong> <code>sync-output.sh</code></li><li><strong>Remote:</strong> <code>gatofb/ACMP_AdsWebsite</code> (main)</li><li><strong>Commit:</strong> <code>d6aa702</code> — Landings de ingles: cierre '¿Arrancamos?' y los 4 niveles dentro del parrafo</li><li><strong>Archivos:</strong> 4 files changed, 20 insertions(+), 26 deletions(-)</li></ul></li>
       <li class="log-entry"><strong>2026-10-06 13:28 — Generación: academia-ingles-intensivo-b</strong><ul><li><strong>Script:</strong> <code>build-static-page.mjs</code></li><li><strong>Página:</strong> <code>academia-ingles-intensivo-b</code> (estática) → <code>Output/academia-ingles/academia-ingles-intensivo-b.html</code></li><li><strong>Fuente:</strong> <code>Static/academia-ingles-intensivo/index.html</code></li><li><strong>Estado:</strong> OK</li><li><strong>Nota:</strong> Cierre: '¿Arrancamos?'. El dato de los 4 niveles sale del grid de stats y entra al parrafo en negrita</li></ul></li>
       <li class="log-entry"><strong>2026-10-06 13:28 — Generación: academia-ingles-intensivo</strong><ul><li><strong>Script:</strong> <code>build-static-page.mjs</code></li><li><strong>Página:</strong> <code>academia-ingles-intensivo</code> (estática) → <code>Output/academia-ingles/academia-ingles-intensivo.html</code></li><li><strong>Fuente:</strong> <code>Static/academia-ingles-intensivo/index.html</code></li><li><strong>Estado:</strong> OK</li><li><strong>Nota:</strong> Cierre: '¿Arrancamos?'. El dato de los 4 niveles sale del grid de stats y entra al parrafo en negrita</li></ul></li>
@@ -1076,7 +1114,7 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
     </ul>
   </section>
 
-  <footer>Generado 06/10/2026, 01:30 p. m. · no editar a mano (se regenera con cada corrida del generador)</footer>
+  <footer>Generado 07/10/2026, 10:24 a. m. · no editar a mano (se regenera con cada corrida del generador)</footer>
 </div>
 
 </body>
