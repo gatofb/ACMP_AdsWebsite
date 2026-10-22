@@ -75,7 +75,7 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
     <div class="stat"><div class="num">0</div><div class="lbl">Cursos con errores</div></div>
     <div class="stat"><div class="num">9</div><div class="lbl">Páginas del sitio sin variantes</div></div>
     <div class="stat"><div class="num">22/10/2026</div><div class="lbl">Última generación</div></div>
-    <div class="stat"><div class="num">10/10/2026</div><div class="lbl">Último deploy</div></div>
+    <div class="stat"><div class="num">22/10/2026</div><div class="lbl">Último deploy</div></div>
   </div>
 
   <section>
@@ -853,8 +853,9 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
 
   <section>
     <h2>Historial de cambios (generaciones y deploys)</h2>
-    <p class="section-note">Fuente: <code>log/changelog.md</code> · 323 entrada(s), más recientes arriba. Los deploys incluyen el commit publicado en <code>ACMP_AdsWebsite</code>.</p>
+    <p class="section-note">Fuente: <code>log/changelog.md</code> · 324 entrada(s), más recientes arriba. Los deploys incluyen el commit publicado en <code>ACMP_AdsWebsite</code>.</p>
     <ul class="log-list">
+      <li class="log-entry"><strong>2026-10-22 12:20 — Deploy: ACMP_AdsWebsite</strong><ul><li><strong>Script:</strong> <code>sync-output.sh</code></li><li><strong>Remote:</strong> <code>gatofb/ACMP_AdsWebsite</code> (main)</li><li><strong>Commit:</strong> <code>90caed0</code> — Pauta: hero solo del curso y el ebook como bono al final de la lista de la tarjeta en las 10 landings derivadas de www (9 cursos + lead-magnet-19k); combo-extremo regenerado con Combo Esencial $57.000 y Combo Avanzado $97.000, sin Combo 2</li><li><strong>Archivos:</strong> 34 files changed, 298 insertions(+), 216 deletions(-)</li></ul></li>
       <li class="log-entry"><strong>2026-10-22 12:18 — Generación: combo-extremo</strong><ul><li><strong>Script:</strong> <code>generate-ads.mjs</code></li><li><strong>Página:</strong> <code>combo-extremo</code> → <code>Output/combo-extremo/</code></li><li><strong>Variantes:</strong> 1 (ads)</li><li><strong>Upsell:</strong> —</li><li><strong>Estado:</strong> OK · 1 warning(s)</li><li><strong>Nota:</strong> Regeneración contra el www actual: Combo Esencial $57.000 y Combo Avanzado $97.000 (sin Combo 2) con el tracking de upsell de hoy; la del 13/10 nunca se había deployado</li></ul></li>
       <li class="log-entry"><strong>2026-10-22 11:11 — Generación: curso-liderazgo</strong><ul><li><strong>Script:</strong> <code>generate-ads.mjs</code></li><li><strong>Página:</strong> <code>curso-liderazgo</code> → <code>Output/curso-liderazgo/</code></li><li><strong>Variantes:</strong> 2 (ads, form)</li><li><strong>Upsell:</strong> —</li><li><strong>Estado:</strong> OK</li><li><strong>Nota:</strong> www pasa a vender Ebook + Curso; la pauta sigue hablando solo del curso en el hero y muestra el ebook como bono, al final de la lista de la tarjeta</li></ul></li>
       <li class="log-entry"><strong>2026-10-22 11:11 — Generación: lead-magnet-19k</strong><ul><li><strong>Script:</strong> <code>generate-ads.mjs</code></li><li><strong>Página:</strong> <code>lead-magnet-19k</code> → <code>Output/curso-oratoria/</code></li><li><strong>Variantes:</strong> 4 (ads, form, step1, step2)</li><li><strong>Upsell:</strong> detectado en la página (.acmp-buy-card.is-combo) → Combo Extremo $156.250 → https://academia.maipistiner.com/checkout/combo-i-acceso-a-todos-los-cursos</li><li><strong>Estado:</strong> OK · 3 warning(s)</li><li><strong>Nota:</strong> www pasa a vender Ebook + Curso; la pauta sigue hablando solo del curso en el hero y muestra el ebook como bono, al final de la lista de la tarjeta</li></ul></li>
