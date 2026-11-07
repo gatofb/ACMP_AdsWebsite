@@ -1,12 +1,12 @@
 {
-  "generado": "2026-11-06T21:09:22.809Z",
+  "generado": "2026-11-07T15:21:21.839Z",
   "public_base": "https://ads.academia-comunica.com",
   "checklist_url": "https://ads.academia-comunica.com/checklist",
   "ultimo_deploy": "2026-11-06 18:09",
   "totales": {
     "cursos": 16,
-    "landings": 47,
-    "cursos_con_error": 0,
+    "landings": 48,
+    "cursos_con_error": 1,
     "paginas_sin_variantes": 10
   },
   "pendientes_antes_de_pautar": [
@@ -764,7 +764,7 @@
     },
     {
       "curso": "empresas",
-      "error": false,
+      "error": true,
       "huerfanos": [],
       "ofertas": [
         {
@@ -828,12 +828,12 @@
           "key": "empresas-b2b",
           "titulo": "Capacitaciones in-company para empresas",
           "modo": "static",
-          "estado": "OK",
-          "generado": "2026-11-06T20:54:01.539Z",
-          "error": false,
+          "estado": "**1 ERROR(ES)** — no publicar",
+          "generado": "2026-11-06T22:42:36.657Z",
+          "error": true,
           "avisos": [
             "Fuente Static/empresas-b2b/index.html · se publica con build-static-page.mjs",
-            "Reporte: OK · 2026-11-06 20:54 (log/ads-empresas-b2b.md)"
+            "Reporte: **1 ERROR(ES)** — no publicar · 2026-11-06 22:42 (log/ads-empresas-b2b.md)"
           ],
           "variantes": [
             {
@@ -845,7 +845,32 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/empresas/empresas-b2b",
               "size": "71 kb",
-              "updated": "2026-11-06T20:54:01.108Z"
+              "updated": "2026-11-07T15:21:12.935Z"
+            }
+          ]
+        },
+        {
+          "key": "empresas-ingles",
+          "titulo": "Inglés de negocios in-company para empresas",
+          "modo": "static",
+          "estado": "OK",
+          "generado": "2026-11-07T10:54:01.319Z",
+          "error": false,
+          "avisos": [
+            "Fuente Static/empresas-ingles/index.html · se publica con build-static-page.mjs",
+            "Reporte: OK · 2026-11-07 10:54 (log/ads-empresas-ingles.md)"
+          ],
+          "variantes": [
+            {
+              "variant": "static",
+              "label": "Página estática (fuente en Static/)",
+              "file": "empresas-ingles.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/empresas/empresas-ingles",
+              "size": "55 kb",
+              "updated": "2026-11-07T10:54:00.338Z"
             }
           ]
         }

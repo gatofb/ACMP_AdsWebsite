@@ -71,10 +71,10 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
 
   <div class="stats">
     <div class="stat"><div class="num">16</div><div class="lbl">Cursos con variantes</div></div>
-    <div class="stat"><div class="num">47</div><div class="lbl">Landings generadas</div></div>
-    <div class="stat"><div class="num">0</div><div class="lbl">Cursos con errores</div></div>
+    <div class="stat"><div class="num">48</div><div class="lbl">Landings generadas</div></div>
+    <div class="stat"><div class="num">1</div><div class="lbl">Cursos con errores</div></div>
     <div class="stat"><div class="num">10</div><div class="lbl">Páginas del sitio sin variantes</div></div>
-    <div class="stat"><div class="num">06/11/2026</div><div class="lbl">Última generación</div></div>
+    <div class="stat"><div class="num">07/11/2026</div><div class="lbl">Última generación</div></div>
     <div class="stat"><div class="num">06/11/2026</div><div class="lbl">Último deploy</div></div>
   </div>
 
@@ -548,7 +548,7 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
   </section>
 
   <section>
-    <h2>empresas <span class="badge badge-ok">OK</span> <span class="badge badge-home">2 ofertas</span></h2>
+    <h2>empresas <span class="badge badge-track-missing">con errores — no publicar</span> <span class="badge badge-home">3 ofertas</span></h2>
     <p class="section-note">Reporte: OK · 2026-10-09 19:14 (<code>log/ads-empresas.md</code>)</p>
     <div class="table-scroll"><table>
       <thead>
@@ -585,8 +585,8 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
         </tr>
       </tbody>
     </table></div>
-    <h3 style="font-family:Poppins,Inter,sans-serif;font-size:.98rem;color:var(--navy);margin:22px 0 10px">Oferta <code>empresas-b2b</code> — Capacitaciones in-company para empresas <span class="badge badge-ok">OK</span></h3>
-    <p class="section-note">Fuente <code>Static/empresas-b2b/index.html</code> · se publica con <code>build-static-page.mjs</code> · Reporte: OK · 2026-11-06 20:54 (<code>log/ads-empresas-b2b.md</code>)</p>
+    <h3 style="font-family:Poppins,Inter,sans-serif;font-size:.98rem;color:var(--navy);margin:22px 0 10px">Oferta <code>empresas-b2b</code> — Capacitaciones in-company para empresas <span class="badge badge-track-missing">con errores — no publicar</span></h3>
+    <p class="section-note">Fuente <code>Static/empresas-b2b/index.html</code> · se publica con <code>build-static-page.mjs</code> · Reporte: **1 ERROR(ES)** — no publicar · 2026-11-06 22:42 (<code>log/ads-empresas-b2b.md</code>)</p>
     <div class="table-scroll"><table>
       <thead>
         <tr><th>Variación</th><th>Archivo</th><th>Estado</th><th>Peso</th><th>Generado</th></tr>
@@ -597,7 +597,23 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
           <td data-label="Archivo" class="path"><a href="empresas/empresas-b2b.html">empresas-b2b.html</a></td>
           <td data-label="Estado"><span class="badge badge-ok">generada</span></td>
           <td data-label="Peso">71 kb</td>
-          <td data-label="Generado" class="updated">06/11/2026, 05:54 p. m.</td>
+          <td data-label="Generado" class="updated">07/11/2026, 12:21 p. m.</td>
+        </tr>
+      </tbody>
+    </table></div>
+    <h3 style="font-family:Poppins,Inter,sans-serif;font-size:.98rem;color:var(--navy);margin:22px 0 10px">Oferta <code>empresas-ingles</code> — Inglés de negocios in-company para empresas <span class="badge badge-ok">OK</span></h3>
+    <p class="section-note">Fuente <code>Static/empresas-ingles/index.html</code> · se publica con <code>build-static-page.mjs</code> · Reporte: OK · 2026-11-07 10:54 (<code>log/ads-empresas-ingles.md</code>)</p>
+    <div class="table-scroll"><table>
+      <thead>
+        <tr><th>Variación</th><th>Archivo</th><th>Estado</th><th>Peso</th><th>Generado</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Variación"><span class="badge badge-ok">Página estática (fuente en Static/)</span></td>
+          <td data-label="Archivo" class="path"><a href="empresas/empresas-ingles.html">empresas-ingles.html</a></td>
+          <td data-label="Estado"><span class="badge badge-ok">generada</span></td>
+          <td data-label="Peso">55 kb</td>
+          <td data-label="Generado" class="updated">07/11/2026, 07:54 a. m.</td>
         </tr>
       </tbody>
     </table></div>
@@ -874,8 +890,24 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
 
   <section>
     <h2>Historial de cambios (generaciones y deploys)</h2>
-    <p class="section-note">Fuente: <code>log/changelog.md</code> · 326 entrada(s), más recientes arriba. Los deploys incluyen el commit publicado en <code>ACMP_AdsWebsite</code>.</p>
+    <p class="section-note">Fuente: <code>log/changelog.md</code> · 342 entrada(s), más recientes arriba. Los deploys incluyen el commit publicado en <code>ACMP_AdsWebsite</code>.</p>
     <ul class="log-list">
+      <li class="log-entry"><strong>2026-11-07 07:54 — Generación: empresas-ingles</strong><ul><li><strong>Script:</strong> <code>build-static-page.mjs</code></li><li><strong>Página:</strong> <code>empresas-ingles</code> (estática) → <code>Output/empresas/empresas-ingles.html</code></li><li><strong>Fuente:</strong> <code>Static/empresas-ingles/index.html</code></li><li><strong>Estado:</strong> OK</li><li><strong>Nota:</strong> Nueva landing B2B solo de inglés (Academia Business English)</li></ul></li>
+      <li class="log-entry"><strong>2026-11-06 19:42 — Generación: empresas-b2b</strong><ul><li><strong>Script:</strong> <code>build-static-page.mjs</code></li><li><strong>Página:</strong> <code>empresas-b2b</code> (estática) → <code>Output/empresas/empresas-b2b.html</code></li><li><strong>Fuente:</strong> <code>Static/empresas-b2b/index.html</code></li><li><strong>Estado:</strong> 1 error(es) — no publicar</li><li><strong>Nota:</strong> Programas: un solo video bajo el subtítulo, sin video en las cards de Foco y 360</li></ul></li>
+      <li class="log-entry"><strong>2026-11-06 19:02 — Generación: empresas-b2b</strong><ul><li><strong>Script:</strong> <code>build-static-page.mjs</code></li><li><strong>Página:</strong> <code>empresas-b2b</code> (estática) → <code>Output/empresas/empresas-b2b.html</code></li><li><strong>Fuente:</strong> <code>Static/empresas-b2b/index.html</code></li><li><strong>Estado:</strong> 1 error(es) — no publicar</li><li><strong>Nota:</strong> Contacto de empresas: empresas@academia-comunica.com y WhatsApp +54 9 11 5979-1637 (footer y flotante)</li></ul></li>
+      <li class="log-entry"><strong>2026-11-06 18:49 — Generación: empresas-b2b</strong><ul><li><strong>Script:</strong> <code>build-static-page.mjs</code></li><li><strong>Página:</strong> <code>empresas-b2b</code> (estática) → <code>Output/empresas/empresas-b2b.html</code></li><li><strong>Fuente:</strong> <code>Static/empresas-b2b/index.html</code></li><li><strong>Estado:</strong> 1 error(es) — no publicar</li><li><strong>Nota:</strong> Hero responsive: debajo de 1140px se apila (texto y formulario centrado) sin espacio vacío</li></ul></li>
+      <li class="log-entry"><strong>2026-11-06 18:37 — Generación: empresas-b2b</strong><ul><li><strong>Script:</strong> <code>build-static-page.mjs</code></li><li><strong>Página:</strong> <code>empresas-b2b</code> (estática) → <code>Output/empresas/empresas-b2b.html</code></li><li><strong>Fuente:</strong> <code>Static/empresas-b2b/index.html</code></li><li><strong>Estado:</strong> 1 error(es) — no publicar</li><li><strong>Nota:</strong> Formulario: el alto se ajusta al contenido (arranca en el del paso 1 y crece si una pregunta no entra)</li></ul></li>
+      <li class="log-entry"><strong>2026-11-06 18:27 — Generación: empresas-b2b</strong><ul><li><strong>Script:</strong> <code>build-static-page.mjs</code></li><li><strong>Página:</strong> <code>empresas-b2b</code> (estática) → <code>Output/empresas/empresas-b2b.html</code></li><li><strong>Fuente:</strong> <code>Static/empresas-b2b/index.html</code></li><li><strong>Estado:</strong> OK</li><li><strong>Nota:</strong> Barra flotante: 'Cotizá ahora' lleva a la sección de programas</li></ul></li>
+      <li class="log-entry"><strong>2026-11-06 18:23 — Generación: empresas-b2b</strong><ul><li><strong>Script:</strong> <code>build-static-page.mjs</code></li><li><strong>Página:</strong> <code>empresas-b2b</code> (estática) → <code>Output/empresas/empresas-b2b.html</code></li><li><strong>Fuente:</strong> <code>Static/empresas-b2b/index.html</code></li><li><strong>Estado:</strong> OK</li><li><strong>Nota:</strong> Business English: sale el video del banner</li></ul></li>
+      <li class="log-entry"><strong>2026-11-06 18:23 — Generación: empresas-b2b</strong><ul><li><strong>Script:</strong> <code>build-static-page.mjs</code></li><li><strong>Página:</strong> <code>empresas-b2b</code> (estática) → <code>Output/empresas/empresas-b2b.html</code></li><li><strong>Fuente:</strong> <code>Static/empresas-b2b/index.html</code></li><li><strong>Estado:</strong> OK</li><li><strong>Nota:</strong> Subtítulo de Academia 360</li></ul></li>
+      <li class="log-entry"><strong>2026-11-06 18:22 — Generación: empresas-b2b</strong><ul><li><strong>Script:</strong> <code>build-static-page.mjs</code></li><li><strong>Página:</strong> <code>empresas-b2b</code> (estática) → <code>Output/empresas/empresas-b2b.html</code></li><li><strong>Fuente:</strong> <code>Static/empresas-b2b/index.html</code></li><li><strong>Estado:</strong> OK</li><li><strong>Nota:</strong> Hero con título nuevo, form del hero con el script oficial, barra rotativa videos→Cotizá en lugar del botón naranja, subtítulo de Academia Foco</li></ul></li>
+      <li class="log-entry"><strong>2026-11-06 18:20 — Generación: empresas-b2b</strong><ul><li><strong>Script:</strong> <code>build-static-page.mjs</code></li><li><strong>Página:</strong> <code>empresas-b2b</code> (estática) → <code>Output/empresas/empresas-b2b.html</code></li><li><strong>Fuente:</strong> <code>Static/empresas-b2b/index.html</code></li><li><strong>Estado:</strong> OK</li><li><strong>Nota:</strong> Hero: nuevo título 'Programas de Capacitación en Habilidades Blandas para equipos de 10 o más colaboradores'</li></ul></li>
+      <li class="log-entry"><strong>2026-11-06 18:19 — Generación: empresas-b2b</strong><ul><li><strong>Script:</strong> <code>build-static-page.mjs</code></li><li><strong>Página:</strong> <code>empresas-b2b</code> (estática) → <code>Output/empresas/empresas-b2b.html</code></li><li><strong>Fuente:</strong> <code>Static/empresas-b2b/index.html</code></li><li><strong>Estado:</strong> OK</li><li><strong>Nota:</strong> Cómo trabajamos, paso 1: el formulario real (PicoCRM ad5757a8) en lugar de la maqueta</li></ul></li>
+      <li class="log-entry"><strong>2026-11-06 18:18 — Generación: empresas-b2b</strong><ul><li><strong>Script:</strong> <code>build-static-page.mjs</code></li><li><strong>Página:</strong> <code>empresas-b2b</code> (estática) → <code>Output/empresas/empresas-b2b.html</code></li><li><strong>Fuente:</strong> <code>Static/empresas-b2b/index.html</code></li><li><strong>Estado:</strong> OK</li><li><strong>Nota:</strong> Adds-ON: sale Studio Academia 1/1 con Mai</li></ul></li>
+      <li class="log-entry"><strong>2026-11-06 18:17 — Generación: empresas-b2b</strong><ul><li><strong>Script:</strong> <code>build-static-page.mjs</code></li><li><strong>Página:</strong> <code>empresas-b2b</code> (estática) → <code>Output/empresas/empresas-b2b.html</code></li><li><strong>Fuente:</strong> <code>Static/empresas-b2b/index.html</code></li><li><strong>Estado:</strong> OK</li><li><strong>Nota:</strong> Adds-ON: sale Clínica de oratoria y storytelling</li></ul></li>
+      <li class="log-entry"><strong>2026-11-06 18:16 — Generación: empresas-b2b</strong><ul><li><strong>Script:</strong> <code>build-static-page.mjs</code></li><li><strong>Página:</strong> <code>empresas-b2b</code> (estática) → <code>Output/empresas/empresas-b2b.html</code></li><li><strong>Fuente:</strong> <code>Static/empresas-b2b/index.html</code></li><li><strong>Estado:</strong> OK</li><li><strong>Nota:</strong> Sale Academia Digital de la landing: quedan Foco, 360 y el banner de Business English</li></ul></li>
+      <li class="log-entry"><strong>2026-11-06 18:15 — Generación: empresas-b2b</strong><ul><li><strong>Script:</strong> <code>build-static-page.mjs</code></li><li><strong>Página:</strong> <code>empresas-b2b</code> (estática) → <code>Output/empresas/empresas-b2b.html</code></li><li><strong>Fuente:</strong> <code>Static/empresas-b2b/index.html</code></li><li><strong>Estado:</strong> OK</li><li><strong>Nota:</strong> Academia Foco: CTA 'Cotizar charla' → 'Cotizar programa'</li></ul></li>
+      <li class="log-entry"><strong>2026-11-06 18:15 — Generación: empresas-b2b</strong><ul><li><strong>Script:</strong> <code>build-static-page.mjs</code></li><li><strong>Página:</strong> <code>empresas-b2b</code> (estática) → <code>Output/empresas/empresas-b2b.html</code></li><li><strong>Fuente:</strong> <code>Static/empresas-b2b/index.html</code></li><li><strong>Estado:</strong> OK</li><li><strong>Nota:</strong> Business English sale de la grilla de programas y pasa a un banner propio (otro producto)</li></ul></li>
       <li class="log-entry"><strong>2026-11-06 18:09 — Deploy: ACMP_AdsWebsite</strong><ul><li><strong>Script:</strong> <code>sync-output.sh</code></li><li><strong>Remote:</strong> <code>gatofb/ACMP_AdsWebsite</code> (main)</li><li><strong>Commit:</strong> <code>a9e615c</code> — Landing B2B nueva: empresas/empresas-b2b (form PicoCRM ad5757a8)</li><li><strong>Archivos:</strong> 3 files changed, 813 insertions(+), 55 deletions(-)</li></ul></li>
       <li class="log-entry"><strong>2026-11-06 17:54 — Generación: empresas-b2b</strong><ul><li><strong>Script:</strong> <code>build-static-page.mjs</code></li><li><strong>Página:</strong> <code>empresas-b2b</code> (estática) → <code>Output/empresas/empresas-b2b.html</code></li><li><strong>Fuente:</strong> <code>Static/empresas-b2b/index.html</code></li><li><strong>Estado:</strong> OK</li><li><strong>Nota:</strong> Landing B2B nueva (Claude Design v1, versión B) con form de pauta PicoCRM ad5757a8</li></ul></li>
       <li class="log-entry"><strong>2026-10-22 12:20 — Deploy: ACMP_AdsWebsite</strong><ul><li><strong>Script:</strong> <code>sync-output.sh</code></li><li><strong>Remote:</strong> <code>gatofb/ACMP_AdsWebsite</code> (main)</li><li><strong>Commit:</strong> <code>90caed0</code> — Pauta: hero solo del curso y el ebook como bono al final de la lista de la tarjeta en las 10 landings derivadas de www (9 cursos + lead-magnet-19k); combo-extremo regenerado con Combo Esencial $57.000 y Combo Avanzado $97.000, sin Combo 2</li><li><strong>Archivos:</strong> 34 files changed, 298 insertions(+), 216 deletions(-)</li></ul></li>
@@ -1205,7 +1237,7 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
     </ul>
   </section>
 
-  <footer>Generado 06/11/2026, 06:09 p. m. · no editar a mano (se regenera con cada corrida del generador)</footer>
+  <footer>Generado 07/11/2026, 12:21 p. m. · no editar a mano (se regenera con cada corrida del generador)</footer>
 </div>
 
 </body>
