@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Capacitaciones in-company para empresas | Academia Comunica de Mai Pistiner</title>
-<meta name="description" content="Capacitaciones en comunicación para empresas desde 50 colaboradores: oratoria, liderazgo, ventas y atención al cliente para equipos desde 10 personas. Presencial o virtual en vivo.">
+<meta name="description" content="Programas de Capacitación en Habilidades Blandas para equipos de 10 o más colaboradores: oratoria, liderazgo, ventas y atención al cliente para equipos desde 10 personas. Presencial o virtual en vivo.">
 <link rel="icon" href="https://www.academia-comunica.com/favicon.ico">
 <!-- acmp:site-scripts-head (copia de Web-ACMP-ClaudDesign/output/empresas.html; esta página es estática: si cambia rules/analytics.json, actualizar este bloque a mano) -->
 <!-- Google tag (gtag.js) — GA4 -->
@@ -62,7 +62,9 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://www.academia-comunica.com/css/cro.css?v=1902ed76">
 <style>
+:root{--acmp-navy:#222b49;--acmp-navy-700:#1b2340;--acmp-orange:#f74604;--border-subtle:#e2e5ee;--fg-2:#4c5474;--font-body:Inter,Arial,sans-serif;--font-display:Poppins,Arial,sans-serif}
 body{margin:0;font-family:Inter,Arial,sans-serif;color:#1a2035;background:#fff;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
 *{box-sizing:border-box}
 h1,h2,h3,p,ul{margin:0}
@@ -70,6 +72,14 @@ a{color:#222b49}a:hover{color:#f74604}
 button{font-family:inherit}
 img,video{max-width:100%}
 [hidden]{display:none !important}
+.tst-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px;margin:48px auto 0;max-width:1040px}
+.tst-card{position:relative;margin:0;background:#f6f6f8;border:1px solid #e2e5ee;border-radius:22px;padding:36px 34px 32px;display:flex;flex-direction:column;gap:18px}
+.tst-ph{position:absolute;top:-13px;right:20px;background:#ffe52d;color:#222b49;font-size:11.5px;font-weight:700;letter-spacing:.08em;padding:6px 12px;border-radius:999px}
+.tst-logo{height:34px;width:auto;align-self:flex-start;object-fit:contain;filter:grayscale(100%);opacity:.85}
+.tst-logo.toyota{height:26px}.tst-logo.paolini{height:44px}
+.tst-q{margin:0;font-size:18px;line-height:1.55;color:#1a2035}
+.tst-by{display:flex;flex-direction:column;font-size:15px;color:#4c5474;margin-top:auto;padding-top:6px;border-top:1px solid #e2e5ee}
+.tst-by strong{font-family:Poppins,Arial,sans-serif;font-weight:600;color:#111528;font-size:16px;margin-top:12px}
 .sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 .wrap{max-width:1240px;margin:0 auto;padding:0 24px}
 .ff-p{font-family:Poppins,Arial,sans-serif}
@@ -118,12 +128,32 @@ img,video{max-width:100%}
 .vcard .vlabel b{background:#ffe52d;color:#222b49;padding:2px 8px;border-radius:4px;text-shadow:none}
 .vcard.playing .vlabel,.vcard.playing .vplay{opacity:0}
 .vplay{position:absolute;left:50%;top:42%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;background:#fff;display:grid;place-items:center;border:0;cursor:pointer;transition:opacity .2s}
-.fab-b2b{position:fixed;left:26px;bottom:26px;z-index:30;display:flex;align-items:center;gap:12px;transition:opacity .25s ease,transform .25s ease}
-.fab-b2b.off{opacity:0;transform:translateY(16px);pointer-events:none}
+.be{position:relative;overflow:hidden;margin-top:48px;background:#1b2340;color:#fff;border-radius:28px;display:block;padding:48px 48px 48px 56px}
+.be::before{content:"";position:absolute;right:-160px;top:-160px;width:520px;height:520px;border-radius:50%;border:1.5px solid rgba(56,182,255,.35);pointer-events:none}
+.be::after{content:"";position:absolute;left:0;top:0;bottom:0;width:8px;background:#38b6ff}
+.be-txt{position:relative;min-width:0}
+.be-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#1b2340;background:#38b6ff;border-radius:999px;padding:7px 14px}
+.be-h{font-weight:700;font-size:clamp(30px,3.4vw,46px);line-height:1.08;letter-spacing:-.03em;margin-top:18px;color:#fff}
+.be-h span{color:#38b6ff}
+.be-d{font-size:16.5px;color:#c8cee2;margin-top:16px;max-width:78ch}
+.be-k{font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fff;margin-top:28px}
+.be-list{list-style:none;padding:0;margin-top:14px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px 28px}
+.be-list li{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;line-height:1.45;color:#e6e8ef}
+.be-dot{flex:none;width:7px;height:7px;background:#38b6ff;margin-top:8px}
+.be-cta{display:inline-flex;align-items:center;margin-top:30px;background:#f74604;color:#fff !important;text-decoration:none;font-weight:700;font-size:17px;padding:13px 28px;border-radius:999px;min-height:48px;text-transform:uppercase;letter-spacing:.04em}
+@media (max-width:960px){.be{padding:36px 28px 32px 32px}}
+@media (max-width:640px){.be{padding:28px 20px 24px 24px;border-radius:22px}.be::before{display:none}.be-eyebrow{font-size:11px;letter-spacing:.08em;padding:6px 12px}.be-list{grid-template-columns:1fr}.be-cta{width:100%;justify-content:center}}
 button:focus-visible,a:focus-visible{outline:2px solid #38b6ff;outline-offset:3px}
 @media (prefers-reduced-motion:reduce){.ring,.mq{animation:none !important}.lift,.btnp,.play,.pill{transition:none}}
+@media (max-width:1140px){
+  #b-top{min-height:0 !important}
+  .hero-inner{flex-direction:column;flex-wrap:nowrap !important;align-items:stretch !important;align-content:flex-start !important;flex:0 0 auto !important;padding-top:20px !important;padding-bottom:56px !important;gap:36px !important}
+  .hero-txt{flex:0 0 auto !important}
+  #b-form{flex:0 0 auto !important;width:100% !important;max-width:560px;margin:0 auto}
+}
 @media (max-width:860px){
   .nav-links{display:none !important}
+  .b2b-logo img{height:38px !important}
   #b-top{min-height:0 !important}
   .hero-inner{padding-top:12px !important;padding-bottom:48px !important;gap:32px !important}
   .valor-art{height:340px !important}
@@ -140,8 +170,6 @@ button:focus-visible,a:focus-visible{outline:2px solid #38b6ff;outline-offset:3p
 @media (max-width:640px){
   .wrap{padding:0 16px}
   #b-form{padding:14px !important}
-  .fab-b2b{left:16px;bottom:18px}
-  .fab-b2b .fab-txt{display:none}
   .stats{gap:18px !important}
 }
 </style>
@@ -158,7 +186,7 @@ button:focus-visible,a:focus-visible{outline:2px solid #38b6ff;outline-offset:3p
 
   <header style="position:relative;z-index:2">
     <div class="wrap" style="padding-top:22px;padding-bottom:22px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 28px">
-      <a href="#b-top" class="ff-p" style="text-decoration:none;font-weight:700;font-size:22px;color:#fff;letter-spacing:-.01em">Academia <span style="color:#f74604">Comunica</span></a>
+      <a href="#b-top" class="b2b-logo" aria-label="Academia Comunica de Mai Pistiner" style="display:flex;align-items:center;text-decoration:none"><img src="https://www.academia-comunica.com/assets/logo-primary.webp" alt="Academia Comunica de Mai Pistiner" width="1094" height="492" style="height:48px;width:auto;display:block;filter:brightness(0) invert(1)"></a>
       <nav aria-label="Secciones" style="display:flex;flex-wrap:wrap;align-items:center;gap:6px 26px">
         <span class="nav-links" style="display:flex;gap:6px 26px;flex-wrap:wrap">
           <a class="navl" href="#b-programas">Programas</a>
@@ -166,15 +194,15 @@ button:focus-visible,a:focus-visible{outline:2px solid #38b6ff;outline-offset:3p
           <a class="navl" href="#b-como">Cómo trabajamos</a>
           <a class="navl" href="#b-cifras">Empresas</a>
         </span>
-        <a class="btnp ff-p" href="#b-form" style="display:inline-flex;align-items:center;background:#f74604;color:#fff;text-decoration:none;font-weight:700;font-size:17px;padding:9px 22px;border-radius:999px;min-height:44px">Cotizá ahora</a>
+        <a class="btnp ff-p" data-pico-link href="https://picocrm.ai/form/ad5757a8-e8d9-4525-abd6-a02aaeee3762" style="display:inline-flex;align-items:center;background:#f74604;color:#fff;text-decoration:none;font-weight:700;font-size:17px;padding:9px 22px;border-radius:999px;min-height:44px">Cotizá ahora</a>
       </nav>
     </div>
   </header>
 
-  <div class="wrap hero-inner" style="position:relative;z-index:2;flex:1;width:100%;padding-top:36px;padding-bottom:80px;display:flex;flex-wrap:wrap;align-items:flex-end;gap:48px">
-    <div style="flex:1 1 540px;min-width:0">
+  <div class="wrap hero-inner" style="position:relative;z-index:2;flex:1;width:100%;padding-top:36px;padding-bottom:80px;display:flex;flex-wrap:wrap;align-items:flex-end;align-content:flex-end;gap:48px">
+    <div class="hero-txt" style="flex:1 1 540px;min-width:0">
       <span style="display:inline-block;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;border:1px solid #5a6688;border-radius:999px;padding:7px 14px">Capacitaciones in-company</span>
-      <h1 class="ff-p" style="font-weight:700;font-size:clamp(38px,5.4vw,78px);line-height:1.04;letter-spacing:-.03em;margin-top:24px;max-width:13ch">Capacitaciones en comunicación para empresas desde <span style="color:#f74604">50 colaboradores</span></h1>
+      <h1 class="ff-p" style="font-weight:700;font-size:clamp(34px,4.6vw,66px);line-height:1.06;letter-spacing:-.03em;margin-top:24px;max-width:17ch">Programas de Capacitación en Habilidades Blandas para equipos de <span style="color:#f74604">10 o más colaboradores</span></h1>
       <p style="font-size:clamp(17px,1.6vw,19px);color:#c8cee2;max-width:50ch;margin-top:24px">Oratoria, liderazgo, ventas y atención al cliente para equipos desde 10 personas. Presencial o virtual en vivo.</p>
       <div style="margin-top:32px">
         <a class="pill lt" href="#b-valor">Descubrí más<span class="ar"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="5 12 12 19 19 12"></polyline></svg></span></a>
@@ -183,7 +211,11 @@ button:focus-visible,a:focus-visible{outline:2px solid #38b6ff;outline-offset:3p
 
     <div id="b-form" style="flex:0 1 500px;min-width:0;width:100%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.24);border-radius:18px;padding:22px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);scroll-margin-top:16px">
       <h2 class="ff-p" style="font-weight:600;font-size:22px;color:#fff;margin:4px 6px 16px">Pedí tu cotización</h2>
-      <div id="b-form-embed" data-acmp-form="empresas-b2b" style="background:#fff;border-radius:12px;overflow:hidden;min-height:560px"></div>
+      <div id="b-form-embed" data-acmp-form="empresas-b2b" style="background:#fffaf5;border-radius:12px;padding:24px 22px 22px;text-align:center">
+        <p style="font-size:16.5px;line-height:1.5;color:#4c5474;margin:0">Contanos sobre tu equipo y te enviamos una propuesta a medida.</p>
+        <a data-pico-link href="https://picocrm.ai/form/ad5757a8-e8d9-4525-abd6-a02aaeee3762" class="btnp ff-p" style="display:flex;align-items:center;justify-content:center;gap:10px;width:100%;margin-top:18px;background:#f74604;color:#fff;text-decoration:none;font-weight:700;font-size:18px;padding:15px 24px;border-radius:999px;min-height:52px">Completar el formulario<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+        <p style="font-size:13.5px;color:#6b7390;margin-top:12px">Grupos desde 10 personas</p>
+      </div>
       <p style="font-size:14px;color:#c8cee2;margin-top:14px;text-align:center">¿Son menos de 10 personas? <a href="https://www.academia-comunica.com/catalogo" style="color:#fff;font-weight:600">Conocé los cursos online</a></p>
     </div>
   </div>
@@ -254,37 +286,20 @@ button:focus-visible,a:focus-visible{outline:2px solid #38b6ff;outline-offset:3p
     <div style="text-align:center">
       <h2 class="ff-p" style="font-weight:500;font-size:clamp(30px,3.8vw,52px);line-height:1.12;letter-spacing:-.03em;color:#222b49">Una experiencia diseñada<span style="display:block;color:#f74604;font-weight:700">para cada equipo</span></h2>
       <p style="font-size:17px;color:#4c5474;margin-top:18px">Programas de Comunicación basados en la <strong style="color:#222b49;font-weight:700">Metodología Mai Pistiner</strong></p>
+      <video class="prog-video" src="https://www.academia-comunica.com/assets/video-academia-360.mp4#t=0.5" controls playsinline preload="metadata" aria-label="Video de los programas para empresas" style="display:block;width:100%;max-width:400px;aspect-ratio:4/5;object-fit:cover;background:#222b49;border-radius:18px;margin:32px auto 0;box-shadow:0 18px 44px rgba(34,43,73,.18)"></video>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:56px;align-items:start">
-      <div style="display:flex;flex-direction:column;gap:14px">
-        <article class="lift" style="background:#fff;border:1px solid #e2e5ee;border-radius:18px;overflow:hidden;box-shadow:0 10px 30px rgba(34,43,73,.08);display:flex;flex-direction:column">
-          <div style="background:#f74604;color:#fff;padding:22px 22px 24px">
-            <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"></rect><polygon points="10 8 15 10.5 10 13 10 8"></polygon><line x1="8" y1="21" x2="16" y2="21"></line></svg>
-            <h3 class="ff-p" style="font-weight:700;font-size:24px;line-height:1.15;margin-top:12px;color:#fff">Academia<span style="display:block">Digital</span></h3>
-          </div>
-          <div style="padding:22px 22px 24px;display:flex;flex-direction:column;gap:18px">
-            <p style="font-size:15px;color:#4c5474;line-height:1.6">Paquetes de Cursos virtuales asincrónicos para que tu equipo potencie habilidades a su propio ritmo.</p>
-            <a class="btnn" href="#b-form" style="align-self:flex-start;display:inline-flex;align-items:center;background:#222b49;color:#fff;text-decoration:none;font-size:13.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:12px 20px;border-radius:999px;min-height:44px">Cotizar packs</a>
-          </div>
-          <video class="prog-video" src="https://www.academia-comunica.com/assets/video-academia-digital.mp4#t=0.5" controls playsinline preload="metadata" aria-label="Video de Academia Digital" style="width:100%;aspect-ratio:4/5;object-fit:cover;background:#222b49;display:block"></video>
-        </article>
-        <div style="background:#f2f2f2;border:1px solid #e2e5ee;border-radius:16px;padding:20px 20px 10px">
-          <p style="font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#222b49">Qué se lleva tu equipo</p>
-          <ul style="list-style:none;padding:0;margin-top:14px;display:flex;flex-direction:column;gap:12px"><li style="display:flex;gap:10px;align-items:flex-start;font-size:14.5px;line-height:1.45;color:#1a2035"><span style="flex:none;width:7px;height:7px;background:#f74604;margin-top:8px"></span><span>Acceso a cursos online de oratoria, liderazgo, ventas y persuasión, y muchos más</span></li><li style="display:flex;gap:10px;align-items:flex-start;font-size:14.5px;line-height:1.45;color:#1a2035"><span style="flex:none;width:7px;height:7px;background:#f74604;margin-top:8px"></span><span>Aprendizaje a su propio ritmo, cuando quiera y desde donde esté</span></li><li class="prog-more" hidden style="display:flex;gap:10px;align-items:flex-start;font-size:14.5px;line-height:1.45;color:#1a2035"><span style="flex:none;width:7px;height:7px;background:#f74604;margin-top:8px"></span><span>Contenidos accesibles desde computadora y celular</span></li><li class="prog-more" hidden style="display:flex;gap:10px;align-items:flex-start;font-size:14.5px;line-height:1.45;color:#1a2035"><span style="flex:none;width:7px;height:7px;background:#f74604;margin-top:8px"></span><span>Herramientas prácticas para aplicar en el trabajo desde la primera clase</span></li><li class="prog-more" hidden style="display:flex;gap:10px;align-items:flex-start;font-size:14.5px;line-height:1.45;color:#1a2035"><span style="flex:none;width:7px;height:7px;background:#f74604;margin-top:8px"></span><span>Workshops con material adicional para fijar conceptos</span></li><li class="prog-more" hidden style="display:flex;gap:10px;align-items:flex-start;font-size:14.5px;line-height:1.45;color:#1a2035"><span style="flex:none;width:7px;height:7px;background:#f74604;margin-top:8px"></span><span>Certificación por cada curso completado</span></li></ul>
-          <button type="button" data-prog-toggle aria-expanded="false" style="margin-top:6px;background:none;border:0;padding:8px 0;min-height:44px;font-size:14px;font-weight:700;color:#b23300;text-decoration:underline;text-underline-offset:3px;cursor:pointer">Ver más</button>
-        </div>
-      </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px;margin:56px auto 0;max-width:880px;align-items:start">
       <div style="display:flex;flex-direction:column;gap:14px">
         <article class="lift" style="background:#fff;border:1px solid #e2e5ee;border-radius:18px;overflow:hidden;box-shadow:0 10px 30px rgba(34,43,73,.08);display:flex;flex-direction:column">
           <div style="background:#f74604;color:#fff;padding:22px 22px 24px">
             <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"></path><polyline points="21 3 21 9 15 9"></polyline></svg>
             <h3 class="ff-p" style="font-weight:700;font-size:24px;line-height:1.15;margin-top:12px;color:#fff">Academia<span style="display:block">Foco</span></h3>
+            <p style="font-size:15px;font-weight:600;line-height:1.35;margin-top:8px;color:#fff;opacity:.92">Profundización en una habilidad: ej. Liderazgo</p>
           </div>
           <div style="padding:22px 22px 24px;display:flex;flex-direction:column;gap:18px">
             <p style="font-size:15px;color:#4c5474;line-height:1.6">Ciclos de trabajo sobre un eje de comunicación: encuentros presenciales o virtuales con Método Mai Pistiner combinados con cursos virtuales asincrónicos para reforzar las herramientas adquiridas. Se incluyen Desafíos, Evaluación de Resultados e Identificación de Talentos en potencia.</p>
-            <a class="btnn" href="#b-form" style="align-self:flex-start;display:inline-flex;align-items:center;background:#222b49;color:#fff;text-decoration:none;font-size:13.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:12px 20px;border-radius:999px;min-height:44px">Cotizar charla</a>
+            <a class="btnn" data-pico-link href="https://picocrm.ai/form/ad5757a8-e8d9-4525-abd6-a02aaeee3762" style="align-self:flex-start;display:inline-flex;align-items:center;background:#222b49;color:#fff;text-decoration:none;font-size:13.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:12px 20px;border-radius:999px;min-height:44px">Cotizar programa</a>
           </div>
-          <video class="prog-video" src="https://www.academia-comunica.com/assets/video-academia-360.mp4#t=0.5" controls playsinline preload="metadata" aria-label="Video de Academia Foco" style="width:100%;aspect-ratio:4/5;object-fit:cover;background:#222b49;display:block"></video>
         </article>
         <div style="background:#f2f2f2;border:1px solid #e2e5ee;border-radius:16px;padding:20px 20px 10px">
           <p style="font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#222b49">Qué se lleva tu equipo</p>
@@ -297,12 +312,12 @@ button:focus-visible,a:focus-visible{outline:2px solid #38b6ff;outline-offset:3p
           <div style="background:#f74604;color:#fff;padding:22px 22px 24px">
             <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 7"></polyline><polyline points="15 7 21 7 21 13"></polyline></svg>
             <h3 class="ff-p" style="font-weight:700;font-size:24px;line-height:1.15;margin-top:12px;color:#fff">Academia<span style="display:block">360</span></h3>
+            <p style="font-size:15px;font-weight:600;line-height:1.35;margin-top:8px;color:#fff;opacity:.92">Desarrollo de varias habilidades blandas con un trabajo integrador y feedback</p>
           </div>
           <div style="padding:22px 22px 24px;display:flex;flex-direction:column;gap:18px">
             <p style="font-size:15px;color:#4c5474;line-height:1.6">Programa de desarrollo de habilidades blandas: encuentros presenciales con Método Mai Pistiner enfocados en las habilidades de un buen líder, que combinan herramientas 100% aplicables y cursos digitales. Se incluyen Desafíos, Evaluación de Resultados e Identificación de Talentos en potencia.</p>
-            <a class="btnn" href="#b-form" style="align-self:flex-start;display:inline-flex;align-items:center;background:#222b49;color:#fff;text-decoration:none;font-size:13.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:12px 20px;border-radius:999px;min-height:44px">Cotizar programas</a>
+            <a class="btnn" data-pico-link href="https://picocrm.ai/form/ad5757a8-e8d9-4525-abd6-a02aaeee3762" style="align-self:flex-start;display:inline-flex;align-items:center;background:#222b49;color:#fff;text-decoration:none;font-size:13.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:12px 20px;border-radius:999px;min-height:44px">Cotizar programas</a>
           </div>
-          <video class="prog-video" src="https://www.academia-comunica.com/assets/video-academia-360.mp4#t=0.5" controls playsinline preload="metadata" aria-label="Video de Academia 360" style="width:100%;aspect-ratio:4/5;object-fit:cover;background:#222b49;display:block"></video>
         </article>
         <div style="background:#f2f2f2;border:1px solid #e2e5ee;border-radius:16px;padding:20px 20px 10px">
           <p style="font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#222b49">Qué se lleva tu equipo</p>
@@ -310,25 +325,19 @@ button:focus-visible,a:focus-visible{outline:2px solid #38b6ff;outline-offset:3p
           <button type="button" data-prog-toggle aria-expanded="false" style="margin-top:6px;background:none;border:0;padding:8px 0;min-height:44px;font-size:14px;font-weight:700;color:#b23300;text-decoration:underline;text-underline-offset:3px;cursor:pointer">Ver más</button>
         </div>
       </div>
-      <div style="display:flex;flex-direction:column;gap:14px">
-        <article class="lift" style="background:#fff;border:1px solid #e2e5ee;border-radius:18px;overflow:hidden;box-shadow:0 10px 30px rgba(34,43,73,.08);display:flex;flex-direction:column">
-          <div style="background:#f74604;color:#fff;padding:22px 22px 24px">
-            <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h9"></path><path d="M8.5 3v2"></path><path d="M11 5c-1 4-4 7-7 8"></path><path d="M6 9c1.5 2 3.5 3.5 6 4"></path><path d="M13 21l4-9 4 9"></path><path d="M14.5 18h5"></path></svg>
-            <h3 class="ff-p" style="font-weight:700;font-size:24px;line-height:1.15;margin-top:12px;color:#fff">Academia<span style="display:block">Business English</span></h3>
-          </div>
-          <div style="padding:22px 22px 24px;display:flex;flex-direction:column;gap:18px">
-            <p style="font-size:15px;color:#4c5474;line-height:1.6">Encuentros presenciales o virtuales con un Método de Inglés Mai Pistiner para ejecutivos enfocado en comunicación para negocios. Combina herramientas para comunicarte oralmente sin miedo + presentar en inglés correctamente + utilización de IA como apoyo para la escritura y gramática.</p>
-            <a class="btnn" href="#b-form" style="align-self:flex-start;display:inline-flex;align-items:center;background:#222b49;color:#fff;text-decoration:none;font-size:13.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:12px 20px;border-radius:999px;min-height:44px">Cotizar clases</a>
-          </div>
-          <video class="prog-video" src="https://www.academia-comunica.com/assets/video-academia-360.mp4#t=0.5" controls playsinline preload="metadata" aria-label="Video de Academia Business English" style="width:100%;aspect-ratio:4/5;object-fit:cover;background:#222b49;display:block"></video>
-        </article>
-        <div style="background:#f2f2f2;border:1px solid #e2e5ee;border-radius:16px;padding:20px 20px 10px">
-          <p style="font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#222b49">Qué se lleva tu equipo</p>
-          <ul style="list-style:none;padding:0;margin-top:14px;display:flex;flex-direction:column;gap:12px"><li style="display:flex;gap:10px;align-items:flex-start;font-size:14.5px;line-height:1.45;color:#1a2035"><span style="flex:none;width:7px;height:7px;background:#f74604;margin-top:8px"></span><span>Herramientas para presentar no solo correctamente sino con impacto</span></li><li style="display:flex;gap:10px;align-items:flex-start;font-size:14.5px;line-height:1.45;color:#1a2035"><span style="flex:none;width:7px;height:7px;background:#f74604;margin-top:8px"></span><span>Inglés de negocios aplicado a reuniones</span></li><li class="prog-more" hidden style="display:flex;gap:10px;align-items:flex-start;font-size:14.5px;line-height:1.45;color:#1a2035"><span style="flex:none;width:7px;height:7px;background:#f74604;margin-top:8px"></span><span>Inglés para hacer networking en eventos y congresos</span></li><li class="prog-more" hidden style="display:flex;gap:10px;align-items:flex-start;font-size:14.5px;line-height:1.45;color:#1a2035"><span style="flex:none;width:7px;height:7px;background:#f74604;margin-top:8px"></span><span>Inglés para negociar y persuadir</span></li><li class="prog-more" hidden style="display:flex;gap:10px;align-items:flex-start;font-size:14.5px;line-height:1.45;color:#1a2035"><span style="flex:none;width:7px;height:7px;background:#f74604;margin-top:8px"></span><span>Confianza para hablar en inglés sin miedo</span></li><li class="prog-more" hidden style="display:flex;gap:10px;align-items:flex-start;font-size:14.5px;line-height:1.45;color:#1a2035"><span style="flex:none;width:7px;height:7px;background:#f74604;margin-top:8px"></span><span>Uso de la IA como apoyo para la escritura y la gramática</span></li><li class="prog-more" hidden style="display:flex;gap:10px;align-items:flex-start;font-size:14.5px;line-height:1.45;color:#1a2035"><span style="flex:none;width:7px;height:7px;background:#f74604;margin-top:8px"></span><span>Práctica en clases en vivo con el grupo</span></li><li class="prog-more" hidden style="display:flex;gap:10px;align-items:flex-start;font-size:14.5px;line-height:1.45;color:#1a2035"><span style="flex:none;width:7px;height:7px;background:#f74604;margin-top:8px"></span><span>Acompañamiento en todo momento</span></li><li class="prog-more" hidden style="display:flex;gap:10px;align-items:flex-start;font-size:14.5px;line-height:1.45;color:#1a2035"><span style="flex:none;width:7px;height:7px;background:#f74604;margin-top:8px"></span><span>Talleres con casos prácticos</span></li><li class="prog-more" hidden style="display:flex;gap:10px;align-items:flex-start;font-size:14.5px;line-height:1.45;color:#1a2035"><span style="flex:none;width:7px;height:7px;background:#f74604;margin-top:8px"></span><span>Presentación y Feedback</span></li></ul>
-          <button type="button" data-prog-toggle aria-expanded="false" style="margin-top:6px;background:none;border:0;padding:8px 0;min-height:44px;font-size:14px;font-weight:700;color:#b23300;text-decoration:underline;text-underline-offset:3px;cursor:pointer">Ver más</button>
-        </div>
-      </div>
     </div>
+
+    <!-- BUSINESS ENGLISH: banner aparte, es otro producto (pedido 2026-11-06) -->
+    <article id="b-english" class="be">
+      <div class="be-txt">
+        <span class="be-eyebrow"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h9"></path><path d="M8.5 3v2"></path><path d="M11 5c-1 4-4 7-7 8"></path><path d="M6 9c1.5 2 3.5 3.5 6 4"></path><path d="M13 21l4-9 4 9"></path><path d="M14.5 18h5"></path></svg>Además · Inglés para ejecutivos</span>
+        <h3 class="ff-p be-h">Academia <span>Business English</span></h3>
+        <p class="be-d">Encuentros presenciales o virtuales con un Método de Inglés Mai Pistiner para ejecutivos enfocado en comunicación para negocios. Combina herramientas para comunicarte oralmente sin miedo + presentar en inglés correctamente + utilización de IA como apoyo para la escritura y gramática.</p>
+        <p class="be-k">Qué se lleva tu equipo</p>
+        <ul class="be-list"><li><span class="be-dot"></span><span>Herramientas para presentar no solo correctamente sino con impacto</span></li><li><span class="be-dot"></span><span>Inglés de negocios aplicado a reuniones</span></li><li><span class="be-dot"></span><span>Inglés para hacer networking en eventos y congresos</span></li><li><span class="be-dot"></span><span>Inglés para negociar y persuadir</span></li><li><span class="be-dot"></span><span>Confianza para hablar en inglés sin miedo</span></li><li><span class="be-dot"></span><span>Uso de la IA como apoyo para la escritura y la gramática</span></li><li><span class="be-dot"></span><span>Práctica en clases en vivo con el grupo</span></li><li><span class="be-dot"></span><span>Acompañamiento en todo momento</span></li><li><span class="be-dot"></span><span>Talleres con casos prácticos</span></li><li><span class="be-dot"></span><span>Presentación y Feedback</span></li></ul>
+        <a class="btnp ff-p be-cta" data-pico-link href="https://picocrm.ai/form/ad5757a8-e8d9-4525-abd6-a02aaeee3762">Cotizar clases</a>
+      </div>
+    </article>
   </div>
 </section>
 
@@ -338,18 +347,10 @@ button:focus-visible,a:focus-visible{outline:2px solid #38b6ff;outline-offset:3p
     <div class="adds-box" style="background:#f2f2f2;border:1px solid #e7e9ee;border-radius:28px;padding:48px 40px 44px">
       <h2 class="ff-p" style="font-weight:500;font-size:clamp(28px,3.2vw,42px);line-height:1.15;letter-spacing:-.02em;color:#222b49">Academia <span style="color:#f74604;font-weight:700">Adds-ON</span></h2>
       <p style="font-size:16.5px;color:#4c5474;margin-top:10px">Nuestros programas no son cursos aislados sino una propuesta sinérgica que lleva habilidades a otro nivel.</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;margin-top:32px">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,340px));justify-content:center;gap:20px;margin-top:32px">
         <article class="lift" style="position:relative;height:420px;border-radius:18px;overflow:hidden;background:#d9dce6">
           <img src="https://www.academia-comunica.com/assets/addon-mapeo.webp" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center">
           <h3 class="ff-p" style="position:relative;z-index:1;margin:0;background:#222b49;color:#fff;padding:28px 20px 52px;clip-path:polygon(0 0,100% 0,100% 78%,50% 100%,0 78%);text-align:center;font-weight:600;font-size:14.5px;line-height:1.4;letter-spacing:.04em;text-transform:uppercase">Mapeo de equipos en habilidades blandas, pensamiento colaborativo y liderazgo</h3>
-        </article>
-        <article class="lift" style="position:relative;height:420px;border-radius:18px;overflow:hidden;background:#d9dce6">
-          <img src="https://www.academia-comunica.com/assets/addon-studio.webp" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:78% center">
-          <h3 class="ff-p" style="position:relative;z-index:1;margin:0;background:#222b49;color:#fff;padding:28px 20px 52px;clip-path:polygon(0 0,100% 0,100% 78%,50% 100%,0 78%);text-align:center;font-weight:600;font-size:14.5px;line-height:1.4;letter-spacing:.04em;text-transform:uppercase">Studio Academia en vivo 1/1 con Mai para prepararse para cada presentación</h3>
-        </article>
-        <article class="lift" style="position:relative;height:420px;border-radius:18px;overflow:hidden;background:#d9dce6">
-          <img src="https://www.academia-comunica.com/assets/addon-clinica.webp" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 25%">
-          <h3 class="ff-p" style="position:relative;z-index:1;margin:0;background:#222b49;color:#fff;padding:28px 20px 52px;clip-path:polygon(0 0,100% 0,100% 78%,50% 100%,0 78%);text-align:center;font-weight:600;font-size:14.5px;line-height:1.4;letter-spacing:.04em;text-transform:uppercase">Clínica de oratoria y storytelling para alto nivel</h3>
         </article>
         <article class="lift" style="position:relative;height:420px;border-radius:18px;overflow:hidden;background:#fff">
           <img src="https://www.academia-comunica.com/assets/addon-toolbox.webp" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;padding:110px 18px 18px">
@@ -375,13 +376,13 @@ button:focus-visible,a:focus-visible{outline:2px solid #38b6ff;outline-offset:3p
           <p style="font-size:18px;color:#4c5474;margin-top:16px;max-width:46ch">Nos contás tu área, el tamaño de tu empresa y cuántas personas querés capacitar. Trabajamos con grupos desde 10 personas.</p>
         </div>
         <div style="flex:1 1 440px;min-width:0;position:relative">
-            <div class="card-ui" style="max-width:420px;padding:26px">
-              <span class="tag" style="right:-10px;top:-16px;font-size:13px;padding:8px 16px;background:#ffe52d;color:#222b49">DESDE 10 PERSONAS</span>
-              <p style="font-size:13.5px;font-weight:600;color:#4c5474">Personas a capacitar</p>
-              <div class="fake-sel">26 a 50<svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5d6482" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
-              <p style="font-size:13.5px;font-weight:600;color:#4c5474;margin-top:14px">Tu área</p>
-              <div class="fake-sel">RRHH, Capacitación o Desarrollo<svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5d6482" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></div>
-              <a href="#b-form" class="btnp ff-p" style="display:block;margin-top:18px;background:#f74604;color:#fff;border-radius:999px;padding:12px;text-align:center;font-weight:700;font-size:19px;text-decoration:none">Cotizá ahora</a>
+            <div class="card-ui" style="max-width:460px;padding:16px">
+              <span class="tag" style="right:-10px;top:-16px;z-index:2;font-size:13px;padding:8px 16px;background:#ffe52d;color:#222b49">DESDE 10 PERSONAS</span>
+              <div data-acmp-form="empresas-b2b-paso1" style="border-radius:12px;background:#fffaf5;padding:24px 22px 22px;text-align:center">
+                <p class="ff-p" style="font-weight:600;font-size:20px;color:#111528;margin:0">Pedí tu cotización</p>
+                <p style="font-size:15.5px;line-height:1.5;color:#4c5474;margin-top:8px">Te lleva al formulario: son unas pocas preguntas.</p>
+                <a data-pico-link href="https://picocrm.ai/form/ad5757a8-e8d9-4525-abd6-a02aaeee3762" class="btnp ff-p" style="display:flex;align-items:center;justify-content:center;gap:10px;width:100%;margin-top:18px;background:#f74604;color:#fff;text-decoration:none;font-weight:700;font-size:18px;padding:15px 24px;border-radius:999px;min-height:52px">Completar el formulario<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+              </div>
             </div>
         </div>
       </div>
@@ -416,7 +417,7 @@ button:focus-visible,a:focus-visible{outline:2px solid #38b6ff;outline-offset:3p
               <div style="margin-top:16px;display:flex;flex-direction:column"><div class="doc-row"><span>Programa</span><span>Academia Foco</span></div><div class="doc-row"><span>Eje</span><span>Liderazgo comunicacional</span></div><div class="doc-row"><span>Modalidad</span><span>Híbrida</span></div><div class="doc-row"><span>Participantes</span><span>30 líderes</span></div><div class="doc-row"><span>Calendario</span><span>4 encuentros mensuales</span></div><div class="doc-row"><span>Inversión</span><span>A medida</span></div></div>
             </div>
         </div>
-      </div><div style="text-align:center;margin-top:56px"><a class="pill" href="#b-form">Cotizá ahora<span class="ar"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a></div>
+      </div><div style="text-align:center;margin-top:56px"><a class="pill" data-pico-link href="https://picocrm.ai/form/ad5757a8-e8d9-4525-abd6-a02aaeee3762">Cotizá ahora<span class="ar"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a></div>
     </div>
     <div class="step rev" style="margin-top:72px">
       <div class="step-head"><span class="num ff-p" style="flex:none;width:64px;height:64px;border-radius:50%;background:#c9cdd8;color:#fff;display:grid;place-items:center;font-weight:700;font-size:26px">4</span><span style="flex:1;border-top:3px dashed #d3d7e3;margin:0 12px"></span><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#c9cdd8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 5 16 12 9 19"></polyline></svg></div>
@@ -451,7 +452,7 @@ button:focus-visible,a:focus-visible{outline:2px solid #38b6ff;outline-offset:3p
               <div style="display:flex;gap:24px;margin-top:10px"><span style="flex:1;text-align:center;font-size:14px;font-weight:600;color:#4c5474">Antes</span><span style="flex:1;text-align:center;font-size:14px;font-weight:600;color:#4c5474">Durante</span><span style="flex:1;text-align:center;font-size:14px;font-weight:600;color:#4c5474">Después</span></div>
             </div>
         </div>
-      </div><div style="text-align:center;margin-top:56px"><a class="pill" href="#b-form">Cotizá ahora<span class="ar"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a></div>
+      </div><div style="text-align:center;margin-top:56px"><a class="pill" data-pico-link href="https://picocrm.ai/form/ad5757a8-e8d9-4525-abd6-a02aaeee3762">Cotizá ahora<span class="ar"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a></div>
     </div>
   </div>
 </section>
@@ -474,7 +475,7 @@ button:focus-visible,a:focus-visible{outline:2px solid #38b6ff;outline-offset:3p
     <div style="flex:1 1 460px;min-width:0">
       <h2 class="ff-p" style="font-weight:700;font-size:clamp(30px,3.6vw,50px);line-height:1.1;letter-spacing:-.03em;color:#111528;max-width:16ch">Un beneficio para todo el equipo</h2>
       <p style="font-size:18px;color:#4c5474;margin-top:18px;max-width:48ch">Ayudamos a más de 250 empresas a que sus equipos presenten, lideren, vendan y atiendan mejor.</p>
-      <a class="btnp ff-p" href="#b-form" style="display:inline-flex;align-items:center;margin-top:30px;background:#f74604;color:#fff;text-decoration:none;font-weight:700;font-size:19px;padding:14px 28px;border-radius:999px;min-height:44px">Cotizá ahora</a>
+      <a class="btnp ff-p" data-pico-link href="https://picocrm.ai/form/ad5757a8-e8d9-4525-abd6-a02aaeee3762" style="display:inline-flex;align-items:center;margin-top:30px;background:#f74604;color:#fff;text-decoration:none;font-weight:700;font-size:19px;padding:14px 28px;border-radius:999px;min-height:44px">Cotizá ahora</a>
     </div>
     <div class="stats" style="flex:1 1 460px;min-width:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px">
       <div style="border-top:3px solid #222b49;padding-top:22px">
@@ -489,8 +490,9 @@ button:focus-visible,a:focus-visible{outline:2px solid #38b6ff;outline-offset:3p
   </div>
 </section>
 
+<!-- TESTIMONIOS: sección sacada el 2026-11-10 para publicar sin textos inventados (Toyota / Grupo Paolini). Volver a agregarla con los testimonios reales: el markup está en el historial de git (commit 7e6d34f o anteriores). -->
 <!-- VIDEOS -->
-<section class="section" style="background:#f6f6f8;padding:104px 0 96px">
+<section id="b-videos" class="section" style="background:#f6f6f8;padding:104px 0 96px;scroll-margin-top:12px">
   <div class="wrap">
     <h2 class="ff-p" style="font-weight:700;font-size:clamp(30px,3.8vw,52px);line-height:1.1;letter-spacing:-.03em;color:#111528;text-align:center">Así se vive una capacitación de la Academia</h2>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px;margin-top:56px;justify-items:center">
@@ -511,7 +513,7 @@ button:focus-visible,a:focus-visible{outline:2px solid #38b6ff;outline-offset:3p
       </div>
     </div>
     <div style="text-align:center;margin-top:48px">
-      <a class="pill" href="#b-form">Cotizá ahora<span class="ar"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a>
+      <a class="pill" data-pico-link href="https://picocrm.ai/form/ad5757a8-e8d9-4525-abd6-a02aaeee3762">Cotizá ahora<span class="ar"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a>
     </div>
   </div>
 </section>
@@ -522,11 +524,11 @@ button:focus-visible,a:focus-visible{outline:2px solid #38b6ff;outline-offset:3p
     <div style="display:flex;flex-wrap:wrap;gap:40px 72px;align-items:flex-start;justify-content:space-between">
       <div style="flex:1 1 520px;min-width:0">
         <p class="ff-p" style="font-weight:600;font-size:clamp(34px,4.6vw,64px);line-height:1.06;letter-spacing:-.03em;max-width:15ch">Potenciá la comunicación de tu equipo</p>
-        <a class="btnp ff-p" href="#b-form" style="display:inline-flex;align-items:center;margin-top:30px;background:#f74604;color:#fff;text-decoration:none;font-weight:700;font-size:19px;padding:14px 28px;border-radius:999px;min-height:44px">Pedí tu cotización</a>
+        <a class="btnp ff-p" data-pico-link href="https://picocrm.ai/form/ad5757a8-e8d9-4525-abd6-a02aaeee3762" style="display:inline-flex;align-items:center;margin-top:30px;background:#f74604;color:#fff;text-decoration:none;font-weight:700;font-size:19px;padding:14px 28px;border-radius:999px;min-height:44px">Pedí tu cotización</a>
       </div>
       <div style="flex:0 1 420px;min-width:0;display:flex;flex-direction:column;gap:10px;font-size:16px;color:#e6e8ef;padding-top:10px">
-        <a href="https://wa.me/12065391288?text=Hola%2C%20quiero%20capacitar%20a%20mi%20equipo%20con%20la%20Academia." style="color:#e6e8ef;text-decoration:none">WhatsApp: +1 (206) 539-1288</a>
-        <a href="mailto:academia@maipistiner.com" style="color:#e6e8ef;text-decoration:none">academia@maipistiner.com</a>
+        <a href="https://wa.me/5491159791637?text=Hola%2C%20quiero%20capacitar%20a%20mi%20equipo%20con%20la%20Academia." style="color:#e6e8ef;text-decoration:none">WhatsApp: +54 9 11 5979-1637</a>
+        <a href="mailto:empresas@academia-comunica.com" style="color:#e6e8ef;text-decoration:none">empresas@academia-comunica.com</a>
       </div>
     </div>
     <div style="margin-top:72px;padding-top:22px;border-top:1px solid #2a2a2a;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;font-size:14px;color:#a9adb9">
@@ -535,12 +537,6 @@ button:focus-visible,a:focus-visible{outline:2px solid #38b6ff;outline-offset:3p
     </div>
   </div>
 </footer>
-
-<!-- BOTÓN FLOTANTE (a la izquierda: a la derecha va el mp-cta de WhatsApp) -->
-<div class="fab-b2b" id="fab-b2b">
-  <a href="#b-form" aria-label="Cotizá ahora" style="width:62px;height:62px;border-radius:50%;background:#f74604;display:grid;place-items:center;box-shadow:0 10px 26px rgba(247,70,4,.4)"><svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"></path></svg></a>
-  <a href="#b-form" class="fab-txt" style="background:#fff;color:#222b49;font-size:14.5px;font-weight:600;padding:9px 16px;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.18);text-decoration:none">Cotizá · grupos desde 10 personas</a>
-</div>
 
 <script>
 // Programas: "Ver más / Ver menos"
@@ -583,97 +579,80 @@ document.querySelectorAll('a[href^="#"]').forEach(function (a) {
     setTimeout(function () { if (Math.abs(window.pageYOffset - y0) < 2 && Math.abs(y - y0) > 2) window.scrollTo(0, y); }, 250);
   });
 });
-// Flotante: se esconde mientras el formulario está en pantalla
-(function () {
-  var fab = document.getElementById('fab-b2b'), form = document.getElementById('b-form');
-  if (!fab || !form || !('IntersectionObserver' in window)) return;
-  new IntersectionObserver(function (es) { fab.classList.toggle('off', es[0].isIntersecting); }, { threshold: 0.15 }).observe(form);
-})();
 </script>
-<!-- form-embed.js (inline) -->
+<!-- pico-link.js (inline) -->
 <script>
 /*
-  Embed del formulario de pauta B2B (PicoCRM ad5757a8) en el hero de
-  Static/empresas-b2b. Copia adaptada de
-  Web-ACMP-ClaudDesign/output/js/empresas/form-empresas-embed.js (mismo set de
-  atribución: utm_*, fbclid, _fbp/_fbc, parent_url) con OTRO formulario: el de
-  www (4cb67e9b) es el del sitio; este es el de la campaña.
-  build-static-page.mjs lo inlinea en la página.
+  Links al formulario de PicoCRM (en vez de embeberlo; pedido del usuario 2026-11-10:
+  "no quiero el formulario embebido en la web, sino que se haga click y lo lleve a la
+  url de pico").
+  Todo <a data-pico-link> sale con la misma atribución que pasaba el embed oficial:
+  utm_*, gclid, fbclid, lead_id, leadgen_id, cookies _fbp/_fbc (el form está en otro
+  dominio y no las puede leer) y parent_url (desde qué landing llegó el lead).
+  Se reescribe al cargar y otra vez al hacer clic (las cookies del Pixel pueden
+  aparecer después). build-static-page.mjs lo inlinea en la página.
 */
 (function () {
   'use strict';
 
-  var FORM_ID = 'ad5757a8-e8d9-4525-abd6-a02aaeee3762';
-  var FORM_BASE = 'https://picocrm.ai/form/' + FORM_ID;
-  var CONTENEDOR = 'b-form-embed';
-
-  var PARAMS_ATRIBUCION = [
+  var PARAMS = [
     'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term',
     'utm_ad', 'utm_adset', 'placement', 'gclid', 'fbclid', 'lead_id', 'leadgen_id'
   ];
 
   function cookie(nombre) {
     try {
-      var m = document.cookie.match(
-        new RegExp('(?:^|; )' + nombre.replace(/([.$?*|{}()[\]\\/+^])/g, '\\$1') + '=([^;]*)')
-      );
+      var m = document.cookie.match(new RegExp('(?:^|; )' + nombre + '=([^;]*)'));
       return m ? decodeURIComponent(m[1]) : null;
     } catch (e) { return null; }
   }
 
-  function srcDelForm() {
+  function destino(a) {
+    var base = a.getAttribute('data-pico-base');
+    if (!base) { base = (a.getAttribute('href') || '').split('?')[0]; a.setAttribute('data-pico-base', base); }
     var extra = [];
     try {
       var qs = new URLSearchParams(window.location.search);
-      PARAMS_ATRIBUCION.forEach(function (k) {
-        var v = qs.get(k);
-        if (v) extra.push(k + '=' + encodeURIComponent(v));
-      });
-      var fbp = cookie('_fbp');
-      var fbc = cookie('_fbc');
+      PARAMS.forEach(function (k) { var v = qs.get(k); if (v) extra.push(k + '=' + encodeURIComponent(v)); });
+      var fbp = cookie('_fbp'), fbc = cookie('_fbc');
       if (fbp) extra.push('fbp=' + encodeURIComponent(fbp));
       if (fbc) extra.push('fbc=' + encodeURIComponent(fbc));
       extra.push('parent_url=' + encodeURIComponent(window.location.href));
-    } catch (e) { /* sin atribución, el form igual funciona */ }
-    return FORM_BASE + '?embed=true' + (extra.length ? '&' + extra.join('&') : '');
+    } catch (e) { /* sin atribución el form igual funciona */ }
+    return base + (extra.length ? '?' + extra.join('&') : '');
   }
 
-  function alto() {
-    // El form de PicoCRM es de a un paso por pantalla: con más alto queda un
-    // bloque vacío abajo. 560 deja lugar a los pasos con lista de opciones.
-    return 560;
+  function todos() {
+    var as = document.querySelectorAll('a[data-pico-link]');
+    for (var i = 0; i < as.length; i++) as[i].setAttribute('href', destino(as[i]));
   }
 
-  function montar() {
-    var box = document.getElementById(CONTENEDOR);
-    if (!box || box.querySelector('iframe')) return;
-    var h = alto();
-    box.style.minHeight = h + 'px';
-
-    var ifr = document.createElement('iframe');
-    ifr.src = srcDelForm();
-    ifr.title = 'Formulario para cotizar capacitaciones in-company';
-    ifr.setAttribute('allow', 'clipboard-write; microphone');
-    ifr.style.border = 'none';
-    ifr.style.display = 'block';
-    ifr.style.width = '100%';
-    ifr.style.height = h + 'px';
-    box.appendChild(ifr);
-
-    window.addEventListener('resize', function () {
-      var nuevo = alto();
-      box.style.minHeight = nuevo + 'px';
-      ifr.style.height = nuevo + 'px';
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', montar);
-  } else {
-    montar();
-  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[data-pico-link]');
+    if (a) a.setAttribute('href', destino(a));
+  }, true);
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', todos);
+  else todos();
 })();
 </script>
+
+<!-- Barra flotante rotativa (mismo runtime y estilos que las landings de curso: acmp-cro.js + cro.css de www).
+     Abajo a la izquierda: primero invita a los videos; al hacer clic en ese mensaje baja a #b-videos y queda fija en "Cotizá". -->
+<script>
+window.ACMP_CRO = {
+ "enabled": true,
+ "fab": {
+  "enabled": true,
+  "show_after_px": 500,
+  "rotate_ms": 9000,
+  "states": [
+   { "key": "video", "html": "¡Sacate todas las dudas mirando estos <strong>videos</strong>!", "href": "#b-videos", "icon": "play", "title": "Ver los videos de capacitaciones en empresas", "event": "ClickFloatCTA_VerVideo" },
+   { "key": "cotizar", "html": "<strong>Cotizá ahora</strong> · grupos desde 10 personas", "href": "#b-programas", "icon": "offer", "title": "Ver los programas para empresas", "event": "ClickFloatCTA_Cotizar" }
+  ]
+ }
+};
+</script>
+<script defer src="https://www.academia-comunica.com/js/shared/acmp-cro.js?v=4bf918b5"></script>
 
 <!-- tracking: mismo runtime que las landings de ads (se sirve desde www) -->
 <script>
@@ -707,5 +686,27 @@ window.ACMP_TRACKING = {
 </script>
 <script src="https://www.academia-comunica.com/js/shared/tracking-academia.js?v=7bd44633" defer></script>
 <script defer src="https://www.academia-comunica.com/js/shared/mp-cta.js?v=1"></script>
+<script>
+/* WhatsApp de EMPRESAS en el flotante (pedido del usuario 2026-11-06).
+   mp-cta.js (www) tiene el número de ventas fijo y sin opción por página;
+   cambiarlo ahí afectaría a todo el sitio. Acá se reescribe el link del botón
+   apenas se monta, conservando el mensaje que arma por slug. */
+(function () {
+  var NUM = '5491159791637';
+  function fix() {
+    var b = document.querySelector('#mp-cta-wrap a[href*="wa.me/"], a.mp-cta-button[href*="wa.me/"]');
+    if (!b) return false;
+    b.href = b.href.replace(/wa\.me\/\d+/, 'wa.me/' + NUM);
+    return true;
+  }
+  function start() {
+    if (fix()) return;
+    var mo = new MutationObserver(function () { if (fix()) mo.disconnect(); });
+    mo.observe(document.body, { childList: true, subtree: true });
+    setTimeout(function () { mo.disconnect(); }, 15000);
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
+})();
+</script>
 </body>
 </html>

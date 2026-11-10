@@ -1,12 +1,12 @@
 {
-  "generado": "2026-11-10T14:07:30.020Z",
+  "generado": "2026-11-10T14:10:38.101Z",
   "public_base": "https://ads.academia-comunica.com",
   "checklist_url": "https://ads.academia-comunica.com/checklist",
   "ultimo_deploy": "2026-11-10 11:07",
   "totales": {
     "cursos": 16,
     "landings": 48,
-    "cursos_con_error": 1,
+    "cursos_con_error": 0,
     "paginas_sin_variantes": 10
   },
   "pendientes_antes_de_pautar": [
@@ -764,7 +764,7 @@
     },
     {
       "curso": "empresas",
-      "error": true,
+      "error": false,
       "huerfanos": [],
       "ofertas": [
         {
@@ -828,12 +828,12 @@
           "key": "empresas-b2b",
           "titulo": "Capacitaciones in-company para empresas",
           "modo": "static",
-          "estado": "**1 ERROR(ES)** — no publicar",
-          "generado": "2026-11-10T13:37:32.153Z",
-          "error": true,
+          "estado": "OK",
+          "generado": "2026-11-10T14:10:02.039Z",
+          "error": false,
           "avisos": [
             "Fuente Static/empresas-b2b/index.html · se publica con build-static-page.mjs",
-            "Reporte: **1 ERROR(ES)** — no publicar · 2026-11-10 13:37 (log/ads-empresas-b2b.md)"
+            "Reporte: OK · 2026-11-10 14:10 (log/ads-empresas-b2b.md)"
           ],
           "variantes": [
             {
@@ -844,8 +844,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/empresas/empresas-b2b",
-              "size": "71 kb",
-              "updated": "2026-11-10T13:38:43.615Z"
+              "size": "68 kb",
+              "updated": "2026-11-10T14:10:01.606Z"
             }
           ]
         },
