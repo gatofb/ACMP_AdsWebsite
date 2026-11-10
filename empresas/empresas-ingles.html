@@ -59,49 +59,6 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
 </script>
 <!-- /acmp:posthog -->
 <!-- /acmp:site-scripts-head -->
-<script>
-/* Alto del formulario (ad5757a8) ajustado al contenido.
-   - El form avisa su alto por postMessage {type:'formHeight'}, pero ocupa el
-     100% del iframe: si le sobra lugar informa el alto del iframe (no avisa que
-     le sobra) y el script oficial le sumaba 40px por mensaje → bucle hasta
-     ~5.000px. Este listener corre ANTES que el oficial (fase de captura) y
-     corta esos mensajes.
-   - Por eso el iframe arranca al alto justo del paso 1 (BASE) y solo crece
-     cuando el form informa más de lo que mide (una pregunta larga), con tope.
-   - El oficial además fija min-height 500px y reajusta en cada resize
-     (600px / alto de pantalla): ffFit lo pisa. */
-(function () {
-  var MAX = 1100;
-  function base() { return window.innerWidth <= 640 ? 420 : 380; }
-  function aplicar(f) {
-    var h = Math.max(base(), f.__ffWant || 0);
-    f.style.minHeight = '0';
-    f.style.height = h + 'px';
-    if (f.parentNode && f.parentNode.style) f.parentNode.style.minHeight = h + 'px';
-  }
-  window.ffFit = {
-    track: function (f) { if (f) { f.__ffFit = true; aplicar(f); } },
-    all: function () { var fs = document.querySelectorAll('iframe'); for (var i = 0; i < fs.length; i++) if (fs[i].__ffFit) aplicar(fs[i]); }
-  };
-  window.addEventListener('message', function (e) {
-    var d = e.data;
-    if (!d || d.type !== 'formHeight' || !d.height) return;
-    e.stopImmediatePropagation();
-    var fs = document.querySelectorAll('iframe');
-    for (var i = 0; i < fs.length; i++) {
-      var f = fs[i];
-      if (f.contentWindow !== e.source) continue;
-      var cur = parseInt(f.style.height, 10) || f.offsetHeight;
-      if (d.height <= cur + 2) return;            // eco de su propio alto
-      f.__ffWant = Math.min(d.height + 8, MAX);   // pregunta más larga: crece
-      aplicar(f);
-      return;
-    }
-  }, true);
-  // El resize del oficial corre después del nuestro (se registró más tarde): re-aplicar al final.
-  window.addEventListener('resize', function () { setTimeout(window.ffFit.all, 0); });
-})();
-</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -236,7 +193,7 @@ button:focus-visible,a:focus-visible{outline:2px solid #38b6ff;outline-offset:3p
           <a class="navl" href="#b-como">Cómo trabajamos</a>
           <a class="navl" href="#b-cifras">Empresas</a>
         </span>
-        <a class="btnp ff-p" href="#b-form" style="display:inline-flex;align-items:center;background:#f74604;color:#fff;text-decoration:none;font-weight:700;font-size:17px;padding:9px 22px;border-radius:999px;min-height:44px">Cotizá ahora</a>
+        <a class="btnp ff-p" data-pico-link href="https://picocrm.ai/form/ad5757a8-e8d9-4525-abd6-a02aaeee3762" style="display:inline-flex;align-items:center;background:#f74604;color:#fff;text-decoration:none;font-weight:700;font-size:17px;padding:9px 22px;border-radius:999px;min-height:44px">Cotizá ahora</a>
       </nav>
     </div>
   </header>
@@ -253,10 +210,10 @@ button:focus-visible,a:focus-visible{outline:2px solid #38b6ff;outline-offset:3p
 
     <div id="b-form" style="flex:0 1 500px;min-width:0;width:100%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.24);border-radius:18px;padding:22px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);scroll-margin-top:16px">
       <h2 class="ff-p" style="font-weight:600;font-size:22px;color:#fff;margin:4px 6px 16px">Pedí tu cotización</h2>
-      <div id="b-form-embed" data-acmp-form="empresas-ingles" style="background:#fffaf5;border-radius:12px;overflow:hidden">
-        <!-- Script oficial del formulario (PicoCRM/FormFlow ad5757a8): monta el iframe ACÁ, donde está el tag. Tiene que ir sincrónico (sin async/defer) y una sola vez por página. -->
-        <script src="https://hvztflxjrhtmpfnoypha.supabase.co/functions/v1/embed-script?id=ad5757a8-e8d9-4525-abd6-a02aaeee3762"></script>
-        <script>ffFit.track(document.getElementById('ff-iframe-ad5757a8-e8d9-4525-abd6-a02aaeee3762'));</script>
+      <div id="b-form-embed" data-acmp-form="empresas-ingles" style="background:#fffaf5;border-radius:12px;padding:24px 22px 22px;text-align:center">
+        <p style="font-size:16.5px;line-height:1.5;color:#4c5474;margin:0">Contanos sobre tu equipo y te enviamos una propuesta a medida.</p>
+        <a data-pico-link href="https://picocrm.ai/form/ad5757a8-e8d9-4525-abd6-a02aaeee3762" class="btnp ff-p" style="display:flex;align-items:center;justify-content:center;gap:10px;width:100%;margin-top:18px;background:#f74604;color:#fff;text-decoration:none;font-weight:700;font-size:18px;padding:15px 24px;border-radius:999px;min-height:52px">Completar el formulario<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+        <p style="font-size:13.5px;color:#6b7390;margin-top:12px">Grupos desde 10 personas</p>
       </div>
       <p style="font-size:14px;color:#c8cee2;margin-top:14px;text-align:center">¿Son menos de 10 personas? <a href="https://www.academia-comunica.com/catalogo" style="color:#fff;font-weight:600">Conocé los cursos online</a></p>
     </div>
@@ -336,7 +293,7 @@ button:focus-visible,a:focus-visible{outline:2px solid #38b6ff;outline-offset:3p
         <p class="be-d">Encuentros presenciales o virtuales con un Método de Inglés Mai Pistiner para ejecutivos enfocado en comunicación para negocios. Combina herramientas para comunicarte oralmente sin miedo + presentar en inglés correctamente + utilización de IA como apoyo para la escritura y gramática.</p>
         <p class="be-k">Qué se lleva tu equipo</p>
         <ul class="be-list"><li><span class="be-dot"></span><span>Herramientas para presentar no solo correctamente sino con impacto</span></li><li><span class="be-dot"></span><span>Inglés de negocios aplicado a reuniones</span></li><li><span class="be-dot"></span><span>Inglés para hacer networking en eventos y congresos</span></li><li><span class="be-dot"></span><span>Inglés para negociar y persuadir</span></li><li><span class="be-dot"></span><span>Confianza para hablar en inglés sin miedo</span></li><li><span class="be-dot"></span><span>Uso de la IA como apoyo para la escritura y la gramática</span></li><li><span class="be-dot"></span><span>Práctica en clases en vivo con el grupo</span></li><li><span class="be-dot"></span><span>Acompañamiento en todo momento</span></li><li><span class="be-dot"></span><span>Talleres con casos prácticos</span></li><li><span class="be-dot"></span><span>Presentación y Feedback</span></li></ul>
-        <a class="btnp ff-p be-cta" href="#b-form">Cotizar clases</a>
+        <a class="btnp ff-p be-cta" data-pico-link href="https://picocrm.ai/form/ad5757a8-e8d9-4525-abd6-a02aaeee3762">Cotizar clases</a>
       </div>
     </article>
   </div>
@@ -359,7 +316,11 @@ button:focus-visible,a:focus-visible{outline:2px solid #38b6ff;outline-offset:3p
         <div style="flex:1 1 440px;min-width:0;position:relative">
             <div class="card-ui" style="max-width:460px;padding:16px">
               <span class="tag" style="right:-10px;top:-16px;z-index:2;font-size:13px;padding:8px 16px;background:#ffe52d;color:#222b49">DESDE 10 PERSONAS</span>
-              <div data-pico-embed data-acmp-form="empresas-ingles-paso1" style="border-radius:12px;overflow:hidden;background:#fffaf5"></div>
+              <div data-acmp-form="empresas-ingles-paso1" style="border-radius:12px;background:#fffaf5;padding:24px 22px 22px;text-align:center">
+                <p class="ff-p" style="font-weight:600;font-size:20px;color:#111528;margin:0">Pedí tu cotización</p>
+                <p style="font-size:15.5px;line-height:1.5;color:#4c5474;margin-top:8px">Te lleva al formulario: son unas pocas preguntas.</p>
+                <a data-pico-link href="https://picocrm.ai/form/ad5757a8-e8d9-4525-abd6-a02aaeee3762" class="btnp ff-p" style="display:flex;align-items:center;justify-content:center;gap:10px;width:100%;margin-top:18px;background:#f74604;color:#fff;text-decoration:none;font-weight:700;font-size:18px;padding:15px 24px;border-radius:999px;min-height:52px">Completar el formulario<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+              </div>
             </div>
         </div>
       </div>
@@ -394,7 +355,7 @@ button:focus-visible,a:focus-visible{outline:2px solid #38b6ff;outline-offset:3p
               <div style="margin-top:16px;display:flex;flex-direction:column"><div class="doc-row"><span>Programa</span><span>Academia Business English</span></div><div class="doc-row"><span>Foco</span><span>Reuniones y presentaciones</span></div><div class="doc-row"><span>Modalidad</span><span>Virtual en vivo</span></div><div class="doc-row"><span>Participantes</span><span>12 ejecutivos</span></div><div class="doc-row"><span>Calendario</span><span>A medida</span></div><div class="doc-row"><span>Inversión</span><span>A medida</span></div></div>
             </div>
         </div>
-      </div><div style="text-align:center;margin-top:56px"><a class="pill" href="#b-form">Cotizá ahora<span class="ar"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a></div>
+      </div><div style="text-align:center;margin-top:56px"><a class="pill" data-pico-link href="https://picocrm.ai/form/ad5757a8-e8d9-4525-abd6-a02aaeee3762">Cotizá ahora<span class="ar"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a></div>
     </div>
     <div class="step rev" style="margin-top:72px">
       <div class="step-head"><span class="num ff-p" style="flex:none;width:64px;height:64px;border-radius:50%;background:#c9cdd8;color:#fff;display:grid;place-items:center;font-weight:700;font-size:26px">4</span><span style="flex:1;border-top:3px dashed #d3d7e3;margin:0 12px"></span><svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#c9cdd8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 5 16 12 9 19"></polyline></svg></div>
@@ -428,7 +389,7 @@ button:focus-visible,a:focus-visible{outline:2px solid #38b6ff;outline-offset:3p
               <div style="margin-top:16px;display:flex;flex-direction:column"><div class="doc-row"><span>Presentación final</span><span>En inglés</span></div><div class="doc-row"><span>Feedback</span><span>Sobre la presentación</span></div><div class="doc-row"><span>Acompañamiento</span><span>En todo momento</span></div></div>
             </div>
         </div>
-      </div><div style="text-align:center;margin-top:56px"><a class="pill" href="#b-form">Cotizá ahora<span class="ar"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a></div>
+      </div><div style="text-align:center;margin-top:56px"><a class="pill" data-pico-link href="https://picocrm.ai/form/ad5757a8-e8d9-4525-abd6-a02aaeee3762">Cotizá ahora<span class="ar"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a></div>
     </div>
   </div>
 </section>
@@ -439,7 +400,7 @@ button:focus-visible,a:focus-visible{outline:2px solid #38b6ff;outline-offset:3p
     <div style="flex:1 1 460px;min-width:0">
       <h2 class="ff-p" style="font-weight:700;font-size:clamp(30px,3.6vw,50px);line-height:1.1;letter-spacing:-.03em;color:#111528;max-width:16ch">Un beneficio para todo el equipo</h2>
       <p style="font-size:18px;color:#4c5474;margin-top:18px;max-width:48ch">La Academia ya acompañó a más de 250 empresas a que sus equipos comuniquen mejor. Ahora, también en inglés.</p>
-      <a class="btnp ff-p" href="#b-form" style="display:inline-flex;align-items:center;margin-top:30px;background:#f74604;color:#fff;text-decoration:none;font-weight:700;font-size:19px;padding:14px 28px;border-radius:999px;min-height:44px">Cotizá ahora</a>
+      <a class="btnp ff-p" data-pico-link href="https://picocrm.ai/form/ad5757a8-e8d9-4525-abd6-a02aaeee3762" style="display:inline-flex;align-items:center;margin-top:30px;background:#f74604;color:#fff;text-decoration:none;font-weight:700;font-size:19px;padding:14px 28px;border-radius:999px;min-height:44px">Cotizá ahora</a>
     </div>
     <div class="stats" style="flex:1 1 460px;min-width:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px">
       <div style="border-top:3px solid #222b49;padding-top:22px">
@@ -476,7 +437,7 @@ button:focus-visible,a:focus-visible{outline:2px solid #38b6ff;outline-offset:3p
       </div>
     </div>
     <div style="text-align:center;margin-top:48px">
-      <a class="pill" href="#b-form">Cotizá ahora<span class="ar"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a>
+      <a class="pill" data-pico-link href="https://picocrm.ai/form/ad5757a8-e8d9-4525-abd6-a02aaeee3762">Cotizá ahora<span class="ar"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a>
     </div>
   </div>
 </section>
@@ -487,7 +448,7 @@ button:focus-visible,a:focus-visible{outline:2px solid #38b6ff;outline-offset:3p
     <div style="display:flex;flex-wrap:wrap;gap:40px 72px;align-items:flex-start;justify-content:space-between">
       <div style="flex:1 1 520px;min-width:0">
         <p class="ff-p" style="font-weight:600;font-size:clamp(34px,4.6vw,64px);line-height:1.06;letter-spacing:-.03em;max-width:15ch">Que tu equipo hable inglés sin miedo</p>
-        <a class="btnp ff-p" href="#b-form" style="display:inline-flex;align-items:center;margin-top:30px;background:#f74604;color:#fff;text-decoration:none;font-weight:700;font-size:19px;padding:14px 28px;border-radius:999px;min-height:44px">Pedí tu cotización</a>
+        <a class="btnp ff-p" data-pico-link href="https://picocrm.ai/form/ad5757a8-e8d9-4525-abd6-a02aaeee3762" style="display:inline-flex;align-items:center;margin-top:30px;background:#f74604;color:#fff;text-decoration:none;font-weight:700;font-size:19px;padding:14px 28px;border-radius:999px;min-height:44px">Pedí tu cotización</a>
       </div>
       <div style="flex:0 1 420px;min-width:0;display:flex;flex-direction:column;gap:10px;font-size:16px;color:#e6e8ef;padding-top:10px">
         <a href="https://wa.me/5491159791637?text=Hola%2C%20quiero%20cotizar%20ingl%C3%A9s%20para%20mi%20equipo." style="color:#e6e8ef;text-decoration:none">WhatsApp: +54 9 11 5979-1637</a>
@@ -543,93 +504,59 @@ document.querySelectorAll('a[href^="#"]').forEach(function (a) {
   });
 });
 </script>
-<!-- form-embed.js (inline) -->
+<!-- pico-link.js (inline) -->
 <script>
 /*
-  Segundo formulario de la página (paso 1 de "Cómo trabajamos").
-
-  El del hero lo monta el script OFICIAL del form
-  (https://hvztflxjrhtmpfnoypha.supabase.co/functions/v1/embed-script?id=ad5757a8-…),
-  pero ese script se monta UNA sola vez por página (si ya existe
-  #ff-container-<id> no hace nada). Por eso este archivo replica lo que hace
-  el oficial para el segundo lugar: mismo src (formflow.capogrowth.com, que
-  redirige a picocrm.ai), misma atribución (utm_*, fbclid, _fbp/_fbc,
-  parent_url). El alto lo ajusta el freno de postMessage del <head>.
-  Si el script oficial cambia, revisar este archivo.
-  build-static-page.mjs lo inlinea en la página.
+  Links al formulario de PicoCRM (en vez de embeberlo; pedido del usuario 2026-11-10:
+  "no quiero el formulario embebido en la web, sino que se haga click y lo lleve a la
+  url de pico").
+  Todo <a data-pico-link> sale con la misma atribución que pasaba el embed oficial:
+  utm_*, gclid, fbclid, lead_id, leadgen_id, cookies _fbp/_fbc (el form está en otro
+  dominio y no las puede leer) y parent_url (desde qué landing llegó el lead).
+  Se reescribe al cargar y otra vez al hacer clic (las cookies del Pixel pueden
+  aparecer después). build-static-page.mjs lo inlinea en la página.
 */
 (function () {
   'use strict';
 
-  var FORM_ID = 'ad5757a8-e8d9-4525-abd6-a02aaeee3762';
-  var FORM_BASE = 'https://formflow.capogrowth.com/form/' + FORM_ID + '?embed=true';
-
-  var PARAMS_ATRIBUCION = [
+  var PARAMS = [
     'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term',
     'utm_ad', 'utm_adset', 'placement', 'gclid', 'fbclid', 'lead_id', 'leadgen_id'
   ];
 
   function cookie(nombre) {
     try {
-      var m = document.cookie.match(
-        new RegExp('(?:^|; )' + nombre.replace(/([.$?*|{}()[\]\\/+^])/g, '\\$1') + '=([^;]*)')
-      );
+      var m = document.cookie.match(new RegExp('(?:^|; )' + nombre + '=([^;]*)'));
       return m ? decodeURIComponent(m[1]) : null;
     } catch (e) { return null; }
   }
 
-  function srcDelForm() {
+  function destino(a) {
+    var base = a.getAttribute('data-pico-base');
+    if (!base) { base = (a.getAttribute('href') || '').split('?')[0]; a.setAttribute('data-pico-base', base); }
     var extra = [];
     try {
       var qs = new URLSearchParams(window.location.search);
-      PARAMS_ATRIBUCION.forEach(function (k) {
-        var v = qs.get(k);
-        if (v) extra.push(k + '=' + encodeURIComponent(v));
-      });
-      var fbp = cookie('_fbp');
-      var fbc = cookie('_fbc');
+      PARAMS.forEach(function (k) { var v = qs.get(k); if (v) extra.push(k + '=' + encodeURIComponent(v)); });
+      var fbp = cookie('_fbp'), fbc = cookie('_fbc');
       if (fbp) extra.push('fbp=' + encodeURIComponent(fbp));
       if (fbc) extra.push('fbc=' + encodeURIComponent(fbc));
       extra.push('parent_url=' + encodeURIComponent(window.location.href));
-    } catch (e) { /* sin atribución, el form igual funciona */ }
-    return FORM_BASE + (extra.length ? '&' + extra.join('&') : '');
+    } catch (e) { /* sin atribución el form igual funciona */ }
+    return base + (extra.length ? '?' + extra.join('&') : '');
   }
 
-  function altoBase() {
-    return window.innerWidth <= 640 ? 560 : 560;
+  function todos() {
+    var as = document.querySelectorAll('a[data-pico-link]');
+    for (var i = 0; i < as.length; i++) as[i].setAttribute('href', destino(as[i]));
   }
 
-  function montarEn(box) {
-    if (box.querySelector('iframe')) return;
-    var h = altoBase();
-    box.style.minHeight = h + 'px';
-
-    var ifr = document.createElement('iframe');
-    ifr.src = srcDelForm();
-    ifr.title = 'Formulario para cotizar inglés in-company';
-    ifr.setAttribute('allow', 'clipboard-write; microphone');
-    ifr.setAttribute('loading', 'lazy');
-    ifr.style.border = 'none';
-    ifr.style.display = 'block';
-    ifr.style.width = '100%';
-    ifr.style.height = h + 'px';
-    box.appendChild(ifr);
-    if (window.ffFit) window.ffFit.track(ifr);   // mismo ajuste al contenido que el del hero
-
-    // El alto lo ajusta el freno de postMessage del <head> de la página
-    // (el form informa el alto del iframe y el "+40" del oficial entraba en bucle).
-  }
-
-  function montar() {
-    var boxes = document.querySelectorAll('[data-pico-embed]');
-    for (var i = 0; i < boxes.length; i++) montarEn(boxes[i]);
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', montar);
-  } else {
-    montar();
-  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[data-pico-link]');
+    if (a) a.setAttribute('href', destino(a));
+  }, true);
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', todos);
+  else todos();
 })();
 </script>
 
