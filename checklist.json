@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-10T13:38:44.139Z",
+  "generado": "2026-11-10T13:59:28.423Z",
   "public_base": "https://ads.academia-comunica.com",
   "checklist_url": "https://ads.academia-comunica.com/checklist",
   "ultimo_deploy": "2026-11-10 10:38",
@@ -772,10 +772,10 @@
           "titulo": null,
           "modo": "lead",
           "estado": "OK",
-          "generado": "2026-10-09T19:14:14.907Z",
+          "generado": "2026-11-10T13:58:50.517Z",
           "error": false,
           "avisos": [
-            "Reporte: OK · 2026-10-09 19:14 (log/ads-empresas.md)"
+            "Reporte: OK · 2026-11-10 13:58 (log/ads-empresas.md)"
           ],
           "variantes": [
             {
@@ -786,8 +786,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/empresas/empresas-ads",
-              "size": "93 kb",
-              "updated": "2026-11-10T13:37:17.221Z"
+              "size": "128 kb",
+              "updated": "2026-11-10T13:58:49.375Z"
             },
             {
               "variant": "form",
@@ -797,8 +797,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/empresas/empresas-form",
-              "size": "92 kb",
-              "updated": "2026-11-10T13:37:17.221Z"
+              "size": "127 kb",
+              "updated": "2026-11-10T13:58:49.506Z"
             },
             {
               "variant": "step1",
