@@ -1,11 +1,11 @@
 {
-  "generado": "2026-11-10T14:10:38.444Z",
+  "generado": "2026-11-10T14:15:35.074Z",
   "public_base": "https://ads.academia-comunica.com",
   "checklist_url": "https://ads.academia-comunica.com/checklist",
   "ultimo_deploy": "2026-11-10 11:10",
   "totales": {
     "cursos": 16,
-    "landings": 48,
+    "landings": 47,
     "cursos_con_error": 0,
     "paginas_sin_variantes": 10
   },
@@ -772,10 +772,10 @@
           "titulo": null,
           "modo": "lead",
           "estado": "OK",
-          "generado": "2026-11-10T14:06:32.177Z",
+          "generado": "2026-11-10T14:15:10.463Z",
           "error": false,
           "avisos": [
-            "Reporte: OK · 2026-11-10 14:06 (log/ads-empresas.md)"
+            "Reporte: OK · 2026-11-10 14:15 (log/ads-empresas.md)"
           ],
           "variantes": [
             {
@@ -787,18 +787,18 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/empresas/empresas-ads",
               "size": "129 kb",
-              "updated": "2026-11-10T14:06:30.954Z"
+              "updated": "2026-11-10T14:15:09.418Z"
             },
             {
               "variant": "form",
               "label": "2 · Formulario de calificación",
               "file": "empresas-form.html",
-              "exists": true,
-              "estado": "generada",
+              "exists": false,
+              "estado": "no aplica",
               "destino": true,
               "url": "https://ads.academia-comunica.com/empresas/empresas-form",
-              "size": "128 kb",
-              "updated": "2026-11-10T14:06:31.078Z"
+              "size": null,
+              "updated": null
             },
             {
               "variant": "step1",
