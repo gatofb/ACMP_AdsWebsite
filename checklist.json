@@ -1,13 +1,13 @@
 {
-  "generado": "2026-11-10T14:27:03.711Z",
+  "generado": "2026-11-10T22:00:00.523Z",
   "public_base": "https://ads.academia-comunica.com",
   "checklist_url": "https://ads.academia-comunica.com/checklist",
   "ultimo_deploy": "2026-11-10 11:27",
   "totales": {
-    "cursos": 16,
-    "landings": 48,
+    "cursos": 17,
+    "landings": 49,
     "cursos_con_error": 0,
-    "paginas_sin_variantes": 10
+    "paginas_sin_variantes": 9
   },
   "pendientes_antes_de_pautar": [
     "Cupón fijo AC50X (curso-oratoria/lead-magnet-19k): confirmar que el checkout cobre $19.997"
@@ -122,6 +122,70 @@
               "url": "https://ads.academia-comunica.com/academia-ingles/academia-ingles-intensivo-b",
               "size": "103 kb",
               "updated": "2026-10-10T12:59:24.544Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "curso": "combo-comunica",
+      "error": false,
+      "huerfanos": [],
+      "ofertas": [
+        {
+          "key": "combo-comunica",
+          "titulo": null,
+          "modo": "venta",
+          "estado": "OK · 1 warning(s)",
+          "generado": "2026-11-10T21:59:17.529Z",
+          "error": false,
+          "avisos": [
+            "Reporte: OK · 1 warning(s) · 2026-11-10 21:59 (log/ads-combo-comunica.md)"
+          ],
+          "variantes": [
+            {
+              "variant": "ads",
+              "label": "1 · Sin puntos de fuga",
+              "file": "combo-comunica-ads.html",
+              "exists": true,
+              "estado": "generada",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/combo-comunica/combo-comunica-ads",
+              "size": "52 kb",
+              "updated": "2026-11-10T21:59:16.700Z"
+            },
+            {
+              "variant": "form",
+              "label": "2 · Formulario de calificación",
+              "file": "combo-comunica-form.html",
+              "exists": false,
+              "estado": "no aplica",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/combo-comunica/combo-comunica-form",
+              "size": null,
+              "updated": null
+            },
+            {
+              "variant": "step1",
+              "label": "3 · Order bump (step 1)",
+              "file": "combo-comunica-step1.html",
+              "exists": false,
+              "estado": "no aplica",
+              "destino": true,
+              "url": "https://ads.academia-comunica.com/combo-comunica/combo-comunica-step1",
+              "size": null,
+              "updated": null
+            },
+            {
+              "variant": "step2",
+              "label": "↳ step 2 (interna del funnel)",
+              "file": "combo-comunica-step2.html",
+              "exists": false,
+              "estado": "no aplica",
+              "destino": false,
+              "url": "https://ads.academia-comunica.com/combo-comunica/combo-comunica-step2",
+              "size": null,
+              "updated": null
             }
           ]
         }

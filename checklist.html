@@ -70,10 +70,10 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
 <div class="wrap">
 
   <div class="stats">
-    <div class="stat"><div class="num">16</div><div class="lbl">Cursos con variantes</div></div>
-    <div class="stat"><div class="num">48</div><div class="lbl">Landings generadas</div></div>
+    <div class="stat"><div class="num">17</div><div class="lbl">Cursos con variantes</div></div>
+    <div class="stat"><div class="num">49</div><div class="lbl">Landings generadas</div></div>
     <div class="stat"><div class="num">0</div><div class="lbl">Cursos con errores</div></div>
-    <div class="stat"><div class="num">10</div><div class="lbl">Páginas del sitio sin variantes</div></div>
+    <div class="stat"><div class="num">9</div><div class="lbl">Páginas del sitio sin variantes</div></div>
     <div class="stat"><div class="num">10/11/2026</div><div class="lbl">Última generación</div></div>
     <div class="stat"><div class="num">10/11/2026</div><div class="lbl">Último deploy</div></div>
   </div>
@@ -145,6 +145,46 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
           <td data-label="Estado"><span class="badge badge-ok">generada</span></td>
           <td data-label="Peso">103 kb</td>
           <td data-label="Generado" class="updated">10/10/2026, 09:59 a. m.</td>
+        </tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <h2>combo-comunica <span class="badge badge-ok">OK</span></h2>
+    <p class="section-note">Reporte: OK · 1 warning(s) · 2026-11-10 21:59 (<code>log/ads-combo-comunica.md</code>)</p>
+    <div class="table-scroll"><table>
+      <thead>
+        <tr><th>Variación</th><th>Archivo</th><th>Estado</th><th>Peso</th><th>Generado</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Variación"><span class="badge badge-ok">1 · Sin puntos de fuga</span></td>
+          <td data-label="Archivo" class="path"><a href="combo-comunica/combo-comunica-ads.html">combo-comunica-ads.html</a></td>
+          <td data-label="Estado"><span class="badge badge-ok">generada</span></td>
+          <td data-label="Peso">52 kb</td>
+          <td data-label="Generado" class="updated">10/11/2026, 06:59 p. m.</td>
+        </tr>
+        <tr>
+          <td data-label="Variación"><span class="badge badge-mod">2 · Formulario de calificación</span></td>
+          <td data-label="Archivo" class="path">combo-comunica-form.html</td>
+          <td data-label="Estado"><span class="badge badge-pending">no aplica</span></td>
+          <td data-label="Peso">—</td>
+          <td data-label="Generado" class="updated">—</td>
+        </tr>
+        <tr>
+          <td data-label="Variación"><span class="badge badge-dc">3 · Order bump (step 1)</span></td>
+          <td data-label="Archivo" class="path">combo-comunica-step1.html</td>
+          <td data-label="Estado"><span class="badge badge-pending">no aplica</span></td>
+          <td data-label="Peso">—</td>
+          <td data-label="Generado" class="updated">—</td>
+        </tr>
+        <tr>
+          <td data-label="Variación"><span class="badge badge-home">↳ step 2 (interna del funnel)</span></td>
+          <td data-label="Archivo" class="path">combo-comunica-step2.html</td>
+          <td data-label="Estado"><span class="badge badge-pending">no aplica</span></td>
+          <td data-label="Peso">—</td>
+          <td data-label="Generado" class="updated">—</td>
         </tr>
       </tbody>
     </table></div>
@@ -831,11 +871,6 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
           <td data-label="Acción"><code>node scripts/generate-ads.mjs --page catalogo</code></td>
         </tr>
         <tr>
-          <td data-label="Página"><strong>combo-comunica</strong></td>
-          <td data-label="Fuente" class="path">Web-ACMP-ClaudDesign/output/combo-comunica.html</td>
-          <td data-label="Acción"><code>node scripts/generate-ads.mjs --page combo-comunica</code></td>
-        </tr>
-        <tr>
           <td data-label="Página"><strong>curso-podcast</strong></td>
           <td data-label="Fuente" class="path">Web-ACMP-ClaudDesign/output/curso-podcast.html</td>
           <td data-label="Acción"><code>node scripts/generate-ads.mjs --page curso-podcast</code></td>
@@ -890,8 +925,12 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
 
   <section>
     <h2>Historial de cambios (generaciones y deploys)</h2>
-    <p class="section-note">Fuente: <code>log/changelog.md</code> · 368 entrada(s), más recientes arriba. Los deploys incluyen el commit publicado en <code>ACMP_AdsWebsite</code>.</p>
+    <p class="section-note">Fuente: <code>log/changelog.md</code> · 372 entrada(s), más recientes arriba. Los deploys incluyen el commit publicado en <code>ACMP_AdsWebsite</code>.</p>
     <ul class="log-list">
+      <li class="log-entry"><strong>2026-11-10 18:59 — Generación: combo-comunica</strong><ul><li><strong>Script:</strong> <code>generate-ads.mjs</code></li><li><strong>Página:</strong> <code>combo-comunica</code> → <code>Output/combo-comunica/</code></li><li><strong>Variantes:</strong> 1 (ads)</li><li><strong>Upsell:</strong> —</li><li><strong>Estado:</strong> OK · 1 warning(s)</li><li><strong>Nota:</strong> Nueva landing de pauta: Combo Comunica</li></ul></li>
+      <li class="log-entry"><strong>2026-11-10 18:58 — Generación: combo-comunica</strong><ul><li><strong>Script:</strong> <code>generate-ads.mjs</code></li><li><strong>Página:</strong> <code>combo-comunica</code> → <code>Output/combo-comunica/</code></li><li><strong>Variantes:</strong> 1 (ads)</li><li><strong>Upsell:</strong> —</li><li><strong>Estado:</strong> OK</li><li><strong>Nota:</strong> Nueva landing de pauta: Combo Comunica</li></ul></li>
+      <li class="log-entry"><strong>2026-11-10 18:58 — Generación: combo-comunica</strong><ul><li><strong>Script:</strong> <code>generate-ads.mjs</code></li><li><strong>Página:</strong> <code>combo-comunica</code> → <code>Output/combo-comunica/</code></li><li><strong>Variantes:</strong> 1 (ads)</li><li><strong>Upsell:</strong> —</li><li><strong>Estado:</strong> OK · 1 warning(s)</li><li><strong>Nota:</strong> Nueva landing de pauta: Combo Comunica</li></ul></li>
+      <li class="log-entry"><strong>2026-11-10 18:57 — Generación: combo-comunica</strong><ul><li><strong>Script:</strong> <code>generate-ads.mjs</code></li><li><strong>Página:</strong> <code>combo-comunica</code> → <code>Output/combo-comunica/</code></li><li><strong>Variantes:</strong> 1 (ads)</li><li><strong>Upsell:</strong> —</li><li><strong>Estado:</strong> 1 error(es) — no publicar · 1 warning(s)</li><li><strong>Nota:</strong> Nueva landing de pauta: Combo Comunica</li></ul></li>
       <li class="log-entry"><strong>2026-11-10 11:27 — Deploy: ACMP_AdsWebsite</strong><ul><li><strong>Script:</strong> <code>sync-output.sh</code></li><li><strong>Remote:</strong> <code>gatofb/ACMP_AdsWebsite</code> (main)</li><li><strong>Commit:</strong> <code>d0498b5</code> — Vuelve empresas-form</li><li><strong>Archivos:</strong> 4 files changed, 704 insertions(+), 20 deletions(-)</li></ul></li>
       <li class="log-entry"><strong>2026-11-10 11:26 — Generación: empresas</strong><ul><li><strong>Script:</strong> <code>generate-ads.mjs</code></li><li><strong>Página:</strong> <code>empresas</code> → <code>Output/empresas/</code></li><li><strong>Variantes:</strong> 2 (ads, form)</li><li><strong>Upsell:</strong> —</li><li><strong>Estado:</strong> OK</li><li><strong>Nota:</strong> Vuelve empresas-form (pedido del usuario: dejar las dos)</li></ul></li>
       <li class="log-entry"><strong>2026-11-10 11:23 — Deploy: ACMP_AdsWebsite</strong><ul><li><strong>Script:</strong> <code>sync-output.sh</code></li><li><strong>Remote:</strong> <code>gatofb/ACMP_AdsWebsite</code> (main)</li><li><strong>Commit:</strong> <code>a6e0bfe</code> — 301 empresas-form → empresas-ads</li><li><strong>Archivos:</strong> 3 files changed, 4 insertions(+), 2 deletions(-)</li></ul></li>
@@ -1263,7 +1302,7 @@ posthog.init('phc_AhGKgKCCoA86W2fdBSTmCkWGCcXFiL7oJM8DGH3uLUsB', { api_host: 'ht
     </ul>
   </section>
 
-  <footer>Generado 10/11/2026, 11:27 a. m. · no editar a mano (se regenera con cada corrida del generador)</footer>
+  <footer>Generado 10/11/2026, 07:00 p. m. · no editar a mano (se regenera con cada corrida del generador)</footer>
 </div>
 
 </body>
