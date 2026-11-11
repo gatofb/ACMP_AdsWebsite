@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-11T00:28:19.548Z",
+  "generado": "2026-11-11T03:09:37.525Z",
   "public_base": "https://ads.academia-comunica.com",
   "checklist_url": "https://ads.academia-comunica.com/checklist",
   "ultimo_deploy": "2026-11-10 21:28",
@@ -137,11 +137,11 @@
           "titulo": "Combo Comunica · Academia Sale — Academia Comunica de Mai Pistiner",
           "modo": "venta",
           "estado": "OK",
-          "generado": "2026-11-10T22:05:49.438Z",
+          "generado": "2026-11-11T03:05:22.316Z",
           "error": false,
           "avisos": [
             "Markup de cyber",
-            "Reporte: OK · 2026-11-10 22:05 (log/ads-combo-comunica.md)"
+            "Reporte: OK · 2026-11-11 03:05 (log/ads-combo-comunica.md)"
           ],
           "variantes": [
             {
@@ -153,7 +153,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/combo-comunica/combo-comunica-ads",
               "size": "96 kb",
-              "updated": "2026-11-10T22:05:48.490Z"
+              "updated": "2026-11-11T03:05:21.163Z"
             },
             {
               "variant": "form",
@@ -330,10 +330,10 @@
           "titulo": null,
           "modo": "venta",
           "estado": "OK · 2 warning(s)",
-          "generado": "2026-11-11T00:28:05.905Z",
+          "generado": "2026-11-11T00:21:36.120Z",
           "error": false,
           "avisos": [
-            "Reporte: OK · 2 warning(s) · 2026-11-11 00:28 (log/ads-curso-email-marketing.md)"
+            "Reporte: OK · 2 warning(s) · 2026-11-11 00:21 (log/ads-curso-email-marketing.md)"
           ],
           "variantes": [
             {
@@ -458,10 +458,10 @@
           "titulo": null,
           "modo": "lead",
           "estado": "OK",
-          "generado": "2026-11-11T00:28:04.021Z",
+          "generado": "2026-11-11T00:21:34.094Z",
           "error": false,
           "avisos": [
-            "Reporte: OK · 2026-11-11 00:28 (log/ads-curso-liderazgo.md)"
+            "Reporte: OK · 2026-11-11 00:21 (log/ads-curso-liderazgo.md)"
           ],
           "variantes": [
             {
@@ -522,10 +522,10 @@
           "titulo": null,
           "modo": "venta",
           "estado": "OK · 2 warning(s)",
-          "generado": "2026-11-11T00:28:02.156Z",
+          "generado": "2026-11-11T00:21:32.143Z",
           "error": false,
           "avisos": [
-            "Reporte: OK · 2 warning(s) · 2026-11-11 00:28 (log/ads-curso-manejo-emociones.md)"
+            "Reporte: OK · 2 warning(s) · 2026-11-11 00:21 (log/ads-curso-manejo-emociones.md)"
           ],
           "variantes": [
             {
@@ -586,10 +586,10 @@
           "titulo": null,
           "modo": "venta",
           "estado": "OK · 3 warning(s)",
-          "generado": "2026-11-11T00:27:56.310Z",
+          "generado": "2026-11-11T00:21:26.111Z",
           "error": false,
           "avisos": [
-            "Reporte: OK · 3 warning(s) · 2026-11-11 00:27 (log/ads-curso-oratoria.md)"
+            "Reporte: OK · 3 warning(s) · 2026-11-11 00:21 (log/ads-curso-oratoria.md)"
           ],
           "variantes": [
             {
@@ -643,12 +643,12 @@
           "titulo": "Curso de Oratoria — Empezá desde $19.997",
           "modo": "venta",
           "estado": "OK · 3 warning(s)",
-          "generado": "2026-11-11T00:27:58.402Z",
+          "generado": "2026-11-11T00:21:28.245Z",
           "error": false,
           "avisos": [
             "Markup de curso-oratoria",
             "Plan extra $19.997 con cupón fijo AC50X",
-            "Reporte: OK · 3 warning(s) · 2026-11-11 00:27 (log/ads-lead-magnet-19k.md)"
+            "Reporte: OK · 3 warning(s) · 2026-11-11 00:21 (log/ads-lead-magnet-19k.md)"
           ],
           "variantes": [
             {
@@ -773,10 +773,10 @@
           "titulo": null,
           "modo": "venta",
           "estado": "OK · 2 warning(s)",
-          "generado": "2026-11-11T00:28:00.396Z",
+          "generado": "2026-11-11T00:21:30.131Z",
           "error": false,
           "avisos": [
-            "Reporte: OK · 2 warning(s) · 2026-11-11 00:28 (log/ads-curso-storytelling.md)"
+            "Reporte: OK · 2 warning(s) · 2026-11-11 00:21 (log/ads-curso-storytelling.md)"
           ],
           "variantes": [
             {
