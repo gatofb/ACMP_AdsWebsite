@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-11T19:26:08.648Z",
+  "generado": "2026-11-12T21:08:45.534Z",
   "public_base": "https://ads.academia-comunica.com",
   "checklist_url": "https://ads.academia-comunica.com/checklist",
   "ultimo_deploy": "2026-11-11 16:26",
@@ -7,7 +7,7 @@
     "cursos": 18,
     "landings": 52,
     "cursos_con_error": 0,
-    "paginas_sin_variantes": 9
+    "paginas_sin_variantes": 10
   },
   "pendientes_antes_de_pautar": [
     "Cupón fijo AC50X (curso-oratoria/lead-magnet-19k): confirmar que el checkout cobre $19.997"
@@ -958,11 +958,11 @@
           "titulo": "Capacitaciones in-company para empresas",
           "modo": "static",
           "estado": "OK",
-          "generado": "2026-11-11T19:25:30.838Z",
+          "generado": "2026-11-12T20:47:47.123Z",
           "error": false,
           "avisos": [
             "Fuente Static/empresas-b2b/index.html · se publica con build-static-page.mjs",
-            "Reporte: OK · 2026-11-11 19:25 (log/ads-empresas-b2b.md)"
+            "Reporte: OK · 2026-11-12 20:47 (log/ads-empresas-b2b.md)"
           ],
           "variantes": [
             {
@@ -973,8 +973,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/empresas/empresas-b2b",
-              "size": "70 kb",
-              "updated": "2026-11-11T19:25:30.397Z"
+              "size": "74 kb",
+              "updated": "2026-11-12T20:47:46.821Z"
             }
           ]
         },
