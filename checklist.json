@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-12T21:08:45.913Z",
+  "generado": "2026-11-15T23:17:12.299Z",
   "public_base": "https://ads.academia-comunica.com",
   "checklist_url": "https://ads.academia-comunica.com/checklist",
   "ultimo_deploy": "2026-11-12 18:08",
@@ -983,11 +983,11 @@
           "titulo": "Inglés de negocios in-company para empresas",
           "modo": "static",
           "estado": "OK",
-          "generado": "2026-11-10T13:37:31.529Z",
+          "generado": "2026-11-12T21:10:41.910Z",
           "error": false,
           "avisos": [
             "Fuente Static/empresas-ingles/index.html · se publica con build-static-page.mjs",
-            "Reporte: OK · 2026-11-10 13:37 (log/ads-empresas-ingles.md)"
+            "Reporte: OK · 2026-11-12 21:10 (log/ads-empresas-ingles.md)"
           ],
           "variantes": [
             {
@@ -998,8 +998,8 @@
               "estado": "generada",
               "destino": true,
               "url": "https://ads.academia-comunica.com/empresas/empresas-ingles",
-              "size": "54 kb",
-              "updated": "2026-11-10T13:37:30.981Z"
+              "size": "55 kb",
+              "updated": "2026-11-12T21:10:41.545Z"
             }
           ]
         }
