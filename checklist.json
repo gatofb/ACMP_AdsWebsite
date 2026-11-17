@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-15T23:17:12.609Z",
+  "generado": "2026-11-17T17:45:19.850Z",
   "public_base": "https://ads.academia-comunica.com",
   "checklist_url": "https://ads.academia-comunica.com/checklist",
   "ultimo_deploy": "2026-11-15 20:17",
@@ -7,7 +7,7 @@
     "cursos": 18,
     "landings": 52,
     "cursos_con_error": 0,
-    "paginas_sin_variantes": 10
+    "paginas_sin_variantes": 11
   },
   "pendientes_antes_de_pautar": [
     "Cupón fijo AC50X (curso-oratoria/lead-magnet-19k): confirmar que el checkout cobre $19.997"
@@ -38,7 +38,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/academia-ingles/academia-ingles-ads",
               "size": "106 kb",
-              "updated": "2026-10-09T19:13:55.114Z"
+              "updated": "2026-11-17T17:40:04.141Z"
             },
             {
               "variant": "form",
@@ -49,7 +49,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/academia-ingles/academia-ingles-form",
               "size": "106 kb",
-              "updated": "2026-10-09T19:13:55.168Z"
+              "updated": "2026-11-17T17:40:04.142Z"
             },
             {
               "variant": "step1",
@@ -96,7 +96,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/academia-ingles/academia-ingles-intensivo",
               "size": "99 kb",
-              "updated": "2026-11-11T03:18:50.046Z"
+              "updated": "2026-11-17T17:40:04.150Z"
             }
           ]
         },
@@ -121,7 +121,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/academia-ingles/academia-ingles-intensivo-b",
               "size": "103 kb",
-              "updated": "2026-11-11T03:18:51.178Z"
+              "updated": "2026-11-17T17:40:04.149Z"
             }
           ]
         }
@@ -916,7 +916,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/empresas/empresas-ads",
               "size": "129 kb",
-              "updated": "2026-11-10T14:26:41.697Z"
+              "updated": "2026-11-17T17:41:24.724Z"
             },
             {
               "variant": "form",
@@ -927,7 +927,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/empresas/empresas-form",
               "size": "128 kb",
-              "updated": "2026-11-10T14:26:41.820Z"
+              "updated": "2026-11-17T17:41:24.725Z"
             },
             {
               "variant": "step1",
@@ -958,11 +958,11 @@
           "titulo": "Capacitaciones in-company para empresas",
           "modo": "static",
           "estado": "OK",
-          "generado": "2026-11-12T20:47:47.123Z",
+          "generado": "2026-11-17T17:41:46.239Z",
           "error": false,
           "avisos": [
             "Fuente Static/empresas-b2b/index.html · se publica con build-static-page.mjs",
-            "Reporte: OK · 2026-11-12 20:47 (log/ads-empresas-b2b.md)"
+            "Reporte: OK · 2026-11-17 17:41 (log/ads-empresas-b2b.md)"
           ],
           "variantes": [
             {
@@ -974,7 +974,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/empresas/empresas-b2b",
               "size": "74 kb",
-              "updated": "2026-11-12T20:47:46.821Z"
+              "updated": "2026-11-17T17:41:45.808Z"
             }
           ]
         },
@@ -983,11 +983,11 @@
           "titulo": "Inglés de negocios in-company para empresas",
           "modo": "static",
           "estado": "OK",
-          "generado": "2026-11-12T21:10:41.910Z",
+          "generado": "2026-11-17T17:41:46.922Z",
           "error": false,
           "avisos": [
             "Fuente Static/empresas-ingles/index.html · se publica con build-static-page.mjs",
-            "Reporte: OK · 2026-11-12 21:10 (log/ads-empresas-ingles.md)"
+            "Reporte: OK · 2026-11-17 17:41 (log/ads-empresas-ingles.md)"
           ],
           "variantes": [
             {
@@ -999,7 +999,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/empresas/empresas-ingles",
               "size": "55 kb",
-              "updated": "2026-11-12T21:10:41.545Z"
+              "updated": "2026-11-17T17:41:46.506Z"
             }
           ]
         }
@@ -1030,7 +1030,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/english-for-impact/english-for-impact-ads",
               "size": "87 kb",
-              "updated": "2026-11-11T03:16:47.314Z"
+              "updated": "2026-11-17T17:40:04.172Z"
             },
             {
               "variant": "form",
@@ -1052,7 +1052,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/english-for-impact/english-for-impact-step1",
               "size": "78 kb",
-              "updated": "2026-11-11T03:16:47.372Z"
+              "updated": "2026-11-17T17:40:04.173Z"
             },
             {
               "variant": "step2",
@@ -1063,7 +1063,7 @@
               "destino": false,
               "url": "https://ads.academia-comunica.com/english-for-impact/english-for-impact-step2",
               "size": "20 kb",
-              "updated": "2026-11-11T03:16:47.372Z"
+              "updated": "2026-11-17T17:40:04.174Z"
             }
           ]
         }
@@ -1094,7 +1094,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-avanzado/ingles-nivel-avanzado-ads",
               "size": "156 kb",
-              "updated": "2026-10-09T19:14:17.565Z"
+              "updated": "2026-11-17T17:40:04.175Z"
             },
             {
               "variant": "form",
@@ -1105,7 +1105,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-avanzado/ingles-nivel-avanzado-form",
               "size": "156 kb",
-              "updated": "2026-10-09T19:14:17.643Z"
+              "updated": "2026-11-17T17:40:04.176Z"
             },
             {
               "variant": "step1",
@@ -1158,7 +1158,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-cero/ingles-nivel-cero-ads",
               "size": "156 kb",
-              "updated": "2026-10-09T19:14:19.670Z"
+              "updated": "2026-11-17T17:40:04.176Z"
             },
             {
               "variant": "form",
@@ -1169,7 +1169,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-cero/ingles-nivel-cero-form",
               "size": "156 kb",
-              "updated": "2026-10-09T19:14:19.751Z"
+              "updated": "2026-11-17T17:40:04.177Z"
             },
             {
               "variant": "step1",
@@ -1222,7 +1222,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-intermedio/ingles-nivel-intermedio-ads",
               "size": "157 kb",
-              "updated": "2026-10-09T19:14:22.015Z"
+              "updated": "2026-11-17T17:40:04.178Z"
             },
             {
               "variant": "form",
@@ -1233,7 +1233,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-intermedio/ingles-nivel-intermedio-form",
               "size": "157 kb",
-              "updated": "2026-10-09T19:14:22.090Z"
+              "updated": "2026-11-17T17:40:04.181Z"
             },
             {
               "variant": "step1",
@@ -1286,7 +1286,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-pre-intermedio/ingles-nivel-pre-intermedio-ads",
               "size": "157 kb",
-              "updated": "2026-10-09T19:14:23.834Z"
+              "updated": "2026-11-17T17:40:04.182Z"
             },
             {
               "variant": "form",
@@ -1297,7 +1297,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/ingles-nivel-pre-intermedio/ingles-nivel-pre-intermedio-form",
               "size": "157 kb",
-              "updated": "2026-10-09T19:14:23.914Z"
+              "updated": "2026-11-17T17:40:04.182Z"
             },
             {
               "variant": "step1",
