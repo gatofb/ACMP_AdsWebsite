@@ -1,5 +1,5 @@
 {
-  "generado": "2026-11-17T17:45:20.241Z",
+  "generado": "2026-11-22T21:33:26.229Z",
   "public_base": "https://ads.academia-comunica.com",
   "checklist_url": "https://ads.academia-comunica.com/checklist",
   "ultimo_deploy": "2026-11-17 14:45",
@@ -660,7 +660,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-oratoria/lead-magnet-19k-ads",
               "size": "129 kb",
-              "updated": "2026-11-11T03:16:33.545Z"
+              "updated": "2026-11-22T21:29:07.745Z"
             },
             {
               "variant": "form",
@@ -671,7 +671,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-oratoria/lead-magnet-19k-form",
               "size": "110 kb",
-              "updated": "2026-11-11T03:16:33.627Z"
+              "updated": "2026-11-22T21:28:49.946Z"
             },
             {
               "variant": "step1",
@@ -682,7 +682,7 @@
               "destino": true,
               "url": "https://ads.academia-comunica.com/curso-oratoria/lead-magnet-19k-step1",
               "size": "121 kb",
-              "updated": "2026-11-11T03:16:33.662Z"
+              "updated": "2026-11-22T21:29:07.745Z"
             },
             {
               "variant": "step2",
@@ -693,7 +693,7 @@
               "destino": false,
               "url": "https://ads.academia-comunica.com/curso-oratoria/lead-magnet-19k-step2",
               "size": "20 kb",
-              "updated": "2026-11-11T03:16:33.663Z"
+              "updated": "2026-11-22T21:28:49.948Z"
             }
           ]
         }
